@@ -173,20 +173,54 @@ pre,
 	font-family: @bsfontBlack;
 	position: absolute;
 	font-weight: bold;
-	font-size: 4.5em;
-	color:@bscolorMain;
+	font-size: 2em;
+	color:@bscolorSecond;
 	top:10px;
-	left:10px;
+	right:10px;
 }
 .firstHeading {
+	display: none;
 	border-bottom:0px;
 	color: @bscolorMain;
 }
+
+/* main body */
+.mw-body#content,{
+	margin-top: 280px;
+	margin-left: 10px;
+	width: 85%;
+}
+#mw-navigation{
+	width: 85%;
+}
+
+/* Main Page */
+#mp-container{
+	position: relative;
+	columns:150px auto;
+}
+.mp-column{
+	position: relative;
+	/*display: block;*/
+	/*width: 200px;*/
+	/*vertical-align: top;*/
+	font-size: @content-font-size-sm;
+}
+	.mp-column h2{
+		font-size: 20px;
+		padding:5px 0px;
+		margin:10px 0px;
+		border-bottom: 5px solid @bscolorSecond;
+	}
+	.mp-column .mw-changeslist{
+		font-size: 16px;
+	}
 
 /* main text area's */
 .mw-content-text{
 	font-size: @content-font-size;
 	letter-spacing:-0.002em;
+	left:0px;
 }
 .mw-headline{
 	color: @bscolorMain;

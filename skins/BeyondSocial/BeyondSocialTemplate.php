@@ -181,10 +181,10 @@ class BeyondSocialTemplate extends BaseTemplate {
 			<div id="mw-head">
 				<?php $this->renderNavigation( 'PERSONAL' ); ?>
 				<div id="left-navigation">
-					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
+					<?php $this->renderNavigation( [ 'NAMESPACES'  ] ); ?>
+					<?php $this->renderNavigation( [ 'VARIANTS', 'VIEWS', 'ACTIONS' ] ); ?>
 				</div>
 				<div id="right-navigation">
-					<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS', 'SEARCH' ] ); ?>
 				</div>
 			</div>
 			<div id="mw-panel">
@@ -194,6 +194,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
 					?>></a></div> -->
 				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+				<div id="bs-search"><?php $this->renderNavigation( [ 'SEARCH' ] ); ?></div>
+
 			</div>
 		</div>
 		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
@@ -475,12 +477,16 @@ class BeyondSocialTemplate extends BaseTemplate {
 								<?php
 								foreach ( $this->data['action_urls'] as $link ) {
 									?>
-									<li<?php echo $link['attributes'] ?>>
-										<a href="<?php
+									<li
+										<?php 
+											// echo $link['attributes'] commanded out for BS
+										?>
+									>
+										<span><a href="<?php
 										echo htmlspecialchars( $link['href'] )
 										?>" <?php
 										echo $link['key'] ?>><?php echo htmlspecialchars( $link['text'] )
-											?></a>
+											?></a></span>
 									</li>
 								<?php
 								}

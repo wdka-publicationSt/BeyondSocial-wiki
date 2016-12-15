@@ -128,7 +128,7 @@
 					// add the placeholder
 					$( '<span class="placeholder" style="display: none;"></span>' ).insertAfter( this );
 					$( this ).detach().prependTo( target ).data( 'collapsibleTabsSettings', outerData );
-					$( this ).attr( 'style', 'display: list-item;' );
+					$( this ).attr( 'style', 'display: inline-block;' );
 					data = $.collapsibleTabs.getSettings( $( ele ) );
 					if ( data ) {
 						expContainerSettings = $.collapsibleTabs.getSettings( $( data.expandedContainer ) );

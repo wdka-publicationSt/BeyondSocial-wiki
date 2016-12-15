@@ -43,30 +43,75 @@ div#mw-head {
 }
 
 /* Navigation Containers */
-#left-navigation, #right-navigation {
-	/*font-size: 1.5em;*/
-	margin-top: 5em;
+#left-navigation {
+	font-family: @bsfontBlack;
+	position: absolute;
+	font-weight: bold;
+	font-size: 4.5em;
 	color:@bscolorMain;
+	top:10px;
+	left:10px;
+	margin:0px;
+	padding:0px;
 }
 #left-navigation {
 	float: left;
-	margin-left: 0em;
-	/*margin-top: 2.5em;*/
-	/* When right nav would overlap left nav, it's placed below it
-	   (normal CSS floats behavior). This rule ensures that no empty space
-	   is shown between them due to right nav's margin-top. Page layout
-	   is still broken, but at least the nav overlaps only the page title
-	   instead of half the content. */
-	/*margin-bottom: -2.5em;*/
-	/* IE 6 double-margin bug fix */
-	display: inline;
+	text-align: left;
+	display: block;
+}
+	/* "Discussion" */
+	#ca-talk span a{
+		position: absolute;
+		top:80px;
+		left:0px;
+	}
+	/* "Read" "Edit" "Watchstar" */
+	#p-views{
+		margin-top:80px;
+	}
+
+	/* comma after each menu item */
+	#left-navigation li:after{
+		content: ", ";
+		margin-top:-30px;
+		padding-right: 10px;
+		vertical-align: top;
+	}
+		/* no comma after page title */
+		#left-navigation li#ca-nstab-main:after{
+			content: " ";
+		}
+		/* exception for "Discussion" */
+		#left-navigation li#ca-talk{
+			width: 173px;
+		}
+		/* comma exception for "Discussion", no comma */
+		#left-navigation li#ca-talk::after{
+			content: "";
+		}
+		/* comma exception for "Discussion", it is placed before "Read" */
+		#left-navigation li#ca-view::before{
+			content: ", ";
+			padding-right: 10px;
+			vertical-align: top;
+		}
+
+/* hide <bs-more-actions> menu tab*/
+h3#p-cactions-label{
+	display: none;
 }
 
-#right-navigation {
-	float: right;
-	right:0px;
-	/*margin-top: 2.5em;*/
+/* display cactions menu: "view history" "delete" "move" "protect" */
+#p-cactions .menu li{
+	position: relative;
+	display: inline-block;
+	padding: 0px;
+	margin:0px;
 }
+	#p-cactions .menu ul{
+		list-style: none;
+	}
+
 
 /* Logo */
 #p-logo {
@@ -90,11 +135,13 @@ div#mw-head {
 /* Panel */
 div#mw-panel {
 	font-size: @menu-main-font-size;
+	font-weight: bold;
+	line-height: 1.2em;
 	position: absolute;
-	top: 160px;
+	top: 300px;
 	/*padding-top: 1em;*/
 	width: 10em;
-	left: 0;
+	right: 0;
 
 	div.portal {
 		/*margin: 0 0.6em 0 0.7em;*/
@@ -125,9 +172,8 @@ div#mw-panel {
 				/*padding: @menu-main-body-padding;*/
 
 				li {
-					/*line-height: 1.125em;*/
 					/*margin: 0;*/
-					/*padding: 0.25em 0;*/
+					/*padding: 0.05em 0;*/
 					font-size: @menu-main-body-font-size;
 					word-wrap: break-word;
 
