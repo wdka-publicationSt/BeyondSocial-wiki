@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bogups",
+			"Тамэ Балъкъэрхэ"
+		]
+	},
+	"beyondsocial-action-addsection": "Теухугъуэ щӀэуэ щӀэдзэн",
+	"beyondsocial-action-delete": "Ихын",
+	"beyondsocial-action-move": "ЦӀэр хъуэжын",
+	"beyondsocial-action-protect": "Хъумэн",
+	"beyondsocial-action-undelete": "ЗыфӀэгъэувэжын",
+	"beyondsocial-action-unprotect": "Хъумэныр техыжын",
+	"beyondsocial-view-create": "ЩӀын",
+	"beyondsocial-view-edit": "Гъэтэрэзын",
+	"beyondsocial-view-history": "Тхыдэм еплъын",
+	"beyondsocial-view-view": "Еджэн",
+	"beyondsocial-view-viewsource": "КъызхэкӀам еплъын"
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Thuvack"
+		]
+	},
+	"beyondsocial-action-addsection": "Veka nholoko ya mhaka",
+	"beyondsocial-action-delete": "Sula",
+	"beyondsocial-action-move": "Yi sa kunwana",
+	"beyondsocial-action-protect": "Sirhelela",
+	"beyondsocial-action-undelete": "Cinca kusula",
+	"beyondsocial-action-unprotect": "Cinca kusirhelela",
+	"beyondsocial-view-create": "Tumbuluxa",
+	"beyondsocial-view-edit": "Lulamisa",
+	"beyondsocial-view-history": "Languta matimu",
+	"beyondsocial-view-view": "Hlaya",
+	"beyondsocial-view-viewsource": "Languta xihlovo"
+}

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Przemub",
+			"Schläsinger",
+			"Timpul",
+			"Äberlausitzer"
+		]
+	},
+	"beyondsocial-action-addsection": "Obschnitt hinzufiega",
+	"beyondsocial-action-delete": "Läscha",
+	"beyondsocial-action-move": "Verschieba",
+	"beyondsocial-action-protect": "Schützen",
+	"beyondsocial-action-undelete": "Wiederherstella",
+	"beyondsocial-action-unprotect": "Freigahn",
+	"beyondsocial-view-create": "Erstella",
+	"beyondsocial-view-edit": "Bearbeita",
+	"beyondsocial-view-history": "Versionsgeschichte",
+	"beyondsocial-view-view": "Lessa",
+	"beyondsocial-view-viewsource": "Quelltext siehn"
+}

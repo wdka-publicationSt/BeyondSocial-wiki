@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Darth Kule",
+			"EugeneZelenko",
+			"Lloffiwr",
+			"Shirayuki",
+			"Umherirrender",
+			"Matma Rex",
+			"Liuxinyu970226",
+			"Raymond"
+		]
+	},
+	"skinname-beyondsocial": "{{optional}}",
+	"beyondsocial-skin-desc": "{{desc|what=skin|name=BeyondSocial|url=https://www.mediawiki.org/wiki/Skin:BeyondSocial}}",
+	"beyondsocial.css": "{{optional}}",
+	"beyondsocial.js": "{{optional}}",
+	"beyondsocial-action-addsection": "Used in the BeyondSocial skin. See for example {{canonicalurl:Talk:Main_Page|useskin=beyondsocial}}\n{{Identical|Add topic}}",
+	"beyondsocial-action-delete": "Used in the BeyondSocial skin, as the name of a tab at the top of the page. See for example {{canonicalurl:Main_Page|useskin=beyondsocial}}\n\n{{Identical|Delete}}",
+	"beyondsocial-action-move": "Used in the BeyondSocial skin, on the tabs at the top of the page. See for example {{canonicalurl:Talk:Main_Page|useskin=beyondsocial}}\n\n{{Identical|Move}}",
+	"beyondsocial-action-protect": "Tab at top of page, in beyondsocial skin\n\n{{Identical|Protect}}",
+	"beyondsocial-action-undelete": "Tab at top of page, in beyondsocial skin.\n{{Identical|Undelete}}",
+	"beyondsocial-action-unprotect": "Tab at top of page, in beyondsocial skin.\n{{Identical|Change protection}}",
+	"beyondsocial-view-create": "Tab label in the BeyondSocial skin. See for example {{canonicalurl:Foo|useskin=beyondsocial}}\n{{Identical|Create}}",
+	"beyondsocial-view-edit": "Tab label in the BeyondSocial skin. See for example {{canonicalurl:Main_Page|useskin=beyondsocial}}\n{{Identical|Edit}}",
+	"beyondsocial-view-history": "Tab label in the BeyondSocial skin. See for example {{canonicalurl:Main_Page|useskin=beyondsocial}}\n{{Identical|View history}}",
+	"beyondsocial-view-view": "Tab label in the BeyondSocial skin (verb). See for example {{canonicalurl:Main_Page|useskin=beyondsocial}}.\n{{Identical|Read}}",
+	"beyondsocial-view-viewsource": "Tab label in the BeyondSocial skin.\n{{Identical|View source}}",
+	"beyondsocial-more-actions": "Label in the BeyondSocial skin's menu for the less-important or rarer actions which are not shown as tabs (like moving the page, or for sysops deleting or protecting the page), as well as (for users with a narrow viewing window in their browser) the less-important tab actions which the user's browser is unable to fit in. {{Identical|More}}"
+}

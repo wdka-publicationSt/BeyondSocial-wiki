@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mayooranathan",
+			"Shanmugamp7",
+			"Surya Prakash.S.A.",
+			"TRYPPN",
+			"Jayarathina"
+		]
+	},
+	"beyondsocial-action-addsection": "தலைப்பைச் சேர்",
+	"beyondsocial-action-delete": "நீக்குக",
+	"beyondsocial-action-move": "நகர்த்தவும்",
+	"beyondsocial-action-protect": "காக்கவும்",
+	"beyondsocial-action-undelete": "நீக்கத்தை நிறுத்து",
+	"beyondsocial-action-unprotect": "காப்பை மாற்று",
+	"beyondsocial-view-create": "உருவாக்கவும்",
+	"beyondsocial-view-edit": "தொகு",
+	"beyondsocial-view-history": "வரலாற்றைக் காட்டவும்",
+	"beyondsocial-view-view": "படிக்கவும்",
+	"beyondsocial-view-viewsource": "மூலத்தைக் காட்டவும்",
+	"beyondsocial-more-actions": "மேலும்"
+}

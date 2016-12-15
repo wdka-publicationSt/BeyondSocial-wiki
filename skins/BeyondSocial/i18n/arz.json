@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ghaly",
+			"Meno25",
+			"Ramsis II"
+		]
+	},
+	"beyondsocial.css": "/* CSS اللى هنا حتأثر على اليوزرز اللى بيستخدموا واجهة فكتور */",
+	"beyondsocial.js": "/* اى جافاسكريبت هنا حتتحمل لكل يوزر بيستخدم واجهة فكتور */",
+	"beyondsocial-action-addsection": "ضيف موضوع",
+	"beyondsocial-action-delete": "مسح",
+	"beyondsocial-action-move": "نقل",
+	"beyondsocial-action-protect": "حمايه",
+	"beyondsocial-action-undelete": "الغى المسح",
+	"beyondsocial-action-unprotect": "غير الحمايه",
+	"beyondsocial-view-create": "اعمل",
+	"beyondsocial-view-edit": "تعديل",
+	"beyondsocial-view-history": "استعراض التاريخ",
+	"beyondsocial-view-view": "قرايه",
+	"beyondsocial-view-viewsource": "استعراض المصدر",
+	"beyondsocial-more-actions": "اكتر"
+}

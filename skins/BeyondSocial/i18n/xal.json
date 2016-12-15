@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Huuchin"
+		]
+	},
+	"beyondsocial-action-addsection": "Төриг немх",
+	"beyondsocial-action-delete": "Һарһх",
+	"beyondsocial-action-move": "Көндәх",
+	"beyondsocial-action-protect": "Харсх",
+	"beyondsocial-action-undelete": "Һарһх биш",
+	"beyondsocial-action-unprotect": "Харсх биш",
+	"beyondsocial-view-create": "Бүтәх",
+	"beyondsocial-view-edit": "Чиклх",
+	"beyondsocial-view-history": "Тууҗин хәләвр",
+	"beyondsocial-view-view": "Умшлһн",
+	"beyondsocial-view-viewsource": "Темдгллһнә хәләвр",
+	"beyondsocial-more-actions": "Нань"
+}

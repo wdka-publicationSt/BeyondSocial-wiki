@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Horus",
+			"Octahedron80",
+			"Woraponboonkerd"
+		]
+	},
+	"skinname-beyondsocial": "เวกเตอร์",
+	"beyondsocial.css": "/* สไตล์ชีตในหน้านี้จะส่งผลแก่ผู้ใช้ที่ใช้สกินเวกเตอร์ */",
+	"beyondsocial.js": "/* จาวาสคริปต์ใด ๆ ในหน้านี้จะถูกโหลดให้แก่ผู้ใช้ที่ใช้สกินเวกเตอร์ */",
+	"beyondsocial-action-addsection": "เพิ่มหัวข้อ",
+	"beyondsocial-action-delete": "ลบ",
+	"beyondsocial-action-move": "เปลี่ยนชื่อ",
+	"beyondsocial-action-protect": "ล็อก",
+	"beyondsocial-action-undelete": "กู้คืน",
+	"beyondsocial-action-unprotect": "เปลี่ยนการล็อก",
+	"beyondsocial-view-create": "สร้าง",
+	"beyondsocial-view-edit": "แก้ไข",
+	"beyondsocial-view-history": "ดูประวัติ",
+	"beyondsocial-view-view": "อ่าน",
+	"beyondsocial-view-viewsource": "ดูโค้ด",
+	"beyondsocial-more-actions": "เพิ่มเติม"
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Malafaya"
+		]
+	},
+	"beyondsocial-action-addsection": "Adjuntar topiko",
+	"beyondsocial-action-delete": "Efacar",
+	"beyondsocial-action-move": "Movar",
+	"beyondsocial-action-protect": "Protektar",
+	"beyondsocial-action-undelete": "Rekuperar",
+	"beyondsocial-action-unprotect": "Desprotektar",
+	"beyondsocial-view-create": "Krear",
+	"beyondsocial-view-edit": "Redaktar",
+	"beyondsocial-view-history": "Vidar versionaro",
+	"beyondsocial-view-view": "Lektar",
+	"beyondsocial-view-viewsource": "Vidar fonto"
+}

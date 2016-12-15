@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi"
+		]
+	},
+	"beyondsocial-action-addsection": "Új téma nyitása",
+	"beyondsocial-action-delete": "Törlés",
+	"beyondsocial-action-move": "Átnevezés",
+	"beyondsocial-action-protect": "Lapvédelem",
+	"beyondsocial-action-undelete": "Visszaállítás",
+	"beyondsocial-action-unprotect": "Védelem módosítása",
+	"beyondsocial-view-create": "Létrehozás",
+	"beyondsocial-view-edit": "Szerkesztés",
+	"beyondsocial-view-history": "Laptörténet",
+	"beyondsocial-view-view": "Olvasás",
+	"beyondsocial-view-viewsource": "A lap forrása"
+}

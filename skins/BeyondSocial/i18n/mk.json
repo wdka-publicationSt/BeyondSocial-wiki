@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06",
+			"Brest"
+		]
+	},
+	"skinname-beyondsocial": "Векторско",
+	"beyondsocial-skin-desc": "Современа верзија на рувото „МоноБук“ со свеж изглед и многу подобрувања на употребливоста",
+	"beyondsocial.css": "/* Тука поставениот CSS се однесува на корисниците на рувото „Векторско“ */",
+	"beyondsocial.js": "/* Тука поставениот JavaScript  ќе им се вчитува на корисниците што го користат рувото „Векторско“ */",
+	"beyondsocial-action-addsection": "Додај тема",
+	"beyondsocial-action-delete": "Избриши",
+	"beyondsocial-action-move": "Премести",
+	"beyondsocial-action-protect": "Заштити",
+	"beyondsocial-action-undelete": "Врати",
+	"beyondsocial-action-unprotect": "Измени заштита",
+	"beyondsocial-view-create": "Создај",
+	"beyondsocial-view-edit": "Уреди",
+	"beyondsocial-view-history": "Историја",
+	"beyondsocial-view-view": "Читај",
+	"beyondsocial-view-viewsource": "Извор",
+	"beyondsocial-more-actions": "Повеќе"
+}

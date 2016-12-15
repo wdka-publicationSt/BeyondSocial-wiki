@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chaduvari",
+			"Kiranmayee",
+			"Praveen Illa",
+			"Ravichandra",
+			"Veeven"
+		]
+	},
+	"skinname-beyondsocial": "వెక్టర్",
+	"beyondsocial-action-addsection": "విషయాన్ని చేర్చు",
+	"beyondsocial-action-delete": "తొలగించు",
+	"beyondsocial-action-move": "తరలించు",
+	"beyondsocial-action-protect": "సంరక్షించు",
+	"beyondsocial-action-undelete": "తొలగింపును రద్దుచెయ్యి",
+	"beyondsocial-action-unprotect": "సంరక్షణను మార్చు",
+	"beyondsocial-view-create": "సృష్టించు",
+	"beyondsocial-view-edit": "సవరించు",
+	"beyondsocial-view-history": "చరిత్రను చూడండి",
+	"beyondsocial-view-view": "చదువు",
+	"beyondsocial-view-viewsource": "మూలాన్ని చూపించు",
+	"beyondsocial-more-actions": "మరిన్ని"
+}

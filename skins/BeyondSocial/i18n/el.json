@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Calak",
+			"Crazymadlover",
+			"Evropi",
+			"Omnipaedista",
+			"Protnet",
+			"ZaDiak",
+			"Geraki"
+		]
+	},
+	"beyondsocial-skin-desc": "Σύγχρονη έκδοση του MonoBook με φρέσκια ματιά και πολλές βελτιώσεις χρηστικότητας",
+	"beyondsocial.css": "/* Το τοποθετημένο εδώ CSS θα επηρεάσει χρήστες του BeyondSocial skin */",
+	"beyondsocial.js": "/* Οποιοσδήποτε κώδικας JavaScript εδώ θα φορτωθεί για χρήστες που χρησιμοποιούν το BeyondSocial skin */",
+	"beyondsocial-action-addsection": "Προσθήκη θέματος",
+	"beyondsocial-action-delete": "Διαγραφή",
+	"beyondsocial-action-move": "Μετακίνηση",
+	"beyondsocial-action-protect": "Προστασία",
+	"beyondsocial-action-undelete": "Επαναφορά",
+	"beyondsocial-action-unprotect": "Αλλαγή προστασίας",
+	"beyondsocial-view-create": "Δημιουργία",
+	"beyondsocial-view-edit": "Επεξεργασία",
+	"beyondsocial-view-history": "Προβολή ιστορικού",
+	"beyondsocial-view-view": "Ανάγνωση",
+	"beyondsocial-view-viewsource": "Προβολή κώδικα",
+	"beyondsocial-more-actions": "Περισσότερα"
+}

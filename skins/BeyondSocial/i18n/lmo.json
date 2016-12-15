@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Insübrich",
+			"Ninonino"
+		]
+	},
+	"beyondsocial-action-addsection": "Giunta argument",
+	"beyondsocial-action-delete": "Scancela",
+	"beyondsocial-action-move": "Sposta",
+	"beyondsocial-action-protect": "Prutegg",
+	"beyondsocial-action-undelete": "Recüpera",
+	"beyondsocial-action-unprotect": "Càmbia la protesiù",
+	"beyondsocial-view-create": "Crea",
+	"beyondsocial-view-edit": "Mudifega",
+	"beyondsocial-view-history": "Varda la storia",
+	"beyondsocial-view-view": "Legg",
+	"beyondsocial-view-viewsource": "Varda el codes",
+	"beyondsocial-more-actions": "Amò"
+}

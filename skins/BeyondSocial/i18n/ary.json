@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Enzoreg",
+			"Zanatos"
+		]
+	},
+	"beyondsocial-action-addsection": "Zid topic",
+	"beyondsocial-action-delete": "Suprimi",
+	"beyondsocial-action-move": "Neqel",
+	"beyondsocial-action-protect": "Ḫami",
+	"beyondsocial-action-undelete": "rja lhadf",
+	"beyondsocial-action-unprotect": "Ḫiyed l-ḫimaya",
+	"beyondsocial-view-create": "Ĥṫareĝ",
+	"beyondsocial-view-edit": "Ĝedel",
+	"beyondsocial-view-history": "Ṫariĥ l-fiċyé",
+	"beyondsocial-view-view": "Qra",
+	"beyondsocial-view-viewsource": "Ċof l-masdar"
+}

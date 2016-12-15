@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Slomox",
+			"Zylbath"
+		]
+	},
+	"beyondsocial-action-addsection": "Thema tofögen",
+	"beyondsocial-action-delete": "Wegdoon",
+	"beyondsocial-action-move": "Schuven",
+	"beyondsocial-action-protect": "Schulen",
+	"beyondsocial-action-undelete": "Wedderhalen",
+	"beyondsocial-action-unprotect": "Siedenschuul ännern",
+	"beyondsocial-view-create": "Opstellen",
+	"beyondsocial-view-edit": "Ännern",
+	"beyondsocial-view-history": "Historie bekieken",
+	"beyondsocial-view-view": "Lesen",
+	"beyondsocial-view-viewsource": "Borntext bekieken"
+}

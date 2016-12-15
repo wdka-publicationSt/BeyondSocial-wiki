@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abanima",
+			"Calak",
+			"Meno25",
+			"Mido",
+			"OsamaK",
+			"أحمد",
+			"زكريا",
+			"Khaled"
+		]
+	},
+	"skinname-beyondsocial": "فكتور",
+	"beyondsocial-skin-desc": "نسة حديثة من مونوبوك بمظهر جديد وسهولة الاستخدام",
+	"beyondsocial.css": "/* الأنماط المتراصة CSS المعروضة هنا ستؤثر على مستخدمي واجهة فكتور */",
+	"beyondsocial.js": "/* أي جافاسكريبت هنا سيتم تحميلها للمستخدمين الذين يستعملون واجهة فكتور */",
+	"beyondsocial-action-addsection": "أضف موضوعا",
+	"beyondsocial-action-delete": "احذف",
+	"beyondsocial-action-move": "انقل",
+	"beyondsocial-action-protect": "احم",
+	"beyondsocial-action-undelete": "ألغ الحذف",
+	"beyondsocial-action-unprotect": "غير الحماية",
+	"beyondsocial-view-create": "أنشئ",
+	"beyondsocial-view-edit": "عدل",
+	"beyondsocial-view-history": "اعرض التاريخ",
+	"beyondsocial-view-view": "اقرأ",
+	"beyondsocial-view-viewsource": "اعرض المصدر",
+	"beyondsocial-more-actions": "مزيد"
+}

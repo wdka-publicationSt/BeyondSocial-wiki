@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alsandro",
+			"David1010",
+			"გიორგიმელა"
+		]
+	},
+	"skinname-beyondsocial": "ვექტორული",
+	"beyondsocial.css": "/* აქ ჩასმული CSS გამოყენებული იქნება ვექტორული გაფორმების თემაში */",
+	"beyondsocial-action-addsection": "თემის ჩამატება",
+	"beyondsocial-action-delete": "წაშლა",
+	"beyondsocial-action-move": "გადატანა",
+	"beyondsocial-action-protect": "დაცვა",
+	"beyondsocial-action-undelete": "აღდგენა",
+	"beyondsocial-action-unprotect": "დაცვის შეცვლა",
+	"beyondsocial-view-create": "შექმნა",
+	"beyondsocial-view-edit": "რედაქტირება",
+	"beyondsocial-view-history": "ისტორია",
+	"beyondsocial-view-view": "შემოწმებული სტატია",
+	"beyondsocial-view-viewsource": "წყაროს ხილვა",
+	"beyondsocial-more-actions": "მეტი"
+}

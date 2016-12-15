@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lionslayer",
+			"Myanmars",
+			"Ninjastrikers",
+			"Penguinlay"
+		]
+	},
+	"beyondsocial-action-addsection": "အကြောင်းအရာအသစ် ထပ်ထည့်ရန်",
+	"beyondsocial-action-delete": "ဖျက်​ပါ​",
+	"beyondsocial-action-move": "ရွှေ့ပါ",
+	"beyondsocial-action-protect": "ကာကွယ်ပါ",
+	"beyondsocial-action-undelete": "မဖျက်တော့ရန်",
+	"beyondsocial-action-unprotect": "ကာကွယ်ခြင်းကို ပြောင်းလဲရန်",
+	"beyondsocial-view-create": "စတင်ရေးသားရန်",
+	"beyondsocial-view-edit": "ပြင်ရန်",
+	"beyondsocial-view-history": "ရာဇဝင်ကြည့်ရန်",
+	"beyondsocial-view-view": "ဖတ်ရန်",
+	"beyondsocial-view-viewsource": "ရင်းမြစ်ကို ကြည့်ရန်",
+	"beyondsocial-more-actions": "ပို၍"
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gion-andri"
+		]
+	},
+	"beyondsocial-action-addsection": "Agiuntar chapitel",
+	"beyondsocial-action-delete": "Stizzar",
+	"beyondsocial-action-move": "Spustar",
+	"beyondsocial-action-protect": "Bloccar",
+	"beyondsocial-action-undelete": "Restituir",
+	"beyondsocial-action-unprotect": "Midar la protecziun",
+	"beyondsocial-view-create": "Crear",
+	"beyondsocial-view-edit": "Modifitgar",
+	"beyondsocial-view-history": "Cronologia",
+	"beyondsocial-view-view": "Leger",
+	"beyondsocial-view-viewsource": "Mussar il code"
+}

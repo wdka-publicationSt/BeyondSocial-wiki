@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Garas",
+			"Homo",
+			"Matasg",
+			"Perkunas",
+			"Hugo.arg",
+			"Tomasdd",
+			"Albertas"
+		]
+	},
+	"skinname-beyondsocial": "Vektorinė",
+	"beyondsocial-skin-desc": "Moderni MonoBook versija su šviežiausia išvaizda ir daugybe panaudojamumo patobulinimų",
+	"beyondsocial-action-addsection": "Pridėti temą",
+	"beyondsocial-action-delete": "Ištrinti",
+	"beyondsocial-action-move": "Pervardyti",
+	"beyondsocial-action-protect": "Užrakinti",
+	"beyondsocial-action-undelete": "Atkurti",
+	"beyondsocial-action-unprotect": "Keisti apsaugą",
+	"beyondsocial-view-create": "Kurti",
+	"beyondsocial-view-edit": "Keisti",
+	"beyondsocial-view-history": "Istorija",
+	"beyondsocial-view-view": "Skaityti",
+	"beyondsocial-view-viewsource": "Žiūrėti kodą",
+	"beyondsocial-more-actions": "Daugiau"
+}

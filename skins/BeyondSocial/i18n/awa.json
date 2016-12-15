@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"1AnuraagPandey"
+		]
+	},
+	"beyondsocial-action-addsection": "शिर्षक जोडा जाय",
+	"beyondsocial-action-delete": "मेटावा जाय",
+	"beyondsocial-action-move": "घुस्कावा जाय",
+	"beyondsocial-action-protect": "सुरक्षित करा जाय",
+	"beyondsocial-action-undelete": "हटाइब वापस लिहा जाय",
+	"beyondsocial-action-unprotect": "सुरक्षा परिवर्तन करा जाय",
+	"beyondsocial-view-create": "बनावा जाय",
+	"beyondsocial-view-edit": "सम्पादन",
+	"beyondsocial-view-history": "इतिहास देखा जाय",
+	"beyondsocial-view-view": "पढा जाय",
+	"beyondsocial-view-viewsource": "स्रोत देखा जाय",
+	"beyondsocial-more-actions": "अउर"
+}

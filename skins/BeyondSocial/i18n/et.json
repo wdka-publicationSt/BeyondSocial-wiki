@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ker",
+			"Pikne",
+			"WikedKentaur"
+		]
+	},
+	"skinname-beyondsocial": "Vektor",
+	"beyondsocial-skin-desc": "MonoBooki uuem versioon värskema väljanägemise ja mitme kasutajasõbralikuma täiendusega",
+	"beyondsocial.css": "/* Siin asuv kaskaadilaadistik puudutab kõiki Vektori-kujunduse kasutajaid. */",
+	"beyondsocial.js": "/* Siin asuv JavaScript laaditakse kõigi Vektori-kujunduse kasutajate jaoks. */",
+	"beyondsocial-action-addsection": "Lisa teema",
+	"beyondsocial-action-delete": "Kustuta",
+	"beyondsocial-action-move": "Teisalda",
+	"beyondsocial-action-protect": "Kaitse",
+	"beyondsocial-action-undelete": "Taasta",
+	"beyondsocial-action-unprotect": "Muuda kaitset",
+	"beyondsocial-view-create": "Loo",
+	"beyondsocial-view-edit": "Muuda",
+	"beyondsocial-view-history": "Näita ajalugu",
+	"beyondsocial-view-view": "Vaata",
+	"beyondsocial-view-viewsource": "Vaata lähteteksti",
+	"beyondsocial-more-actions": "Veel"
+}

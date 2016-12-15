@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Felis",
+			"Jun Misugi"
+		]
+	},
+	"beyondsocial-action-addsection": "Aggiungì oggettu",
+	"beyondsocial-action-delete": "Canzella",
+	"beyondsocial-action-move": "Ippustha",
+	"beyondsocial-action-protect": "Pruteggì",
+	"beyondsocial-view-create": "Cria",
+	"beyondsocial-view-edit": "Mudifigga",
+	"beyondsocial-view-history": "Vèdi isthòria",
+	"beyondsocial-view-view": "Leggi",
+	"beyondsocial-view-viewsource": "Vèdi fonti"
+}

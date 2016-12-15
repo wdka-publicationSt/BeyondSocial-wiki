@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Makuba",
+			"Renan"
+		]
+	},
+	"beyondsocial.css": "/* CSS colocat ci va afectar usatores de pelle BeyondSocial */",
+	"beyondsocial.js": "/* Alquel JavaScript ci va esser cargat por usatores que usa li pelle BeyondSocial */",
+	"beyondsocial-action-addsection": "Adjunter tema",
+	"beyondsocial-action-delete": "Deleter",
+	"beyondsocial-action-move": "Mover",
+	"beyondsocial-action-protect": "Gardar",
+	"beyondsocial-action-undelete": "Restituer",
+	"beyondsocial-action-unprotect": "Desgardar",
+	"beyondsocial-view-create": "Crear",
+	"beyondsocial-view-edit": "Redacter",
+	"beyondsocial-view-history": "Historie de versiones",
+	"beyondsocial-view-view": "Leer",
+	"beyondsocial-view-viewsource": "Vider fonte"
+}

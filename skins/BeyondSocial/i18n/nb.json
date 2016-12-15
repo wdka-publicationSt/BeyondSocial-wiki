@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Danmichaelo",
+			"Event",
+			"Nghtwlkr"
+		]
+	},
+	"beyondsocial-skin-desc": "Moderne versjon av MonoBook med et friskt utseende og mange bruksforbedringer",
+	"beyondsocial-action-addsection": "Nytt emne",
+	"beyondsocial-action-delete": "Slett",
+	"beyondsocial-action-move": "Flytt",
+	"beyondsocial-action-protect": "Beskytt",
+	"beyondsocial-action-undelete": "Gjenopprett",
+	"beyondsocial-action-unprotect": "Endre beskyttelse",
+	"beyondsocial-view-create": "Opprett",
+	"beyondsocial-view-edit": "Rediger",
+	"beyondsocial-view-history": "Vis historikk",
+	"beyondsocial-view-view": "Les",
+	"beyondsocial-view-viewsource": "Vis kilden",
+	"beyondsocial-more-actions": "Mer"
+}

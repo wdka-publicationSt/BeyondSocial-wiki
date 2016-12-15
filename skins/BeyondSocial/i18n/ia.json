@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"beyondsocial-skin-desc": "Version moderne de MonoBook con aspecto rejuvenescite e multe meliorationes de usabilitate.",
+	"beyondsocial.css": "/* Le CSS placiate hic afficera le usatores del apparentia BeyondSocial */",
+	"beyondsocial.js": "/* Omne JavaScript hic se executara pro le usatores del apparentia BeyondSocial */",
+	"beyondsocial-action-addsection": "Adder topico",
+	"beyondsocial-action-delete": "Deler",
+	"beyondsocial-action-move": "Renominar",
+	"beyondsocial-action-protect": "Proteger",
+	"beyondsocial-action-undelete": "Restaurar",
+	"beyondsocial-action-unprotect": "Cambiar protection",
+	"beyondsocial-view-create": "Crear",
+	"beyondsocial-view-edit": "Modificar",
+	"beyondsocial-view-history": "Vider historia",
+	"beyondsocial-view-view": "Leger",
+	"beyondsocial-view-viewsource": "Vider texto fonte",
+	"beyondsocial-more-actions": "Plus"
+}

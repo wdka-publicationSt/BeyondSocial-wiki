@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"skinname-beyondsocial": "Vèctor",
+	"beyondsocial.css": "/* Lo code CSS betâ ique afècterat los usanciérs de l’habelyâjo « Vèctor ». */",
+	"beyondsocial.js": "/* Tot code JavaScript betâ ique serat chargiê per los usanciérs de l’habelyâjo « Vèctor ». */",
+	"beyondsocial-action-addsection": "Apondre na chousa",
+	"beyondsocial-action-delete": "Suprimar",
+	"beyondsocial-action-move": "Dèplaciér",
+	"beyondsocial-action-protect": "Protègiér",
+	"beyondsocial-action-undelete": "Refâre",
+	"beyondsocial-action-unprotect": "Changiér la protèccion",
+	"beyondsocial-view-create": "Fâre",
+	"beyondsocial-view-edit": "Changiér",
+	"beyondsocial-view-history": "Vêre l’historico",
+	"beyondsocial-view-view": "Liére",
+	"beyondsocial-view-viewsource": "Vêre lo tèxto sôrsa",
+	"beyondsocial-more-actions": "Més"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arslan",
+			"Khalid Mahmood"
+		]
+	},
+	"beyondsocial-action-addsection": "مضمون پاؤ",
+	"beyondsocial-action-delete": "مکاؤ",
+	"beyondsocial-action-move": "ٹرو",
+	"beyondsocial-action-protect": "بچاؤ",
+	"beyondsocial-action-undelete": "واپس لیاؤ",
+	"beyondsocial-action-unprotect": "تبدیلی بچاؤ",
+	"beyondsocial-view-create": "بناؤ",
+	"beyondsocial-view-edit": "لکھو",
+	"beyondsocial-view-history": "تریخ وکھاؤ",
+	"beyondsocial-view-view": "پڑھو",
+	"beyondsocial-view-viewsource": "ویکھو",
+	"beyondsocial-more-actions": "ہور"
+}

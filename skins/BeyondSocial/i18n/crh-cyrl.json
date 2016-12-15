@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Don Alessandro"
+		]
+	},
+	"beyondsocial-action-addsection": "Мевзу къош",
+	"beyondsocial-action-delete": "Ёкъ эт",
+	"beyondsocial-action-move": "Адыны денъиштир",
+	"beyondsocial-action-protect": "Къорчала",
+	"beyondsocial-action-undelete": "Янъыдан ярат",
+	"beyondsocial-action-unprotect": "Къорчалавны денъиштир",
+	"beyondsocial-view-create": "Ярат",
+	"beyondsocial-view-edit": "Денъиштир",
+	"beyondsocial-view-history": "Кечмишини косьтер",
+	"beyondsocial-view-view": "Окъу",
+	"beyondsocial-view-viewsource": "Менба кодуны косьтер"
+}

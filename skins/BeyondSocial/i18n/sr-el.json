@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello",
+			"Milicevic01",
+			"Rancher",
+			"Жељко Тодоровић"
+		]
+	},
+	"skinname-beyondsocial": "Vektorsko",
+	"beyondsocial.css": "/* CSS postavljen ovde će uticati na sve korisnike teme „Vektorsko“ */",
+	"beyondsocial.js": "/* Javaskript postavljen ovde će se učitati za sve one koji koriste temu „Vektorsko“ */",
+	"beyondsocial-action-addsection": "Dodaj temu",
+	"beyondsocial-action-delete": "Obriši",
+	"beyondsocial-action-move": "Premesti",
+	"beyondsocial-action-protect": "Zaštiti",
+	"beyondsocial-action-undelete": "Vrati",
+	"beyondsocial-action-unprotect": "Promeni zaštitu",
+	"beyondsocial-view-create": "Napravi",
+	"beyondsocial-view-edit": "Uredi",
+	"beyondsocial-view-history": "Istorija",
+	"beyondsocial-view-view": "Čitaj",
+	"beyondsocial-view-viewsource": "Izvorni kod",
+	"beyondsocial-more-actions": "Više"
+}

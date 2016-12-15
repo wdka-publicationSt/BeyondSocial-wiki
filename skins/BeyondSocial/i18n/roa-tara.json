@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"skinname-beyondsocial": "Vettore",
+	"beyondsocial-skin-desc": "Versione moderne de MonoBook cu 'nu sguarde aggiornate e 'nu sbuènne de miglioramende sus a l'ausabbilità",
+	"beyondsocial.css": "/* 'U CSS ca se iacchie aqquà 'u 'ndrucane le utinde d'a masckere Vettore */",
+	"beyondsocial.js": "/* Ogne JavaScript aqquà avène carecate pe le utinde ca ausane 'a masckere Vettore */",
+	"beyondsocial-action-addsection": "Aggiunge 'na discussiona",
+	"beyondsocial-action-delete": "Scangille",
+	"beyondsocial-action-move": "Spuèste",
+	"beyondsocial-action-protect": "Protegge",
+	"beyondsocial-action-undelete": "Repristine",
+	"beyondsocial-action-unprotect": "Cange 'a protezione",
+	"beyondsocial-view-create": "Ccreje",
+	"beyondsocial-view-edit": "Cange",
+	"beyondsocial-view-history": "Vide 'u cunde",
+	"beyondsocial-view-view": "Ligge",
+	"beyondsocial-view-viewsource": "Vide 'u sorgende",
+	"beyondsocial-more-actions": "De cchiù"
+}

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"YulouCN",
+			"SolidBlock"
+		]
+	},
+	"beyondsocial-skin-desc": "给杂清新的样子再加上好多吧多可用性的新MonoBook",
+	"beyondsocial-action-addsection": "搞杂话题",
+	"beyondsocial-action-delete": "消嘎",
+	"beyondsocial-action-move": "移走",
+	"beyondsocial-action-protect": "免修",
+	"beyondsocial-action-undelete": "还原",
+	"beyondsocial-action-unprotect": "换杂保护",
+	"beyondsocial-view-create": "弄噶",
+	"beyondsocial-view-edit": "增改",
+	"beyondsocial-view-history": "履歷",
+	"beyondsocial-view-view": "讀",
+	"beyondsocial-view-viewsource": "望下代碼",
+	"beyondsocial-more-actions": "更多"
+}

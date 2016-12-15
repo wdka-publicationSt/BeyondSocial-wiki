@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nertiks",
+			"Peteris"
+		]
+	},
+	"beyondsocial-action-delete": "Āupausinais",
+	"beyondsocial-action-move": "Prapīdais",
+	"beyondsocial-action-protect": "Kūnsteis",
+	"beyondsocial-action-unprotect": "Etkūnteis",
+	"beyondsocial-view-create": "Teīkeis",
+	"beyondsocial-view-edit": "Redigīs",
+	"beyondsocial-view-history": "Enwaidinnais istōrijan",
+	"beyondsocial-view-view": "Skaitāis",
+	"beyondsocial-view-viewsource": "Enwaidinnais appun"
+}

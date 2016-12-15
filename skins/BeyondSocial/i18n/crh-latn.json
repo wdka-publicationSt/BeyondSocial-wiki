@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Don Alessandro"
+		]
+	},
+	"beyondsocial-action-addsection": "Mevzu qoş",
+	"beyondsocial-action-delete": "Yoq et",
+	"beyondsocial-action-move": "Adını deñiştir",
+	"beyondsocial-action-protect": "Qorçala",
+	"beyondsocial-action-undelete": "Yañıdan yarat",
+	"beyondsocial-action-unprotect": "Qorçalavnı deñiştir",
+	"beyondsocial-view-create": "Yarat",
+	"beyondsocial-view-edit": "Deñiştir",
+	"beyondsocial-view-history": "Keçmişini köster",
+	"beyondsocial-view-view": "Oqu",
+	"beyondsocial-view-viewsource": "Menba kodunı köster"
+}

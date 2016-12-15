@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ezagren",
+			"J Subhi"
+		]
+	},
+	"beyondsocial-action-addsection": "Tambahi tupik",
+	"beyondsocial-action-delete": "Hapus",
+	"beyondsocial-action-move": "Pindahakan",
+	"beyondsocial-action-protect": "Lindungi",
+	"beyondsocial-action-undelete": "Pawalangan pahapusan",
+	"beyondsocial-action-unprotect": "Palindungan",
+	"beyondsocial-view-create": "Ulah",
+	"beyondsocial-view-edit": "Babak",
+	"beyondsocial-view-history": "Tiringi halam",
+	"beyondsocial-view-view": "Baca",
+	"beyondsocial-view-viewsource": "Tiringi asal mula"
+}

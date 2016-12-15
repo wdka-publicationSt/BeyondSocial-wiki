@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Iltever",
+			"Къарачайлы",
+			"Ernác"
+		]
+	},
+	"skinname-beyondsocial": "Вектор",
+	"beyondsocial-action-addsection": "Джангы тема къош",
+	"beyondsocial-action-delete": "Кетер",
+	"beyondsocial-action-move": "Атын ауушдур",
+	"beyondsocial-action-protect": "Джакъла",
+	"beyondsocial-action-undelete": "Къайтар",
+	"beyondsocial-action-unprotect": "Джакълауну тюрлендир",
+	"beyondsocial-view-create": "Къура",
+	"beyondsocial-view-edit": "Тюрлендир",
+	"beyondsocial-view-history": "Тарихи",
+	"beyondsocial-view-view": "Окъу",
+	"beyondsocial-view-viewsource": "Кодха къара",
+	"beyondsocial-more-actions": "Энтда"
+}

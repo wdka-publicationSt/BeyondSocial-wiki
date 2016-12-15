@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amdf"
+		]
+	},
+	"beyondsocial-action-delete": "Карангдаш",
+	"beyondsocial-action-move": "Лӹмӹм вашталташ",
+	"beyondsocial-action-protect": "Ӹшӹклӓш",
+	"beyondsocial-view-create": "Ӹштӓш",
+	"beyondsocial-view-edit": "Тӧрлӹмӓш",
+	"beyondsocial-view-history": "Историм анжымаш",
+	"beyondsocial-view-view": "Лыдмаш",
+	"beyondsocial-view-viewsource": "Сек пӹтӓриш кодым анжалаш"
+}

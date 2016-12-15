@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siddhartha Ghai",
+			"आलोक",
+			"रोहित रावत"
+		]
+	},
+	"beyondsocial-action-addsection": "विषय जोड़ें",
+	"beyondsocial-action-delete": "हटाएँ",
+	"beyondsocial-action-move": "स्थानांतरण करें",
+	"beyondsocial-action-protect": "सुरक्षित करें",
+	"beyondsocial-action-undelete": "हटाना वापस लें",
+	"beyondsocial-action-unprotect": "सुरक्षा बदलें",
+	"beyondsocial-view-create": "बनाएँ",
+	"beyondsocial-view-edit": "सम्पादन",
+	"beyondsocial-view-history": "इतिहास देखें",
+	"beyondsocial-view-view": "पढ़ें",
+	"beyondsocial-view-viewsource": "स्रोत देखें",
+	"beyondsocial-more-actions": "अधिक"
+}

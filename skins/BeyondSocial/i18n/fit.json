@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mestos"
+		]
+	},
+	"beyondsocial-action-addsection": "Lissää aine",
+	"beyondsocial-action-delete": "Ota poies",
+	"beyondsocial-action-move": "Siirä",
+	"beyondsocial-action-protect": "Suojaa",
+	"beyondsocial-action-undelete": "Pane takashiin",
+	"beyondsocial-action-unprotect": "Muuta suojaa",
+	"beyondsocial-view-create": "Luo",
+	"beyondsocial-view-edit": "Mookkaa",
+	"beyondsocial-view-history": "Näytä histuuria",
+	"beyondsocial-view-view": "Lue",
+	"beyondsocial-view-viewsource": "Näytä lähekooti"
+}

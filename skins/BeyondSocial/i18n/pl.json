@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Matma Rex",
+			"Sp5uhe"
+		]
+	},
+	"skinname-beyondsocial": "Wektor",
+	"beyondsocial-skin-desc": "Odświeżona wersja skórki Książka, z nowym wyglądem i usprawnieniami",
+	"beyondsocial.css": "/* Umieszczony tutaj kod CSS wpłynie na wygląd skórki Wektor */",
+	"beyondsocial.js": "/* Umieszczony tutaj kod JavaScript zostanie załadowany wyłącznie przez użytkowników korzystających ze skórki Wektor */",
+	"beyondsocial-action-addsection": "Dodaj temat",
+	"beyondsocial-action-delete": "Usuń",
+	"beyondsocial-action-move": "Przenieś",
+	"beyondsocial-action-protect": "Zabezpiecz",
+	"beyondsocial-action-undelete": "Odtwórz",
+	"beyondsocial-action-unprotect": "Zmień zabezpieczenie",
+	"beyondsocial-view-create": "Utwórz",
+	"beyondsocial-view-edit": "Edytuj",
+	"beyondsocial-view-history": "Wyświetl historię",
+	"beyondsocial-view-view": "Czytaj",
+	"beyondsocial-view-viewsource": "Tekst źródłowy",
+	"beyondsocial-more-actions": "Więcej"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arystanbek",
+			"Emperyan",
+			"Joseph",
+			"Stultiwikia",
+			"Vito Genovese",
+			"Rapsar"
+		]
+	},
+	"beyondsocial-skin-desc": "Taze bir görünüm ile MonoBook Modern versiyonu ve kullanılabilirlik iyileştirmeler",
+	"beyondsocial-action-addsection": "Konu ekle",
+	"beyondsocial-action-delete": "Sil",
+	"beyondsocial-action-move": "Taşı",
+	"beyondsocial-action-protect": "Koru",
+	"beyondsocial-action-undelete": "Silinmeyi geri al",
+	"beyondsocial-action-unprotect": "Korumayı değiştir",
+	"beyondsocial-view-create": "Oluştur",
+	"beyondsocial-view-edit": "Değiştir",
+	"beyondsocial-view-history": "Geçmişi gör",
+	"beyondsocial-view-view": "Oku",
+	"beyondsocial-view-viewsource": "Kaynağı gör",
+	"beyondsocial-more-actions": "Diğer"
+}

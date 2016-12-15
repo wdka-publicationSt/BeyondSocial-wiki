@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lezgia",
+			"Migraghvi",
+			"Namik",
+			"Soul Train"
+		]
+	},
+	"beyondsocial-action-addsection": "Тема алава авун",
+	"beyondsocial-action-delete": "Алудун",
+	"beyondsocial-action-move": "ТӀвар эхцигун",
+	"beyondsocial-action-protect": "Хуьн",
+	"beyondsocial-action-undelete": "ТуькӀуьр хъувун",
+	"beyondsocial-action-unprotect": "Хуьн дегишарун",
+	"beyondsocial-view-create": "ТуькӀуьрун",
+	"beyondsocial-view-edit": "Дуьзарин",
+	"beyondsocial-view-history": "Тарихдиз килигун",
+	"beyondsocial-view-view": "КӀелун",
+	"beyondsocial-view-viewsource": "Чешме къалурун"
+}

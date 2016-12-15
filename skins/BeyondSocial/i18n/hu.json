@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bdamokos",
+			"Dani",
+			"Dj",
+			"Misibacsi",
+			"Tacsipacsi",
+			"Tgr"
+		]
+	},
+	"beyondsocial-skin-desc": "A MonoBook felület modern változata frissebb kinézettel és sok használhatóságot javító fejlesztéssel",
+	"beyondsocial.css": "/* Az ide elhelyezett CSS hatással lesz a BeyondSocial felület használóira */",
+	"beyondsocial.js": "/* A BeyondSocial felületet használó szerkesztők számára betöltendő JavaScriptek */",
+	"beyondsocial-action-addsection": "Új téma nyitása",
+	"beyondsocial-action-delete": "Törlés",
+	"beyondsocial-action-move": "Átnevezés",
+	"beyondsocial-action-protect": "Lapvédelem",
+	"beyondsocial-action-undelete": "Visszaállítás",
+	"beyondsocial-action-unprotect": "Védelem módosítása",
+	"beyondsocial-view-create": "Létrehozás",
+	"beyondsocial-view-edit": "Szerkesztés",
+	"beyondsocial-view-history": "Laptörténet",
+	"beyondsocial-view-view": "Olvasás",
+	"beyondsocial-view-viewsource": "A lap forrása",
+	"beyondsocial-more-actions": "Több"
+}

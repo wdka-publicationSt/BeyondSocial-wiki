@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dasius",
+			"GretaDoci",
+			"MicroBoy",
+			"Mikullovci11",
+			"Olsi"
+		]
+	},
+	"beyondsocial-action-addsection": "Shto një temë",
+	"beyondsocial-action-delete": "Grise",
+	"beyondsocial-action-move": "Zhvendose",
+	"beyondsocial-action-protect": "Mbroje",
+	"beyondsocial-action-undelete": "Anullo fshirjen",
+	"beyondsocial-action-unprotect": "Ndrysho mbrojtjen",
+	"beyondsocial-view-create": "Krijo",
+	"beyondsocial-view-edit": "Redakto",
+	"beyondsocial-view-history": "Shiko historikun",
+	"beyondsocial-view-view": "Lexo",
+	"beyondsocial-view-viewsource": "Shiko tekstin",
+	"beyondsocial-more-actions": "Më tepër..."
+}

@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fulup",
+			"Y-M D"
+		]
+	},
+	"skinname-beyondsocial": "Vektor",
+	"beyondsocial.css": "/* Talvezout a raio ar CSS lakaet amañ evit implijerien ar gwiskadur Vektor */",
+	"beyondsocial.js": "/* Kement JavaScript amañ a vo karget evit an implijerien a ra gant ar gwiskadur Vektor */",
+	"beyondsocial-action-addsection": "Rannbennad nevez",
+	"beyondsocial-action-delete": "Diverkañ",
+	"beyondsocial-action-move": "Adenvel",
+	"beyondsocial-action-protect": "Gwareziñ",
+	"beyondsocial-action-undelete": "Diziverkañ",
+	"beyondsocial-action-unprotect": "Cheñch gwarez",
+	"beyondsocial-view-create": "Krouiñ",
+	"beyondsocial-view-edit": "Kemmañ",
+	"beyondsocial-view-history": "Gwelet an istor",
+	"beyondsocial-view-view": "Lenn",
+	"beyondsocial-view-viewsource": "Sellet ouzh tarzh an destenn",
+	"beyondsocial-more-actions": "Muioc'h"
+}

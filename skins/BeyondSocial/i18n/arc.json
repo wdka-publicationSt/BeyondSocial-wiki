@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"334a",
+			"Basharh",
+			"Michaelovic"
+		]
+	},
+	"beyondsocial-action-addsection": "ܐܘܣܦ ܡܠܘܐܐ",
+	"beyondsocial-action-delete": "ܫܘܦ",
+	"beyondsocial-action-move": "ܫܢܝ",
+	"beyondsocial-action-protect": "ܛܪ",
+	"beyondsocial-action-undelete": "ܠܐ ܫܘܦ",
+	"beyondsocial-action-unprotect": "ܫܚܠܦ ܢܛܝܪܘܬܐ",
+	"beyondsocial-view-create": "ܒܪܝ",
+	"beyondsocial-view-edit": "ܫܚܠܦ",
+	"beyondsocial-view-history": "ܚܙܝ ܬܫܥܝܬܐ",
+	"beyondsocial-view-view": "ܩܪܝ",
+	"beyondsocial-view-viewsource": "ܚܙܝ ܡܒܘܥܐ"
+}

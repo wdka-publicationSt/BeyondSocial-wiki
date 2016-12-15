@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Rotemliss",
+			"Guycn2"
+		]
+	},
+	"skinname-beyondsocial": "וקטור",
+	"beyondsocial-skin-desc": "גרסה מודרנית של מונובוק עם מראה רענן והרבה שיפורי שמישות",
+	"beyondsocial.css": "/* הסגנונות הנכתבים כאן ישפיעו על העיצוב BeyondSocial בלבד */",
+	"beyondsocial.js": "/* כל סקריפט JavaScript שנכתב כאן ירוץ רק עבור המשתמשים בעיצוב BeyondSocial */",
+	"beyondsocial-action-addsection": "הוספת נושא",
+	"beyondsocial-action-delete": "מחיקה",
+	"beyondsocial-action-move": "העברה",
+	"beyondsocial-action-protect": "הגנה",
+	"beyondsocial-action-undelete": "שחזור",
+	"beyondsocial-action-unprotect": "שינוי הגנה",
+	"beyondsocial-view-create": "יצירה",
+	"beyondsocial-view-edit": "עריכה",
+	"beyondsocial-view-history": "הצגת היסטוריה",
+	"beyondsocial-view-view": "קריאה",
+	"beyondsocial-view-viewsource": "הצגת מקור",
+	"beyondsocial-more-actions": "עוד"
+}

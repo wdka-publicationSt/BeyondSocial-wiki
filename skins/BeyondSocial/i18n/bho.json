@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ganesh",
+			"Nepaboy",
+			"SatyamMishra"
+		]
+	},
+	"beyondsocial-action-addsection": "बिसय जोड़ीं",
+	"beyondsocial-action-delete": "मिटाईं",
+	"beyondsocial-action-move": "स्थानांतरण",
+	"beyondsocial-action-protect": "संरक्षित करीं",
+	"beyondsocial-action-undelete": "मत मिटाईं",
+	"beyondsocial-action-unprotect": "सुरक्षा बदलीं",
+	"beyondsocial-view-create": "बनाईं",
+	"beyondsocial-view-edit": "संपादन",
+	"beyondsocial-view-history": "इतिहास देखीं",
+	"beyondsocial-view-view": "पढ़ीं",
+	"beyondsocial-view-viewsource": "स्रोत देखीं",
+	"beyondsocial-more-actions": "अधिका"
+}

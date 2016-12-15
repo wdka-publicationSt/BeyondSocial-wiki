@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daniel Harahap",
+			"WBT003Bugari",
+			"WBT006Hendra",
+			"WBT009Anju"
+		]
+	},
+	"beyondsocial-action-addsection": "Bagian na imbaru",
+	"beyondsocial-action-delete": "Sesa",
+	"beyondsocial-action-move": "Pahusor",
+	"beyondsocial-action-protect": "Ramoti",
+	"beyondsocial-action-undelete": "unang sesa",
+	"beyondsocial-action-unprotect": "Uba parlindungan",
+	"beyondsocial-view-create": "Tompa",
+	"beyondsocial-view-edit": "Paubah",
+	"beyondsocial-view-history": "Patudu andorang na",
+	"beyondsocial-view-view": "Jaha",
+	"beyondsocial-view-viewsource": "Ida haroanna"
+}

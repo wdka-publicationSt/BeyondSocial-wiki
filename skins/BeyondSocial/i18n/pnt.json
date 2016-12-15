@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Omnipaedista",
+			"Sinopeus",
+			"ZaDiak"
+		]
+	},
+	"beyondsocial-action-delete": "Σβήσον",
+	"beyondsocial-action-move": "Ετεροχλάεμαν",
+	"beyondsocial-action-protect": "Ασπάλιγμαν",
+	"beyondsocial-action-undelete": "Κλώσιμον",
+	"beyondsocial-action-unprotect": "Άνοιγμαν",
+	"beyondsocial-view-create": "Ποίσον",
+	"beyondsocial-view-edit": "Άλλαξον",
+	"beyondsocial-view-history": "Τερέστεν ιστορίαν",
+	"beyondsocial-view-view": "Δεάβασον",
+	"beyondsocial-view-viewsource": "Τερέστεν κωδικόν"
+}

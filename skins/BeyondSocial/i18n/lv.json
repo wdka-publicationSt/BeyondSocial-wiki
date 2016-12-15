@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Marozols",
+			"Papuass"
+		]
+	},
+	"beyondsocial-action-addsection": "Jauna sadaļa",
+	"beyondsocial-action-delete": "Dzēst",
+	"beyondsocial-action-move": "Pārvietot",
+	"beyondsocial-action-protect": "Aizsargāt",
+	"beyondsocial-action-undelete": "Atjaunot",
+	"beyondsocial-action-unprotect": "Mainīt aizsardzību",
+	"beyondsocial-view-create": "Izveidot",
+	"beyondsocial-view-edit": "Labot",
+	"beyondsocial-view-history": "Hronoloģija",
+	"beyondsocial-view-view": "Skatīt",
+	"beyondsocial-view-viewsource": "Aplūkot kodu",
+	"beyondsocial-more-actions": "Vairāk"
+}

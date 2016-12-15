@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Universal Life"
+		]
+	},
+	"beyondsocial-action-addsection": "Ajustar sujeto",
+	"beyondsocial-action-delete": "Efassar",
+	"beyondsocial-action-move": "Taşirear",
+	"beyondsocial-action-protect": "Guadrar",
+	"beyondsocial-action-undelete": "Traer atrás",
+	"beyondsocial-action-unprotect": "Trocar proteksyon",
+	"beyondsocial-view-create": "Criar",
+	"beyondsocial-view-edit": "Trocar",
+	"beyondsocial-view-history": "Ver la istoria",
+	"beyondsocial-view-view": "Meldar",
+	"beyondsocial-view-viewsource": "Ver su manadero"
+}

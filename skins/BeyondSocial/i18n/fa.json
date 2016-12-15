@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Calak",
+			"Ebraminio",
+			"Huji",
+			"Reza1615",
+			"Zack90"
+		]
+	},
+	"skinname-beyondsocial": "برداری",
+	"beyondsocial-skin-desc": "نسخه مدرن منوبوک با نگاه تازه و بهبود قابلیت استفاده",
+	"beyondsocial.css": "/* دستورات این بخش کاربرانی را که از پوستهٔ وکتور استفاده کنند تحت تاثیر قرار می‌دهند. */",
+	"beyondsocial.js": "/ * کدهای جاوااسکریپتی که در اینجا قرار می‌گیرند برای کاربران پوستهٔ وکتور  بارگیری می‌شود * /",
+	"beyondsocial-action-addsection": "افزودن بخش",
+	"beyondsocial-action-delete": "حذف",
+	"beyondsocial-action-move": "انتقال",
+	"beyondsocial-action-protect": "محافظت",
+	"beyondsocial-action-undelete": "احیا",
+	"beyondsocial-action-unprotect": "تغییر سطح حفاظت",
+	"beyondsocial-view-create": "ایجاد",
+	"beyondsocial-view-edit": "ویرایش",
+	"beyondsocial-view-history": "نمایش تاریخچه",
+	"beyondsocial-view-view": "خواندن",
+	"beyondsocial-view-viewsource": "نمایش مبدأ",
+	"beyondsocial-more-actions": "بیشتر"
+}

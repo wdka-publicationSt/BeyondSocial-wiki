@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liangent",
+			"Xiaomingyan"
+		]
+	},
+	"beyondsocial-action-addsection": "添主题",
+	"beyondsocial-action-delete": "删吥",
+	"beyondsocial-action-move": "移吥",
+	"beyondsocial-action-protect": "护到",
+	"beyondsocial-action-undelete": "望下删吥𠮶页面",
+	"beyondsocial-action-unprotect": "更改保护",
+	"beyondsocial-view-create": "创建",
+	"beyondsocial-view-edit": "编辑",
+	"beyondsocial-view-history": "望下历史",
+	"beyondsocial-view-view": "读",
+	"beyondsocial-view-viewsource": "望下原始码"
+}

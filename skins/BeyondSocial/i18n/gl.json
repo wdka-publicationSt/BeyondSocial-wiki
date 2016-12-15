@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm",
+			"Toliño",
+			"Vivaelcelta"
+		]
+	},
+	"beyondsocial-skin-desc": "Versión moderna da aparencia MonoBook, cun aspecto fresco e moitas melloras na usabilidade",
+	"beyondsocial.css": "/* O CSS que se coloque aquí afectará a quen use a aparencia BeyondSocial */",
+	"beyondsocial.js": "/* Calquera JavaScript que haxa aquí será cargado para os usuarios que usen a aparencia BeyondSocial */",
+	"beyondsocial-action-addsection": "Nova sección",
+	"beyondsocial-action-delete": "Borrar",
+	"beyondsocial-action-move": "Mover",
+	"beyondsocial-action-protect": "Protexer",
+	"beyondsocial-action-undelete": "Restaurar",
+	"beyondsocial-action-unprotect": "Cambiar a protección",
+	"beyondsocial-view-create": "Crear",
+	"beyondsocial-view-edit": "Editar",
+	"beyondsocial-view-history": "Ver o historial",
+	"beyondsocial-view-view": "Ler",
+	"beyondsocial-view-viewsource": "Ver o código fonte",
+	"beyondsocial-more-actions": "Máis"
+}

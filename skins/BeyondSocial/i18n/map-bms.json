@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"StefanusRA"
+		]
+	},
+	"beyondsocial-action-addsection": "Nambah topik",
+	"beyondsocial-action-delete": "Busek",
+	"beyondsocial-action-move": "Pindah",
+	"beyondsocial-action-protect": "Reksa",
+	"beyondsocial-action-undelete": "Batalna pambusakan",
+	"beyondsocial-action-unprotect": "Owahi pangreksan",
+	"beyondsocial-view-create": "Gawe",
+	"beyondsocial-view-edit": "Sunting",
+	"beyondsocial-view-history": "Sajarah kaca",
+	"beyondsocial-view-view": "Waca",
+	"beyondsocial-view-viewsource": "Deleng sumbere"
+}

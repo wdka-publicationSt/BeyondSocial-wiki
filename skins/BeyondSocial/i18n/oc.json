@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Boulaur",
+			"Cedric31"
+		]
+	},
+	"beyondsocial.css": "/* Lo CSS plaçat aicí afectarà los utilizaires de l’abilhatge BeyondSocial */",
+	"beyondsocial.js": "/* Tot JavaScript aicí serà cargat amb las paginas accedidas pels utilizaires de l’abilhatge BeyondSocial unicament. */",
+	"beyondsocial-action-addsection": "Apondre un subjècte",
+	"beyondsocial-action-delete": "Suprimir",
+	"beyondsocial-action-move": "Tornar nomenar",
+	"beyondsocial-action-protect": "Protegir",
+	"beyondsocial-action-undelete": "Restablir",
+	"beyondsocial-action-unprotect": "Suprimir la proteccion",
+	"beyondsocial-view-create": "Crear",
+	"beyondsocial-view-edit": "Modificar",
+	"beyondsocial-view-history": "Veire l'istoric",
+	"beyondsocial-view-view": "Legir",
+	"beyondsocial-view-viewsource": "Veire la font",
+	"beyondsocial-more-actions": "Mai"
+}

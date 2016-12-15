@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"NehalDaveND",
+			"Shubha"
+		]
+	},
+	"beyondsocial-action-addsection": "विषयः योज्यताम्",
+	"beyondsocial-action-delete": "अपाक्रियताम्",
+	"beyondsocial-action-move": "शीर्षकं परिवर्त्यताम्",
+	"beyondsocial-action-protect": "संरक्ष्यताम्",
+	"beyondsocial-action-undelete": "अनपाक्रियाम्",
+	"beyondsocial-action-unprotect": "संरक्षणं परिवर्तयतु",
+	"beyondsocial-view-create": "सृज्यताम्",
+	"beyondsocial-view-edit": "सम्पाद्यताम्",
+	"beyondsocial-view-history": "इतिहासः दृश्यताम्",
+	"beyondsocial-view-view": "पठ्यताम्",
+	"beyondsocial-view-viewsource": "स्रोतः दृश्यताम्",
+	"beyondsocial-more-actions": "अधिकम्"
+}

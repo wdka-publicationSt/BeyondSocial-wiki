@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ebe123",
+			"Hangmanwa7id"
+		]
+	},
+	"beyondsocial-action-delete": "Supprimer",
+	"beyondsocial-action-move": "Renommer",
+	"beyondsocial-action-protect": "Protéger",
+	"beyondsocial-view-create": "Créer",
+	"beyondsocial-view-edit": "Changer",
+	"beyondsocial-view-view": "Lire",
+	"beyondsocial-view-viewsource": "Regarder la source",
+	"beyondsocial-more-actions": "Plus"
+}

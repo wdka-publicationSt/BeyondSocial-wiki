@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Assele",
+			"Haqmar",
+			"Рустам Нурыев",
+			"Sagan"
+		]
+	},
+	"skinname-beyondsocial": "Векторлы",
+	"beyondsocial-skin-desc": "Хәҙерге заман  «Векторлы» күренеше, биҙәлеш яүыртылған һәм яңы мөмкинлектәр файҙаланылған",
+	"beyondsocial-action-addsection": "Тема өҫтәргә",
+	"beyondsocial-action-delete": "Юйырға",
+	"beyondsocial-action-move": "Исемен үҙгәртергә",
+	"beyondsocial-action-protect": "Һаҡларға",
+	"beyondsocial-action-undelete": "Тергеҙергә",
+	"beyondsocial-action-unprotect": "Һаҡлауҙы үҙгәртергә",
+	"beyondsocial-view-create": "Яһау",
+	"beyondsocial-view-edit": "Үҙгәртергә",
+	"beyondsocial-view-history": "Тарихты ҡарау",
+	"beyondsocial-view-view": "Уҡыу",
+	"beyondsocial-view-viewsource": "Сығанаҡты ҡарарға",
+	"beyondsocial-more-actions": "Тағы"
+}

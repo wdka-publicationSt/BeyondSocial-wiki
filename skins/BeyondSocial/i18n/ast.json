@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Esbardu",
+			"Xuacu"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Versión moderna de MonoBook, con un aspeutu frescu y munchos ameyoramientos d'usabilidá",
+	"beyondsocial.css": "/* Los CSS allugaos equí afeutarán a los usuarios del aspeutu BeyondSocial */",
+	"beyondsocial.js": "/* Cualesquier JavaScript que tea equí se cargará pa los usuarios del aspeutu BeyondSocial */",
+	"beyondsocial-action-addsection": "Amestar seición",
+	"beyondsocial-action-delete": "Desaniciar",
+	"beyondsocial-action-move": "Treslladar",
+	"beyondsocial-action-protect": "Protexer",
+	"beyondsocial-action-undelete": "Restaurar",
+	"beyondsocial-action-unprotect": "Camudar la proteición",
+	"beyondsocial-view-create": "Crear",
+	"beyondsocial-view-edit": "Editar",
+	"beyondsocial-view-history": "Ver historial",
+	"beyondsocial-view-view": "Lleer",
+	"beyondsocial-view-viewsource": "Ver fonte",
+	"beyondsocial-more-actions": "Más"
+}

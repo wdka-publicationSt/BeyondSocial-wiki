@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lam-ang",
+			"Saluyot"
+		]
+	},
+	"beyondsocial-skin-desc": "Moderno a bersion ti MonoBook nga addaan iti baro a langa ken adu kadagiti naserbi a panagpasayaat",
+	"beyondsocial-action-addsection": "Agnayon iti topiko",
+	"beyondsocial-action-delete": "Ikkaten",
+	"beyondsocial-action-move": "Iyalis",
+	"beyondsocial-action-protect": "Salakniban",
+	"beyondsocial-action-undelete": "Isubli ti inikkat",
+	"beyondsocial-action-unprotect": "Sukatan ti salaknib",
+	"beyondsocial-view-create": "Agaramid",
+	"beyondsocial-view-edit": "Urnosen",
+	"beyondsocial-view-history": "Kitaen ti pakasaritaan",
+	"beyondsocial-view-view": "Basaen",
+	"beyondsocial-view-viewsource": "Kitaen ti taudan",
+	"beyondsocial-more-actions": "Adu pay"
+}

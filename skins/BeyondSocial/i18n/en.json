@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Modern version of MonoBook with fresh look and many usability improvements",
+	"beyondsocial.css": "/* CSS placed here will affect users of the BeyondSocial skin */",
+	"beyondsocial.js": "/* Any JavaScript here will be loaded for users using the BeyondSocial skin */",
+	"beyondsocial-action-addsection": "Add topic",
+	"beyondsocial-action-delete": "Delete",
+	"beyondsocial-action-move": "Move",
+	"beyondsocial-action-protect": "Protect",
+	"beyondsocial-action-undelete": "Undelete",
+	"beyondsocial-action-unprotect": "Change protection",
+	"beyondsocial-view-create": "Create",
+	"beyondsocial-view-edit": "Edit",
+	"beyondsocial-view-history": "View history",
+	"beyondsocial-view-view": "Read",
+	"beyondsocial-view-viewsource": "View source",
+	"beyondsocial-more-actions": "More"
+}

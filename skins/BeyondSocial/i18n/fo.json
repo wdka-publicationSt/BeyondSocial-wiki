@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Diupwijk",
+			"EileenSanda"
+		]
+	},
+	"beyondsocial-skin-desc": "Moderna versión af MonoBook við frískari útsjónd og nógvum nýtslubetringum",
+	"beyondsocial-action-addsection": "Nýtt evni",
+	"beyondsocial-action-delete": "Strika",
+	"beyondsocial-action-move": "Flyt",
+	"beyondsocial-action-protect": "Friða",
+	"beyondsocial-action-undelete": "Endurstovna",
+	"beyondsocial-action-unprotect": "Broyt verju",
+	"beyondsocial-view-create": "Stovna",
+	"beyondsocial-view-edit": "Rætta",
+	"beyondsocial-view-history": "Vís søgu",
+	"beyondsocial-view-view": "Les",
+	"beyondsocial-view-viewsource": "Vís keldu",
+	"beyondsocial-more-actions": "Meira"
+}

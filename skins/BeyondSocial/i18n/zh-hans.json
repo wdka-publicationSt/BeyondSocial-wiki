@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hydra",
+			"Liangent",
+			"Liuxinyu970226",
+			"Xiaomingyan",
+			"Cwek"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "提供清新的外观和许多可用性改进的现代版MonoBook",
+	"beyondsocial.css": "/* 这里放置的CSS将影响使用BeyondSocial皮肤的用户 */",
+	"beyondsocial.js": "/* 这里的任何JavaScript将为使用BeyondSocial皮肤的用户加载 */",
+	"beyondsocial-action-addsection": "添加话题",
+	"beyondsocial-action-delete": "删除",
+	"beyondsocial-action-move": "移动",
+	"beyondsocial-action-protect": "保护",
+	"beyondsocial-action-undelete": "还原",
+	"beyondsocial-action-unprotect": "更改保护",
+	"beyondsocial-view-create": "创建",
+	"beyondsocial-view-edit": "编辑",
+	"beyondsocial-view-history": "查看历史",
+	"beyondsocial-view-view": "阅读",
+	"beyondsocial-view-viewsource": "查看源代码",
+	"beyondsocial-more-actions": "更多"
+}

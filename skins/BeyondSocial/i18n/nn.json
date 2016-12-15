@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gunnernett",
+			"Njardarlogar"
+		]
+	},
+	"beyondsocial-action-addsection": "Nytt emne",
+	"beyondsocial-action-delete": "Slett",
+	"beyondsocial-action-move": "Flytt",
+	"beyondsocial-action-protect": "Vern",
+	"beyondsocial-action-undelete": "Gjenopprett",
+	"beyondsocial-action-unprotect": "Endra vern",
+	"beyondsocial-view-create": "Opprett",
+	"beyondsocial-view-edit": "Endre",
+	"beyondsocial-view-history": "Sjå historikken",
+	"beyondsocial-view-view": "Les",
+	"beyondsocial-view-viewsource": "Sjå kjelda",
+	"beyondsocial-more-actions": "Meir"
+}

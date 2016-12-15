@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Teak",
+			"Vadgt",
+			"Xelgen",
+			"Arman musikyan"
+		]
+	},
+	"skinname-beyondsocial": "Սովորական",
+	"beyondsocial-action-addsection": "Ավելացնել քննարկում",
+	"beyondsocial-action-delete": "Ջնջել",
+	"beyondsocial-action-move": "Տեղափոխել այս էջը",
+	"beyondsocial-action-protect": "Պաշտպանել",
+	"beyondsocial-action-undelete": "Վերականգնել",
+	"beyondsocial-action-unprotect": "Փոխել պաշտպանումը",
+	"beyondsocial-view-create": "Ստեղծել",
+	"beyondsocial-view-edit": "Խմբագրել",
+	"beyondsocial-view-history": "Դիտել պատմությունը",
+	"beyondsocial-view-view": "Կարդալ",
+	"beyondsocial-view-viewsource": "Դիտել ելատեքստը",
+	"beyondsocial-more-actions": "Ավելին"
+}

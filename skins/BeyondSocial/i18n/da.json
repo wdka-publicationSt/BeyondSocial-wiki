@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Byrial",
+			"Christian List",
+			"Peter Alberti"
+		]
+	},
+	"beyondsocial-skin-desc": "Moderne version af MonoBook med frisk udseende og mange forbedringer af brugervenligheden",
+	"beyondsocial-action-addsection": "Nyt emne",
+	"beyondsocial-action-delete": "Slet",
+	"beyondsocial-action-move": "Flyt",
+	"beyondsocial-action-protect": "Beskyt",
+	"beyondsocial-action-undelete": "Gendan",
+	"beyondsocial-action-unprotect": "Ændr beskyttelse",
+	"beyondsocial-view-create": "Opret",
+	"beyondsocial-view-edit": "Redigér",
+	"beyondsocial-view-history": "Se historik",
+	"beyondsocial-view-view": "Læs",
+	"beyondsocial-view-viewsource": "Se kilden",
+	"beyondsocial-more-actions": "Mere"
+}

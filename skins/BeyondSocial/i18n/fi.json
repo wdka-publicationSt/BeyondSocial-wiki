@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"Nedergard",
+			"Nike",
+			"Pxos",
+			"SuperPete"
+		]
+	},
+	"beyondsocial-skin-desc": "Uudistettu versio MonoBookista raikkaalla ulkoasulla ja useilla käytettävyysparannuksilla",
+	"beyondsocial.css": "/* Tämä sivu sisältää BeyondSocial-ulkoasua muuttavia tyylejä. */",
+	"beyondsocial.js": "/* Tämän sivun JavaScript-koodi liitetään BeyondSocial-tyyliin */",
+	"beyondsocial-action-addsection": "Lisää aihe",
+	"beyondsocial-action-delete": "Poista",
+	"beyondsocial-action-move": "Siirrä",
+	"beyondsocial-action-protect": "Suojaa",
+	"beyondsocial-action-undelete": "Palauta",
+	"beyondsocial-action-unprotect": "Muuta suojausta",
+	"beyondsocial-view-create": "Luo",
+	"beyondsocial-view-edit": "Muokkaa",
+	"beyondsocial-view-history": "Näytä historia",
+	"beyondsocial-view-view": "Lue",
+	"beyondsocial-view-viewsource": "Näytä lähdekoodi",
+	"beyondsocial-more-actions": "Muut"
+}

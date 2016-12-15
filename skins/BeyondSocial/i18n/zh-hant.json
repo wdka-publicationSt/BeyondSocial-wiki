@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cwlin0416",
+			"Justincheng12345",
+			"Liuxinyu970226",
+			"Mark85296341",
+			"LNDDYL"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "現代版的 MonoBook，有著較新穎的外觀與許多使用性的改進",
+	"beyondsocial.css": "/* 此 CSS 會影響使用 BeyondSocial 介面外觀的使用者 */",
+	"beyondsocial.js": "/* 此 JavaScript 會用於使用 BeyondSocial 介面外觀的使用者 */",
+	"beyondsocial-action-addsection": "新增話題",
+	"beyondsocial-action-delete": "刪除",
+	"beyondsocial-action-move": "移動",
+	"beyondsocial-action-protect": "保護",
+	"beyondsocial-action-undelete": "取消刪除",
+	"beyondsocial-action-unprotect": "變更保護",
+	"beyondsocial-view-create": "建立",
+	"beyondsocial-view-edit": "編輯",
+	"beyondsocial-view-history": "檢視歷史",
+	"beyondsocial-view-view": "閱讀",
+	"beyondsocial-view-viewsource": "檢視原始碼",
+	"beyondsocial-more-actions": "更多"
+}

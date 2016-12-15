@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Denö",
+			"Ilja.mos",
+			"Mashoi7"
+		]
+	},
+	"beyondsocial-action-addsection": "Ližiä aihe",
+	"beyondsocial-action-delete": "Ota iäre",
+	"beyondsocial-action-move": "Siirrä",
+	"beyondsocial-action-protect": "Suojua",
+	"beyondsocial-action-unprotect": "Vaihta suojavustu",
+	"beyondsocial-view-create": "Luaji",
+	"beyondsocial-view-edit": "Kohendele",
+	"beyondsocial-view-history": "Kačo histourii",
+	"beyondsocial-view-view": "Luve",
+	"beyondsocial-view-viewsource": "Kačo algukoodu",
+	"beyondsocial-more-actions": "Vie"
+}

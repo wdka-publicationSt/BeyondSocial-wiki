@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fryed-peach",
+			"Marine-Blue",
+			"Penn Station",
+			"Shirayuki",
+			"Whym",
+			"青子守歌",
+			"Takot"
+		]
+	},
+	"skinname-beyondsocial": "ベクター",
+	"beyondsocial-skin-desc": "新しい見た目でユーザビリティが改善された、モダンバージョンのMonobook。",
+	"beyondsocial.css": "/* ここに記述したCSSはベクター外装の利用者に影響します */",
+	"beyondsocial.js": "/* ここにあるすべてのJavaScriptは、ベクター外装を使用している利用者に対して読み込まれます */",
+	"beyondsocial-action-addsection": "話題追加",
+	"beyondsocial-action-delete": "削除",
+	"beyondsocial-action-move": "移動",
+	"beyondsocial-action-protect": "保護",
+	"beyondsocial-action-undelete": "復元",
+	"beyondsocial-action-unprotect": "保護再設定",
+	"beyondsocial-view-create": "作成",
+	"beyondsocial-view-edit": "編集",
+	"beyondsocial-view-history": "履歴表示",
+	"beyondsocial-view-view": "閲覧",
+	"beyondsocial-view-viewsource": "ソースを閲覧",
+	"beyondsocial-more-actions": "その他"
+}

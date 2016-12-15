@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"AdiJapan",
+			"Danutz",
+			"Firilacroco",
+			"Minisarm",
+			"Strainu",
+			"ImGelu"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Versiunea modernă pentru MonoBook cu o înfățișare reîmprospătată și multe îmbunătățiri de uzabilitate",
+	"beyondsocial.css": "/* CSS plasate aici vor afecta utilizatorii stilului BeyondSocial */",
+	"beyondsocial-action-addsection": "Mesaj nou",
+	"beyondsocial-action-delete": "Ștergere",
+	"beyondsocial-action-move": "Redenumire",
+	"beyondsocial-action-protect": "Protejare",
+	"beyondsocial-action-undelete": "Recuperare",
+	"beyondsocial-action-unprotect": "Modificare protecție",
+	"beyondsocial-view-create": "Creare",
+	"beyondsocial-view-edit": "Modificare",
+	"beyondsocial-view-history": "Istoric",
+	"beyondsocial-view-view": "Lectură",
+	"beyondsocial-view-viewsource": "Sursă pagină",
+	"beyondsocial-more-actions": "Mai mult"
+}

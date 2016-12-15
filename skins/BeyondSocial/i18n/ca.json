@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aleator",
+			"Anskar",
+			"Calak",
+			"Paucabot",
+			"Ssola",
+			"Vriullop",
+			"Toniher",
+			"Fitoschido"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Versió moderna del MonoBook amb un nou aspesctes i moltes millores en la usabilitat",
+	"beyondsocial-action-addsection": "Afegeix un tema",
+	"beyondsocial-action-delete": "Esborra",
+	"beyondsocial-action-move": "Reanomena",
+	"beyondsocial-action-protect": "Protegeix",
+	"beyondsocial-action-undelete": "Restaura",
+	"beyondsocial-action-unprotect": "Desprotegeix",
+	"beyondsocial-view-create": "Crea",
+	"beyondsocial-view-edit": "Modifica",
+	"beyondsocial-view-history": "Mostra l’historial",
+	"beyondsocial-view-view": "Mostra",
+	"beyondsocial-view-viewsource": "Mostra el codi",
+	"beyondsocial-more-actions": "Més"
+}

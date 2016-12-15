@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"UV",
+			"Laurentianus"
+		]
+	},
+	"beyondsocial-action-addsection": "Partem novam addere",
+	"beyondsocial-action-delete": "Delere",
+	"beyondsocial-action-move": "Movere",
+	"beyondsocial-action-protect": "Protegere",
+	"beyondsocial-action-undelete": "Restituere",
+	"beyondsocial-action-unprotect": "Protectionem mutare",
+	"beyondsocial-view-create": "Creare",
+	"beyondsocial-view-edit": "Recensere",
+	"beyondsocial-view-history": "Historiam inspicere",
+	"beyondsocial-view-view": "Legere",
+	"beyondsocial-view-viewsource": "Fontem inspicere",
+	"beyondsocial-more-actions": "Plura"
+}

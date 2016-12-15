@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Don Alessandro",
+			"Frhdkazan"
+		]
+	},
+	"skinname-beyondsocial": "Sızımlı",
+	"beyondsocial-action-addsection": "Yaña tema östäw",
+	"beyondsocial-action-delete": "Beterü",
+	"beyondsocial-action-move": "Küçerü",
+	"beyondsocial-action-protect": "Yaqlaw",
+	"beyondsocial-action-undelete": "Qaytaru",
+	"beyondsocial-action-unprotect": "Yaqlawnı beterü",
+	"beyondsocial-view-create": "Tözü",
+	"beyondsocial-view-edit": "Üzgärtü",
+	"beyondsocial-view-history": "Tarixın qaraw",
+	"beyondsocial-view-view": "Uqu",
+	"beyondsocial-view-viewsource": "Çığanağın qaraw",
+	"beyondsocial-more-actions": "Başqalar"
+}

@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crazymadlover",
+			"Giro720",
+			"Hamilton Abreu",
+			"Malafaya",
+			"Vitorvicentevalente",
+			"Waldir"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Versão moderna do MonoBook com um visual fresco e várias melhorias de usabilidade",
+	"beyondsocial.css": "/* Código CSS colocado aqui afectará os utilizadores do tema BeyondSocial */",
+	"beyondsocial.js": "/* Código Javascript colocado aqui será carregado para utilizadores do tema BeyondSocial */",
+	"beyondsocial-action-addsection": "Adicionar&nbsp;tópico",
+	"beyondsocial-action-delete": "Eliminar",
+	"beyondsocial-action-move": "Mover",
+	"beyondsocial-action-protect": "Proteger",
+	"beyondsocial-action-undelete": "Restaurar",
+	"beyondsocial-action-unprotect": "Alterar protecção",
+	"beyondsocial-view-create": "Criar",
+	"beyondsocial-view-edit": "Editar",
+	"beyondsocial-view-history": "Ver histórico",
+	"beyondsocial-view-view": "Ler",
+	"beyondsocial-view-viewsource": "Ver fonte",
+	"beyondsocial-more-actions": "Mais"
+}

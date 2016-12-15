@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geoleplubo"
+		]
+	},
+	"beyondsocial-action-addsection": "Rajouter un sujeut",
+	"beyondsocial-action-delete": "Défacer",
+	"beyondsocial-action-move": "Canger ch'nom",
+	"beyondsocial-action-protect": "Garantir",
+	"beyondsocial-action-undelete": "N'poin défacher",
+	"beyondsocial-action-unprotect": "Canger l'garantie",
+	"beyondsocial-view-create": "Créer",
+	"beyondsocial-view-edit": "Éditer",
+	"beyondsocial-view-history": "Vir l'histoère",
+	"beyondsocial-view-view": "Lire",
+	"beyondsocial-view-viewsource": "Vir l'source"
+}

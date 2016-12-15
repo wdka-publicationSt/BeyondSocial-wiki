@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Sapral Mikail",
+			"Умар",
+			"Adam-Yourist"
+		]
+	},
+	"beyondsocial-action-addsection": "БӀагал тӀатоха",
+	"beyondsocial-action-delete": "ДӀадаккха",
+	"beyondsocial-action-move": "ЦӀи хувца",
+	"beyondsocial-action-protect": "Лораде",
+	"beyondsocial-action-undelete": "Юхаоттаде",
+	"beyondsocial-action-unprotect": "Лорам хувца",
+	"beyondsocial-view-create": "Кхоллар",
+	"beyondsocial-view-edit": "Нийсъе",
+	"beyondsocial-view-history": "Истори",
+	"beyondsocial-view-view": "Де́ша",
+	"beyondsocial-view-viewsource": "Зембакхама бӀаргтассам",
+	"beyondsocial-more-actions": "Кхы а"
+}

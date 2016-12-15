@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hosseinblue",
+			"Arash71",
+			"Lakzon"
+		]
+	},
+	"beyondsocial-skin-desc": "نسخه مدرن منوبوک با نگاه تازه و بهبود قابلیت استفاده",
+	"beyondsocial-action-addsection": "افزودن بۀخش",
+	"beyondsocial-action-delete": "حۀذف کردن/پاک کردن",
+	"beyondsocial-action-move": "جاوواز کرِدِن",
+	"beyondsocial-action-protect": "پروژۀ",
+	"beyondsocial-action-undelete": "گلآدائن حةذف/واگردانی حذف",
+	"beyondsocial-action-unprotect": "گؤەڕانن/تغییر سطح حفاظت",
+	"beyondsocial-view-create": "دؤِرس کردن/سازین",
+	"beyondsocial-view-edit": "دەسکاری",
+	"beyondsocial-view-history": "سئرکردن تاریخچۀ-ویرگار",
+	"beyondsocial-view-view": "خووەنن",
+	"beyondsocial-view-viewsource": "سئرکردن بِنچۀک/مۀنبۀع",
+	"beyondsocial-more-actions": "ویشتر/فرۀتر"
+}

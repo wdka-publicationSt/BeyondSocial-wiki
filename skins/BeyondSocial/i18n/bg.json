@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borislav",
+			"DCLXVI",
+			"Spiritia",
+			"StanProg"
+		]
+	},
+	"beyondsocial-action-addsection": "Добавяне на тема",
+	"beyondsocial-action-delete": "Изтриване",
+	"beyondsocial-action-move": "Преместване",
+	"beyondsocial-action-protect": "Защита",
+	"beyondsocial-action-undelete": "Възстановяване",
+	"beyondsocial-action-unprotect": "Промяна на защитата",
+	"beyondsocial-view-create": "Създаване",
+	"beyondsocial-view-edit": "Редактиране",
+	"beyondsocial-view-history": "История",
+	"beyondsocial-view-view": "Преглед",
+	"beyondsocial-view-viewsource": "Преглед на кода",
+	"beyondsocial-more-actions": "Още"
+}

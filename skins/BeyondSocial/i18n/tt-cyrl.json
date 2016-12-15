@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Don Alessandro",
+			"Rinatus",
+			"Ильнар",
+			"Рашат Якупов",
+			"Derslek"
+		]
+	},
+	"skinname-beyondsocial": "Сызымлы",
+	"beyondsocial-skin-desc": "Хәзерге заманга туры килгән MonoBook күренеше, яңа бизәлеш һәм яңа мөмкинлекләр",
+	"beyondsocial-action-addsection": "Яңа тема өстәү",
+	"beyondsocial-action-delete": "Бетерү",
+	"beyondsocial-action-move": "Күчерү",
+	"beyondsocial-action-protect": "Яклау",
+	"beyondsocial-action-undelete": "Кайтару",
+	"beyondsocial-action-unprotect": "Яклауны үзгәртү",
+	"beyondsocial-view-create": "Төзү",
+	"beyondsocial-view-edit": "Үзгәртү",
+	"beyondsocial-view-history": "Тарихын карау",
+	"beyondsocial-view-view": "Уку",
+	"beyondsocial-view-viewsource": "Чыганагын карау",
+	"beyondsocial-more-actions": "Тагын"
+}

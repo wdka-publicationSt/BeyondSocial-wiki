@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Calak",
+			"Romaine",
+			"SPQRobin",
+			"Siebrand",
+			"Troefkaart",
+			"Sjoerddebruin"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Moderne versie van MonoBook met een fris uiterlijk en verbeteringen op het gebied van gebruiksvriendelijkheid",
+	"beyondsocial.css": "/* CSS die hier wordt geplaatst heeft alleen invloed op het uiterlijk BeyondSocial */",
+	"beyondsocial.js": "/* JavaScript die hier wordt geplaatst heeft alleen invloed op gebruikers die het uiterlijk BeyondSocial gebruiken */",
+	"beyondsocial-action-addsection": "Kopje toevoegen",
+	"beyondsocial-action-delete": "Verwijderen",
+	"beyondsocial-action-move": "Hernoemen",
+	"beyondsocial-action-protect": "Beveiligen",
+	"beyondsocial-action-undelete": "Terugplaatsen",
+	"beyondsocial-action-unprotect": "Beveiliging wijzigen",
+	"beyondsocial-view-create": "Aanmaken",
+	"beyondsocial-view-edit": "Bewerken",
+	"beyondsocial-view-history": "Geschiedenis weergeven",
+	"beyondsocial-view-view": "Lezen",
+	"beyondsocial-view-viewsource": "Brontekst bekijken",
+	"beyondsocial-more-actions": "Meer"
+}

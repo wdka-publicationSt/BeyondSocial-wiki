@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Justincheng12345",
+			"Nemo bis"
+		]
+	},
+	"skinname-beyondsocial": "動力",
+	"beyondsocial.css": "/* 此之 CSS 用於動力面之簿也 */",
+	"beyondsocial.js": "/* 此之JavaScript將載於用動力面之簿 */",
+	"beyondsocial-action-addsection": "入題",
+	"beyondsocial-action-delete": "刪",
+	"beyondsocial-action-move": "遷",
+	"beyondsocial-action-protect": "緘",
+	"beyondsocial-action-undelete": "覽刪",
+	"beyondsocial-action-unprotect": "啟",
+	"beyondsocial-view-create": "立",
+	"beyondsocial-view-edit": "纂",
+	"beyondsocial-view-history": "覽史",
+	"beyondsocial-view-view": "閱",
+	"beyondsocial-view-viewsource": "覽源",
+	"beyondsocial-more-actions": "益多"
+}

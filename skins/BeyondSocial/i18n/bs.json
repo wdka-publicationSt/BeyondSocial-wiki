@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"CERminator",
+			"DzWiki",
+			"KWiki",
+			"Edinwiki",
+			"Srdjan m"
+		]
+	},
+	"beyondsocial-skin-desc": "Moderna verzija MonoKnjige s novijim izgledom i mnogim poboljšanjima u pogledu upotrebljivosti",
+	"beyondsocial-action-addsection": "Dodaj temu",
+	"beyondsocial-action-delete": "Izbriši",
+	"beyondsocial-action-move": "Premjesti",
+	"beyondsocial-action-protect": "Zaštiti",
+	"beyondsocial-action-undelete": "Vrati obrisano",
+	"beyondsocial-action-unprotect": "Promijeni zaštitu",
+	"beyondsocial-view-create": "Napravi",
+	"beyondsocial-view-edit": "Uredi",
+	"beyondsocial-view-history": "Historija",
+	"beyondsocial-view-view": "Čitaj",
+	"beyondsocial-view-viewsource": "Pogledaj izvor",
+	"beyondsocial-more-actions": "Više"
+}

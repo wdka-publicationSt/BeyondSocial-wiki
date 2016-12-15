@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"គីមស៊្រុន",
+			"វ័ណថារិទ្ធ"
+		]
+	},
+	"skinname-beyondsocial": "វ៉ិចទ័រ​​",
+	"beyondsocial.css": "/* CSS បានដាក់ទីនេះនឹងមានអនុភាពលើអ្នកប្រើប្រាស់នៃសំបក BeyondSocial */",
+	"beyondsocial-action-addsection": "បន្ថែម​ប្រធានបទ​",
+	"beyondsocial-action-delete": "លុបចោល",
+	"beyondsocial-action-move": "ប្តូរទីតាំង",
+	"beyondsocial-action-protect": "ការពារ",
+	"beyondsocial-action-undelete": "ឈប់លុបចោល",
+	"beyondsocial-action-unprotect": "ប្ដូរការការពារ",
+	"beyondsocial-view-create": "បង្កើត​",
+	"beyondsocial-view-edit": "កែប្រែ​",
+	"beyondsocial-view-history": "មើល​ប្រវត្តិ​",
+	"beyondsocial-view-view": "អាន",
+	"beyondsocial-view-viewsource": "មើល​កូដ",
+	"beyondsocial-more-actions": "បន្ថែមទៀត"
+}

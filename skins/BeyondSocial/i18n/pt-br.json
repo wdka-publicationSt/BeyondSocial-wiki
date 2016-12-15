@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cainamarques",
+			"Diego Queiroz",
+			"Giro720",
+			"Helder.wiki",
+			555,
+			"He7d3r"
+		]
+	},
+	"beyondsocial.js": "/* Qualquer JavaScript aqui colocado afetará os usuários do skin BeyondSocial */",
+	"beyondsocial-action-addsection": "Adicionar tópico",
+	"beyondsocial-action-delete": "Eliminar",
+	"beyondsocial-action-move": "Mover",
+	"beyondsocial-action-protect": "Proteger",
+	"beyondsocial-action-undelete": "Restaurar",
+	"beyondsocial-action-unprotect": "Alterar a proteção",
+	"beyondsocial-view-create": "Criar",
+	"beyondsocial-view-edit": "Editar",
+	"beyondsocial-view-history": "Ver histórico",
+	"beyondsocial-view-view": "Ler",
+	"beyondsocial-view-viewsource": "Ver código-fonte",
+	"beyondsocial-more-actions": "Mais"
+}

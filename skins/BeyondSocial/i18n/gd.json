@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Akerbeltz",
+			"GunChleoc"
+		]
+	},
+	"beyondsocial-skin-desc": "Tionndadh ùr-nodha de MonoBook le dreach ùr air 's iomadh leasachadh air a sho-chleachdachd",
+	"beyondsocial-action-addsection": "Cuir ris cuspair",
+	"beyondsocial-action-delete": "Sguab às",
+	"beyondsocial-action-move": "Gluais",
+	"beyondsocial-action-protect": "Dìon",
+	"beyondsocial-action-undelete": "Neo-dhèan an sguabadh às",
+	"beyondsocial-action-unprotect": "Atharraich an dìon",
+	"beyondsocial-view-create": "Cruthaich",
+	"beyondsocial-view-edit": "Deasaich",
+	"beyondsocial-view-history": "Seall an eachdraidh",
+	"beyondsocial-view-view": "Leugh",
+	"beyondsocial-view-viewsource": "Seall an tùs",
+	"beyondsocial-more-actions": "Barrachd"
+}

@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gmelfi",
+			"Melos",
+			"Pippinu",
+			"Sarvaturi"
+		]
+	},
+	"beyondsocial-skin-desc": "Virsioni muderna di MonoBook cu n'aspettu novu e tanti migghiuramenti nta l'usabbilità",
+	"beyondsocial-action-addsection": "Agghiunci n'argumentu",
+	"beyondsocial-action-delete": "Cancella",
+	"beyondsocial-action-move": "Sposta",
+	"beyondsocial-action-protect": "Pruteggi",
+	"beyondsocial-action-undelete": "Annulla la cancillazzioni",
+	"beyondsocial-action-unprotect": "Cancia la prutizzioni",
+	"beyondsocial-view-create": "Crea",
+	"beyondsocial-view-edit": "Cancia",
+	"beyondsocial-view-history": "Talìa la crunuluggìa",
+	"beyondsocial-view-view": "Leggi",
+	"beyondsocial-view-viewsource": "Talìa la surgenti",
+	"beyondsocial-more-actions": "Àutri cosi"
+}

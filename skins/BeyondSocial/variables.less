@@ -1,0 +1,74 @@
+@html-font-size: 100%;
+
+@bscolorMain: rgba(0,0,0,1);
+@bscolorSecond: rgba(245,0,34,1);
+@bscolorThird: rgba(196,0,34,1);
+@bsfont: "Brood";
+@bsfontBlack: "AvenirBlack";
+
+// Page content
+// FIXME: Use global variable since Echo and CentralNotice use this variable
+@content-border-color: None;
+// FIXME: Find an open font that works with this stack and is readable by Windows users
+@content-font-family: @bsfont;
+@content-font-color: @bscolorMain;
+@content-font-size: 2.2em;
+@content-line-height: 1.18;
+@content-font-size-sm: 0.5em;
+@content-line-height-sm: 1.3;
+@content-line-height-special: 2;
+@content-padding: 0;
+@content-heading-font-size: 2em;
+@content-heading-font-family: @bsfont;
+@content-heading-font-family-generic: @bsfont;
+@body-background-color: rgba(255,255,255,0);
+@heading-line-height: 1.3;
+
+// Navigation
+@menu-background-color: None;
+
+// Common menu
+@menu-link-color: @bscolorSecond;
+
+// Main menu
+@menu-main-font-size: inherit;
+
+@menu-main-heading-font-size: 1em;
+@menu-main-heading-padding: 0.25em 0 0.25em 0.25em;
+@menu-main-heading-color: @bscolorMain;
+
+@menu-main-body-font-size: 0.75em;
+@menu-main-body-link-color: @bscolorSecond;
+@menu-main-body-link-visited-color: @bscolorThird;
+@menu-main-body-margin: 0 0 0 1.25em;
+@menu-main-body-padding: 0;
+
+@menu-main-logo-left: 0.5em;
+
+// Personal menu
+@menu-personal-font-size: 0.75em;
+
+// fonts
+/*@font-face{
+	font-family: "Avenir";
+	src:url('fonts/AvenirLTStd-MediumOblique.otf');
+	font-style: italic, oblique;
+}
+@font-face{
+	font-family: "Avenir";
+	src:url('fonts/AvenirLTStd-Medium.otf');
+}*/
+@font-face{
+	font-family: "Brood";
+	src:url('fonts/VAGRoundedStd-Light.otf');
+}
+@font-face{
+	font-family: "Brood";
+	src:url('fonts/VAGRoundedStd-Bold.otf');
+	font-weight: bold;
+}
+@font-face{
+	font-family: "AvenirBlack";
+	src:url('fonts/AvenirLTStd-Black.otf');
+	font-weight: bold;
+}

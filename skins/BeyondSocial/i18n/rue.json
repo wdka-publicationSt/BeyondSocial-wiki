@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gazeb",
+			"Tkalyn"
+		]
+	},
+	"beyondsocial-action-addsection": "Придати тему",
+	"beyondsocial-action-delete": "Вымазати",
+	"beyondsocial-action-move": "Переменовати",
+	"beyondsocial-action-protect": "Всокотити",
+	"beyondsocial-action-undelete": "Обновити",
+	"beyondsocial-action-unprotect": "Змінити замок",
+	"beyondsocial-view-create": "Створити",
+	"beyondsocial-view-edit": "Едітовати",
+	"beyondsocial-view-history": "Видїти історію",
+	"beyondsocial-view-view": "Чітати",
+	"beyondsocial-view-viewsource": "Видїти код",
+	"beyondsocial-more-actions": "Веце"
+}

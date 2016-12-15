@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Klenje",
+			"Tocaibon"
+		]
+	},
+	"beyondsocial-action-addsection": "Gnove sezion",
+	"beyondsocial-action-delete": "Elimine",
+	"beyondsocial-action-move": "Môf",
+	"beyondsocial-action-protect": "Protêç",
+	"beyondsocial-action-undelete": "Recupere",
+	"beyondsocial-action-unprotect": "Gambie la protezion",
+	"beyondsocial-view-create": "Cree",
+	"beyondsocial-view-edit": "Cambie",
+	"beyondsocial-view-history": "Cjale il storic",
+	"beyondsocial-view-view": "Lei",
+	"beyondsocial-view-viewsource": "Cjale risultive",
+	"beyondsocial-more-actions": "Di plui"
+}

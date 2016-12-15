@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bresta"
+		]
+	},
+	"beyondsocial.css": "/* CSSi i vednosun këtu ka me i prekë shfrytëzuesit e dukjes BeyondSocial */",
+	"beyondsocial.js": "/* Çdo JavaScript këtu ka me u ngarkue për shfrytëzuesit që përdorin dukjen BeyondSocial */",
+	"beyondsocial-action-addsection": "Shto temë",
+	"beyondsocial-action-delete": "Fshij",
+	"beyondsocial-action-move": "Zhvendos",
+	"beyondsocial-action-protect": "Mbroj",
+	"beyondsocial-action-undelete": "Kthe fshimjen mbrapsht",
+	"beyondsocial-action-unprotect": "Hiq mbrojtjen",
+	"beyondsocial-view-create": "Krijo",
+	"beyondsocial-view-edit": "Redakto",
+	"beyondsocial-view-history": "Shih historinë",
+	"beyondsocial-view-view": "Lexo",
+	"beyondsocial-view-viewsource": "Shih kodin"
+}

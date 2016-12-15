@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mjbmr",
+			"محک"
+		]
+	},
+	"beyondsocial-action-addsection": "ترنه گپ بزوئن",
+	"beyondsocial-action-delete": "پاک هاکردن",
+	"beyondsocial-action-move": "دکش هاکردن",
+	"beyondsocial-action-protect": "زلفن بزوئن",
+	"beyondsocial-action-undelete": "دباره بنویشته بیّن",
+	"beyondsocial-action-unprotect": "زلفن عوض هاکردن",
+	"beyondsocial-view-create": "بساتن",
+	"beyondsocial-view-edit": "دچی‌ین",
+	"beyondsocial-view-history": "تاریخچه ره بَدی‌ین",
+	"beyondsocial-view-view": "بخوندستن",
+	"beyondsocial-view-viewsource": "ونه منبع ره هارشائن",
+	"beyondsocial-more-actions": "ویشته"
+}

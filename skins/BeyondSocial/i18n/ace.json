@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fadli Idris",
+			"Si Gam Acèh"
+		]
+	},
+	"beyondsocial-action-addsection": "Tamah bhaih",
+	"beyondsocial-action-delete": "Sampôh",
+	"beyondsocial-action-move": "Pupinah",
+	"beyondsocial-action-protect": "Peulindông",
+	"beyondsocial-action-undelete": "Bateuë sampôh",
+	"beyondsocial-action-unprotect": "Gantoe neulindông",
+	"beyondsocial-view-create": "Peugöt",
+	"beyondsocial-view-edit": "Andam",
+	"beyondsocial-view-history": "Eu riwayat",
+	"beyondsocial-view-view": "Beuët",
+	"beyondsocial-view-viewsource": "Eu nè",
+	"beyondsocial-more-actions": "Lom"
+}

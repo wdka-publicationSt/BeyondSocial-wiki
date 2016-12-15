@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Avicennasis",
+			"John Reid",
+			"Omnipaedista",
+			"Aursani",
+			"Macofe"
+		]
+	},
+	"beyondsocial-skin-desc": "Modern version o MonoBook wi ae fresh luik n monie uisabeelitie impruivments",
+	"beyondsocial-action-addsection": "Eik topic",
+	"beyondsocial-action-delete": "Delyte",
+	"beyondsocial-action-move": "Muiv",
+	"beyondsocial-action-protect": "Fend",
+	"beyondsocial-action-undelete": "Ondelyte",
+	"beyondsocial-action-unprotect": "Chynge protection",
+	"beyondsocial-view-create": "Ceaut",
+	"beyondsocial-view-edit": "Eedit",
+	"beyondsocial-view-history": "See histerie",
+	"beyondsocial-view-view": "Read",
+	"beyondsocial-view-viewsource": "See Soorce",
+	"beyondsocial-more-actions": "Mair"
+}

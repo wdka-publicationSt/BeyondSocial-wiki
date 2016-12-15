@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	},
+	"beyondsocial-action-addsection": "Abschnitt zuefiege",
+	"beyondsocial-action-delete": "Lesche",
+	"beyondsocial-action-move": "Verschiebe",
+	"beyondsocial-action-protect": "Schitze",
+	"beyondsocial-action-undelete": "Widerhärstelle",
+	"beyondsocial-action-unprotect": "Syteschutz ändere",
+	"beyondsocial-view-create": "Aalege",
+	"beyondsocial-view-edit": "Bearbeite",
+	"beyondsocial-view-history": "Versionsgschicht",
+	"beyondsocial-view-view": "Läse",
+	"beyondsocial-view-viewsource": "Quälltext aaluege",
+	"beyondsocial-more-actions": "Meh"
+}

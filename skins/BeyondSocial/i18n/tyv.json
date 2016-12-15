@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agilight",
+			"Sborsody",
+			"Монгуш Салим"
+		]
+	},
+	"skinname-beyondsocial": "Вектор",
+	"beyondsocial-action-addsection": "Тема немээр",
+	"beyondsocial-action-delete": "Ырадыры",
+	"beyondsocial-action-move": "Шимчээри",
+	"beyondsocial-action-protect": "Камгалаары",
+	"beyondsocial-action-undelete": "Эгидер",
+	"beyondsocial-action-unprotect": "Камгалалды өскертири",
+	"beyondsocial-view-create": "Кылыр",
+	"beyondsocial-view-edit": "Эдер",
+	"beyondsocial-view-history": "Төөгүнү көөр",
+	"beyondsocial-view-view": "Номчуур",
+	"beyondsocial-view-viewsource": "Дөзү бижиин көөрү",
+	"beyondsocial-more-actions": "Оон ыңай"
+}

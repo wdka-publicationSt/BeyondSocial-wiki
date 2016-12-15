@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Armando-Martin",
+			"Crazymadlover",
+			"Dalton2",
+			"Fitoschido",
+			"Locos epraix",
+			"Manuelt15",
+			"MarcoAurelio",
+			"Miguel2706",
+			"Platonides",
+			"Vivaelcelta"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Versión moderna de MonoBook, con un aspecto actualizado y muchas mejoras de usabilidad",
+	"beyondsocial.css": "/* El CSS colocado en esta página afectará a los usuarios que usen la apariencia \"BeyondSocial\" */",
+	"beyondsocial.js": "/* Cualquier código JavaScript escrito aquí se cargará para todos los usuarios que usen la apariencia BeyondSocial */",
+	"beyondsocial-action-addsection": "Sección nueva",
+	"beyondsocial-action-delete": "Borrar",
+	"beyondsocial-action-move": "Trasladar",
+	"beyondsocial-action-protect": "Proteger",
+	"beyondsocial-action-undelete": "Restaurar",
+	"beyondsocial-action-unprotect": "Cambiar protección",
+	"beyondsocial-view-create": "Crear",
+	"beyondsocial-view-edit": "Editar",
+	"beyondsocial-view-history": "Ver historial",
+	"beyondsocial-view-view": "Leer",
+	"beyondsocial-view-viewsource": "Ver código",
+	"beyondsocial-more-actions": "Más"
+}

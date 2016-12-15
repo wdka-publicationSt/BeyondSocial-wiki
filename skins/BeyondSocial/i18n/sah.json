@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"HalanTul"
+		]
+	},
+	"beyondsocial-skin-desc": "Аныгы, саҥардыллыбыт, тупсарыллыбыт MonoBook",
+	"beyondsocial-action-addsection": "Тиэмэ эбии",
+	"beyondsocial-action-delete": "Сот",
+	"beyondsocial-action-move": "Аатын уларыт",
+	"beyondsocial-action-protect": "Уларыйбат гын",
+	"beyondsocial-action-undelete": "Төннөр",
+	"beyondsocial-action-unprotect": "Көмүскэлин уларыт",
+	"beyondsocial-view-create": "Ай",
+	"beyondsocial-view-edit": "Уларыт",
+	"beyondsocial-view-history": "Устуоруйатын көрүү",
+	"beyondsocial-view-view": "Ааҕыы",
+	"beyondsocial-view-viewsource": "Бэлиэлэрин көрүү",
+	"beyondsocial-more-actions": "Эбии"
+}

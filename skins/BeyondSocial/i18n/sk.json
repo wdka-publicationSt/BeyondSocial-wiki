@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Helix84",
+			"Rudko",
+			"Sudo77(new)",
+			"KuboF",
+			"Mikulas1"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Moderná verzia MonoBooku so sviežim vzhľadom a vylepšenou použiteľnosťou",
+	"beyondsocial.css": "/* Tu umiestnené CSS bude ovplyvňovať používateľov štýlu BeyondSocial */",
+	"beyondsocial.js": "/* Tu sa nachádzajúci JavaScript sa načíta používateľom vzhľadu BeyondSocial */",
+	"beyondsocial-action-addsection": "Pridať tému",
+	"beyondsocial-action-delete": "Zmazať",
+	"beyondsocial-action-move": "Presunúť",
+	"beyondsocial-action-protect": "Zamknúť",
+	"beyondsocial-action-undelete": "Obnoviť",
+	"beyondsocial-action-unprotect": "Zmeniť stav ochrany",
+	"beyondsocial-view-create": "Vytvoriť",
+	"beyondsocial-view-edit": "Upraviť",
+	"beyondsocial-view-history": "Zobraziť históriu",
+	"beyondsocial-view-view": "Čítať",
+	"beyondsocial-view-viewsource": "Zobraziť zdroj",
+	"beyondsocial-more-actions": "Viac"
+}

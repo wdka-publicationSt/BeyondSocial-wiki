@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Csisc",
+			"Malekbr",
+			"GeekEmad"
+		]
+	},
+	"beyondsocial-action-addsection": "أضف موضوعا",
+	"beyondsocial-action-delete": "احذف",
+	"beyondsocial-action-move": "انقل",
+	"beyondsocial-action-protect": "احم",
+	"beyondsocial-action-undelete": "استرجع الحذف",
+	"beyondsocial-action-unprotect": "غير الحماية",
+	"beyondsocial-view-create": "أنشئ",
+	"beyondsocial-view-edit": "Baddel",
+	"beyondsocial-view-history": "Warri listorik",
+	"beyondsocial-view-view": "Aqrê",
+	"beyondsocial-view-viewsource": "اعرض المصدر",
+	"beyondsocial-more-actions": "Akŧar"
+}

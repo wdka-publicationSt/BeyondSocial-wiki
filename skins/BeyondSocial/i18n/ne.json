@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bhawani Gautam",
+			"RajeshPandey",
+			"सरोज कुमार ढकाल",
+			"बिप्लब आनन्द",
+			"राम प्रसाद जोशी"
+		]
+	},
+	"skinname-beyondsocial": "भेक्टर",
+	"beyondsocial.css": "/* यहाँ राखिएको CSS ले भेक्टर स्किनको प्रयोगकर्ताहरूलाई प्रभावित गर्ने छ  */",
+	"beyondsocial-action-addsection": "विषय थप्नुहोस",
+	"beyondsocial-action-delete": "हटाउने",
+	"beyondsocial-action-move": "सार्ने",
+	"beyondsocial-action-protect": "सुरक्षित गर्ने",
+	"beyondsocial-action-undelete": "हटाएको रद्द गर्ने",
+	"beyondsocial-action-unprotect": "सुरक्षा परिवर्तन गर्ने",
+	"beyondsocial-view-create": "सृजना गर्ने",
+	"beyondsocial-view-edit": "सम्पादन",
+	"beyondsocial-view-history": "इतिहास हेर्ने",
+	"beyondsocial-view-view": "पढ्ने",
+	"beyondsocial-view-viewsource": "स्रोत हेर्ने",
+	"beyondsocial-more-actions": "थप"
+}

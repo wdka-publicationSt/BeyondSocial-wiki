@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"Darth Kule",
+			"Gianfranco",
+			"Melos",
+			"Pietrodn",
+			"FRacco",
+			"Elitre"
+		]
+	},
+	"beyondsocial-skin-desc": "Versione moderna del MonoBook con un aspetto rinnovato e molti miglioramenti dell'usabilità",
+	"beyondsocial.css": "/* Gli stili CSS inseriti qui si applicano agli utenti che usano il tema BeyondSocial */",
+	"beyondsocial.js": "/* Il codice JavaScript inserito qui viene caricato dagli utenti che usano il tema BeyondSocial */",
+	"beyondsocial-action-addsection": "Aggiungi discussione",
+	"beyondsocial-action-delete": "Cancella",
+	"beyondsocial-action-move": "Sposta",
+	"beyondsocial-action-protect": "Proteggi",
+	"beyondsocial-action-undelete": "Ripristina",
+	"beyondsocial-action-unprotect": "Cambia la protezione",
+	"beyondsocial-view-create": "Crea",
+	"beyondsocial-view-edit": "Modifica",
+	"beyondsocial-view-history": "Cronologia",
+	"beyondsocial-view-view": "Leggi",
+	"beyondsocial-view-viewsource": "Visualizza wikitesto",
+	"beyondsocial-more-actions": "Altro"
+}

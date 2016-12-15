@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hazard-SJ",
+			"Yocahuna",
+			"Katxis"
+		]
+	},
+	"beyondsocial-action-addsection": "Ad tapik",
+	"beyondsocial-action-delete": "Diliit",
+	"beyondsocial-action-move": "Muuv",
+	"beyondsocial-action-protect": "Protek",
+	"beyondsocial-action-undelete": "Andiliit",
+	"beyondsocial-action-unprotect": "Neu protektian",
+	"beyondsocial-view-create": "Kriet",
+	"beyondsocial-view-edit": "Hedit",
+	"beyondsocial-view-history": "Vyuu ischri",
+	"beyondsocial-view-view": "Riid",
+	"beyondsocial-view-viewsource": "Vyuu Suos",
+	"beyondsocial-more-actions": "Muo"
+}

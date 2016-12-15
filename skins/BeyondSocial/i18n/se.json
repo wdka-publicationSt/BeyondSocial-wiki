@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gálaniitoluodda",
+			"Jeblad",
+			"Trondtr"
+		]
+	},
+	"beyondsocial-action-addsection": "Lasit fáttá",
+	"beyondsocial-action-delete": "Sihko",
+	"beyondsocial-action-move": "Sirdde",
+	"beyondsocial-action-protect": "Suodjal",
+	"beyondsocial-action-undelete": "Máhcat",
+	"beyondsocial-action-unprotect": "Rievdat suodjaleami",
+	"beyondsocial-view-create": "Álggat",
+	"beyondsocial-view-edit": "Rievdat",
+	"beyondsocial-view-history": "Geahča historjjá",
+	"beyondsocial-view-view": "Loga",
+	"beyondsocial-view-viewsource": "Geahča gáldokoda"
+}

@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arifin.wijaya",
+			"Bennylin",
+			"Farras",
+			"Iwan Novirion",
+			"Rex"
+		]
+	},
+	"skinname-beyondsocial": "Vektor",
+	"beyondsocial-skin-desc": "Versi modern dari MonoBook dengan tampilan segar dan banyak perbaikan kegunaan",
+	"beyondsocial.css": "/* CSS yang ada di sini akan diterapkan pada kulit Vektor. */",
+	"beyondsocial.js": "/* Semua JavaScript di sini akan dimuatkan untuk para pengguna yang menggunakan kulit BeyondSocial */",
+	"beyondsocial-action-addsection": "Bagian baru",
+	"beyondsocial-action-delete": "Hapus",
+	"beyondsocial-action-move": "Pindahkan",
+	"beyondsocial-action-protect": "Lindungi",
+	"beyondsocial-action-undelete": "Pembatalan penghapusan",
+	"beyondsocial-action-unprotect": "Ubah perlindungan",
+	"beyondsocial-view-create": "Buat",
+	"beyondsocial-view-edit": "Sunting",
+	"beyondsocial-view-history": "Versi terdahulu",
+	"beyondsocial-view-view": "Baca",
+	"beyondsocial-view-viewsource": "Lihat sumber",
+	"beyondsocial-more-actions": "Lainnya"
+}

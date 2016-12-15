@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kaszeba",
+			"Kuvaly"
+		]
+	},
+	"beyondsocial-action-addsection": "Dodôj témã",
+	"beyondsocial-action-delete": "Rëmôj",
+	"beyondsocial-action-move": "Przeniesë",
+	"beyondsocial-action-protect": "Zazychrëjë",
+	"beyondsocial-action-undelete": "Doprowôdzë nazôd",
+	"beyondsocial-action-unprotect": "Òdzychrëjë",
+	"beyondsocial-view-create": "Ùsôdzë",
+	"beyondsocial-view-edit": "Edicëjô",
+	"beyondsocial-view-history": "Historëjô lopka",
+	"beyondsocial-view-view": "Czëtôj",
+	"beyondsocial-view-viewsource": "Zdrojowi tekst"
+}

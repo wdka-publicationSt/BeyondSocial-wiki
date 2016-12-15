@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pras",
+			"NoiX180"
+		]
+	},
+	"beyondsocial-action-addsection": "Tambah rembug",
+	"beyondsocial-action-delete": "Busak",
+	"beyondsocial-action-move": "Alih",
+	"beyondsocial-action-protect": "Reksa",
+	"beyondsocial-action-undelete": "Batalna pambusakan",
+	"beyondsocial-action-unprotect": "Owahi pangreksan",
+	"beyondsocial-view-create": "Gawé",
+	"beyondsocial-view-edit": "Besut",
+	"beyondsocial-view-history": "Deleng babad",
+	"beyondsocial-view-view": "Waca",
+	"beyondsocial-view-viewsource": "Pirsani sumber",
+	"beyondsocial-more-actions": "Liyané"
+}

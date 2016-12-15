@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ex13",
+			"Tivek",
+			"Bugoslav"
+		]
+	},
+	"beyondsocial-action-addsection": "Dodaj temu",
+	"beyondsocial-action-delete": "Izbriši",
+	"beyondsocial-action-move": "Premjesti",
+	"beyondsocial-action-protect": "Zaštiti",
+	"beyondsocial-action-undelete": "Vrati",
+	"beyondsocial-action-unprotect": "Promijeni zaštitu",
+	"beyondsocial-view-create": "Započni",
+	"beyondsocial-view-edit": "Uredi",
+	"beyondsocial-view-history": "Vidi stare izmjene",
+	"beyondsocial-view-view": "Čitaj",
+	"beyondsocial-view-viewsource": "Vidi izvor",
+	"beyondsocial-more-actions": "Više"
+}

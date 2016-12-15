@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар",
+			"Gazimagomedov"
+		]
+	},
+	"beyondsocial-skin-desc": "MonoBook'алъул цӀияб версия цияб куцгун ва цӀиял юзабилитиялгун",
+	"beyondsocial-action-addsection": "Тема жубазе",
+	"beyondsocial-action-delete": "БацIцIине",
+	"beyondsocial-action-move": "ЦӀар хисизе",
+	"beyondsocial-action-protect": "Хиса-басияздасан цIунизе",
+	"beyondsocial-action-undelete": "БукӀараб гӀадин гьабизе",
+	"beyondsocial-action-unprotect": "ЦӀуни хисизе",
+	"beyondsocial-view-create": "Гьабизе",
+	"beyondsocial-view-edit": "Хисизабизе",
+	"beyondsocial-view-history": "Тарих балагьизе",
+	"beyondsocial-view-view": "ЦӀализе",
+	"beyondsocial-view-viewsource": "Вики-текст балагьизе",
+	"beyondsocial-more-actions": "Жеги"
+}

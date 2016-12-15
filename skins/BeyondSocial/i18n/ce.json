@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sasan700",
+			"Умар",
+			"Исмаил Садуев"
+		]
+	},
+	"skinname-beyondsocial": "Векторан",
+	"beyondsocial-action-addsection": "Тема тӀетоха",
+	"beyondsocial-action-delete": "ДӀаяккхар",
+	"beyondsocial-action-move": "ЦӀе хийцар",
+	"beyondsocial-action-protect": "Ларъяр",
+	"beyondsocial-action-undelete": "МеттахӀоттае",
+	"beyondsocial-action-unprotect": "Ларъяр хийцар",
+	"beyondsocial-view-create": "Кхоллар",
+	"beyondsocial-view-edit": "Нисъе",
+	"beyondsocial-view-history": "АгӀона хийцамаш",
+	"beyondsocial-view-view": "Éшар",
+	"beyondsocial-view-viewsource": "Билглонашка хьажа",
+	"beyondsocial-more-actions": "Кхин"
+}

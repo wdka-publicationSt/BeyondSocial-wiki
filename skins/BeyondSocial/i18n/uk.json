@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"AS",
+			"Ahonc",
+			"Base",
+			"Calak",
+			"Dim Grits",
+			"NickK",
+			"Prima klasy4na",
+			"Тест",
+			"Ата",
+			"Piramidion"
+		]
+	},
+	"skinname-beyondsocial": "Векторне",
+	"beyondsocial-skin-desc": "Сучасна версія MonoBook зі свіжим виглядом і багатьма зручними покращеннями",
+	"beyondsocial.css": "/* Розміщений тут CSS-код буде використаний в темі оформлення Векторне */",
+	"beyondsocial.js": "/* Розміщений тут код JavaScript буде завантажений для всіх користувачів, що використовують векторну тему оформлення */",
+	"beyondsocial-action-addsection": "Додати тему",
+	"beyondsocial-action-delete": "Вилучити",
+	"beyondsocial-action-move": "Перейменувати",
+	"beyondsocial-action-protect": "Захистити",
+	"beyondsocial-action-undelete": "Відновити",
+	"beyondsocial-action-unprotect": "Зміна захисту",
+	"beyondsocial-view-create": "Створити",
+	"beyondsocial-view-edit": "Редагувати",
+	"beyondsocial-view-history": "Переглянути історію",
+	"beyondsocial-view-view": "Читати",
+	"beyondsocial-view-viewsource": "Переглянути код",
+	"beyondsocial-more-actions": "Ще"
+}

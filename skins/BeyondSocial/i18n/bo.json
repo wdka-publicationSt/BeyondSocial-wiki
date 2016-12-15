@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Freeyak",
+			"Phurbutsering",
+			"ཁ་བཏགས་ནག་པོ"
+		]
+	},
+	"beyondsocial-action-addsection": "བརྗོད་གཞི་ཁ་སྣོན།",
+	"beyondsocial-action-delete": "སུབས།",
+	"beyondsocial-action-move": "སྤོར་བ།",
+	"beyondsocial-action-protect": "འགོག་སྲུང།",
+	"beyondsocial-action-undelete": "མི་བསུབས་",
+	"beyondsocial-action-unprotect": "སྲུང་སྐྱོབ་གློད་པ།",
+	"beyondsocial-view-create": "གསར་བཟོ།",
+	"beyondsocial-view-edit": "རྩོམ་སྒྲིག",
+	"beyondsocial-view-history": "ལོ་རྒྱུས་ལ་ལྟ་བ།",
+	"beyondsocial-view-view": "ཀློག་པ།",
+	"beyondsocial-view-viewsource": "ཁུངས་ལ་ལྟ་བ།",
+	"beyondsocial-more-actions": "དེ་ལས་མང་བ།"
+}

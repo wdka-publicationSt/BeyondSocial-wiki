@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Azim",
+			"Sergey Ivanov",
+			"Сай",
+			"Санюн Вадик"
+		]
+	},
+	"beyondsocial-action-addsection": "У ӱжашым тӱҥалаш",
+	"beyondsocial-action-delete": "Шӧраш",
+	"beyondsocial-action-move": "Лӱмым вашталташ",
+	"beyondsocial-action-protect": "Тӧрлатымаш деч аралаш",
+	"beyondsocial-action-undelete": "Шӧрымым пӧртылаш",
+	"beyondsocial-action-unprotect": "Оролым вашталташ",
+	"beyondsocial-view-create": "Ышташ",
+	"beyondsocial-view-edit": "Тӧрлаташ",
+	"beyondsocial-view-history": "Эртымгорным ончалаш",
+	"beyondsocial-view-view": "Лудаш",
+	"beyondsocial-view-viewsource": "Тӱҥалтыш текстым ончалаш"
+}

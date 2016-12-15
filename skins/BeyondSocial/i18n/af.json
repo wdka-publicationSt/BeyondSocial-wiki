@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Byeboer",
+			"Naudefj"
+		]
+	},
+	"beyondsocial-action-addsection": "Nuwe onderwerp",
+	"beyondsocial-action-delete": "Skrap",
+	"beyondsocial-action-move": "Skuif",
+	"beyondsocial-action-protect": "Beskerm",
+	"beyondsocial-action-undelete": "Ontskrap",
+	"beyondsocial-action-unprotect": "Wysig beskerming",
+	"beyondsocial-view-create": "Skep",
+	"beyondsocial-view-edit": "Wysig",
+	"beyondsocial-view-history": "Wys geskiedenis",
+	"beyondsocial-view-view": "Lees",
+	"beyondsocial-view-viewsource": "Wys bronteks",
+	"beyondsocial-more-actions": "Meer"
+}

@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arystanbek",
+			"Daniyar",
+			"GaiJin",
+			"Kaztrans"
+		]
+	},
+	"beyondsocial-action-addsection": "Тақырып қосу",
+	"beyondsocial-action-delete": "Жою",
+	"beyondsocial-action-move": "Атауын өзгерту",
+	"beyondsocial-action-protect": "Қорғау",
+	"beyondsocial-action-undelete": "Жоюды болдырмау",
+	"beyondsocial-action-unprotect": "Қорғанысын өзгерту",
+	"beyondsocial-view-create": "Бастау",
+	"beyondsocial-view-edit": "Өңдеу",
+	"beyondsocial-view-history": "Өңделу тарихы",
+	"beyondsocial-view-view": "Оқу",
+	"beyondsocial-view-viewsource": "Қайнарын қарау",
+	"beyondsocial-more-actions": "Тағы"
+}

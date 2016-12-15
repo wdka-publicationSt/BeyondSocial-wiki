@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"OC Ripper",
+			"Conquistador",
+			"Srdjan m"
+		]
+	},
+	"beyondsocial-action-addsection": "Dodaj temu",
+	"beyondsocial-action-delete": "Brisanje",
+	"beyondsocial-action-move": "Premjesti",
+	"beyondsocial-action-protect": "Zaštiti",
+	"beyondsocial-action-undelete": "Vrati obrisano",
+	"beyondsocial-action-unprotect": "Promijeni zaštitu",
+	"beyondsocial-view-create": "Napravi",
+	"beyondsocial-view-edit": "Uredi",
+	"beyondsocial-view-history": "Vidi historiju",
+	"beyondsocial-view-view": "Čitaj",
+	"beyondsocial-view-viewsource": "Vidi izvor (source)",
+	"beyondsocial-more-actions": "Više"
+}

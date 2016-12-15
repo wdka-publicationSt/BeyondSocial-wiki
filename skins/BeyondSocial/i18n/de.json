@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Metalhead64",
+			"The Evil IP address",
+			"Umherirrender"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Stellt eine modernisierte Benutzeroberfläche bereit",
+	"beyondsocial.css": "/* Das folgende CSS wird für Benutzer der BeyondSocial-Benutzeroberfläche geladen. */",
+	"beyondsocial.js": "/* Das folgende JavaScript wird für Benutzer der BeyondSocial-Benutzeroberfläche geladen. */",
+	"beyondsocial-action-addsection": "Abschnitt hinzufügen",
+	"beyondsocial-action-delete": "Löschen",
+	"beyondsocial-action-move": "Verschieben",
+	"beyondsocial-action-protect": "Schützen",
+	"beyondsocial-action-undelete": "Wiederherstellen",
+	"beyondsocial-action-unprotect": "Seitenschutz ändern",
+	"beyondsocial-view-create": "Erstellen",
+	"beyondsocial-view-edit": "Bearbeiten",
+	"beyondsocial-view-history": "Versionsgeschichte",
+	"beyondsocial-view-view": "Lesen",
+	"beyondsocial-view-viewsource": "Quelltext anzeigen",
+	"beyondsocial-more-actions": "Mehr"
+}

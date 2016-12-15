@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Akeron",
+			"Crochet.david",
+			"DavidL",
+			"Gomoko",
+			"Jean-Frédéric",
+			"Od1n"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "Version moderne de MonoBook avec un aspect rajeuni et beaucoup d’améliorations ergonomiques",
+	"beyondsocial.css": "/* Le CSS placé ici affectera les utilisateurs de l’habillage BeyondSocial. */",
+	"beyondsocial.js": "/* Tout code JavaScript placé ici sera chargé pour les utilisateurs de l’habillage BeyondSocial */",
+	"beyondsocial-action-addsection": "Ajouter un sujet",
+	"beyondsocial-action-delete": "Supprimer",
+	"beyondsocial-action-move": "Renommer",
+	"beyondsocial-action-protect": "Protéger",
+	"beyondsocial-action-undelete": "Rétablir",
+	"beyondsocial-action-unprotect": "Changer la protection",
+	"beyondsocial-view-create": "Créer",
+	"beyondsocial-view-edit": "Modifier",
+	"beyondsocial-view-history": "Historique",
+	"beyondsocial-view-view": "Lire",
+	"beyondsocial-view-viewsource": "Voir la source",
+	"beyondsocial-more-actions": "Plus"
+}

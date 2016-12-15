@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"skinname-beyondsocial": "Vektor",
+	"beyondsocial-skin-desc": "Moderní verze MonoBooku s novějším vzhledem a vylepšenou použitelností",
+	"beyondsocial.css": "/* Zde uvedené CSS bude ovlivňovat pouze styl „Vektor“ */",
+	"beyondsocial.js": "/* JavaScript pro uživatele používající vzhled „Vektor“ */",
+	"beyondsocial-action-addsection": "Přidat téma",
+	"beyondsocial-action-delete": "Smazat",
+	"beyondsocial-action-move": "Přesunout",
+	"beyondsocial-action-protect": "Zamknout",
+	"beyondsocial-action-undelete": "Obnovit",
+	"beyondsocial-action-unprotect": "Změnit zámek",
+	"beyondsocial-view-create": "Založit",
+	"beyondsocial-view-edit": "Editovat",
+	"beyondsocial-view-history": "Zobrazit historii",
+	"beyondsocial-view-view": "Číst",
+	"beyondsocial-view-viewsource": "Zobrazit zdrojový kód",
+	"beyondsocial-more-actions": "Další"
+}

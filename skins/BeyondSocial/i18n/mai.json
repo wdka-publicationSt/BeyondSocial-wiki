@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ggajendra",
+			"Umeshberma",
+			"Tulsi Bhagat",
+			"बिप्लब आनन्द"
+		]
+	},
+	"skinname-beyondsocial": "सदिश",
+	"beyondsocial-action-addsection": "विचार-बिन्दु जोड़ू",
+	"beyondsocial-action-delete": "मेटाउ",
+	"beyondsocial-action-move": "घसकाउ",
+	"beyondsocial-action-protect": "रक्षण करू",
+	"beyondsocial-action-undelete": "आपस लाउ",
+	"beyondsocial-action-unprotect": "सुरक्षा बदलू",
+	"beyondsocial-view-create": "बनाउ",
+	"beyondsocial-view-edit": "सम्पादन करी",
+	"beyondsocial-view-history": "इतिहास देखी",
+	"beyondsocial-view-view": "पढी",
+	"beyondsocial-view-viewsource": "जड़ि देखू",
+	"beyondsocial-more-actions": "आर"
+}

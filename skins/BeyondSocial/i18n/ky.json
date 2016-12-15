@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chorobek",
+			"Growingup",
+			"Ztimur",
+			"Викиней",
+			"Janatkg"
+		]
+	},
+	"beyondsocial-action-addsection": "Тема кошуу",
+	"beyondsocial-action-delete": "Өчүрүү",
+	"beyondsocial-action-move": "Аталышын өзгөртүү",
+	"beyondsocial-action-protect": "Коргоо",
+	"beyondsocial-action-undelete": "Калыбына келтирүү",
+	"beyondsocial-action-unprotect": "Коргоону өзгөртүү",
+	"beyondsocial-view-create": "Түзүү",
+	"beyondsocial-view-edit": "Оңдоо",
+	"beyondsocial-view-history": "Тарыхын кароо",
+	"beyondsocial-view-view": "Окуу",
+	"beyondsocial-view-viewsource": "Кайнарын кароо",
+	"beyondsocial-more-actions": "Кененирээк"
+}

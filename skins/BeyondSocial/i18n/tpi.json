@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Iketsi",
+			"Wantok"
+		]
+	},
+	"beyondsocial-action-delete": "Rausim",
+	"beyondsocial-action-move": "Surikim",
+	"beyondsocial-action-protect": "Tambuim",
+	"beyondsocial-view-create": "Kirapim",
+	"beyondsocial-view-edit": "Senisim",
+	"beyondsocial-view-history": "Ol senis",
+	"beyondsocial-view-view": "Rit",
+	"beyondsocial-view-viewsource": "Lukim as tok"
+}

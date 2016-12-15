@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"AZISS",
+			"Arystanbek",
+			"Gulmammad",
+			"Sortilegus",
+			"Vago",
+			"Vugar 1981",
+			"Wertuose"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial.css": "/* Burada yerləşən CSS BeyondSocial istifadəçilərinə tətbiq olunur */",
+	"beyondsocial.js": "/* Burada BeyondSocial skin istifadəçiləri üçün istənilən JavaScript yüklənəcək */",
+	"beyondsocial-action-addsection": "Mövzu əlavə et",
+	"beyondsocial-action-delete": "Sil",
+	"beyondsocial-action-move": "Adını dəyişdir",
+	"beyondsocial-action-protect": "Mühafizə et",
+	"beyondsocial-action-undelete": "Bərpa et",
+	"beyondsocial-action-unprotect": "Mühafizəni kənarlaşdır",
+	"beyondsocial-view-create": "Yarat",
+	"beyondsocial-view-edit": "Redaktə",
+	"beyondsocial-view-history": "Tarixçəyə bax",
+	"beyondsocial-view-view": "Oxu",
+	"beyondsocial-view-viewsource": "Mənbəyə bax",
+	"beyondsocial-more-actions": "Daha"
+}

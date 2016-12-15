@@ -1,0 +1,222 @@
+/*
+ * Any rules which should not be flipped automatically in right-to-left situations should be
+ * prepended with @noflip in a comment block.
+ *
+ * This stylesheet employs a few CSS trick to accomplish compatibility with a wide range of web
+ * browsers. The most common trick is to use some styles in IE6 only. This is accomplished by using
+ * a rule that makes things work in IE6, and then following it with a rule that begins with
+ * "html > body" or use a child selector ">", which is ignored by IE6 because it does not support
+ * the child selector. You can spot this by looking for the "OVERRIDDEN BY COMPLIANT BROWSERS" and
+ * "IGNORED BY IE6" comments.
+ */
+@import "mediawiki.mixins";
+/*https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS*/
+/*see: mediawiki/resources/src/mediawiki.less*/
+
+/* Framework */
+html {
+	font-size: @html-font-size;
+}
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: @content-font-family;
+}
+body {
+	background-color: @body-background-color;
+}
+
+/* Content */
+.mw-body {
+	margin-left: 10em;
+	padding: @content-padding;
+	/* Border on top, left, and bottom side */
+	border: 0px;
+	/* Merge the border with tabs' one (in their background image) */
+	margin-top: 0px;
+	color: @content-font-color;
+	direction: ltr;
+
+	.mw-editsection,
+	.mw-editsection-like {
+		font-family: @content-font-family;
+	}
+
+	p {
+		line-height: inherit;
+		margin: 0.5em 0;
+	}
+
+	h1,
+	h2 {
+		font-family: @content-heading-font-family;
+		line-height: @heading-line-height;
+		margin-bottom: 0.25em;
+		padding: 0;
+
+		/* Fallback heading font for scripts which render poorly in @content-heading-font-family. */
+		/* See T73240 */
+		&:lang( ja ), /* See T65817 */
+		&:lang( he ), /* See T65843 and T65844 */
+		&:lang( ko ) { /* See T65827 */
+			font-family: @content-heading-font-family-generic;
+		}
+	}
+
+	h1 {
+		font-size: @content-heading-font-size;
+	}
+	.mw-body-content {
+		h1 {
+			margin-top: 1em;
+		}
+	}
+
+	h2 {
+		font-size: 1.5em;
+		margin-top: 1em;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: @content-line-height;
+		margin-top: 0.3em;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	h3,
+	h4 {
+		font-weight: bold;
+	}
+
+	h4,
+	h5,
+	h6 {
+		font-size: 100%; /* (reset) */
+	}
+
+	#toc h2,
+	.toc h2 {
+		font-size: 100%; /* (reset) */
+		font-family: @content-font-family;
+	}
+
+	.firstHeading {
+		/* Change the default from mediawiki.skinning CSS to let indicators float into heading area */
+		overflow: visible;
+	}
+
+	.mw-indicators {
+		float: right;
+		line-height: @content-line-height;
+		font-size: @content-font-size;
+		/* Ensure that this is displayed on top of .mw-body-content and clickable */
+		position: relative;
+		z-index: 1;
+	}
+
+	.mw-indicator {
+		display: inline-block;
+		zoom: 1;
+		*display: inline;
+	}
+}
+
+/* Hide empty portlets */
+div.emptyPortlet {
+	display: none;
+}
+
+ul {
+	list-style-type: disc;
+	.list-style-image-svg('images/bullet-icon.svg', 'images/bullet-icon.png');
+}
+
+pre,
+.mw-code {
+	line-height: 1.3em;
+}
+
+/* Site Notice (includes notices from CentralNotice extension) */
+#siteNotice {
+	font-size: 0.8em;
+}
+
+.redirectText {
+	font-size: 140%;
+}
+
+.redirectMsg p {
+	margin: 0;
+}
+
+.mw-body-content {
+	position: relative;
+	line-height: @content-line-height;
+	font-size: @content-font-size;
+	z-index: 0;
+}
+
+/*********************************************/
+/* Beyond Social specific overwritten styles */
+/*********************************************/
+#bs-title{
+	font-family: @bsfontBlack;
+	position: absolute;
+	font-weight: bold;
+	font-size: 4.5em;
+	color:@bscolorMain;
+	top:10px;
+	left:10px;
+}
+.firstHeading {
+	border-bottom:0px;
+	color: @bscolorMain;
+}
+
+/* main text area's */
+.mw-content-text{
+	font-size: @content-font-size;
+	letter-spacing:-0.002em;
+}
+.mw-headline{
+	color: @bscolorMain;
+}
+
+/* smaller font size */
+.mw-specialpage-summary, 									/* recent changes */
+.mw-newarticletext, .plainlinks, 							/* new empty pages */
+.editOptions, .editButtons,									/* edit pages */
+{
+	font-size: @content-font-size-sm;
+	line-height: @content-line-height-sm;		
+	letter-spacing:-0.002em;
+}
+
+/* bigger line height for lists and special pages */
+.mw-helplink,  												/* help button */
+.rcoptions, .mw-changeslist,	 							/* recent changes */
+form#search, .mw-search-createlink,							/* search results page */
+{
+	font-size: @content-font-size-sm;
+	line-height: @content-line-height-special;		
+}
+
+table.wikitable > tr > th, table.wikitable > tr > td, table.wikitable > * > tr > th, table.wikitable > * > tr > td {
+	border:2px solid black;
+}
+.mw-body a, .mw-body a:active, .mw-body a.external:active, .mw-body a.external{
+	color:@menu-link-color;
+}
+.mw-body a:visited, .mw-body a.external:visited{
+	color:@menu-main-body-link-visited-color;
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Paul Beppler",
+			"Midnight Gambler"
+		]
+	},
+	"beyondsocial-action-addsection": "Abschnitt hinzufüche",
+	"beyondsocial-action-delete": "Lösche",
+	"beyondsocial-action-move": "Verschiebe",
+	"beyondsocial-action-protect": "Schütz",
+	"beyondsocial-action-undelete": "Wiederherstelle",
+	"beyondsocial-action-unprotect": "Seiteschutz ännre",
+	"beyondsocial-view-create": "Erstell",
+	"beyondsocial-view-edit": "Beoorbeite",
+	"beyondsocial-view-history": "Versionsgeschicht",
+	"beyondsocial-view-view": "Lese",
+	"beyondsocial-view-viewsource": "Quelltext oonzeiche",
+	"beyondsocial-more-actions": "Meahr"
+}

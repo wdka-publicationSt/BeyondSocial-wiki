@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Usingha"
+		]
+	},
+	"beyondsocial-action-addsection": "বিষয় তিলকর",
+	"beyondsocial-action-delete": "পুসে বেলা",
+	"beyondsocial-action-move": "থেইকর",
+	"beyondsocial-action-protect": "লুকর",
+	"beyondsocial-action-undelete": "নাপুসি",
+	"beyondsocial-action-unprotect": "লুকরানিহান সিলকর",
+	"beyondsocial-view-create": "হঙকরিক",
+	"beyondsocial-view-edit": "পতানি",
+	"beyondsocial-view-history": "ইতিহাস চেইক",
+	"beyondsocial-view-view": "পাকরিক",
+	"beyondsocial-view-viewsource": "সোর্স চেইক"
+}

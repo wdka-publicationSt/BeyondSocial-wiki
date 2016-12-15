@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kizito"
+		]
+	},
+	"beyondsocial-action-addsection": "Tandikawo emboozi endala",
+	"beyondsocial-action-delete": "Gyawo olupapula luno",
+	"beyondsocial-action-move": "Simbuliza",
+	"beyondsocial-action-protect": "Ssiba",
+	"beyondsocial-action-undelete": "Zawo",
+	"beyondsocial-action-unprotect": "Kyusa ebikugizo",
+	"beyondsocial-view-create": "Lukolewo",
+	"beyondsocial-view-edit": "Kyusa",
+	"beyondsocial-view-history": "Ennanda ya fayiro eno",
+	"beyondsocial-view-view": "Soma",
+	"beyondsocial-view-viewsource": "Kebera obulambike obw'ennono obw'olupapula luno"
+}

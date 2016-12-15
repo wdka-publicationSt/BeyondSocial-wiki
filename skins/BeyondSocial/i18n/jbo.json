@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gleki"
+		]
+	},
+	"skinname-beyondsocial": "la vektor",
+	"beyondsocial-skin-desc": "cabna versiio la monobuk i vifne tarmi i so'i da nu xamgu zenba",
+	"beyondsocial-action-addsection": "jmina lo se casnu pagbu",
+	"beyondsocial-action-delete": "vimcu",
+	"beyondsocial-action-move": "stika lo cmene",
+	"beyondsocial-action-protect": "co'a bandu",
+	"beyondsocial-action-undelete": "ca'o nai vimcu",
+	"beyondsocial-action-unprotect": "co'u bandu",
+	"beyondsocial-view-create": "zbasu",
+	"beyondsocial-view-edit": "stika",
+	"beyondsocial-view-history": "citri lo papri",
+	"beyondsocial-view-view": "tcidu",
+	"beyondsocial-view-viewsource": "cpacu lo krasi",
+	"beyondsocial-more-actions": "ji'a"
+}

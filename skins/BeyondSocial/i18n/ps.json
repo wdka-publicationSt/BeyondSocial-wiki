@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"skinname-beyondsocial": "وېکټور",
+	"beyondsocial.css": "/* د CSS هره بڼه چې دلته ځای پر ځای کېږي هغه به د وېکټور د پوښ ټولو کارنانو لپاره کار کوي */",
+	"beyondsocial.js": "/* د جاوا هر يو سکرېپټ چې دلته ځای پر ځای کېږي هغه به د وېکټور د پوښ ټولو کارنانو لپاره کار کوي */",
+	"beyondsocial-action-addsection": "سرليک ورگډول",
+	"beyondsocial-action-delete": "ړنگول",
+	"beyondsocial-action-move": "لېږدول",
+	"beyondsocial-action-protect": "ژغورل",
+	"beyondsocial-action-undelete": "ناړنگول",
+	"beyondsocial-action-unprotect": "ژغورنه بدلول",
+	"beyondsocial-view-create": "جوړول",
+	"beyondsocial-view-edit": "سمول",
+	"beyondsocial-view-history": "پېښليک کتل",
+	"beyondsocial-view-view": "لوستل",
+	"beyondsocial-view-viewsource": "سرچينه کتل",
+	"beyondsocial-more-actions": "نور"
+}

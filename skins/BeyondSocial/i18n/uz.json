@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abdulla",
+			"Arystanbek",
+			"Casual",
+			"CoderSI",
+			"Sociologist",
+			"Nataev"
+		]
+	},
+	"skinname-beyondsocial": "Vektor",
+	"beyondsocial-action-addsection": "Mavzu qoʻshish",
+	"beyondsocial-action-delete": "O‘chirish",
+	"beyondsocial-action-move": "Ko‘chirish",
+	"beyondsocial-action-protect": "Himoyalash",
+	"beyondsocial-action-undelete": "Tiklash",
+	"beyondsocial-action-unprotect": "Himoyani oʻzgartirish",
+	"beyondsocial-view-create": "Yaratish",
+	"beyondsocial-view-edit": "Tahrirlash",
+	"beyondsocial-view-history": "Tarix",
+	"beyondsocial-view-view": "Mutolaa",
+	"beyondsocial-view-viewsource": "Manbasini koʻrish",
+	"beyondsocial-more-actions": "Yana"
+}

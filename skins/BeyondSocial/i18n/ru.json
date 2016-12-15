@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ignatus",
+			"JenVan",
+			"Kaganer",
+			"Nemo bis",
+			"Okras",
+			"Александр Сигачёв"
+		]
+	},
+	"skinname-beyondsocial": "Векторное",
+	"beyondsocial-skin-desc": "Современная версия MonoBook с обновлённым оформлением и многими улучшениями в юзабилити",
+	"beyondsocial.css": "/* Размещённый здесь CSS будет применяться к векторной теме оформления  */",
+	"beyondsocial.js": "/* Размещённый здесь код JavaScript будет загружаться пользователям, использующим тему оформления BeyondSocial */",
+	"beyondsocial-action-addsection": "Добавить тему",
+	"beyondsocial-action-delete": "Удалить",
+	"beyondsocial-action-move": "Переименовать",
+	"beyondsocial-action-protect": "Защитить",
+	"beyondsocial-action-undelete": "Восстановить",
+	"beyondsocial-action-unprotect": "Изменить защиту",
+	"beyondsocial-view-create": "Создать",
+	"beyondsocial-view-edit": "Править",
+	"beyondsocial-view-history": "История",
+	"beyondsocial-view-view": "Читать",
+	"beyondsocial-view-viewsource": "Просмотр разметки",
+	"beyondsocial-more-actions": "Ещё"
+}

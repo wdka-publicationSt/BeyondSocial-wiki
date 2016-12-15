@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"KuboF",
+			"Objectivesea",
+			"Yekrats"
+		]
+	},
+	"skinname-beyondsocial": "Vektoro",
+	"beyondsocial.css": "/* La jena CSS influos la paĝaspekton por uzantoj de la Vektora temo. */",
+	"beyondsocial.js": "/* La jena Ĝavaskripto ŝargiĝos por uzantoj de la Vektora temo. */",
+	"beyondsocial-action-addsection": "Aldoni temon",
+	"beyondsocial-action-delete": "Forigi",
+	"beyondsocial-action-move": "Alinomi",
+	"beyondsocial-action-protect": "Protekti",
+	"beyondsocial-action-undelete": "Malforigi",
+	"beyondsocial-action-unprotect": "Ŝanĝi protektadon",
+	"beyondsocial-view-create": "Krei",
+	"beyondsocial-view-edit": "Redakti",
+	"beyondsocial-view-history": "Vidi historion",
+	"beyondsocial-view-view": "Legi",
+	"beyondsocial-view-viewsource": "Vidi fonton",
+	"beyondsocial-more-actions": "Pli"
+}

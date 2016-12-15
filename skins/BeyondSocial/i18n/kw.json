@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kernoweger",
+			"Kw-Moon",
+			"Nrowe"
+		]
+	},
+	"beyondsocial-action-addsection": "Keworra testen",
+	"beyondsocial-action-delete": "Dilea",
+	"beyondsocial-action-move": "Gwaya",
+	"beyondsocial-action-protect": "Difres",
+	"beyondsocial-action-undelete": "Disdhilea",
+	"beyondsocial-action-unprotect": "Chanjya difresans",
+	"beyondsocial-view-create": "Gwruthyl",
+	"beyondsocial-view-edit": "Chanjya",
+	"beyondsocial-view-history": "Gweles an istori",
+	"beyondsocial-view-view": "Redya",
+	"beyondsocial-view-viewsource": "Gweles an bennfenten",
+	"beyondsocial-more-actions": "Moy"
+}

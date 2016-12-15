@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ktchankt",
+			"Waihorace",
+			"Yueman"
+		]
+	},
+	"skinname-beyondsocial": "BeyondSocial",
+	"beyondsocial-skin-desc": "MonoBook嘅摩登版，有新嘅樣，又有好多功能改進",
+	"beyondsocial.css": "/* 響呢度放 CSS 碼去改用戶用嘅域達畫面 */",
+	"beyondsocial.js": "/* 響每一次個頁面載入時，用域達畫面嘅用戶都會載入呢度任何嘅JavaScript */",
+	"beyondsocial-action-addsection": "加主題",
+	"beyondsocial-action-delete": "剷走",
+	"beyondsocial-action-move": "搬",
+	"beyondsocial-action-protect": "保護",
+	"beyondsocial-action-undelete": "取消剷走",
+	"beyondsocial-action-unprotect": "改保護",
+	"beyondsocial-view-create": "開",
+	"beyondsocial-view-edit": "改",
+	"beyondsocial-view-history": "睇吓歷史",
+	"beyondsocial-view-view": "閱",
+	"beyondsocial-view-viewsource": "睇吓原始碼",
+	"beyondsocial-more-actions": "更多"
+}
