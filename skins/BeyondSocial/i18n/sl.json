@@ -3,15 +3,16 @@
 		"authors": [
 			"Dbc334",
 			"Smihael",
-			"Yerpo"
+			"Yerpo",
+			"Janezdrilc"
 		]
 	},
 	"beyondsocial-skin-desc": "Sodobna različica MonoBook s svežim videzom in mnogimi izboljšavami uporabnosti",
 	"beyondsocial-action-addsection": "Dodaj temo",
 	"beyondsocial-action-delete": "Izbriši",
-	"beyondsocial-action-move": "Prestavi",
+	"beyondsocial-action-move": "Preimenuj",
 	"beyondsocial-action-protect": "Zaščiti",
-	"beyondsocial-action-undelete": "Vrni",
+	"beyondsocial-action-undelete": "Obnovi",
 	"beyondsocial-action-unprotect": "Spremeni zaščito",
 	"beyondsocial-view-create": "Ustvari",
 	"beyondsocial-view-edit": "Uredi",

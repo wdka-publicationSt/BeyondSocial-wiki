@@ -10,8 +10,6 @@
  * "IGNORED BY IE6" comments.
  */
 @import "mediawiki.mixins";
-/*https://www.mediawiki.org/wiki/Manual:Coding_conventions/CSS*/
-/*see: mediawiki/resources/src/mediawiki.less*/
 
 /* Framework */
 html {
@@ -30,12 +28,14 @@ body {
 
 /* Content */
 .mw-body {
-	margin-left: 10em;
+	width: ~"calc(100% - 250px)";
+	margin-left: 0em;
 	padding: @content-padding;
 	/* Border on top, left, and bottom side */
-	border: 0px;
+	border: 0;
 	/* Merge the border with tabs' one (in their background image) */
 	margin-top: 0px;
+	background-color: @body-background-color;
 	color: @content-font-color;
 	direction: ltr;
 
@@ -51,7 +51,7 @@ body {
 
 	h1,
 	h2 {
-		font-family: @content-heading-font-family;
+		font-family: @bsfontBlack;
 		line-height: @heading-line-height;
 		margin-bottom: 0.25em;
 		padding: 0;
@@ -61,7 +61,7 @@ body {
 		&:lang( ja ), /* See T65817 */
 		&:lang( he ), /* See T65843 and T65844 */
 		&:lang( ko ) { /* See T65827 */
-			font-family: @content-heading-font-family-generic;
+			font-family: @bsfontBlack;
 		}
 	}
 
@@ -138,6 +138,7 @@ div.emptyPortlet {
 
 ul {
 	list-style-type: disc;
+	/* ! this can still be adjusted for BS*/
 	.list-style-image-svg('images/bullet-icon.svg', 'images/bullet-icon.png');
 }
 
@@ -166,6 +167,7 @@ pre,
 	z-index: 0;
 }
 
+
 /*********************************************/
 /* Beyond Social specific overwritten styles */
 /*********************************************/
@@ -178,79 +180,47 @@ pre,
 	top:10px;
 	right:10px;
 }
-.firstHeading {
-	display: none;
+
+.mw-body h1.firstHeading {
+	position: absolute;
+	top:0px;
+	left:10px;
 	border-bottom:0px;
+	margin:0;
+	padding:0;
+	font-family: @bsfontBlack;
+	font-size: @menu-navigation-font-size;
 	color: @bscolorMain;
 }
 
-/* main body */
-.mw-body#content,{
-	margin-top: 280px;
-	margin-left: 10px;
-	width: 85%;
-}
-#mw-navigation{
-	width: 85%;
-}
 
-/* Main Page */
-#mp-container{
-	position: relative;
-	columns:150px auto;
-}
-.mp-column{
-	position: relative;
-	/*display: block;*/
-	/*width: 200px;*/
-	/*vertical-align: top;*/
-	font-size: @content-font-size-sm;
-}
-	.mp-column h2{
-		font-size: 20px;
-		padding:5px 0px;
-		margin:10px 0px;
-		border-bottom: 5px solid @bscolorSecond;
-	}
-	.mp-column .mw-changeslist{
-		font-size: 16px;
-	}
 
-/* main text area's */
-.mw-content-text{
-	font-size: @content-font-size;
-	letter-spacing:-0.002em;
-	left:0px;
-}
-.mw-headline{
-	color: @bscolorMain;
-}
 
-/* smaller font size */
-.mw-specialpage-summary, 									/* recent changes */
-.mw-newarticletext, .plainlinks, 							/* new empty pages */
-.editOptions, .editButtons,									/* edit pages */
-{
-	font-size: @content-font-size-sm;
-	line-height: @content-line-height-sm;		
-	letter-spacing:-0.002em;
-}
 
-/* bigger line height for lists and special pages */
-.mw-helplink,  												/* help button */
-.rcoptions, .mw-changeslist,	 							/* recent changes */
-form#search, .mw-search-createlink,							/* search results page */
-{
-	font-size: @content-font-size-sm;
-	line-height: @content-line-height-special;		
-}
 
-table.wikitable > tr > th, table.wikitable > tr > td, table.wikitable > * > tr > th, table.wikitable > * > tr > td {
-	border:2px solid black;
-}
-.mw-body a, .mw-body a:active, .mw-body a.external:active, .mw-body a.external{
-	color:@menu-link-color;
-}
-.mw-body a:visited, .mw-body a.external:visited{
-	color:@menu-main-body-link-visited-color;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

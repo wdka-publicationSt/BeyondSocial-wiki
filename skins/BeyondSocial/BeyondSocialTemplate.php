@@ -1,7 +1,7 @@
 <?php
 /**
- * BeyondSocial (Beyond Social) is based on "Vector - Modern version of MonoBook with fresh look and many usability
- * improvements".
+ * BeyondSocial - Modern version of MonoBook with fresh look and many usability
+ * improvements.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -96,6 +96,46 @@ class BeyondSocialTemplate extends BaseTemplate {
 		?>
 		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
+
+		<!-- *************************************** -->
+		<!-- ** order of nav & content is swapped ** -->
+		<!-- *************************************** -->
+		<div id="mw-navigation">
+		
+			<!-- *************************************** -->
+			<!-- *** Beyond Social Title added       *** -->
+			<!-- *************************************** -->
+			<a href="/index.php"><div id="bs-title">Beyond Social</div></a>
+
+			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
+
+			<div id="mw-head">
+				<?php $this->renderNavigation( 'PERSONAL' ); ?>
+				<div id="left-navigation">
+					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
+				</div>
+				<div id="right-navigation">
+
+					<!-- *************************************** -->
+					<!-- *** 'SEARCH' removed here           *** -->
+					<!-- *************************************** -->
+					<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
+				</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="<?php
+					echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
+					?>" <?php
+					echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
+					?>></a></div>
+
+				<!-- *************************************** -->
+				<!-- *** 'SEARCH' added here             *** -->
+				<!-- *************************************** -->
+				<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
+				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+			</div>
+		</div>
 		<div id="content" class="mw-body" role="main">
 			<a id="top"></a>
 
@@ -174,30 +214,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 				<?php $this->html( 'debughtml' ); ?>
 			</div>
 		</div>
-		<div id="mw-navigation">
-			<a href="/index.php"><div id="bs-title">Beyond Social</div></a>
-			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
-
-			<div id="mw-head">
-				<?php $this->renderNavigation( 'PERSONAL' ); ?>
-				<div id="left-navigation">
-					<?php $this->renderNavigation( [ 'NAMESPACES'  ] ); ?>
-					<?php $this->renderNavigation( [ 'VARIANTS', 'VIEWS', 'ACTIONS' ] ); ?>
-				</div>
-				<div id="right-navigation">
-				</div>
-			</div>
-			<div id="mw-panel">
-				<!-- <div id="p-logo" role="banner"><a class="mw-wiki-logo" href="<?php
-					echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
-					?>" <?php
-					echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
-					?>></a></div> -->
-				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-				<div id="bs-search"><?php $this->renderNavigation( [ 'SEARCH' ] ); ?></div>
-
-			</div>
-		</div>
+		
 		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
 			<?php
 			foreach ( $this->getFooterLinks() as $category => $links ) {
@@ -355,7 +372,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 			switch ( $element ) {
 				case 'NAMESPACES':
 					?>
-					<div id="p-namespaces" role="navigation" class="vectorTabs<?php
+					<div id="p-namespaces" role="navigation" class="beyondsocialTabs<?php
 					if ( count( $this->data['namespace_urls'] ) == 0 ) {
 						echo ' emptyPortlet';
 					}
@@ -384,7 +401,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 					break;
 				case 'VARIANTS':
 					?>
-					<div id="p-variants" role="navigation" class="vectorMenu<?php
+					<div id="p-variants" role="navigation" class="beyondsocialMenu<?php
 					if ( count( $this->data['variant_urls'] ) == 0 ) {
 						echo ' emptyPortlet';
 					}
@@ -429,7 +446,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 					break;
 				case 'VIEWS':
 					?>
-					<div id="p-views" role="navigation" class="vectorTabs<?php
+					<div id="p-views" role="navigation" class="beyondsocialTabs<?php
 					if ( count( $this->data['view_urls'] ) == 0 ) {
 						echo ' emptyPortlet';
 					}
@@ -463,30 +480,38 @@ class BeyondSocialTemplate extends BaseTemplate {
 					break;
 				case 'ACTIONS':
 					?>
-					<div id="p-cactions" role="navigation" class="vectorMenu<?php
+					<div id="p-cactions" role="navigation" class="beyondsocialMenu<?php
 					if ( count( $this->data['action_urls'] ) == 0 ) {
 						echo ' emptyPortlet';
 					}
 					?>" aria-labelledby="p-cactions-label">
-						<h3 id="p-cactions-label"><span><?php
-							$this->msg( 'bs-more-actions' )
-						?></span><a href="#"></a></h3>
+
+
+						<!-- *************************************** -->
+						<!-- *** h3#p-cactions-label is not used *** -->
+						<!-- *************************************** -->
+						<h3 id="p-cactions-label"><span>
+						<?php
+							// $this->msg( 'beyondsocial-more-actions' )
+						?>
+						</span><a href="#"></a></h3>
 
 						<div class="menu">
 							<ul<?php $this->html( 'userlangattributes' ) ?>>
 								<?php
 								foreach ( $this->data['action_urls'] as $link ) {
 									?>
-									<li
-										<?php 
-											// echo $link['attributes'] commanded out for BS
-										?>
-									>
-										<span><a href="<?php
-										echo htmlspecialchars( $link['href'] )
-										?>" <?php
-										echo $link['key'] ?>><?php echo htmlspecialchars( $link['text'] )
-											?></a></span>
+									<li<?php echo $link['attributes'] ?>>
+										<!-- *************************************** -->
+										<!-- *** span element added here         *** -->
+										<!-- *************************************** -->
+										<span>
+											<a href="<?php
+											echo htmlspecialchars( $link['href'] )
+											?>" <?php
+											echo $link['key'] ?>><?php echo htmlspecialchars( $link['text'] )
+												?></a>
+										</span>
 									</li>
 								<?php
 								}

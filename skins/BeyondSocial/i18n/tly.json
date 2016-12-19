@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Гусейн"
+			"Гусейн",
+			"Ganbarzada"
 		]
 	},
 	"beyondsocial-action-addsection": "Мывзу зијод кардеј",
@@ -14,5 +15,6 @@
 	"beyondsocial-view-edit": "Сәрост кардеј",
 	"beyondsocial-view-history": "Тарых",
 	"beyondsocial-view-view": "Һандемон",
-	"beyondsocial-view-viewsource": "Дијә кардеј"
+	"beyondsocial-view-viewsource": "Дијә кардеј",
+	"beyondsocial-more-actions": "həniyən"
 }

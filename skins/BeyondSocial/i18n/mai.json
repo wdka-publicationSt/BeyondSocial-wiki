@@ -8,16 +8,16 @@
 		]
 	},
 	"skinname-beyondsocial": "सदिश",
-	"beyondsocial-action-addsection": "विचार-बिन्दु जोड़ू",
-	"beyondsocial-action-delete": "मेटाउ",
-	"beyondsocial-action-move": "घसकाउ",
+	"beyondsocial-action-addsection": "विचार-बिन्दु जोडी",
+	"beyondsocial-action-delete": "मेटाबी",
+	"beyondsocial-action-move": "स्थानान्तरण करी",
 	"beyondsocial-action-protect": "रक्षण करू",
 	"beyondsocial-action-undelete": "आपस लाउ",
 	"beyondsocial-action-unprotect": "सुरक्षा बदलू",
-	"beyondsocial-view-create": "बनाउ",
+	"beyondsocial-view-create": "बनाबी",
 	"beyondsocial-view-edit": "सम्पादन करी",
 	"beyondsocial-view-history": "इतिहास देखी",
 	"beyondsocial-view-view": "पढी",
-	"beyondsocial-view-viewsource": "जड़ि देखू",
+	"beyondsocial-view-viewsource": "स्रोत देखी",
 	"beyondsocial-more-actions": "आर"
 }

@@ -2,20 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"Asoxor",
-			"Calak"
+			"Calak",
+			"Sarchia"
 		]
 	},
 	"skinname-beyondsocial": "ڤێکتۆر",
 	"beyondsocial-action-addsection": "بابەت دابنێ",
-	"beyondsocial-action-delete": "بیسڕەوە",
-	"beyondsocial-action-move": "بیگوازەوە",
-	"beyondsocial-action-protect": "بیپارێزە",
+	"beyondsocial-action-delete": "سڕینەوە",
+	"beyondsocial-action-move": "گواستنەوە",
+	"beyondsocial-action-protect": "پاراستن",
 	"beyondsocial-action-undelete": "سڕینەوە بگەڕێنەوە",
 	"beyondsocial-action-unprotect": "پاراستن بگۆڕە",
 	"beyondsocial-view-create": "دروستکردن",
-	"beyondsocial-view-edit": "دەستکاریی بکە",
-	"beyondsocial-view-history": "مێژووەکەی ببینە",
-	"beyondsocial-view-view": "بیخوێنەوە",
+	"beyondsocial-view-edit": "دەستکاری",
+	"beyondsocial-view-history": "مێژوو",
+	"beyondsocial-view-view": "خوێندنەوە",
 	"beyondsocial-view-viewsource": "سەرچاوەکەی ببینە",
 	"beyondsocial-more-actions": "زیاتر"
 }

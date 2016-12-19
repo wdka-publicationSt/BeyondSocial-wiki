@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Botuzhaleny-sodamo"
+			"Botuzhaleny-sodamo",
+			"Rueter"
 		]
 	},
 	"beyondsocial-action-addsection": "Поладомс мезде кортамс",
@@ -14,5 +15,6 @@
 	"beyondsocial-view-edit": "Витнемс-петнемс",
 	"beyondsocial-view-history": "Ваномс юронзо-путовксонзо",
 	"beyondsocial-view-view": "Ловномс",
-	"beyondsocial-view-viewsource": "Ваномс косто саезь"
+	"beyondsocial-view-viewsource": "Ваномс косто саезь",
+	"beyondsocial-more-actions": "Седе ламо"
 }

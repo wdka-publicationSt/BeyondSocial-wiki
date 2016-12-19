@@ -5,21 +5,25 @@
 			"Calak",
 			"Erdemaslancan",
 			"Mirzali",
-			"Gorizon"
+			"Gorizon",
+			"Kumkumuk",
+			"Gırd",
+			"Velg",
+			"1917 Ekim Devrimi"
 		]
 	},
 	"skinname-beyondsocial": "Vektor",
 	"beyondsocial-skin-desc": "Asayışo de newe be versiyonê MonoBookiyo modern ra û weşkerdışê ke şenê bıgureniyê",
 	"beyondsocial-action-addsection": "Mewzu vıraze",
-	"beyondsocial-action-delete": "Bestere",
-	"beyondsocial-action-move": "Bere",
-	"beyondsocial-action-protect": "Bışevekne",
-	"beyondsocial-action-undelete": "Esterıtışi peyser bıgê",
-	"beyondsocial-action-unprotect": "Starkerdışi bıvurne",
-	"beyondsocial-view-create": "Vıraze",
-	"beyondsocial-view-edit": "Bıvurne",
-	"beyondsocial-view-history": "Tarixê pele bıvêne",
+	"beyondsocial-action-delete": "Besterne",
+	"beyondsocial-action-move": "Bıkırışê",
+	"beyondsocial-action-protect": "Bısıtarne",
+	"beyondsocial-action-undelete": "Peyser biya",
+	"beyondsocial-action-unprotect": "Sıtarnayışi bıvurne",
+	"beyondsocial-view-create": "Bıvıraze",
+	"beyondsocial-view-edit": "Bıvurnê",
+	"beyondsocial-view-history": "Tariği bımucne",
 	"beyondsocial-view-view": "Bıwane",
-	"beyondsocial-view-viewsource": "Çımey bıvêne",
-	"beyondsocial-more-actions": "Zêde"
+	"beyondsocial-view-viewsource": "Çimey bımucne",
+	"beyondsocial-more-actions": "Tayêna"
 }

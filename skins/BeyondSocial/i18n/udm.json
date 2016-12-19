@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Andrewboltachev"
+			"Andrewboltachev",
+			"Kaganer"
 		]
 	},
 	"beyondsocial-action-addsection": "Выль темаез ватсано",
@@ -12,5 +13,6 @@
 	"beyondsocial-view-edit": "Тупатоно",
 	"beyondsocial-view-history": "История",
 	"beyondsocial-view-view": "Лыдӟоно",
-	"beyondsocial-view-viewsource": "Кодзэ учкыны"
+	"beyondsocial-view-viewsource": "Кодзэ учкыны",
+	"beyondsocial-more-actions": "Эшшо"
 }

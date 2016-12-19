@@ -2,18 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"Anson2812",
-			"Jetlag"
+			"Jetlag",
+			"Hakka",
+			"唐吉訶德的侍從"
 		]
 	},
-	"beyondsocial-action-addsection": "加入話題",
-	"beyondsocial-action-delete": "刪除",
-	"beyondsocial-action-move": "移動",
-	"beyondsocial-action-protect": "保護",
+	"beyondsocial-action-addsection": "Kâ-ngi̍p fa-thì",
+	"beyondsocial-action-delete": "San-chhù",
+	"beyondsocial-action-move": "Yì-thûng",
+	"beyondsocial-action-protect": "Pó-fu",
 	"beyondsocial-action-undelete": "恢復",
 	"beyondsocial-action-unprotect": "更改保護",
-	"beyondsocial-view-create": "建立",
-	"beyondsocial-view-edit": "編寫",
-	"beyondsocial-view-history": "查看歷史",
-	"beyondsocial-view-view": "閱讀",
-	"beyondsocial-view-viewsource": "查看源碼"
+	"beyondsocial-view-create": "Kien-li̍p",
+	"beyondsocial-view-edit": "Phiên-siá",
+	"beyondsocial-view-history": "Khon li̍t-sṳ́",
+	"beyondsocial-view-view": "Thu̍k",
+	"beyondsocial-view-viewsource": "Khon ngièn-sṳ́-mâ",
+	"beyondsocial-more-actions": "Kiên-tô"
 }

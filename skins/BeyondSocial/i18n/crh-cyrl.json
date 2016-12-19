@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Don Alessandro"
+			"Don Alessandro",
+			"Danvintius Bookix"
 		]
 	},
 	"beyondsocial-action-addsection": "Мевзу къош",
@@ -14,5 +15,6 @@
 	"beyondsocial-view-edit": "Денъиштир",
 	"beyondsocial-view-history": "Кечмишини косьтер",
 	"beyondsocial-view-view": "Окъу",
-	"beyondsocial-view-viewsource": "Менба кодуны косьтер"
+	"beyondsocial-view-viewsource": "Менба кодуны косьтер",
+	"beyondsocial-more-actions": "Буюк"
 }

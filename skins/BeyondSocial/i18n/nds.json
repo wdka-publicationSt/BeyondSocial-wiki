@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Slomox",
-			"Zylbath"
+			"Zylbath",
+			"Servien"
 		]
 	},
 	"beyondsocial-action-addsection": "Thema tofögen",
@@ -15,5 +16,6 @@
 	"beyondsocial-view-edit": "Ännern",
 	"beyondsocial-view-history": "Historie bekieken",
 	"beyondsocial-view-view": "Lesen",
-	"beyondsocial-view-viewsource": "Borntext bekieken"
+	"beyondsocial-view-viewsource": "Borntext bekieken",
+	"beyondsocial-more-actions": "Mehr"
 }

@@ -4,19 +4,20 @@
 			"Amire80",
 			"Sapral Mikail",
 			"Умар",
-			"Adam-Yourist"
+			"Adam-Yourist",
+			"ElizaMag"
 		]
 	},
-	"beyondsocial-action-addsection": "БӀагал тӀатоха",
+	"beyondsocial-action-addsection": "Тема тӀатоха",
 	"beyondsocial-action-delete": "ДӀадаккха",
 	"beyondsocial-action-move": "ЦӀи хувца",
 	"beyondsocial-action-protect": "Лораде",
-	"beyondsocial-action-undelete": "Юхаоттаде",
-	"beyondsocial-action-unprotect": "Лорам хувца",
-	"beyondsocial-view-create": "Кхоллар",
-	"beyondsocial-view-edit": "Нийсъе",
-	"beyondsocial-view-history": "Истори",
+	"beyondsocial-action-undelete": "Хьаметтаоттаде",
+	"beyondsocial-action-unprotect": "Лорадар (гIо) хувца",
+	"beyondsocial-view-create": "Хьакхолла",
+	"beyondsocial-view-edit": "Нийсде",
+	"beyondsocial-view-history": "ОагӀон хувцамаш",
 	"beyondsocial-view-view": "Де́ша",
-	"beyondsocial-view-viewsource": "Зембакхама бӀаргтассам",
+	"beyondsocial-view-viewsource": "Хьалххе бӀаргтохара разметкага хьажар",
 	"beyondsocial-more-actions": "Кхы а"
 }

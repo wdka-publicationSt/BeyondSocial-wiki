@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"StefanusRA"
+			"StefanusRA",
+			"Mbrt"
 		]
 	},
 	"beyondsocial-action-addsection": "Nambah topik",
@@ -14,5 +15,6 @@
 	"beyondsocial-view-edit": "Sunting",
 	"beyondsocial-view-history": "Sajarah kaca",
 	"beyondsocial-view-view": "Waca",
-	"beyondsocial-view-viewsource": "Deleng sumbere"
+	"beyondsocial-view-viewsource": "Deleng sumbere",
+	"beyondsocial-more-actions": "Liane"
 }

@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Andibing"
+			"Andibing",
+			"Chase me ladies, I'm the Cavalry"
 		]
 	},
+	"beyondsocial-action-addsection": "Add topic",
+	"beyondsocial-view-create": "Create",
 	"beyondsocial-view-edit": "Edit",
-	"beyondsocial-view-history": "View history"
+	"beyondsocial-view-history": "View history",
+	"beyondsocial-view-view": "Read",
+	"beyondsocial-more-actions": "More"
 }

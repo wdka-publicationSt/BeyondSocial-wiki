@@ -5,57 +5,11 @@
 #ca-watch.icon a {
 	margin: 0;
 	padding: 0;
-	width: 0px;
-	/*display: block;*/
-	/*width: 26px;*/
-	/* This hides the text but shows the background image */
-	/*padding-top: 1.1em;*/
-	/*margin-top: 0;*/
-	/* Only applied in IE6 */
-	/*_margin-top: -0.8em;*/
-	height: 0;
-	overflow: hidden;
-	/*background-position: 5px 60%;*/
+	display: block;
 }
-	#ca-watch span::after{
-		content: "Unwatch";
-		color:@bscolorMain;
-		float: left;
-	}
-	#ca-unwatch span::after{
-		content: "Watch";
-		color:@bscolorMain;
-		float: left;
-	}
 #ca-unwatch.icon a {
-	/*.background-image-svg('images/unwatch-icon.svg', 'images/unwatch-icon.png');*/
-	/*background-repeat: no-repeat;*/
+	content: "watch";
 }
 #ca-watch.icon a {
-	/*.background-image-svg('images/watch-icon.svg', 'images/watch-icon.png');*/
-	/*background-repeat: no-repeat;*/
-}
-#ca-unwatch.icon a:hover,
-#ca-unwatch.icon a:focus {
-	/*.background-image-svg('images/unwatch-icon-hl.svg', 'images/unwatch-icon-hl.png');*/
-}
-#ca-watch.icon a:hover,
-#ca-watch.icon a:focus {
-	/*.background-image-svg('images/watch-icon-hl.svg', 'images/watch-icon-hl.png');*/
-}
-#ca-unwatch.icon a.loading,
-#ca-watch.icon a.loading {
-	/*.background-image-svg('images/watch-icon-loading.svg', 'images/watch-icon-loading.png');*/
-	/*.rotation(700ms);*/
-	/* Suppress the hilarious rotating focus outline on Firefox */
-	outline: none;
-	cursor: default;
-	pointer-events: none;
-	/*background-position: 50% 60%;*/
-	/*-webkit-transform-origin: 50% 57%;*/
-	/*transform-origin: 50% 57%;*/
-}
-#ca-unwatch.icon a span,
-#ca-watch.icon a span {
-	display: none;
+	content: "unwatch";
 }

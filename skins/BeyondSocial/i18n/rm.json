@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gion-andri"
+			"Gion-andri",
+			"Terfili"
 		]
 	},
 	"beyondsocial-action-addsection": "Agiuntar chapitel",
@@ -14,5 +15,6 @@
 	"beyondsocial-view-edit": "Modifitgar",
 	"beyondsocial-view-history": "Cronologia",
 	"beyondsocial-view-view": "Leger",
-	"beyondsocial-view-viewsource": "Mussar il code"
+	"beyondsocial-view-viewsource": "Mussar il code",
+	"beyondsocial-more-actions": "dapli"
 }

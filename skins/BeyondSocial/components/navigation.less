@@ -11,24 +11,17 @@
 
 /* Head */
 #mw-page-base {
-	height: 10em;
-	/*background-position: bottom left;*/
-	/*background-repeat: repeat-x;*/
-	/* This image is only a fallback (for IE 6-9), so we do not @embed it. */
-	/*background-image: url('images/page-fade.png');*/
-	/*.vertical-gradient(@body-background-color, @menu-background-color, 50%, 100%);*/
-	/*background-color: @body-background-color;*/
+	height: 5em;
 }
 
-/* empty block */
 #mw-head-base {
-	margin-top: -5em;
-	margin-left: 10em;
-	height: 3.8em;
+	margin-top:-5em;
+	height: 5.75em;
 }
 
 div#mw-head {
-	position: absolute;
+	/*position: absolute;*/
+	display: block;
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -38,118 +31,50 @@ div#mw-head {
 		padding: 0;
 	}
 }
-#p-personal{
-
-}
 
 /* Navigation Containers */
+#mw-navigation{
+
+}
+
+/* Page type + Discussion */
 #left-navigation {
+	position: absolute;
+	float: right;
+	top:15px;
+	right: 250px;
 	font-family: @bsfontBlack;
-	position: absolute;
-	font-weight: bold;
-	font-size: 4.5em;
-	color:@bscolorMain;
-	top:10px;
-	left:10px;
-	margin:0px;
-	padding:0px;
-}
-#left-navigation {
-	float: left;
-	text-align: left;
-	display: block;
-}
-	/* "Discussion" */
-	#ca-talk span a{
-		position: absolute;
-		top:80px;
-		left:0px;
-	}
-	/* "Read" "Edit" "Watchstar" */
-	#p-views{
-		margin-top:80px;
-	}
+	font-size: 2em;
 
-	/* comma after each menu item */
-	#left-navigation li:after{
-		content: ", ";
-		margin-top:-30px;
-		padding-right: 10px;
-		vertical-align: top;
+	/* reset the comma after the nav items for the left-nav*/
+	ul li span a:after{
+		content: " ";
 	}
-		/* no comma after page title */
-		#left-navigation li#ca-nstab-main:after{
-			content: " ";
-		}
-		/* exception for "Discussion" */
-		#left-navigation li#ca-talk{
-			width: 173px;
-		}
-		/* comma exception for "Discussion", no comma */
-		#left-navigation li#ca-talk::after{
-			content: "";
-		}
-		/* comma exception for "Discussion", it is placed before "Read" */
-		#left-navigation li#ca-view::before{
-			content: ", ";
-			padding-right: 10px;
-			vertical-align: top;
-		}
-
-/* hide <bs-more-actions> menu tab*/
-h3#p-cactions-label{
-	display: none;
 }
-
-/* display cactions menu: "view history" "delete" "move" "protect" */
-#p-cactions .menu li{
+/* read, edit, view history, watch, + more*/
+#right-navigation {
 	position: relative;
-	display: inline-block;
-	padding: 0px;
-	margin:0px;
-}
-	#p-cactions .menu ul{
-		list-style: none;
-	}
-
-
-/* Logo */
-#p-logo {
-	display: none;
-	position: absolute;
-	top: -160px;
-	left: 0;
-	width: 10em;
-	height: 160px;
-
-	a {
-		display: block;
-		width: 10em;
-		height: 160px;
-		/*background-repeat: no-repeat;*/
-		/*background-position: center center;*/
-		text-decoration: none;
-	}
+	float: left;
+	font-family: @bsfontBlack;
+	font-size: @menu-navigation-font-size;
 }
 
-/* Panel */
+/* Panel (= Sidebar) */
 div#mw-panel {
 	font-size: @menu-main-font-size;
-	font-weight: bold;
-	line-height: 1.2em;
 	position: absolute;
-	top: 300px;
-	/*padding-top: 1em;*/
-	width: 10em;
+	width: 200px;
+	top: 160px;
+	padding:1em 0 0 0;
 	right: 0;
 
 	div.portal {
-		/*margin: 0 0.6em 0 0.7em;*/
-		/*padding: 0.25em 0;*/
-		/*direction: ltr;*/
-		/*background-position: top left;*/
-		/*background-repeat: no-repeat;*/
-		/*.background-image('images/portal-break.png');*/
+		margin: 0 0.6em 0 0.7em;
+		padding: 0.25em 0;
+		direction: ltr;
+		background-position: top left;
+		background-repeat: no-repeat;
+		.background-image('images/portal-break.png');
 
 		h3 {
 			font-size: @menu-main-heading-font-size;
@@ -159,6 +84,7 @@ div#mw-panel {
 			padding: @menu-main-heading-padding;
 			cursor: default;
 			border: none;
+			display: initial;
 		}
 
 		div.body {
@@ -169,11 +95,12 @@ div#mw-panel {
 				list-style-type: none;
 				list-style-image: none;
 				margin: 0;
-				/*padding: @menu-main-body-padding;*/
+				padding: @menu-main-body-padding;
 
 				li {
+					/*line-height: 1.125em;*/
 					/*margin: 0;*/
-					/*padding: 0.05em 0;*/
+					/*padding: 0.25em 0;*/
 					font-size: @menu-main-body-font-size;
 					word-wrap: break-word;
 

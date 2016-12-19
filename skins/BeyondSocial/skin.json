@@ -1,11 +1,13 @@
 {
 	"name": "BeyondSocial",
 	"author": [
-		"Trevor Parscal",
-		"Roan Kattouw",
+		"Manetta Berends",
+		"Andre Castro",
+		"Trevor Parscal (Vector)",
+		"Roan Kattouw (Vector)",
 		"..."
 	],
-	"url": "https://www.mediawiki.org/wiki/Skin:BeyondSocial",
+	"url": "https://github.com/wdka-publicationSt/BeyondSocial-wiki",
 	"descriptionmsg": "beyondsocial-skin-desc",
 	"namemsg": "skinname-beyondsocial",
 	"license-name": "GPL-2.0+",
