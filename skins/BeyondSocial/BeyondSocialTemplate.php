@@ -117,6 +117,11 @@ class BeyondSocialTemplate extends BaseTemplate {
 				<div id="right-navigation">
 
 					<!-- *************************************** -->
+					<!-- *** page title moved to here        *** -->
+					<!-- *************************************** -->
+					<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
+
+					<!-- *************************************** -->
 					<!-- *** 'SEARCH' removed here           *** -->
 					<!-- *************************************** -->
 					<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
@@ -153,9 +158,14 @@ class BeyondSocialTemplate extends BaseTemplate {
 			// Loose comparison with '!=' is intentional, to catch null and false too, but not '0'
 			if ( $this->data['title'] != '' ) {
 			?>
+
+			<!-- ************************************************************************* -->
+			<!-- *** page title is set to display:none; and included in the navigation *** -->
+			<!-- ************************************************************************* -->
 			<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php
 				 $this->html( 'title' )
 			?></h1>
+
 			<?php
 			} ?>
 			<?php $this->html( 'prebodyhtml' ) ?>
@@ -474,51 +484,96 @@ class BeyondSocialTemplate extends BaseTemplate {
 							<?php
 							}
 							?>
+
+							<!-- *************************************** -->
+							<!-- *** p-cactions moved to this <UL>   *** -->
+							<!-- *************************************** -->
+							<?php
+								foreach ( $this->data['action_urls'] as $link ) {
+							?>
+								<li
+									<?php 
+										echo $link['attributes'] 
+									?>>
+									<!-- *************************************** -->
+									<!-- *** span element added here         *** -->
+									<!-- *************************************** -->
+									<span>
+										<a href="<?php echo htmlspecialchars( $link['href'] ) ?>"<?php echo $link['key'] ?>>
+										<?php 
+											echo htmlspecialchars( $link['text'] )
+										?>
+										</a>
+									</span>
+								</li>
+							<?php
+								}
+							?>
 						</ul>
 					</div>
-					<?php
-					break;
-				case 'ACTIONS':
-					?>
-					<div id="p-cactions" role="navigation" class="beyondsocialMenu<?php
-					if ( count( $this->data['action_urls'] ) == 0 ) {
-						echo ' emptyPortlet';
-					}
-					?>" aria-labelledby="p-cactions-label">
 
+					<!-- ************************************************ -->
+					<!-- *** this list moved to the previous UL above *** -->
+					<!-- ************************************************ -->
+					<?php
+					// break;
+				// case 'ACTIONS':
+					?>
+					<!-- <div id="p-cactions" role="navigation" class="beyondsocialMenu -->
+					<?php
+						// if ( count( $this->data['action_urls'] ) == 0 ) { echo ' emptyPortlet'; } 
+					?>
+					<!-- " aria-labelledby="p-cactions-label"> -->
 
 						<!-- *************************************** -->
 						<!-- *** h3#p-cactions-label is not used *** -->
 						<!-- *************************************** -->
-						<h3 id="p-cactions-label"><span>
+						<!-- <h3 id="p-cactions-label"><span> -->
 						<?php
 							// $this->msg( 'beyondsocial-more-actions' )
 						?>
-						</span><a href="#"></a></h3>
-
-						<div class="menu">
-							<ul<?php $this->html( 'userlangattributes' ) ?>>
+						<!-- </span><a href="#"></a></h3> -->
+						
+						<!-- <div class="menu"> -->
+							<!-- <ul -->
+								<?php 
+									// $this->html( 'userlangattributes' ) 
+								?>
+							<!-- > -->
 								<?php
-								foreach ( $this->data['action_urls'] as $link ) {
-									?>
-									<li<?php echo $link['attributes'] ?>>
+									// foreach ( $this->data['action_urls'] as $link ) {
+								?>
+									<!-- <li -->
+										<?php 
+											// echo $link['attributes'] 
+										?>
+									<!-- > -->
 										<!-- *************************************** -->
 										<!-- *** span element added here         *** -->
 										<!-- *************************************** -->
-										<span>
-											<a href="<?php
-											echo htmlspecialchars( $link['href'] )
-											?>" <?php
-											echo $link['key'] ?>><?php echo htmlspecialchars( $link['text'] )
-												?></a>
-										</span>
-									</li>
+										<!-- <span> -->
+											<!-- <a href=" -->
+												<?php 
+													// echo htmlspecialchars( $link['href'] ) 
+												?>
+											<!-- " -->
+												<?php 
+													// echo $link['key'] 
+												?>
+											<!-- > -->
+											<?php 
+												// echo htmlspecialchars( $link['text'] )
+											?>
+											<!-- </a> -->
+										<!-- </span> -->
+									<!-- </li> -->
 								<?php
-								}
+									// }
 								?>
-							</ul>
-						</div>
-					</div>
+							<!-- </ul> -->
+						<!-- </div> -->
+					<!-- </div> -->
+
 					<?php
 					break;
 				case 'PERSONAL':

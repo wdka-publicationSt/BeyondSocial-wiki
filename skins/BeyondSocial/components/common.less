@@ -35,13 +35,12 @@ body {
 	border: 0;
 	/* Merge the border with tabs' one (in their background image) */
 	margin-top: 0px;
-	background-color: @body-background-color;
 	color: @content-font-color;
 	direction: ltr;
 
 	.mw-editsection,
 	.mw-editsection-like {
-		font-family: @content-font-family;
+		font-family: @bsfont;
 	}
 
 	p {
@@ -53,8 +52,9 @@ body {
 	h2 {
 		font-family: @bsfontBlack;
 		line-height: @heading-line-height;
-		margin-bottom: 0.25em;
+		margin-bottom: 0em;
 		padding: 0;
+		border:0;
 
 		/* Fallback heading font for scripts which render poorly in @content-heading-font-family. */
 		/* See T73240 */
@@ -108,11 +108,13 @@ body {
 	.toc h2 {
 		font-size: 100%; /* (reset) */
 		font-family: @content-font-family;
+		border:0px solid @bscolorMain;
 	}
 
+	/* BS replaced the firstheading to the navigation */
 	.firstHeading {
 		/* Change the default from mediawiki.skinning CSS to let indicators float into heading area */
-		overflow: visible;
+		/*overflow: visible;*/
 	}
 
 	.mw-indicators {
@@ -165,6 +167,7 @@ pre,
 	line-height: @content-line-height;
 	font-size: @content-font-size;
 	z-index: 0;
+	margin-top: 20px;
 }
 
 
@@ -177,28 +180,82 @@ pre,
 	font-weight: bold;
 	font-size: 2em;
 	color:@bscolorSecond;
-	top:10px;
+	top:20px;
 	right:10px;
 }
 
+/* this page title element is not needed anymore, there is a copy in the right-navigation element */
 .mw-body h1.firstHeading {
-	position: absolute;
-	top:0px;
-	left:10px;
-	border-bottom:0px;
-	margin:0;
-	padding:0;
-	font-family: @bsfontBlack;
-	font-size: @menu-navigation-font-size;
-	color: @bscolorMain;
+	display: none;
 }
 
+/* slideshow gallery for main page */
+#mp-gallery ul.mw-gallery-slideshow {
+	width: 100%;
+	height: 500px;
+	padding:0;
 
+	li.gallerycarousel{
+		margin:0;
+		padding:0;
+		height: 100%;
+	}
+	img{
+		width: auto;
+		height: 500px;
+		z-index: 2;
+	}
+	.mw-gallery-slideshow-buttons{
+		position: absolute;
+		width: 100%;
+		margin-top:200px;
+		padding: 0;
+		color:@bscolorMain;
+		opacity: 1;
+		text-align: center;
+		z-index: 3;
+	}
+	/* display none of the ui buttons ... */
+	.oo-ui-iconElement .oo-ui-iconElement-icon{
+		display: none;
+		height: 50px;
+		width: 50px;
+	}
+	/* ... but display the previous and next button only */
+	.oo-ui-iconElement-icon.oo-ui-icon-previous, .oo-ui-iconElement-icon.oo-ui-icon-next{
+		display: inline-block;
+	}
+	.oo-ui-buttonElement{
+		/* there needs to be a better way to position the slideshow navigation buttons */
+		margin:0 10%; 
+	}
 
+}
 
+/* img gallery */
 
+li.gallerybox{
+	div.thumb{
+		background-color: transparent;
+		border:2px solid @bscolorSecond;
+		margin-bottom:5px;
+	}
+	div.gallerytext{
+		display: none;
+	}
+}
 
+/* tables */
+table.wikitable{
+	margin:0;
+	width: 100%; /* still expands the table wider than the parent div*/
+	border:none;
 
+	tr > th, tr > td{
+		border:2px solid @bscolorMain;
+		padding:5px;
+	}
+}
 
 
 
