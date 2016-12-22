@@ -105,7 +105,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 			<!-- *************************************** -->
 			<!-- *** Beyond Social Title added       *** -->
 			<!-- *************************************** -->
-			<a href="/index.php"><div id="bs-title">Beyond Social</div></a>
+			<a href="/wiki/index.php"><div id="bs-title">Beyond Social</div></a>
 
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 
