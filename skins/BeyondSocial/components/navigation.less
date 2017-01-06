@@ -42,11 +42,11 @@ div#mw-head {
 	position: absolute;
 	float: right;
 	width: 230px;
-	top:64px;
+	top:80px;
 	right: 0px;
 	font-family: @bsfontBlack;
 	font-size: 2em;
-	line-height: 0.6;
+	line-height: 0.9;
 	z-index: 10;
 
 	/* reset the comma after the nav items for the left-nav*/
@@ -95,13 +95,16 @@ div#mw-panel {
 	right: 0;
 	z-index: 100;
 
+	/* to prevent having the sidebar next to the search field */
+	div.portal#p-Pages{
+		margin-top: 50px;
+	}
+
 	div.portal {
-		margin: 0 0.6em 0 0.7em;
+		display: block;
+		margin: 0 0 0 0;
 		padding: 0.25em 0;
 		direction: ltr;
-		background-position: top left;
-		background-repeat: no-repeat;
-		.background-image('images/portal-break.png');
 
 		h3 {
 			font-size: @menu-main-heading-font-size;
