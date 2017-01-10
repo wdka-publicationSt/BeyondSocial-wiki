@@ -6,6 +6,13 @@
 		margin:0;
 		padding:0;
 	}
+	hr{
+		border:0;
+		margin:10px 0;
+	}
+	p{
+		/*padding-bottom: 10px;*/
+	}
 }
 
 
@@ -20,6 +27,9 @@
 		vertical-align: top;
 	}
 	.mp-column-item{
+		position: relative;
+		display: block;
+		clear: both;
 		margin-right:10px;
 		margin-bottom: 20px;
 
@@ -43,8 +53,25 @@
 			}
 		}
 	}
+	.item-left{
+		display: inline-block;
+		width: 50%;
+		float: left;
+	}
+	.item-right{
+		position: relative;
+		display: inline-block;
+		width: 50%;
+		float: right;
+	}
 }
 
+.mw-body #media-suggestions, .mw-body #article-suggestions, .mw-body #category-suggestions{
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
 
 
 /* recent changes */
@@ -59,7 +86,7 @@
 }
 
 /* recent uploads */
-#recent-uploads{
+#recent-uploads, #media-suggestions{
 	text-align: left;
 	ul.gallery{
 		text-align:center;
@@ -68,9 +95,9 @@
 	li.gallerybox{
 		div.thumb{
 			width: 100%;
-			background-color: transparent;
+			background-color: white;
 			margin:0;
-			border:1px solid @bscolorSecond;
+			/*border:1px solid @bscolorSecond;*/
 		}
 		div.gallerytext{
 			font-family: @bsfont;
@@ -88,15 +115,65 @@
 
 /* new pages */
 #mp-container .mp-column-item#new-pages li{
-	padding: 20px 0px;
+	padding: 24px 0 6px 0;
 }
 	.mw-newpages-pagename{
+		max-width: ~"calc(100% - 10px)";
 		position: absolute;
 		font-weight: bold;
 		float:left;
 		left:0px;
-		margin-top: -24px;
+		margin-top: -22px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		-ms-text-overflow: ellipsis;
+		-moz-binding: url(<q>assets/xml/ellipsis.xml#ellipsis</q>);
 	}
 	#new-pages .comment{
 		display: none;
 	}
+
+/* slideshow gallery for main page */
+/* NOT IN USE */
+#mp-gallery ul.mw-gallery-slideshow {
+	/*width: 100%;*/
+	/*height: 500px;*/
+	/*padding:0;*/
+
+	li.gallerycarousel{
+		/*margin:0;*/
+		/*padding:0;*/
+		/*height: 100%;*/
+	}
+	img{
+		/*width: auto;*/
+		/*height: 500px;*/
+		/*z-index: 2;*/
+	}
+	.mw-gallery-slideshow-buttons{
+		/*position: absolute;*/
+		/*width: 100%;*/
+		/*margin-top:200px;*/
+		/*padding: 0;*/
+		/*color:@bscolorMain;*/
+		/*opacity: 1;*/
+		/*text-align: center;*/
+		/*z-index: 3;*/
+	}
+	/* display none of the ui buttons ... */
+	.oo-ui-iconElement .oo-ui-iconElement-icon{
+		/*display: none;*/
+		/*height: 50px;*/
+		/*width: 50px;*/
+	}
+	/* ... but display the previous and next button only */
+	.oo-ui-iconElement-icon.oo-ui-icon-previous, .oo-ui-iconElement-icon.oo-ui-icon-next{
+		/*display: inline-block;*/
+	}
+	.oo-ui-buttonElement{
+		/* there needs to be a better way to position the slideshow navigation buttons */
+		/*margin:0 10%; */
+	}
+}
