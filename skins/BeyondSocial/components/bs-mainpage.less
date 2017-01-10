@@ -1,5 +1,6 @@
 /*Main Page*/
 
+
 /* resets */
 .mw-body #mp-container{
 	h1, h2, h3, h4, p{
@@ -17,14 +18,20 @@
 
 
 #mp-container{
-	/*font-size: 50%;*/
+	top:200px;
 	min-width: 650px;
+	margin-top:110px;
+	margin-left: -3px;
 
 	.mp-column{
 		display: inline-block;
 		min-width: 150px;
 		width: ~"calc(33% - 3px)";
 		vertical-align: top;
+	}
+	.mp-column.double{
+		min-width: 300px;
+		width: ~"calc(66% - 6px)";
 	}
 	.mp-column-item{
 		position: relative;
@@ -52,6 +59,7 @@
 				padding:0;
 			}
 		}
+
 	}
 	.item-left{
 		display: inline-block;
@@ -66,7 +74,8 @@
 	}
 }
 
-.mw-body #media-suggestions, .mw-body #article-suggestions, .mw-body #category-suggestions{
+/* suggestion columns*/
+.mw-body #article-suggestions, .mw-body #category-suggestions{
 	img{
 		width: 100%;
 		height: auto;
@@ -120,7 +129,6 @@
 	.mw-newpages-pagename{
 		max-width: ~"calc(100% - 10px)";
 		position: absolute;
-		font-weight: bold;
 		float:left;
 		left:0px;
 		margin-top: -22px;
@@ -177,3 +185,8 @@
 		/*margin:0 10%; */
 	}
 }
+
+/*@media all and (max-width: 768px) {
+
+}
+*/

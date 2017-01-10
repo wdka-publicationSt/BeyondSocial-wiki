@@ -111,22 +111,59 @@ div#content {
 /* Beyond Social Responsive */
 /****************************/
 
-/* BS-mainpage */
-/*#mp-container{
-	
-	.mp-column.third{
-		display: block;
-		min-width: 150px;
-		width: ~"calc(33% - 3px)";
-		vertical-align: top;
-		float: right;
-	}
-	.mp-column.first, .mp-column.second{
-		display: block;
-		min-width: 300px;
-		width: ~"calc(66% - 3px)";
-		vertical-align: top;
-		float: left;
-	}
+.mw-body{
+	font-size: 150%;
+	width: ~"calc(100% - 80px)";
 }
-*/
+
+/* BS-mainpage */
+#mp-container{
+	width: ~"calc(100% + 0px)";
+	max-width: 900px;
+	margin-left:-10px;
+	/*font-size: 150%;*/
+
+	.mp-column, .mp-column.double{
+		display: block;
+		width: ~"calc(100% + 62px)";
+	}
+	.mp-column-item{
+		small{
+			width: 100%;
+			padding:3px;
+			background-color: rgba(230,230,230,.5);
+			text-align: center;
+		}		
+	}
+
+}
+/* hide the sidebar */
+#mw-panel{
+	display: none;
+}
+
+/* show sidebar */
+#sidebar-link{
+	display: block;
+}
+	#sidebar-link:before{
+		content: "open ";
+	}
+	#sidebar-link.active:before{
+		content: "hide ";
+	}
+.slide-left{
+	margin-left: -160px;
+	width: ~"calc(100% - 160px)";
+}
+div#mw-panel{
+	top: 200px;
+}
+
+/* adjust typography for new pages */
+.mw-newpages-pagename{
+	margin-top: -34px;	
+}
+#mp-container .mp-column-item#new-pages li{
+	padding:34px 0 16px 0;
+}

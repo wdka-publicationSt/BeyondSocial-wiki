@@ -48,7 +48,10 @@
 			"position": "top",
 			"styles": {
 				"responsive.less": {
-					"media": "screen and (max-width: 768px)"
+					"media": "screen and (max-width: 850px)"
+				},
+				"mobile.less": {
+					"media": "screen and (max-width: 500px)"
 				}
 			}
 		},
@@ -97,7 +100,7 @@
 	"config": {
 		"BeyondSocialUseSimpleSearch": true,
 		"BeyondSocialUseIconWatch": true,
-		"BeyondSocialResponsive": false
+		"BeyondSocialResponsive": true
 	},
 	"manifest_version": 1
 }

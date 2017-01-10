@@ -28,7 +28,7 @@ body {
 
 /* Content */
 .mw-body {
-	width: ~"calc(100% - 250px)";
+	width: ~"calc(100% - 190px)";
 	margin-left: 0em;
 	padding: @content-padding;
 	/* Border on top, left, and bottom side */
@@ -181,19 +181,14 @@ pre,
 /*********************************************/
 /* Beyond Social specific overwritten styles */
 /*********************************************/
-#bs-title{
-	font-family: @bsfontBlack;
-	position: absolute;
-	font-weight: bold;
-	font-size: 2em;
-	color:@bscolorSecond;
-	top:20px;
-	right:10px;
-}
-
 /* this page title element is not needed anymore, there is a copy in the right-navigation element */
 .mw-body h1.firstHeading {
 	display: none;
+}
+
+/* prevent body text to jump next to the nav */
+#mw-content-text{
+	clear:both;
 }
 
 /* tables */
@@ -217,7 +212,10 @@ table.wikitable{
 	display: none;
 }
 
-
+/*file toc*/
+ul#filetoc{
+	height: auto;
+}
 
 
 

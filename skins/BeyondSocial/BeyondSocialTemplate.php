@@ -114,6 +114,10 @@ class BeyondSocialTemplate extends BaseTemplate {
 				<div id="left-navigation">
 					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
 				</div>
+				<!-- ******************************************* -->
+				<!-- ** sidebar link added for responsive css ** -->
+				<!-- ******************************************* -->
+				<div id="sidebar-link">sidebar</div>
 				<div id="right-navigation">
 
 					<!-- *************************************** -->

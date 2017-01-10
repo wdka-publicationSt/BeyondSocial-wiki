@@ -110,4 +110,17 @@ jQuery( function ( $ ) {
 				}
 			}
 		} );
+
+	// BS CODE
+	$('#sidebar-link').click(function(){
+		$('#mw-navigation, #content, #footer').toggleClass('slide-left');
+		$('#mw-navigation, #content, #footer').css('transition','all 0.3s');
+		$('#mw-panel').toggle();
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active');
+		}
+		else{
+			$(this).removeClass('active');
+		}
+	});
 } );
