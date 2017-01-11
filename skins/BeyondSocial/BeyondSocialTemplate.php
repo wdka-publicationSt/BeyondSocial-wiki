@@ -1,7 +1,8 @@
 <?php
 /**
- * BeyondSocial - Modern version of MonoBook with fresh look and many usability
- * improvements.
+ * BeyondSocial - This skin is developed for the project Beyond Social, 
+ * in the context of the Willem de Kooning Academy in Rotterdam. 
+ * The skin is very much based on the Vector skin.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -107,8 +108,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 			<!-- *************************************** -->
 			<a href="/wiki/index.php"><div id="bs-title">Beyond Social</div></a>
 			<div id="wdka-logos">
-				<img src="../skins/BeyondSocial/images/wdkalogo_bw.svg">
-				<img src="../skins/BeyondSocial/images/wdkalogo_2.svg">
+				<img src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg">
+				<img src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_2.svg">
 			</div>
 
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
@@ -266,8 +267,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<?php
 					}
 					?>
-					<li><img width="50px" src="../skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
-					<li><img width="50px" src="../skins/BeyondSocial/images/wdkalogo_2.svg"></li>
+					<li><img width="50px" src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
+					<li><img width="50px" src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></li>
 				</ul>
 			<?php
 			}

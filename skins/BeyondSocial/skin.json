@@ -1,13 +1,13 @@
 {
 	"name": "BeyondSocial",
 	"author": [
-		"Manetta Berends",
-		"Andre Castro",
+		"Manetta Berends (Beyond Social)",
+		"André Castro (Beyond Social)",
 		"Trevor Parscal (Vector)",
 		"Roan Kattouw (Vector)"
 	],
 	"url": "https://github.com/wdka-publicationSt/BeyondSocial-wiki",
-	"descriptionmsg": "beyondsocial-skin-desc",
+	"descriptionmsg": "This skin is developed for the project Beyond Social, in the context of the Willem de Kooning Academy in Rotterdam. See www.beyond-social.org. The skin is very much based on the Vector skin.",
 	"namemsg": "skinname-beyondsocial",
 	"license-name": "GPL-2.0+",
 	"type": "skin",

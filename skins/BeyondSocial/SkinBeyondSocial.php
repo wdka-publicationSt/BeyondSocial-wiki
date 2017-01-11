@@ -1,7 +1,8 @@
 <?php
 /**
- * BeyondSocial - Modern version of MonoBook with fresh look and many usability
- * improvements.
+ * BeyondSocial - This skin is developed for the project Beyond Social, 
+ * in the context of the Willem de Kooning Academy in Rotterdam. 
+ * The skin is very much based on the Vector skin.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

@@ -1,27 +1,30 @@
 {
 	"name": "mediawiki/beyondsocial-skin",
 	"type": "mediawiki-skin",
-	"description": "Modern version of the MonoBook skin",
+	"description": "This skin is developed for the project Beyond Social, in the context of the Willem de Kooning Academy in Rotterdam. See www.beyond-social.org. The skin is very much based on the Vector skin.",
 	"keywords": [
 		"wiki",
 		"MediaWiki",
 		"skin"
 	],
-	"homepage": "https://www.mediawiki.org/wiki/Skin:BeyondSocial",
+	"homepage": "http://www.beyond-social.org",
 	"license": "GPL-2.0+",
 	"authors": [
 		{
-			"name": "Trevor Parscal"
+			"name": "Manetta Bereds (Beyond Social)"
 		},
 		{
-			"name": "Roan Kattouw"
+			"name": "André Castro (Beyond Social)"
+		},
+		{
+			"name": "Trevor Parscal (Vector)"
+		},
+		{
+			"name": "Roan Kattouw (Vector)"
 		}
 	],
 	"support": {
-		"wiki": "https://www.mediawiki.org/wiki/Skin:BeyondSocial",
-		"forum": "https://www.mediawiki.org/wiki/Skin_talk:BeyondSocial",
-		"source": "https://phabricator.wikimedia.org/diffusion/SVEC/",
-		"irc": "irc://irc.freenode.org/mediawiki"
+		"github": "https://github.com/wdka-publicationSt/BeyondSocial-wiki"
 	},
 	"require": {
 		"php": ">=5.5.9",
