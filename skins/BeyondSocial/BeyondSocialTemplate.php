@@ -108,8 +108,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 			<!-- *************************************** -->
 			<a href="/wiki/index.php"><div id="bs-title">Beyond Social</div></a>
 			<div id="wdka-logos">
-				<img src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg">
-				<img src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_2.svg">
+				<img src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg">
+				<img src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg">
 			</div>
 
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
@@ -267,8 +267,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<?php
 					}
 					?>
-					<li><img width="50px" src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
-					<li><img width="50px" src="/var/www/beyond-social.org/html/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></li>
+					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
+					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></li>
 				</ul>
 			<?php
 			}
