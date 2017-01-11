@@ -115,11 +115,12 @@ jQuery( function ( $ ) {
 	$('#sidebar-link').click(function(){
 		$('#mw-navigation, #content, #footer').toggleClass('slide-left');
 		$('#mw-navigation, #content, #footer').css('transition','all 0.3s');
-		$('#mw-panel').toggle();
-		if(!$(this).hasClass('active')){
-			$(this).addClass('active');
+		if ( $('#mw-panel').css('display') == 'none' ){
+			$('#mw-panel').show();
+			$(this).addClass('active');		    
 		}
 		else{
+			$('#mw-panel').hide();
 			$(this).removeClass('active');
 		}
 	});
@@ -128,7 +129,9 @@ jQuery( function ( $ ) {
 			$('#mw-panel').show();
 		}
 		else {
-			$('#mw-panel').hide();
+			if(!$('#sidebar-link').hasClass('active')){
+				$('#mw-panel').hide();
+			}
 		}
 	});
 } );

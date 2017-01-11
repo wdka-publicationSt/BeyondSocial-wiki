@@ -106,6 +106,10 @@ class BeyondSocialTemplate extends BaseTemplate {
 			<!-- *** Beyond Social Title added       *** -->
 			<!-- *************************************** -->
 			<a href="/wiki/index.php"><div id="bs-title">Beyond Social</div></a>
+			<div id="wdka-logos">
+				<img src="../skins/BeyondSocial/images/wdkalogo_bw.svg">
+				<img src="../skins/BeyondSocial/images/wdkalogo_2.svg">
+			</div>
 
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 
@@ -262,6 +266,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<?php
 					}
 					?>
+					<li><img width="50px" src="../skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
+					<li><img width="50px" src="../skins/BeyondSocial/images/wdkalogo_2.svg"></li>
 				</ul>
 			<?php
 			}
