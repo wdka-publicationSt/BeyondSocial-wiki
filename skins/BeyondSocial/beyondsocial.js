@@ -123,4 +123,12 @@ jQuery( function ( $ ) {
 			$(this).removeClass('active');
 		}
 	});
+	$(window).resize(function() {
+		if ($(window).width() > 835) {
+			$('#mw-panel').show();
+		}
+		else {
+			$('#mw-panel').hide();
+		}
+	});
 } );

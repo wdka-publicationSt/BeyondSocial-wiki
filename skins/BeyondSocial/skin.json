@@ -51,7 +51,7 @@
 					"media": "screen and (max-width: 850px)"
 				},
 				"mobile.less": {
-					"media": "screen and (max-width: 500px)"
+					"media": "mobile and (max-width: 500px)"
 				}
 			}
 		},
