@@ -42,11 +42,11 @@ div#mw-head {
 	position: absolute;
 	float: right;
 	width: 195px;
-	top:160px;
 	right: 0px;
 	font-family: @bsfontBlack;
 	font-size: @menu-navigation-second-font-size;
-	line-height: 16px;
+	top:170px;
+	line-height: 0.95;
 	z-index: 10;
 
 	/* reset the comma after the nav items for the left-nav*/
@@ -58,6 +58,13 @@ div#mw-head {
 		display: block;
 	}
 }
+	/* for unclear reasons, the left-navigation's line height responses differently in firefox and chrome. This is dirty fix to that weird behaviour. */
+	@-moz-document url-prefix() {
+		#left-navigation {
+	        top:160px;
+			line-height: 0.65em;
+	    }
+	}
 #wdka-logos{
 	position: absolute;
 	top:60px;
