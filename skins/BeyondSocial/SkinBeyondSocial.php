@@ -48,7 +48,7 @@ class SkinBeyondSocial extends SkinTemplate {
 		parent::initPage( $out );
 
 		if ( $this->beyondsocialConfig->get( 'BeyondSocialResponsive' ) ) {
-			$out->addMeta( 'viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0' );
+			$out->addMeta( 'viewport', 'width=device-width, initial-scale=1' );
 			$out->addModuleStyles( 'skins.beyondsocial.styles.responsive' );
 		}
 
