@@ -32,7 +32,7 @@
 	"@note": "When modifying skins.beyondsocial.styles definition, make sure the installer still works",
 	"ResourceModules": {
 		"skins.beyondsocial.styles": {
-			"targets": [ "desktop", "mobile" ],
+			"targets": [ "desktop" ],
 			"position": "top",
 			"styles": {
 				"screen.less": {
@@ -44,7 +44,7 @@
 			}
 		},
 		"skins.beyondsocial.styles.responsive": {
-			"targets": [ "desktop", "mobile" ],
+			"targets": [ "desktop" ],
 			"position": "top",
 			"styles": {
 				"responsive.less": {
