@@ -136,7 +136,18 @@ jQuery( function ( $ ) {
 	// });
 
 
-	$(document).on('touchmove', function(e) {
-	    e.preventDefault();
+		
+
+	$(window).on("pageload", function() {
+		$('html, body').css({
+			'overflow': 'hidden',
+			'height': '100%'
+		})
+	});
+	$(window).on("load", function() {
+		$('html, body').css({
+			'overflow': 'auto',
+			'height': 'auto'
+		})
 	});
 } );
