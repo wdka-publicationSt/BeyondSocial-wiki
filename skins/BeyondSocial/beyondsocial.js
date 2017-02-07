@@ -141,13 +141,16 @@ jQuery( function ( $ ) {
 	$(window).on("pageload", function() {
 		$('html, body').css({
 			'overflow': 'hidden',
-			'height': '100%'
+			'height': '100%', 
+			'top': '0px'
 		})
 	});
 	$(window).on("load", function() {
 		$('html, body').css({
 			'overflow': 'auto',
-			'height': 'auto'
+			'height': 'auto', 
+			'top': '0px'
+			
 		})
 	});
 } );
