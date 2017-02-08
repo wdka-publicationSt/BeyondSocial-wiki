@@ -116,13 +116,11 @@ class BeyondSocialTemplate extends BaseTemplate {
 
 			<div id="mw-head">
 				<?php $this->renderNavigation( 'PERSONAL' ); ?>
-				<div id="left-navigation">
-					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
-				</div>
+
 				<!-- ******************************************* -->
 				<!-- ** sidebar link added for responsive css ** -->
 				<!-- ******************************************* -->
-				<div id="sidebar-link">sidebar</div>
+				<div id="sidebar-link">Menu</div>
 				<div id="right-navigation">
 
 					<!-- *************************************** -->
@@ -134,6 +132,13 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<!-- *** 'SEARCH' removed here           *** -->
 					<!-- *************************************** -->
 					<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
+				</div>
+
+				<!-- *************************************** -->
+				<!-- *** 'left-navigation' moved to here *** -->
+				<!-- *************************************** -->
+				<div id="left-navigation">
+					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
 				</div>
 			</div>
 			<div id="mw-panel">
