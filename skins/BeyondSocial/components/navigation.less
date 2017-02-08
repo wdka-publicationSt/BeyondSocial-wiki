@@ -1,7 +1,6 @@
 @import "mediawiki.mixins";
 @import "personalMenu";
 @import "search";
-@import "tabs";
 
 /* Hide, but keep accessible for screen-readers */
 #mw-navigation h2 {
@@ -64,6 +63,22 @@ div#mw-head {
 		margin:0;
 		padding:0;
 	}
+	li {
+		&.new {
+			a,
+			a:visited{
+				color: #ff2400;
+			}
+		}
+
+		&.selected {
+			a,
+			a:visited{
+				text-decoration: none;
+				color: @bscolorSecond;
+			}
+		}
+	}
 	#p-namespaces-label{
 		display: none;
 	}
@@ -95,7 +110,7 @@ div#mw-head {
 		line-height: 0.95;
 	}
 	#p-views{
-		border-top:1px solid black;
+		border-top:2px solid @bscolorSecond;
 		margin-top:2px;
 		padding-top:10px;
 	}
@@ -121,11 +136,21 @@ div#mw-head {
 			content: ", ";
 			vertical-align: top;
 		}
-	a {
-		/* For IE6, overridden later to display:block by modern browsers */
-		display: inline-block;
-		color: @menu-link-color;
-		cursor: pointer;
+	li {
+		&.new {
+			a,
+			a:visited{
+				color: #a55858;
+			}
+		}
+
+		&.selected {
+			a,
+			a:visited{
+				text-decoration: none;
+				color: @bscolorSecond;
+			}
+		}
 	}
 	span {
 		display: inline-block;
@@ -146,6 +171,15 @@ div#mw-head {
 		display: none;
 	}
 }
+
+#left-navigation, #right-navigation{
+	a, a:visited, a:active {
+		display: inline-block;
+		color: @menu-link-color;
+		cursor: pointer;
+	}
+}
+
 #bs-title{
 	font-family: @bsfontBlack;
 	position: absolute;
