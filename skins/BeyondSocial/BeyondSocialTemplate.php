@@ -525,20 +525,20 @@ class BeyondSocialTemplate extends BaseTemplate {
 							<?php
 								}
 							?>
-								<!-- ***************************************************** -->
-								<!-- *** added the share option here, thanks Template! *** -->
-								<!-- ***************************************************** -->
-    							<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-								<li id="share">
-									<span id="shareButtons">Share
-										<a target="_blank" id="shareTwitter" href="">
-											<i class="fa fa-twitter-square" aria-hidden="true"></i>
-										</a>
-										<a href="" id="shareFacebook" target="_blank">
-											<i class="fa fa-facebook-square" aria-hidden="true"></i>
-										</a>
-									</span>
-								</li>
+							<!-- ***************************************************** -->
+							<!-- *** added the share option here, thanks Template! *** -->
+							<!-- ***************************************************** -->
+							<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+							<li id="share">
+								<span id="shareButtons">Share
+									<a target="_blank" id="shareTwitter" href="">
+										<i class="fa fa-twitter-square" aria-hidden="true"></i>
+									</a>
+									<a href="" id="shareFacebook" target="_blank">
+										<i class="fa fa-facebook-square" aria-hidden="true"></i>
+									</a>
+								</span>
+							</li>
 						</ul>
 					</div>
 
