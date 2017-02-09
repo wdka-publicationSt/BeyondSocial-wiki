@@ -53,6 +53,13 @@
 				"mobile.less": {
 					"media": "mobile and (max-width: 500px)"
 				}
+			},
+			"targets": [ "print" ],
+			"position": "top",
+			"styles": {
+				"print.less": {
+					"media": "print"
+				}
 			}
 		},
 		"skins.beyondsocial.js": {

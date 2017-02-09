@@ -1,0 +1,208 @@
+/* BeyondSocial print styles */
+
+@media print {
+
+	/* CSS RESET */
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	@bscolorMain: rgba(0,0,0,1);
+	@bscolorSecond: rgba(0,68,255,1);
+
+	@bsfontBook: "Book";
+	@bsfont: "Avenir";
+	@bsfontBlack: "AvenirBlack";
+
+	@content-font-size: 1.2em;
+	@content-line-height: 1.25;
+	@content-heading-font-size: 1.4em;
+
+	html{
+		position: absolute;
+		top:0px;
+		left:0px;
+	}
+	body{
+		font-family: @bsfontBook;
+		font-size: @content-font-size;
+		line-height: @content-line-height;
+		margin:0;
+		padding:0;
+		columns:2 85mm;
+		-moz-columns:2 85mm;
+
+		h1, h2, h3, h4, h5, h6{
+			font-family: @bsfontBlack;
+			margin:5mm 0 0 0;
+			padding:0px;
+		}
+		h1#firstHeading{
+			font-size: @content-heading-font-size;
+			color:@bscolorSecond;
+			border-bottom:1px solid @bscolorSecond;
+			margin:5px 0 10px 0;
+			top:0px;
+		}
+		a{
+			font-family: @bsfont;
+			font-size: 0.8em;
+		}
+		img{
+			width: 100%;
+			height: auto;
+		}
+			div.thumb{
+				display: block;
+				border:0px;
+				width: 100%;
+				margin:5mm 0 0 0;
+				padding:0;
+			}
+			div.thumbinner{
+				width: 100%;
+				border:0px;
+				background-color: transparent;
+				margin:0;
+				padding:0;
+			}
+			img.thumbimage{
+				width: 100%;
+				height: auto;
+				border:0px;
+			}
+			.thumbcaption{
+				font-family: @bsfont;
+				font-size: 0.8em;
+				margin:0 0 5mm 0;
+				padding:0;
+			}
+		p{
+			margin-bottom:5mm;
+		}
+		hr{
+			border:0;
+			border-bottom: 1px solid @bscolorSecond;
+		}
+		#footer{
+			font-family: @bsfont;
+			border-top: 1pt solid @bscolorSecond;
+			font-size: 0.8em;
+			padding:2mm 0 0 0;
+		}
+		pre,
+		.mw-code {
+			white-space: pre-wrap;
+			overflow: hidden;
+		}
+		#toc{
+			display: none;
+		}
+		table.wikitable{
+			margin:0;
+			width: 85mm; /* still expands the table wider than the parent div*/
+			max-width: 85mm;
+			border:none;
+
+			tr > th, tr > td{
+				border:2px solid @bscolorMain;
+				padding:5px;
+			}
+		}
+		table.wikitable.editorial{
+			margin-bottom:-30px;
+
+			tr > th, tr > td{
+				border:0px;
+			}
+			tr > th{
+				background-color: @bscolorSecond;
+				text-align: left;
+			}
+			tr > th > a{
+				color:white;
+				font-family: @bsfont;
+				font-size:17px;
+			}
+		}
+		table.wikitable.editorial:first-of-type{
+			margin-top:10px;
+		}
+		table.wikitable.editorial:last-of-type{
+			margin-bottom:5mm;
+		}
+	}
+	
+
+
+	// fonts
+	@font-face{
+		font-family: "Avenir";
+		src:url('fonts/AvenirLTStd-MediumOblique.otf');
+		font-style: italic, oblique;
+	}
+	@font-face{
+		font-family: "Avenir";
+		src:url('fonts/AvenirLTStd-Medium.otf');
+	}
+	@font-face{
+		font-family: "Book";
+		src:url('fonts/crimson/CrimsonText-Italic.ttf');
+		font-style: italic, oblique;
+	}
+	@font-face{
+		font-family: "Book";
+		src:url('fonts/crimson/CrimsonText-Roman.ttf');
+	}
+	@font-face{
+		font-family: "AvenirBlack";
+		src:url('fonts/AvenirLTStd-Black.otf');
+		font-weight: bold;
+	}
+
+}
