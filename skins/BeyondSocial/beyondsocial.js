@@ -113,6 +113,33 @@ jQuery( function ( $ ) {
 
 	// BS js
 
+	// Beyond Social responsiveness function, hides the sidebar
+	$('#sidebar-link').click(function(){
+		$('#mw-navigation, #content, #footer').toggleClass('slide-left');
+		$('#mw-navigation, #content, #footer').css('transition','all 0.3s');
+		if ( $('#mw-panel').css('display') == 'none' ){
+			$('#mw-panel').show(200, 'linear');
+			$(this).addClass('active');		    
+		}
+		else{
+			$('#mw-panel').hide();
+			$(this).removeClass('active');
+		}
+	});
+	$(window).resize(function() {
+		if ($(window).width() > 850) {
+			$('#mw-panel').show();
+			$('#sidebar-link').hide();
+		}
+		else {
+			if(!$('#sidebar-link').hasClass('active')){
+				$('#mw-panel').hide();
+			}
+			$('#sidebar-link').show();
+		}
+	});
+
+	// function to open a new tab which loads Tw/FB as a sharing option. Written by Template.
 	function shareClick(){
 		$(document).on('click','#share a', function(e){
 			e.preventDefault()
@@ -124,15 +151,12 @@ jQuery( function ( $ ) {
 			}
 		})
 	}
+	// this function loads the first img on the page into the head, so FB can read it and place it next to the shared link. Written by Template.
 	function addFBImage(){
 		if($('.content').find('img').length == true){
 			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$('#mw-content-text').find('img').first()[0].src+'" />')
-			// $('head').append('<link rel="image_src" type="image/jpeg" href="http://beyond-social.org/wiki/images/thumb/a/a1/Pawns_at_Play.png/800px-Pawns_at_Play.png" />')
-
 		}else{
 			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$(document).find('img').first()[0].src+'" />')
-			// $('head').append('<link rel="image_src" type="image/jpeg" href="http://beyond-social.org/wiki/images/thumb/a/a1/Pawns_at_Play.png/800px-Pawns_at_Play.png" />')
-			// }
 		}
 	}
 	shareClick()
