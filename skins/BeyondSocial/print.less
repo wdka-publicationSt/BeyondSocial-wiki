@@ -64,9 +64,8 @@
 	@content-heading-font-size: 1.4em;
 
 	html{
-		position: absolute;
-		top:0px;
-		left:0px;
+		margin:0;
+		padding:0;
 	}
 	body{
 		font-family: @bsfontBook;
@@ -75,7 +74,7 @@
 		margin:0;
 		padding:0;
 		columns:2 85mm;
-		-moz-columns:2 auto;
+		-moz-columns:2 80mm;
 
 		h1, h2, h3, h4, h5, h6{
 			font-family: @bsfontBlack;
@@ -100,7 +99,7 @@
 			color:inherit;
 		}
 		img{
-			width: 100%;
+			width: 100% !important;
 			height: auto;
 			padding:0;
 			margin:0;
@@ -154,8 +153,7 @@
 		}
 		table.wikitable{
 			margin:0;
-			width: 85mm; /* still expands the table wider than the parent div*/
-			max-width: 85mm;
+			width: 100%; /* still expands the table wider than the parent div*/
 			border:none;
 
 			tr > th, tr > td{
