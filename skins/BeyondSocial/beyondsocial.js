@@ -114,30 +114,30 @@ jQuery( function ( $ ) {
 	// BS js
 
 	// Beyond Social responsiveness function, hides the sidebar
-	$('#sidebar-link').click(function(){
-		$('#mw-navigation, #content, #footer').toggleClass('slide-left');
-		$('#mw-navigation, #content, #footer').css('transition','all 0.3s');
-		if ( $('#mw-panel').css('display') == 'none' ){
-			$('#mw-panel').show(200, 'linear');
-			$(this).addClass('active');		    
-		}
-		else{
-			$('#mw-panel').hide();
-			$(this).removeClass('active');
-		}
-	});
-	$(window).resize(function() {
-		if ($(window).width() > 850) {
-			$('#mw-panel').show();
-			$('#sidebar-link').hide();
-		}
-		else {
-			if(!$('#sidebar-link').hasClass('active')){
-				$('#mw-panel').hide();
-			}
-			$('#sidebar-link').show();
-		}
-	});
+	// $('#sidebar-link').click(function(){
+	// 	$('#mw-navigation, #content, #footer').toggleClass('slide-left');
+	// 	$('#mw-navigation, #content, #footer').css('transition','all 0.3s');
+	// 	if ( $('#mw-panel').css('display') == 'none' ){
+	// 		$('#mw-panel').show(200, 'linear');
+	// 		$(this).addClass('active');		    
+	// 	}
+	// 	else{
+	// 		$('#mw-panel').hide();
+	// 		$(this).removeClass('active');
+	// 	}
+	// });
+	// $(window).resize(function() {
+	// 	if ($(window).width() > 850) {
+	// 		$('#mw-panel').show();
+	// 		$('#sidebar-link').hide();
+	// 	}
+	// 	else {
+	// 		if(!$('#sidebar-link').hasClass('active')){
+	// 			$('#mw-panel').hide();
+	// 		}
+	// 		$('#sidebar-link').show();
+	// 	}
+	// });
 
 	// function to open a new tab which loads Tw/FB as a sharing option. Written by Template.
 	function shareClick(){
