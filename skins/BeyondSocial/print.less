@@ -75,27 +75,35 @@
 		margin:0;
 		padding:0;
 		columns:2 85mm;
-		-moz-columns:2 85mm;
+		-moz-columns:2 auto;
 
 		h1, h2, h3, h4, h5, h6{
 			font-family: @bsfontBlack;
 			margin:5mm 0 0 0;
-			padding:0px;
+			padding:0;
 		}
 		h1#firstHeading{
 			font-size: @content-heading-font-size;
 			color:@bscolorSecond;
 			border-bottom:1px solid @bscolorSecond;
 			margin:5px 0 10px 0;
+			padding:0px;
 			top:0px;
+		}
+		#left-navigation, #right-navigation{
+			padding:0;
+			margin:0;
 		}
 		a{
 			font-family: @bsfont;
 			font-size: 0.8em;
+			color:inherit;
 		}
 		img{
 			width: 100%;
 			height: auto;
+			padding:0;
+			margin:0;
 		}
 			div.thumb{
 				display: block;
@@ -133,12 +141,13 @@
 			font-family: @bsfont;
 			border-top: 1pt solid @bscolorSecond;
 			font-size: 0.8em;
-			padding:2mm 0 0 0;
+			padding:3mm 0 0 0;
 		}
 		pre,
 		.mw-code {
 			white-space: pre-wrap;
 			overflow: hidden;
+			margin:3mm 0 0 0;
 		}
 		#toc{
 			display: none;
@@ -164,7 +173,7 @@
 				background-color: @bscolorSecond;
 				text-align: left;
 			}
-			tr > th > a{
+			tr > th > a, tr > th > a:visited, tr > th > a:active{
 				color:white;
 				font-family: @bsfont;
 				font-size:17px;
