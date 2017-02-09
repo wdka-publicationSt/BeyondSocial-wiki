@@ -124,6 +124,19 @@ jQuery( function ( $ ) {
 			}
 		})
 	}
+	function addFBImage(){
+		if($('.content').find('img').length == true){
+			// $('head').append('<link rel="image_src" type="image/jpeg" href="'+$('.content').find('img').first()[0].src+'" />')
+			$('head').append('<link rel="image_src" type="image/jpeg" href="http://beyond-social.org/wiki/images/thumb/a/a1/Pawns_at_Play.png/800px-Pawns_at_Play.png" />')
+
+		}else{
+			// $('head').append('<link rel="image_src" type="image/jpeg" href="'+$(document).find('img').first()[0].src+'" />')
+			$('head').append('<link rel="image_src" type="image/jpeg" href="http://beyond-social.org/wiki/images/thumb/a/a1/Pawns_at_Play.png/800px-Pawns_at_Play.png" />')
+			// }
+		}
+	}
 	shareClick()
+	addFBImage()
+
 
 } );
