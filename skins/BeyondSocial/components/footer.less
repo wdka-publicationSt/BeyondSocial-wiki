@@ -1,10 +1,13 @@
 /* Footer */
 div#footer {
+	display: none;
 	font-family:@bsfont;
 	margin-top: 2em;
 	padding: 0.75em;
 	direction: ltr;
-	width: ~"calc(100% - 210px)";
+	width: ~"calc(100% - 1.5em)";
+	background-color: @bscolorThird;
+	height: 230px;
 
 	ul {
 		list-style-type: none;
@@ -21,7 +24,7 @@ div#footer {
 		}
 	}
 
-	#footer-icons {
+/*	#footer-icons {
 		position: relative;
 		top:-30px;
 		float: right;
@@ -36,9 +39,12 @@ div#footer {
 				border-radius: 4px;
 			}
 		}
-	}
+	}*/
 
 	#footer-info {
+		position: absolute;
+		top:53px;
+		z-index: 100;
 		li {
 			font-size: @menu-main-body-font-size;
 			line-height: 1.4em;
@@ -46,6 +52,7 @@ div#footer {
 		}
 	}
 
+	/* links */
 	#footer-places {
 		li, li a {
 			font-family:@bsfont;
@@ -53,6 +60,7 @@ div#footer {
 			color:@bscolorSecond;
 			float: left;
 			margin-right: 0.5em;
+			width: 100%;
 		}
 	}
 }

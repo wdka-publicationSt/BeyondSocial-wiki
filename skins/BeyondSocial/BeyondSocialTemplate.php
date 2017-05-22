@@ -117,10 +117,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 			<div id="mw-head">
 				<?php $this->renderNavigation( 'PERSONAL' ); ?>
 
-				<!-- ******************************************* -->
-				<!-- ** sidebar link added for responsive css ** -->
-				<!-- ******************************************* -->
-				<div id="sidebar-link">Menu</div>
 				<div id="right-navigation">
 
 					<!-- *************************************** -->
@@ -141,19 +137,9 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
 				</div>
 			</div>
-			<div id="mw-panel">
-				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="<?php
-					echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
-					?>" <?php
-					echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
-					?>></a></div>
-
-				<!-- *************************************** -->
-				<!-- *** 'SEARCH' added here             *** -->
-				<!-- *************************************** -->
-				<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
-				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-			</div>
+			<!-- *************************************** -->
+			<!-- *** mw-Panel removed here (=Sidebar)*** -->
+			<!-- *************************************** -->
 		</div>
 		<div id="content" class="mw-body" role="main">
 			<a id="top"></a>
@@ -238,9 +224,58 @@ class BeyondSocialTemplate extends BaseTemplate {
 				<?php $this->html( 'debughtml' ); ?>
 			</div>
 		</div>
-		
+
+		<!-- ***************************************** -->
+		<!-- *** mw-panel (=Sidebar) moved to here *** -->
+		<!-- *** used as footer                    *** -->
+		<!-- ***************************************** -->
+		<div id="mw-panel">
+			<!-- *************************************** -->
+			<!-- *** 'SEARCH' added here             *** -->
+			<!-- *************************************** -->
+			<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
+
+			<!-- *************************************** -->
+			<!-- *** footericons added here          *** -->
+			<!-- *************************************** -->
+			<?php $footericons = $this->getFooterIcons( 'icononly' );
+			if ( count( $footericons ) > 0 ) {
+				?>
+				<ul id="footer-icons" class="noprint">
+					<?php
+					foreach ( $footericons as $blockName => $footerIcons ) {
+						?>
+						<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
+							<?php
+							foreach ( $footerIcons as $icon ) {
+								echo $this->getSkin()->makeFooterIcon( $icon );
+							}
+							?>
+						</li>
+					<?php
+					}
+					?>
+					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
+					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></li>
+				</ul>
+			<?php
+			}
+			?>			
+
+			<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="<?php
+				echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
+				?>" <?php
+				echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
+				?>></a></div>
+
+			<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+
+		</div>
+
+
 		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
 			<?php
+
 			foreach ( $this->getFooterLinks() as $category => $links ) {
 				?>
 				<ul id="footer-<?php echo $category ?>">

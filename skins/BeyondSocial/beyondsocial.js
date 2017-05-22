@@ -162,5 +162,4 @@ jQuery( function ( $ ) {
 	shareClick()
 	addFBImage()
 
-
 } );
