@@ -138,7 +138,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 				</div>
 			</div>
 			<!-- *************************************** -->
-			<!-- *** mw-Panel removed here (=Sidebar)*** -->
+			<!-- *** mw-Panel removed here (=Footer now)*** -->
 			<!-- *************************************** -->
 		</div>
 		<div id="content" class="mw-body" role="main">
@@ -226,7 +226,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 		</div>
 
 		<!-- ***************************************** -->
-		<!-- *** mw-panel (=Sidebar) moved to here *** -->
+		<!-- *** mw-panel (=Footer now) moved to here *** -->
 		<!-- *** used as footer                    *** -->
 		<!-- ***************************************** -->
 		<div id="mw-panel">
@@ -255,8 +255,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<?php
 					}
 					?>
-					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
-					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></li>
+					<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></a></li>
+					<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></a></li>
 				</ul>
 			<?php
 			}
@@ -269,7 +269,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 				?>></a></div>
 
 			<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-
 		</div>
 
 

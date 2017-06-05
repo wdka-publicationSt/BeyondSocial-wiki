@@ -21,11 +21,11 @@
 div#simpleSearch {
 	display: block;
 	width: 150px;
-	min-width: 5em;
+	min-width: ~"calc(100% - 1.5em)";
 	max-width: 20em;
 	padding-right: 1.4em;
 	height: 1.4em;
-	margin: 0.65em 0;
+	margin: @content-padding 0;
 	position: relative;
 	min-height: 1px; /* Gotta trigger hasLayout for IE7 */
 	border: solid 1px #aaa;
