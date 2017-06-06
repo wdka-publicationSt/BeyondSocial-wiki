@@ -1,0 +1,120 @@
+__NOTOC__
+
+<div id="mp-container">
+
+<div class="mp-column first double">
+<div id="about" class="mp-column-item">
+==About Beyond Social==
+{{:About_Beyond_Social}}
+
+<small>[[About_Beyond_Social|→ read more]]</small>
+</div>
+
+<div id="recent-uploads" class="mp-column-item">
+
+==Recent Files==
+{{:Special:Newimages/12}}
+
+<small>[[Special:NewFiles|&rarr; show all recent files]]</small>
+</div>
+
+<div id="discussions" class="mp-column-item">
+
+== Recent Discussions ==
+<DPL>
+  namespace=Talk
+  count=10
+</DPL>
+</div>
+
+<div id="wanted-pages" class="mp-column-item">
+==Wanted Pages==
+{{:Special:WantedPages/10}}
+<small>[[Special:WantedPages|&rarr; see all Wanted Pages]]</small>
+</div>
+</div>
+
+<div class="mp-column second">
+<div id="editorials" class="mp-column-item">
+==Editorials==
+Each editorial is a collection of different articles, carefully selected to emphasise a certain issue, topic or theme and guided by a text by the curator to read articles in a new way. [[Editorial_Tutorial|More info here.]]
+
+{{#ask:
+[[Template::Template:Editorial]]
+|?Thumb
+|?Editor
+|?Category
+|?Modification date
+|?Creation date
+|?Last editor is
+|format=template
+|template=Editorials
+|limit=2
+|sort=Modification date
+|order=descending
+}}
+
+
+<small>[[Editorials|→ show all Editorials]]</small>
+</div>
+
+<div id="highlights" class="mp-column-item">
+
+[[Category:Editorials|Main Page]]
+[[Category:Meta|Main Page]]
+
+==Highlights==
+{{:Main_Page_Article_Suggestions}}
+</div>
+</div>
+
+<div class="mp-column-item double">
+<div id="new-pages" class="mp-column-item">
+==recent activity==
+{{Special:RecentChanges/20}}
+<br><small>[[Special:NewPages|&rarr; show all new pages]]</small>
+</div>
+</div>
+
+<div class="mp-column first double">
+<div id="create-page" class="mp-column-item">
+==Contribute==
+Feel welcome to create your own article or editorial.
+
+Create a new page [[Wiki_tutorial|&rarr; wiki tutorial]]<br>
+using a form; Title: {{#forminput:form=Article}}<br>
+without form; Title: {{#createpage:||create page}}
+
+
+Create an editorial [[Editorial_Tutorial|&rarr; more info]]<br>
+Title: {{#forminput:form=Editorial}}
+</div>
+</div>
+
+<div class="mp-column second">
+<div id="category-suggestions" class="mp-column-item">
+
+==Categories==
+{{:Main_Page_Category_Suggestions}}
+
+<small>[[Special:Categories|→ show all Categories]]<br></small>
+</div>
+</div>
+
+<div class="mp-column first double">
+<div id="events" class="mp-column-item">
+==Upcoming Events==
+{{:Events}}
+<small>[[Events|→ show all Events]]</small>
+</div>
+</div>
+
+<div class="mp-column second">
+
+==Events Gallery==
+
+Soon!
+</div>
+
+</div>
+
