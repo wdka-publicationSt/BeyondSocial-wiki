@@ -210,27 +210,26 @@ div#mw-head {
 /* Panel (= transformed into Footer) */
 div#mw-panel {
 	display: block;
-	font-family: @bsfont;
-	font-size: @menu-main-font-size;
-	position: relative;
-	width: ~"calc(100% - 1.5em)";
-	padding:0.75em;
-	margin:1em 0 0 0;
+    left: 0;
+    bottom: 0;
+	width: ~"calc(100% - 1em)";
+	padding:@content-padding;
+	margin:@content-padding 0 0 0;
 	z-index: 100;
 	background-color: white;
+	font-family: @bsfont;
+	font-size: @menu-main-font-size;
 
-	/* to prevent having the sidebar next to the search field */
-	div.portal#p-Pages{
-		margin-top: 50px;
-	}
 	/* search box */
 	#p-search{
 		display: block;
 		width: 100%;
-		height: 50px;
+		height: 3em;
+		margin:0;
+		padding:0;
 	}
-	/* tools links */
-	#p-tb{
+	/* tools & categories links */
+	#p-tb, #p-categorytree-portlet{
 		display: none;
 	}
 
@@ -243,22 +242,28 @@ div#mw-panel {
 			list-style-type: none;
 			list-style-image: none;
 			float: left;
-			margin: 0 3px;
+			margin: 0 0 0 @content-padding;
 			line-height: 2em;
 			text-align: right;
+			
+			/* mediawiki logo */
 
 			img{
 				border-radius: 4px;
 			}
 		}
+		li#footer-poweredbyico{
+			float: none;
+			margin-bottom:@content-padding;
+		}
 	}
 	div.portal {
 		position: relative;
 		display: inline-block;
-		width: 180px;
+		width: 165px;
 		vertical-align: top;
-		margin: 0 0 0 0;
-		padding: 0.25em 0;
+		margin: 0;
+		padding: 0;
 		direction: ltr;
 
 		h3 {
@@ -299,6 +304,7 @@ div#mw-panel {
 			}
 		}
 	}
+
 
 	/* First sidebar portlet. Not using :first-of-type for IE<=8 support. */
 	#p-logo + div.portal {
