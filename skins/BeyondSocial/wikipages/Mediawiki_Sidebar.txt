@@ -1,0 +1,27 @@
+* General
+** Mainpage|mainpage-description
+** About_Beyond_Social|about Beyond Social
+** Special:Categories|Categories
+** Contribute|Contribute
+** Contributers|Contributors
+** randompage-url|randompage
+** Special:RecentChanges|Recent Changes
+** Special:NewFiles|Recent Files
+
+* Edited content
+** Editorials|Editorials
+** Category:Events|Events
+
+* Editors
+** Wiki_Introduction|Wiki Introduction
+** wiki_tutorial|Wiki Tutorial
+** Editorial_tutorial|Editorial Tutorial
+** Special:Upload|Upload File
+** Special:SpecialPages|Special Pages
+** BureaucratLinks|Bureaucrat Links
+** Special:AdminLinks|Admin Links
+
+* Contact
+** Mailinglist|Subscribe to our mailinglist
+** mailto:info@beyond-social.org|info@beyond-social.org
+
