@@ -5,7 +5,7 @@
 	position: relative;
 	overflow: hidden;
 	display: block;
-	width: 100%;
+	width: ~"calc(100% + 240px)";
 	height: 500px;
 
 	.editorials-oneline{
@@ -13,14 +13,23 @@
 		
 	}
 }
-
 .editorials-wrapper{
 	width: 231px;
 	display: inline-block;
 	vertical-align: top;
 	margin:10px 5px 30px 0;
+	
+	.title, .info{
+		font-family: @bsfont;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+	}
+	.title{
+		margin:10px 0;
+		height: 50px;
+	}
 }
-	.editorials-wrapper .thumb-wrapper{
+.editorials-wrapper .thumb-wrapper{
 		overflow: hidden;
     	position: relative;
 	}
@@ -39,16 +48,6 @@
 			overflow: hidden;
 			margin:0;
 		}
-
-	.title{
-		margin:10px 0;
-		height: 50px;
-	}
-	.info{
-
-	}
-
-
 
 /* editorial pages */
 
@@ -96,7 +95,8 @@ h1#firstHeading, #bs-title, #wdka-logos, #right-navigation #p-views {
 	float:top;
 	top:-200px;
 	left:-@content-padding;
-	width: ~"calc(100% + 0.9em)";
+	width: ~"calc(100% + 80px)";
+	left:-60px;
 	z-index: -5;
 	height: 656px;
 	overflow-y:hidden;
@@ -124,7 +124,7 @@ h1#firstHeading, #bs-title, #wdka-logos, #right-navigation #p-views {
 	#editorialHeader::after{
 		display: block;
 		position: absolute;
-		background-image: linear-gradient(to bottom, rgba(222,224,255,1) 0, rgba(222,224,255,0) 100%);
+		background-image: linear-gradient(to bottom, rgba(237,255,93,1) 0, rgba(0,0,0,0) 100%);
 		top:0px;
 		height: 300px;
 		width: 100%;
@@ -134,9 +134,10 @@ h1#firstHeading, #bs-title, #wdka-logos, #right-navigation #p-views {
 	position:relative;
 	background-color:rgba(0,68,255,1);
 	color:white;
-	width:~"calc(100% - 0.1em)";
-	left:-@content-padding;
+	width:~"calc(100% + 50px)";
+	left: -60px;
 	margin:-350px 0 1em 0;
 	padding: @content-padding;
 	height:150px;
+	z-index: 99;
 }

@@ -1,0 +1,96 @@
+/* article list on the Main Page */
+.article-list{
+	font-family:'Avenir';
+	font-weight:bold;
+	font-size:17px;
+
+}
+	#mp-container .mp-column-item .article-list ul li{
+		padding:3px 0;
+		line-height: 20px;
+	}
+
+/* article pages */
+
+#article-banner{
+	background-color:@bscolorSecond;
+	color:white;
+	width:~"calc(100% - 20px)";
+	padding:10px;
+	margin:0px;
+}
+
+table.wikitable.article{
+	margin-bottom:-30px;
+
+	tr > th, tr > td{
+		border:0px;
+	}
+	tr > th{
+		background-color: @bscolorSecond;
+		text-align: left;
+	}
+	tr > th > a{
+		color:white;
+		font-family: @bsfont;
+		font-size:17px;
+	}
+}
+table.wikitable.article:first-of-type{
+	margin-top:10px;
+}
+
+
+/* general changes here, dirty way to test article header */
+h1#firstHeading, #bs-title, #wdka-logos, #right-navigation #p-views {
+	z-index: 100;
+}
+	#right-navigation #p-views{
+		position: relative;
+	}
+#articleHeader{
+	position: relative;
+	top:-200px;
+	left:-@content-padding;
+	width: ~"calc(100% + 0.9em)";
+	z-index: -5;
+	height: 656px;
+	overflow-y:hidden;
+}
+	#articleHeader div.thumb, #articleHeader div.tright, #articleHeader div.thumbinner{
+		margin:0;
+		width: 0px;
+		background-color: none;
+		border:0;
+		padding:0;
+		font-size: 100%;
+		text-align: left;
+		overflow: none;
+	}
+	#articleHeader img{
+		width: 100%;
+		background-size: cover;
+		z-index: -5;
+	}
+	#articleHeader img.thumbimage{
+		width:inherit;
+	}
+	#articleHeader::after{
+		display: block;
+		position: absolute;
+		background-image: linear-gradient(to bottom, rgba(222,224,255,1) 0, rgba(222,224,255,0) 100%);
+		top:0px;
+		height: 300px;
+		width: 100%;
+		content: '';
+	}
+#articleBanner{
+	position:relative;
+	background-color:rgba(0,68,255,1);
+	color:white;
+	width:~"calc(100% - 0.1em)";
+	left:-@content-padding;
+	margin:-350px 0 1em 0;
+	padding: @content-padding;
+	height:150px;
+}

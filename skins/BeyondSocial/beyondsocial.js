@@ -146,4 +146,8 @@ jQuery( function ( $ ) {
 		});
 	}
 	centerLandscapeImages()
+
+	// quick (probably not ok) solution to keep page at top after a refresh
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+
 } );

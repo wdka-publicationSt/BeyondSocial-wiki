@@ -1,0 +1,46 @@
+<noinclude>
+=Add an event=
+Add an event to the Beyond Social calendar. 
+
+{{#forminput:form=Event}}
+
+=About=
+This is the form page that can be used to add an '''event'''. The output of this form is placed in the [[Template:Event]].
+
+
+</noinclude>
+<includeonly>
+
+{{#default_form:Event}}
+
+{{{for template|Event|label=Form for creating an Event}}}
+
+{| class="formtable" style="verticle-align:top;font-weight:normal;"
+! Tagline: 
+| {{{field|Tagline|mandatory|placeholder= |cols=100}}}
+|-
+! Date: 
+| {{{field|Date|mandatory|input type=datepicker}}}
+|-
+! Location: 
+| {{{field|Location|mandatory|cols=100}}}
+|-
+!
+|}
+
+==Description==
+Write here a longer description of this event.
+
+{{{field|Description|input type=textarea|editor=wikieditor|rows=10}}}
+
+{{{end template}}}
+
+{{{for template|Events_more}}}
+{{{end template}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+
+
+</includeonly>

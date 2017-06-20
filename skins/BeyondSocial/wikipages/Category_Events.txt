@@ -1,0 +1,24 @@
+__NOTOC__
+<noinclude>
+==Events==
+</noinclude>
+{{#ask: 
+[[Template::Template:Event]]
+|?Date
+|?Location
+|?Description
+|?Modification date
+|?Creation date
+|?Last editor is
+|format=template
+|template=Events
+|sort=Date
+|order=descending
+}}
+
+<noinclude>
+=Add a new event=
+Add an event to the Beyond Social calendar. 
+
+{{#forminput:form=Event|button text=Add event}}
+</noinclude>

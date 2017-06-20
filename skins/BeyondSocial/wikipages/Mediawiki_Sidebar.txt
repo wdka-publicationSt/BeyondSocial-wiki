@@ -1,5 +1,5 @@
-* General
-** Mainpage|mainpage-description
+* General 
+** Mainpage|Main Page
 ** About_Beyond_Social|about Beyond Social
 ** Special:Categories|Categories
 ** Contribute|Contribute
@@ -24,4 +24,3 @@
 * Contact
 ** Mailinglist|Subscribe to our mailinglist
 ** mailto:info@beyond-social.org|info@beyond-social.org
-
