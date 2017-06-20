@@ -27,17 +27,17 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	min-width: 880px;
+	/*min-width: 900px;*/
 	background-color: @body-background-color;
 }
 
 /* Content */
 .mw-body {
 	flex:1;
-	width: ~"calc(100% - 1em)";
+	width: ~"calc(100% - 240px - 1em)";
 	padding: @content-padding;
-	border: 0;
-	margin: 0;
+	border:0;
+	margin:0 0 0 50px;
 	color: @content-font-color;
 	direction: ltr;
 
@@ -47,8 +47,7 @@ body {
 	}
 
 	p {
-		line-height: inherit;
-		margin: 0.5em 0;
+		margin: 0 0 @gridsize 0;
 	}
 
 	h1,
@@ -111,18 +110,11 @@ body {
 	pre{
 		font-size: 14px;
 	}
-
 	#toc h2,
 	.toc h2 {
 		font-size: 100%; /* (reset) */
 		font-family: @content-font-family;
 		border:0px solid @bscolorMain;
-	}
-
-	/* BS replaced the firstheading to the navigation */
-	.firstHeading {
-		/* Change the default from mediawiki.skinning CSS to let indicators float into heading area */
-		/*overflow: visible;*/
 	}
 
 	.mw-indicators {
@@ -134,11 +126,13 @@ body {
 		position: relative;
 		z-index: 1;
 	}
-
+	a:visited{
+		color:black;
+	}
 	.mw-indicator {
 		display: inline-block;
 		zoom: 1;
-		*display: inline;
+		display: inline;
 	}
 }
 

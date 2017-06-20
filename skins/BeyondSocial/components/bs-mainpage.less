@@ -5,52 +5,29 @@
 .mw-body #mp-container{
 	hr{
 		border:0;
-		margin:20px 0 40px 0;
-	}
-	p{
-		/*padding-bottom: 10px;*/
+		margin:0;
 	}
 }
 
 
 #mp-container{
+	width: ~"calc(100% + 0px)";
 	top:0px;
-	min-width: 650px;
-	margin-top:-70px;
 
 	.mp-column{
-		display: inline-block;
-		float: left;
-		width: 33.3%;
-		vertical-align: top;
-	}
-	.mp-column.double{
-		width: ~"calc(66.6% - 0.5em)";
-	}
-	h1, h2, h3, h4, h5, h6{
-		color:@bscolorSecond;
-	}
-	h1,h2{
-		border-bottom: 0.5em solid @bscolorSecond;
-		padding-bottom: 0.25em;
-		margin-bottom: @content-padding;
-	}
-	h3, h4, h5, h6{
-		margin:0;
-		padding:0;
+		width: 100%;
 	}
 	.mp-column-item{
-		position: relative;
-		display: block;
+		width: ~"calc(100% - 50px)";
 		clear: both;
 		margin-bottom: 2em;
 
 		h1, h2, h3, h4, h5, h6{
-			color:@bscolorSecond;
+			color:@bscolorMain;
 		}
 		ul{
 			list-style: none;
-			margin:0 0 10px 0;
+			margin:0 0 @gridsize 0;
 			padding:0;
 
 			li{
@@ -63,9 +40,19 @@
 	.mp-column.first{
 		margin-right: @content-padding;
 	}
+	h1,h2{
+		width: ~"calc(100% + 50px + 1em)";
+		border-top: @gridsize solid @bscolorThird;
+		padding-top: @gridsize;
+		margin-bottom: @gridsize;
+	}
+	h3, h4, h5, h6{
+		margin:0;
+		padding:0;
+	}
 	.item-left{
 		display: inline-block;
-		width: 50%;
+		width: 25%;
 		float: left;
 	}
 	.item-right{
@@ -76,20 +63,42 @@
 	}
 }
 
-/* suggestion columns*/
-.mw-body #article-suggestions, .mw-body #category-suggestions{
-	img{
+/* contribute */
+.mp-column #contribute form.pfFormInput{
+	width: ~"calc(100% + 30px)";
+	margin:0;
+	padding:0;
+	display: block;
+
+	input.formInput{
 		width: 100%;
-		height: auto;
+		border:0;
+		padding:8px 0px 5px 10px;
 		margin:0;
+		font-size: @menu-navigation-second-font-size;
+		font-family: @bsfontBlack;
+		color:@bscolorSecond;
 	}
-}
-#media-suggestions{
-	ul.gallery{
-		margin-top: 10px;
+	input#input_button_1{
+		background-color: transparent;
+		border:0;
 	}
+		
 }
 
+/* editorials */
+.editorials-oneline-wrapper-Main-Page{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: ~"calc(100% + 240px)";
+	height: 500px;
+
+	.editorials-oneline{
+		position: absolute;
+		
+	}
+}
 
 /* recent changes */
 .mw-body #recent-changes{
@@ -101,100 +110,3 @@
 		padding-top: 9px;
 	}
 }
-
-/* recent uploads */
-#recent-uploads, #media-suggestions{
-	ul.gallery{
-		/*text-align:center;*/
-	}
-	/* img gallery */
-	li.gallerybox{
-		div.thumb{
-			width: 100%;
-			background-color: white;
-			margin:0;
-			/*border:1px solid @bscolorSecond;*/
-		}
-		div.gallerytext{
-			font-family: @bsfont;
-			font-size: 12px;
-			margin:0;
-			padding:0;
-
-			p{
-				margin:0;
-				padding:3px 0 10px 0;
-			}
-		}
-	}
-}
-
-/* new pages */
-#mp-container .mp-column-item#new-pages li{
-	padding: 24px 0 6px 0;
-
-	.mw-newpages-pagename{
-		max-width: ~"calc(100% - 10px)";
-		position: absolute;
-		float:left;
-		left:0px;
-		margin-top: -22px;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		-o-text-overflow: ellipsis;
-		-ms-text-overflow: ellipsis;
-		-moz-binding: url(<q>assets/xml/ellipsis.xml#ellipsis</q>);
-	}
-}
-	#new-pages .comment{
-		display: none;
-	}
-
-/* slideshow gallery for main page */
-/* NOT IN USE */
-#mp-gallery ul.mw-gallery-slideshow {
-	/*width: 100%;*/
-	/*height: 500px;*/
-	/*padding:0;*/
-
-	li.gallerycarousel{
-		/*margin:0;*/
-		/*padding:0;*/
-		/*height: 100%;*/
-	}
-	img{
-		/*width: auto;*/
-		/*height: 500px;*/
-		/*z-index: 2;*/
-	}
-	.mw-gallery-slideshow-buttons{
-		/*position: absolute;*/
-		/*width: 100%;*/
-		/*margin-top:200px;*/
-		/*padding: 0;*/
-		/*color:@bscolorMain;*/
-		/*opacity: 1;*/
-		/*text-align: center;*/
-		/*z-index: 3;*/
-	}
-	/* display none of the ui buttons ... */
-	.oo-ui-iconElement .oo-ui-iconElement-icon{
-		/*display: none;*/
-		/*height: 50px;*/
-		/*width: 50px;*/
-	}
-	/* ... but display the previous and next button only */
-	.oo-ui-iconElement-icon.oo-ui-icon-previous, .oo-ui-iconElement-icon.oo-ui-icon-next{
-		/*display: inline-block;*/
-	}
-	.oo-ui-buttonElement{
-		/* there needs to be a better way to position the slideshow navigation buttons */
-		/*margin:0 10%; */
-	}
-}
-
-/*@media all and (max-width: 768px) {
-
-}
-*/

@@ -102,27 +102,34 @@ class BeyondSocialTemplate extends BaseTemplate {
 		<!-- ** order of nav & content is swapped ** -->
 		<!-- *************************************** -->
 		<div id="mw-navigation">
-		
+
+			<!-- *************************************** -->
+			<!-- *** personal menu moved to here     *** -->
+			<!-- *************************************** -->		
+			<?php $this->renderNavigation( 'PERSONAL' ); ?>
+
 			<!-- *************************************** -->
 			<!-- *** Beyond Social Title added       *** -->
 			<!-- *************************************** -->
-			<a href="/wiki/index.php"><div id="bs-title">Beyond Social</div></a>
-<!-- 			<div id="wdka-logos">
-				<img src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg">
-				<img src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg">
-			</div> -->
+			<a href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
+			
+			<!-- *************************************** -->
+			<!-- *** page title moved to here        *** -->
+			<!-- *************************************** -->
+			<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
+
+			<!-- *************************************** -->
+			<!-- *** personal menu removed here      *** -->
+			<!-- *************************************** -->	
 
 			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
 
 			<div id="mw-head">
-				<?php $this->renderNavigation( 'PERSONAL' ); ?>
+				<div id="left-navigation">
+					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
+				</div>
 
 				<div id="right-navigation">
-
-					<!-- *************************************** -->
-					<!-- *** page title moved to here        *** -->
-					<!-- *************************************** -->
-					<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
 
 					<!-- *************************************** -->
 					<!-- *** 'SEARCH' removed here           *** -->
@@ -130,12 +137,37 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
 				</div>
 
-				<!-- *************************************** -->
-				<!-- *** 'left-navigation' moved to here *** -->
-				<!-- *************************************** -->
-				<div id="left-navigation">
-					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
+				<div id="page-info">
+				<!-- ********************************************** -->
+				<!-- *** Footer info moved to here as page info *** -->
+				<!-- ********************************************** -->
+					<!-- "This page is last modifief by ..." -->
+					<!-- List with Footer Links -->
+					<?php
+					foreach ( $this->getFooterLinks() as $category => $links ) {
+						?>
+						<ul id="page-info-<?php echo $category ?>">
+							<?php
+							foreach ( $links as $link ) {
+								?>
+								<li id="page-info-<?php echo $category ?>-<?php echo $link ?>"><?php $this->html( $link ) ?></li>
+							<?php
+							}
+							?>
+						</ul>
+					<?php
+					}
+					?>
+					<!-- ****************************** -->
+					<!-- *** CATLINKS moved to here *** -->
+					<!-- ****************************** -->
+					<?php
+						if ( $this->data['catlinks'] ) {
+							$this->html( 'catlinks' );
+						}
+					?>
 				</div>
+
 			</div>
 			<!-- *************************************** -->
 			<!-- *** mw-Panel removed here (=Footer now)*** -->
@@ -212,9 +244,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 				<?php
 				}
 
-				if ( $this->data['catlinks'] ) {
-					$this->html( 'catlinks' );
-				}
+				// CAT LINKS REMOVED HERE
 
 				if ( $this->data['dataAfterContent'] ) {
 					$this->html( 'dataAfterContent' );
@@ -273,46 +303,10 @@ class BeyondSocialTemplate extends BaseTemplate {
 
 
 		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
-			<?php
 
-			foreach ( $this->getFooterLinks() as $category => $links ) {
-				?>
-				<ul id="footer-<?php echo $category ?>">
-					<?php
-					foreach ( $links as $link ) {
-						?>
-						<li id="footer-<?php echo $category ?>-<?php echo $link ?>"><?php $this->html( $link ) ?></li>
-					<?php
-					}
-					?>
-				</ul>
-			<?php
-			}
-			?>
-			<?php $footericons = $this->getFooterIcons( 'icononly' );
-			if ( count( $footericons ) > 0 ) {
-				?>
-				<ul id="footer-icons" class="noprint">
-					<?php
-					foreach ( $footericons as $blockName => $footerIcons ) {
-						?>
-						<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
-							<?php
-							foreach ( $footerIcons as $icon ) {
-								echo $this->getSkin()->makeFooterIcon( $icon );
-							}
-							?>
-						</li>
-					<?php
-					}
-					?>
-					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></li>
-					<li><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></li>
-				</ul>
-			<?php
-			}
-			?>
-			<div style="clear:both"></div>
+			<!-- FOOTER INFO HERE REMOVED -->
+			<!-- FOOTER ICONS HERE REMOVED -->
+
 		</div>
 		<?php $this->printTrail(); ?>
 
@@ -573,70 +567,14 @@ class BeyondSocialTemplate extends BaseTemplate {
 									</a>
 								</span>
 							</li>
+							<!-- *********************************** -->
+							<!-- *** added the print option here *** -->
+							<!-- *********************************** -->
+							<li id="print">
+								<a id="printButton" href="javascript:window.print()">Print</a>
+							</li>
 						</ul>
 					</div>
-
-					<!-- ************************************************ -->
-					<!-- *** this list moved to the previous UL above *** -->
-					<!-- ************************************************ -->
-					<?php
-					// break;
-				// case 'ACTIONS':
-					?>
-					<!-- <div id="p-cactions" role="navigation" class="beyondsocialMenu -->
-					<?php
-						// if ( count( $this->data['action_urls'] ) == 0 ) { echo ' emptyPortlet'; } 
-					?>
-					<!-- " aria-labelledby="p-cactions-label"> -->
-
-						<!-- *************************************** -->
-						<!-- *** h3#p-cactions-label is not used *** -->
-						<!-- *************************************** -->
-						<!-- <h3 id="p-cactions-label"><span> -->
-						<?php
-							// $this->msg( 'beyondsocial-more-actions' )
-						?>
-						<!-- </span><a href="#"></a></h3> -->
-						
-						<!-- <div class="menu"> -->
-							<!-- <ul -->
-								<?php 
-									// $this->html( 'userlangattributes' ) 
-								?>
-							<!-- > -->
-								<?php
-									// foreach ( $this->data['action_urls'] as $link ) {
-								?>
-									<!-- <li -->
-										<?php 
-											// echo $link['attributes'] 
-										?>
-									<!-- > -->
-										<!-- *************************************** -->
-										<!-- *** span element added here         *** -->
-										<!-- *************************************** -->
-										<!-- <span> -->
-											<!-- <a href=" -->
-												<?php 
-													// echo htmlspecialchars( $link['href'] ) 
-												?>
-											<!-- " -->
-												<?php 
-													// echo $link['key'] 
-												?>
-											<!-- > -->
-											<?php 
-												// echo htmlspecialchars( $link['text'] )
-											?>
-											<!-- </a> -->
-										<!-- </span> -->
-									<!-- </li> -->
-								<?php
-									// }
-								?>
-							<!-- </ul> -->
-						<!-- </div> -->
-					<!-- </div> -->
 
 					<?php
 					break;

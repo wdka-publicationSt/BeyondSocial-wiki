@@ -1,0 +1,82 @@
+<noinclude>
+=Article form=
+
+'''To create an article with a form:''' <br>
+enter the name of name you want to give your page. If a page with that name already exists, you can change it, by entering its name.
+
+Create or edit an article:
+
+{{#forminput:form=Article|button text=Create Article|no autofocus}}
+
+=Articles created with this form=
+{{#ask: 
+[[Template::Template:Article]]
+|?Thumb
+|?Category
+|?Modification date
+|?Creation date
+|?Last editor is
+|format=template
+|template=Articles
+|limit=10
+|sort=Modification date
+|order=descending
+}}
+
+</noinclude>
+
+<includeonly>
+
+{{#default_form:Article}}
+
+<div id="wikiPreview" style="display: none; padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px solid #AAAAAA;"></div>
+{{{for template|Article|label=Form for creating an Article}}}
+
+{| class="formtable" style="verticle-align:top;font-weight:normal;"
+! Subtitle: 
+| {{{field|Subtitle|placeholder=e.g.: In the context of Beyond Social|cols=100}}}
+|-
+! Image:
+| {{{field|Image|input type=text with autocomplete|values from namespace=File|placeholder=e.g.: Research.jpg|cols=100}}}<br>
+|-
+! Image description & source (when applicable):
+| {{{field|Caption|placeholder=e.g.: Presentation day, photograph by Ward Cunningham, 2017|cols=100}}}
+|-
+! <small style="font-weight:normal;">Note: You need to upload your image first to the wiki &rarr; [[Special:Upload|Upload File]]</small>
+|-
+! Category:
+| {{{field|Category|input type=text with autocomplete|values from namespace=Category|placeholder=e.g.: Politics|cols=100}}}
+|-
+! Quote (optional): 
+| {{{field|Quote|input type=textarea|placeholder=e.g.: "What is simplicity? Simplicity is the shortest path to a solution." - Ward Cunningham|cols=40|rows=5}}}
+|-
+|}
+
+=Summary=
+
+{{{field|Summary|input type=textarea|editor=wikieditor|rows=5}}}
+
+=Article=
+
+{{{field|Body|input type=textarea|editor=wikieditor|rows=30}}}
+{{{end template}}}
+
+=Links=
+
+{{{for template|Links_internal|multiple|label=add internal wiki links|add button text=Add link}}}
+Link: {{{field|link|input type=text with autocomplete|values from namespace=User||Main||Talk||File|class=articles|cols=100|placeholder=e.g.: About Beyond Social}}}
+Display text: {{{field|displaytext|input type=text|cols=100|placeholder=e.g.: More information about this project}}}
+{{{end template}}}
+
+
+{{{for template|Links_external|multiple|label=add external links|add button text=Add link}}}
+Link: {{{field|link|input type=text|class=articles|cols=100|placeholder=e.g.: http://www.wikipedia.org}}}
+Display text: {{{field|displaytext|input type=text|cols=100|placeholder=e.g.: Wikipedia, The Free Encyclopedia}}}
+{{{end template}}}
+
+{{{standard input|minor edit}}} {{{standard input|watch}}}
+
+{{{standard input|save}}} {{{standard input|preview}}} {{{standard input|changes}}} {{{standard input|cancel}}}
+
+</includeonly>
+

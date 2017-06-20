@@ -10,201 +10,184 @@
 
 /* Head */
 #mw-page-base {
-	height: 5em;
+	/*height: 5em;*/
 }
 
 #mw-head-base {
-	margin-top:-5em;
-	height: 5.75em;
-}
-
-div#mw-head {
-	/*position: absolute;*/
-	display: block;
-	top: 0;
-	right: 0;
-	width: 100%;
-
-	h3 {
-		margin: 0;
-		padding: 0;
-	}
+	/*margin-top:-5em;*/
+	/*height: 5.75em;*/
 }
 
 /* Navigation Containers */
 #mw-navigation{
-	width: ~"calc(100% - 10px)";
+	width: 100%;
 }
-
-/* Page type + Discussion */
-#left-navigation {
-	position: absolute;
-	padding-bottom:20px;
-	margin-top:-86px;
-
-	#p-namespaces{
-		position: relative;
-		width: auto;
-		left: 10px;
-		top:0px;
+	/* wiki title */
+	#bs-title{
 		font-family: @bsfontBlack;
-		font-size: @menu-navigation-second-font-size;
-		z-index: 10;
-		line-height: 28px;
+		position: absolute;
+		font-weight: bold;
+		font-size: @menu-navigation-font-size;
+		color:@bscolorMain;
+		top:-5px;
+		left:0px;
 	}
-
-	/* reset the comma after the nav items for the left-nav*/
-	ul li span::after{
-		content: " ";
-	}
-	ul, ul li{
-		clear: both;
-		display: block;
-		margin:0;
-		padding:0;
-	}
-	li {
-		&.new {
-			a,
-			a:visited{
-				color: #ff2400;
-			}
-		}
-
-		&.selected {
-			a,
-			a:visited{
-				text-decoration: none;
-				color: @bscolorSecond;
-			}
-		}
-	}
-	#p-namespaces-label{
-		display: none;
-	}
-}
-	/* for unclear reasons, the left-navigation's line height responses differently in firefox and chrome. This is dirty fix to that weird behaviour. */
-	/*@-moz-document url-prefix() {
-		#left-navigation {
-	        top:160px;
-			line-height: 0.65em;
-	    }
-	}*/
-
-/* read, edit, view history, watch, + more*/
-#right-navigation {
-	position: relative;
-	top:-87px;
-	left:10px;
-	width: ~"calc(100% - 201px)";
-
+	/* page title */
 	h1#firstHeading {
 		position: relative;
+		width: ~"calc(100% - 190px)";
 		border-bottom:0px;
-		margin:0 0 0px 0;
+		margin:65px 0 0px 0;
 		padding:0 0 10px 0;
-		left:-5px;
+		left:5px;
 		font-family: @bsfontBlack;
 		font-size: @menu-navigation-font-size;
-		color: @bscolorSecond;
+		color: @bscolorMain;
 		line-height: 0.95;
 	}
-	#p-views{
-		border-top:2px solid @bscolorSecond;
-		margin-top:2px;
-		padding-top:10px;
-	}
-	ul{
-		list-style-type: none;
-		list-style-image: none;
-		margin: 0 0 0 200px;
-		padding: 0;
-		float:right;
-		display: inline-block;
-	}
-	li{
-		position: relative;
-		top:0px;
-		float: left;
-		font-family: @bsfontBlack;
-		font-size: @menu-navigation-second-font-size;
-		line-height: 1.00;
-		z-index: 100;	
-		padding: 0 0 0 5px;
-		white-space: nowrap;
-	}
-		li span::after{
-			content: ", ";
-			vertical-align: top;
-		}
-	li {
-		&.new {
-			a,
-			a:visited{
-				color: #a55858;
-			}
+
+/* right navigation strip */
+div#mw-head {
+	position: absolute;
+	float: right;
+	width: 170px;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	margin:0;
+	padding:0 10px;
+	z-index: 100;
+	background-color: rgba(255,255,0,1);
+
+	/* Page type + Discussion */
+	#left-navigation {
+		margin:30px 0 10px 0;
+
+		#p-namespaces{
+			font-family: @bsfontBlack;
+			font-size: @menu-navigation-second-font-size;
+			line-height: 1.1;
 		}
 
-		&.selected {
-			a,
-			a:visited{
-				text-decoration: none;
-				color: @bscolorSecond;
+		/* reset the comma after the nav items for the left-nav*/
+		ul li span::after{
+			content: " ";
+		}
+		ul, ul li{
+			clear: both;
+			display: block;
+			margin:0;
+			padding:0;
+		}
+		li {
+			&.new {
+				a,
+				a:visited{
+					color: #ff2400;
+				}
+			}
+
+			&.selected {
+				a,
+				a:visited{
+					text-decoration: none;
+					color: @bscolorSecond;
+				}
 			}
 		}
+		#p-namespaces-label{
+			display: none;
+		}
 	}
-	span {
-		display: inline-block;
 
-		a  {
-			/* For IE6, overridden later to display:block by modern browsers */
+	/* read, edit, view history, watch, + more*/
+	#right-navigation {
+		#p-views{
+
+		}
+		ul{
+			list-style-type: none;
+			list-style-image: none;
+			margin: 0;
+			padding: 0;
+			float:right;
 			display: inline-block;
 		}
-
-		/* Ignored by IE6 which doesn't support child selector */
-		> a {
-			/* @noflip */
+		li{
+			position: relative;
+			top:0px;
 			float: left;
-			display: block;
+			font-family: @bsfontBlack;
+			font-size: @menu-navigation-second-font-size;
+			line-height: 1.1;
+			margin:0;
+			padding: 0;
+		}
+			li span::after{
+				content: ", ";
+				vertical-align: top;
+			}
+		li {
+			&.new {
+				a,
+				a:visited{
+					color: #a55858;
+				}
+			}
+
+			&.selected {
+				a,
+				a:visited{
+					text-decoration: none;
+					color: @bscolorSecond;
+				}
+			}
+		}
+		span {
+			display: inline-block;
+
+			a  {
+				/* For IE6, overridden later to display:block by modern browsers */
+				display: inline-block;
+			}
+
+			/* Ignored by IE6 which doesn't support child selector */
+			> a {
+				/* @noflip */
+				float: left;
+				display: block;
+			}
+		}
+		#p-views-label{
+			display: none;
 		}
 	}
-	#p-views-label{
-		display: none;
-	}
-}
+	#page-info{
+		font-family: @bsfont;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
 
-#left-navigation, #right-navigation{
-	a, a:visited, a:active {
-		display: inline-block;
-		color: @menu-link-color;
-		cursor: pointer;
-	}
-}
-
-#bs-title{
-	font-family: @bsfontBlack;
-	position: absolute;
-	font-weight: bold;
-	font-size: @menu-navigation-second-font-size;
-	color:@bscolorSecond;
-	top:30px;
-	right:7px;
-}
-#wdka-logos{
-	position: absolute;
-	top:76px;
-	width: 187px;
-	right: 3px;
-	text-align: right;
-
-	img{
-		width: 82px;
-		height: auto;
-		border:0;
-		border-radius: 10px;
-		padding-right: 5px;
+		ul, ul li{
+			clear: both;
+			display: block;
+			margin:0;
+			padding:0;
+		}
+		#page-info-info{
+			padding:10px 0 0 0;
+		}
+		#page-info-places{
+			display: none;
+		}
 	}
 
+	#left-navigation, #right-navigation{
+		a, a:visited, a:active {
+			display: inline-block;
+			color: @menu-link-color;
+			cursor: pointer;
+		}
+	}
 }
 
 /* Panel (= transformed into Footer) */
@@ -331,7 +314,7 @@ li#share span:after{
 	font-family:'FontAwesome';
 	font-size: 23px;
 	text-rendering: auto;
-	margin-right: -3px;
+	margin-right: 5px;
 }
 i{
 	color: @bscolorSecond;
