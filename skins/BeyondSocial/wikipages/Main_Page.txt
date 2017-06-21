@@ -50,9 +50,10 @@ Each editorial is a collection of different articles, carefully selected to emph
 <div class="mp-column">
 <div id="events" class="mp-column-item">
 
-==Upcoming Events==
+==Events==
 {{:Category:Events}}
 
 <small>[[:Category:Events|→ show all Events]]</small>
 </div>
 </div>
+

@@ -1,0 +1,20 @@
+<noinclude>
+This is the "Articles" template. This template uses the SMW tags of pages that are made with the Form:Article form. 
+<pre>
+{{ Articles
+| Title=
+| Thumb=
+| Category=
+| Modification date=
+| Creation date=
+| Last editor is=
+}}
+</pre>
+</noinclude>
+
+<includeonly><div class="editorials-wrapper">
+<div class="thumb-wrapper">{{{2}}}</div>
+<div class="title">{{{1}}}</div>
+<div class="info"><small>Last modified at {{{5}}} by {{{6}}}</small></div>
+</div></includeonly>
+

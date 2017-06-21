@@ -1,0 +1,31 @@
+<noinclude>
+This is the "Article" template.
+It should be called in the following format:
+<pre>
+{{article
+|Title=
+|Subtitle=
+|Image=
+|Caption=
+|Summary=
+|Body=
+}}
+</pre>
+Edit the page to see the template text.
+</noinclude>
+
+<includeonly>
+[[Template::Template:Article| ]]
+[[Thumb::File:{{{Image}}}| ]]
+
+__NOTOC__
+
+<div id="articleHeader">[[File:{{{Image|}}}|{{{Caption|}}}]]</div>
+<div id="articleCaption"><small>{{{Caption|}}}</small></div>
+
+<div id="articleBanner">Article<div style="float:right;width:50%;">{{{Summary|}}}</div><br></div>
+ 
+{{{Body|}}}
+
+</includeonly>
+
