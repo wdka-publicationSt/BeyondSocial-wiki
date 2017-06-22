@@ -11,14 +11,14 @@
 
 
 #mp-container{
-	width: ~"calc(100% + 0px)";
+	width: 100%;
 	top:0px;
 
 	.mp-column{
 		width: 100%;
 	}
 	.mp-column-item{
-		width: ~"calc(100% - 50px)";
+		width: ~"calc(100% - 0px)";
 		clear: both;
 		margin-bottom: 2em;
 
@@ -41,7 +41,7 @@
 		margin-right: @content-padding;
 	}
 	h1,h2{
-		width: ~"calc(100% + 50px + 1em)";
+		width: ~"calc(100% + 250px)";
 		border-top: @gridsize solid @bscolorThird;
 		padding-top: @gridsize;
 		margin-bottom: @gridsize;
@@ -65,7 +65,7 @@
 
 /* contribute */
 .mp-column #contribute form.pfFormInput{
-	width: ~"calc(100% + 30px)";
+	width: ~"calc(100% - 10px)";
 	margin:0;
 	padding:0;
 	display: block;
@@ -88,10 +88,10 @@
 
 /* editorials */
 .editorials-oneline-wrapper-Main-Page{
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	display: block;
-	width: ~"calc(100% + 240px)";
+	width: ~"calc(100% - 60px)";
 	height: 500px;
 
 	.editorials-oneline{
@@ -101,7 +101,9 @@
 }
 
 /* recent changes */
-.mw-body #recent-changes{
+#recent-uploads.mp-column-item {
+	margin-top:500px;
+
 	table p{
 		margin: 0;
 	} 
