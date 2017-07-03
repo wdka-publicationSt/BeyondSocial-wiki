@@ -188,8 +188,12 @@ div#mw-head {
 		}
 		.catlinks li{
 			border-left:none;
+			display: inline-block;
 			/*padding-left: @content-padding;*/
 		}
+			.catlinks li:after{
+				content:' ';
+			}
 	}
 
 	#left-navigation, #right-navigation{
