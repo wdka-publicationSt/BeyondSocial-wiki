@@ -41,7 +41,7 @@
 		margin-right: @content-padding;
 	}
 	h1,h2{
-		width: ~"calc(100% + 250px)";
+		width: 90vw;
 		border-top: @gridsize solid @bscolorThird;
 		padding-top: @gridsize;
 		margin-bottom: @gridsize;
@@ -63,25 +63,59 @@
 	}
 }
 
+/* small arrow link */
+p small.arrow-link{
+	position: absolute;
+	font-family: @bsfont;
+	font-size: @content-small-font-size;
+	margin-top:-40px;
+	left:~"calc(100% - 180px)";
+	z-index: 200;
+}
+	p small.arrow-link.second{
+		margin-top:-20px;
+	}
+	p small.arrow-link.third{
+		margin-top:0px;
+	}
+	small.arrow-link a:visited, .arrow-link a:active{
+		color:@bscolorSecond;
+	}
+	small.arrow-link a:hover{
+		cursor: pointer;
+	}
+
 /* contribute */
+.mp-column #contribute {
+	margin-bottom:-1em;
+}
 .mp-column #contribute form.pfFormInput{
 	width: ~"calc(100% - 10px)";
-	margin:0;
+	margin:@content-padding 0 0 0;
 	padding:0;
 	display: block;
 
 	input.formInput{
-		width: 100%;
+		width:~"calc(100vw - 310px)";
 		border:0;
 		padding:8px 0px 5px 10px;
 		margin:0;
 		font-size: @menu-navigation-second-font-size;
 		font-family: @bsfontBlack;
-		color:@bscolorSecond;
+		/*color:@bscolorSecond;*/
 	}
 	input#input_button_1{
+		position: absolute;
+		font-family: @bsfont;
 		background-color: transparent;
 		border:0;
+		color:@bscolorSecond;
+		padding:0;
+		margin-top: @content-padding;
+		margin-left: ~"calc(100vw - 409px)";
+	}
+	input#input_button_1:hover{
+		cursor:pointer;
 	}
 		
 }

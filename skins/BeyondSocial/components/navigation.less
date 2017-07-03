@@ -174,10 +174,21 @@ div#mw-head {
 			padding:0;
 		}
 		#page-info-info{
-			padding:10px 0 0 0;
+			padding:@content-padding 0 0 0;
 		}
 		#page-info-places{
 			display: none;
+		}	
+		/* categories box */
+		#catlinks{
+			border:none;
+			background-color: transparent;
+			margin:@content-padding 0 0 0;
+			padding:0;
+		}
+		.catlinks li{
+			border-left:none;
+			/*padding-left: @content-padding;*/
 		}
 	}
 
@@ -211,8 +222,8 @@ div#mw-panel {
 		margin:0;
 		padding:0;
 	}
-	/* tools & categories links */
-	#p-tb, #p-categorytree-portlet{
+	/* tools */
+	#p-tb{
 		display: none;
 	}
 

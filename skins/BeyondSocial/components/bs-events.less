@@ -1,6 +1,6 @@
-#events{
-	width: 100%;
-	
+#events.mp-column-item {
+	width: ~"calc(100vw - 300px)";
+}
 	.events-wrapper{
 		width: 100%;
 
@@ -13,7 +13,7 @@
 		}
 		.title{
 			position: relative;
-			width: ~"calc(100% - 174px)";
+			width: ~"calc(100% - 180px)";
 			border-bottom:1px solid;
 			/*font-weight: bold;*/
 		}
@@ -21,4 +21,7 @@
 
 		}
 	}
-}
+	.events-wrapper:first-of-type .title{
+		border-top:1px solid;
+	}
+

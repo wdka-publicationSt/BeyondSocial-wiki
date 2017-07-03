@@ -27,17 +27,18 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	/*min-width: 900px;*/
+	width: 100%;
+	min-width: 960px;
 	background-color: @body-background-color;
 }
 
 /* Content */
 .mw-body {
 	flex:1;
-	width: ~"calc(100% - 310px)";
-	padding: @content-padding;
+	width: ~"calc(100% - 250px)";
+	padding: @content-padding @content-padding @content-padding 50px;
 	border:0;
-	margin:0 0 0 50px;
+	margin:0;
 	color: @content-font-color;
 	direction: ltr;
 
@@ -57,6 +58,7 @@ body {
 		margin-bottom: 0em;
 		padding: 0;
 		border:0;
+		width: ~"calc(100vw - 290px)";
 
 		/* Fallback heading font for scripts which render poorly in @content-heading-font-family. */
 		/* See T73240 */
@@ -170,11 +172,16 @@ pre,
 /* Beyond Social specific resets */
 /*********************************/
 #mw-content-text {
-	width: 800px;
+	width: ~"calc(100% - 40px)";
 	font-size: @content-font-size;
 	line-height: @content-line-height;
 	z-index: 0;
 }
+/* text width for content */
+#mw-content-text.mw-content-ltr{
+	width: 750px;
+}
+
 #content img{
 	min-width: 100%;
 	max-width: 100%;
@@ -256,6 +263,20 @@ html .thumbcaption{
 	padding:0;
 	font-size: 87%;
 	margin-top:-4px;
+}
+
+/* form input preview text */
+::-moz-placeholder{
+	color:lightgrey;
+}
+:-moz-placeholder{
+	color:lightgrey;
+}
+::-webkit-input-placeholder{
+	color:lightgrey;
+}
+:-ms-input-{
+	color:lightgrey;
 }
 
 /* used in the wiki tutorial */
