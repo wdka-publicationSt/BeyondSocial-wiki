@@ -1,0 +1,27 @@
+<noinclude>
+This is the "More editorials" template.
+It should be called in the following format:
+<pre>
+{{Editorials more}}
+</pre>
+Edit the page to see the template text.
+</noinclude>
+
+=More editorials=
+<div class="editorials-oneline-wrapper"><div class="editorials-oneline">{{#ask: 
+[[Template::Template:Editorial]]
+|?Thumb
+|?Editor
+|?Category
+|?Modification date
+|?Creation date
+|?Last editor is
+|format=template
+|template=Editorials
+|limit=10
+|sort=Modification date
+|order=descending
+}}</div></div>
+
+<small class="arrow-link">[[Editorials|→ show all Editorials]]</small>
+

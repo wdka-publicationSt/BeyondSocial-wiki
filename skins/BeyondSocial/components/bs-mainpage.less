@@ -9,7 +9,6 @@
 	}
 }
 
-
 #mp-container{
 	width: 100%;
 	top:0px;
@@ -40,8 +39,8 @@
 	.mp-column.first{
 		margin-right: @content-padding;
 	}
-	h1,h2{
-		width: 90vw;
+	h1{
+		width: 130vw;
 		border-top: @gridsize solid @bscolorThird;
 		padding-top: @gridsize;
 		margin-bottom: @gridsize;
@@ -63,61 +62,15 @@
 	}
 }
 
-/* small arrow link */
-p small.arrow-link{
+/* intro */
+#intro{
 	position: absolute;
-	font-family: @bsfont;
-	font-size: @content-small-font-size;
-	margin-top:-40px;
-	left:~"calc(100% - 180px)";
-	z-index: 200;
-}
-	p small.arrow-link.second{
-		margin-top:-20px;
-	}
-	p small.arrow-link.third{
-		margin-top:0px;
-	}
-	small.arrow-link a:visited, .arrow-link a:active{
-		color:@bscolorSecond;
-	}
-	small.arrow-link a:hover{
-		cursor: pointer;
-	}
-
-/* contribute */
-.mp-column #contribute {
-	margin-bottom:-1em;
-}
-.mp-column #contribute form.pfFormInput{
-	width: ~"calc(100% - 10px)";
-	margin:@content-padding 0 0 0;
-	padding:0;
-	display: block;
-
-	input.formInput{
-		width:~"calc(100vw - 310px)";
-		border:0;
-		padding:8px 0px 5px 10px;
-		margin:0;
-		font-size: @menu-navigation-second-font-size;
-		font-family: @bsfontBlack;
-		/*color:@bscolorSecond;*/
-	}
-	input#input_button_1{
-		position: absolute;
-		font-family: @bsfont;
-		background-color: transparent;
-		border:0;
-		color:@bscolorSecond;
-		padding:0;
-		margin-top: @content-padding;
-		margin-left: ~"calc(100vw - 409px)";
-	}
-	input#input_button_1:hover{
-		cursor:pointer;
-	}
-		
+	width: 210px;
+	top:27px;
+	left:~"calc(100% - 465px)";
+	color:@bscolorSecond;
+	font-size: 1em;
+	line-height: 1.2;
 }
 
 /* editorials */
@@ -125,18 +78,24 @@ p small.arrow-link{
 	position: absolute;
 	overflow: hidden;
 	display: block;
-	width: ~"calc(100% - 60px)";
-	height: 500px;
+	width: ~"calc(100% - 50px)";
+	height: 480px;
 
 	.editorials-oneline{
 		position: absolute;
 		
 	}
 }
+@media only screen and (max-width:1039px){
+    #intro{
+    	left:560px;
+    }
+}
 
 /* recent changes */
 #recent-uploads.mp-column-item {
-	margin-top:500px;
+	/* extra margin for this item, as the editorial oneline element is set to absolute*/
+	margin-top:505px;
 
 	table p{
 		margin: 0;

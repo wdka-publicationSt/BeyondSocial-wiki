@@ -2,62 +2,21 @@
 @import "personalMenu";
 @import "search";
 
-/* Hide, but keep accessible for screen-readers */
-#mw-navigation h2 {
-	position: absolute;
-	top: -9999px;
-}
-
-/* Head */
-#mw-page-base {
-	/*height: 5em;*/
-}
-
-#mw-head-base {
-	/*margin-top:-5em;*/
-	/*height: 5.75em;*/
-}
-
-/* Navigation Containers */
-#mw-navigation{
-	width: 100%;
-}
-	/* wiki title */
-	#bs-title{
-		font-family: @bsfontBlack;
-		position: absolute;
-		font-weight: bold;
-		font-size: @menu-navigation-font-size;
-		color:@bscolorMain;
-		top:0px;
-		left:5px;
-	}
-	/* page title */
-	h1#firstHeading {
-		position: relative;
-		width: ~"calc(100% - 190px)";
-		border-bottom:0px;
-		margin:65px 0 0px 0;
-		padding:0 0 10px 0;
-		left:5px;
-		font-family: @bsfontBlack;
-		font-size: @menu-navigation-font-size;
-		color: @bscolorMain;
-		line-height: 0.95;
-	}
-
 /* right navigation strip */
+@sidebar-backgroundcolor: rgba(255,255,0,1);
+
 div#mw-head {
-	position: absolute;
-	float: right;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
 	width: 170px;
 	height: 100%;
-	top: 0px;
-	right: 0px;
+	top: -77px;
+	right: 0;
 	margin:0;
-	padding:0 10px;
+	padding:0 10px 77px;
 	z-index: 100;
-	background-color: rgba(255,255,0,1);
+	background-color: @sidebar-backgroundcolor;
 
 	/* Page type + Discussion */
 	#left-navigation {
@@ -191,8 +150,8 @@ div#mw-head {
 			display: inline-block;
 			/*padding-left: @content-padding;*/
 		}
-			.catlinks li:after{
-				content:' ';
+			.catlinks li a{
+				padding-right: 5px;
 			}
 	}
 
@@ -207,6 +166,7 @@ div#mw-head {
 
 /* Panel (= transformed into Footer) */
 div#mw-panel {
+	position: relative;
 	display: block;
     left: 0;
     bottom: 0;

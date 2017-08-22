@@ -12,9 +12,9 @@ This is the "Articles" template. This template uses the SMW tags of pages that a
 </pre>
 </noinclude>
 
-<includeonly><div class="editorials-wrapper">
+<includeonly><div class="articles-wrapper">
 <div class="thumb-wrapper">{{{2}}}</div>
 <div class="title">{{{1}}}</div>
-<div class="info"><small>Last modified at {{{5}}} by {{{6}}}</small></div>
+<div class="info"><small>Last modified at {{{4}}} by {{{6}}}</small></div>
 </div></includeonly>
 

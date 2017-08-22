@@ -3,7 +3,6 @@
 	font-family:'Avenir';
 	font-weight:bold;
 	font-size:17px;
-
 }
 	#mp-container .mp-column-item .article-list ul li{
 		padding:3px 0;
@@ -11,86 +10,61 @@
 	}
 
 /* article pages */
-
-#article-banner{
-	background-color:@bscolorSecond;
-	color:white;
-	width:~"calc(100% - 20px)";
-	padding:10px;
-	margin:0px;
-}
-
-table.wikitable.article{
-	margin-bottom:-30px;
-
-	tr > th, tr > td{
-		border:0px;
+#article-wrapper{
+	.title{
+		display: none;
+		font-family: @bsfontBlack;
+		line-height: @heading-line-height;
+		font-size: 200%;
 	}
-	tr > th{
-		background-color: @bscolorSecond;
-		text-align: left;
+	.subtitle{
+		display: none;
+		margin-bottom:100px;
 	}
-	tr > th > a{
-		color:white;
+	.image{
+		margin-top:-2em;
+		margin-bottom:3em;
+
+		.thumb{
+			margin-bottom:0px;
+		}
+	}
+	.caption, .thumbcaption{
 		font-family: @bsfont;
-		font-size:17px;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
+		margin-bottom:@gridsize;
+	}
+	.summary{
+		font-size: 125%;
+		line-height: 1.4;
+		margin-bottom: 1em;
+		hyphens: auto;
+	}
+	.article{
+		iframe{
+			width: 100%;
+			height: 450px;
+			margin-top:@gridsize;
+			margin-bottom: -20px;
+		}
 	}
 }
-table.wikitable.article:first-of-type{
-	margin-top:10px;
-}
 
+/* contribute */
+#contribute-wrapper{
+	width: 130vw;
+	background-color: @bscolorThird;
+	padding:@gridsize @gridsize 30px 50px;
+	margin-left:-50px;
+	margin-bottom:-10px;
 
-/* general changes here, dirty way to test article header */
-h1#firstHeading, #bs-title, #wdka-logos, #right-navigation #p-views {
-	z-index: 100;
-}
-	#right-navigation #p-views{
-		position: relative;
-	}
-#articleHeader{
-	position: relative;
-	top:-200px;
-	left:-@content-padding;
-	width: ~"calc(100% + 0.9em)";
-	z-index: -5;
-	height: 656px;
-	overflow-y:hidden;
-}
-	#articleHeader div.thumb, #articleHeader div.tright, #articleHeader div.thumbinner{
-		margin:0;
-		width: 0px;
-		background-color: none;
+	h1{
 		border:0;
-		padding:0;
-		font-size: 100%;
-		text-align: left;
-		overflow: none;
+		margin:0;
 	}
-	#articleHeader img{
-		width: 100%;
-		background-size: cover;
-		z-index: -5;
+	.contribute-container{
+		max-width: 750px;
 	}
-	#articleHeader img.thumbimage{
-		width:inherit;
-	}
-	#articleHeader::after{
-		display: block;
-		position: absolute;
-		background-image: linear-gradient(to bottom, rgba(222,224,255,1) 0, rgba(222,224,255,0) 100%);
-		top:0px;
-		height: 300px;
-		width: 100%;
-		content: '';
-	}
-#articleBanner{
-	position:relative;
-	background-color:rgba(0,68,255,1);
-	color:white;
-	width:~"calc(100% - 0.1em)";
-	left:-@content-padding;
-	margin:-350px 0 1em 0;
-	padding: @content-padding;
-	height:150px;
 }

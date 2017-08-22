@@ -10,7 +10,8 @@
 
 * Edited content
 ** Editorials|Editorials
-** Category:Events|Events
+** Events|Events
+** Articles|Articles
 
 * Editors
 ** Wiki_Introduction|Wiki Introduction
@@ -24,3 +25,4 @@
 * Contact
 ** Mailinglist|Subscribe to our mailinglist
 ** mailto:info@beyond-social.org|info@beyond-social.org
+

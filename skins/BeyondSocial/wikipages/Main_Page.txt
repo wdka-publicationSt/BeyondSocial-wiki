@@ -2,20 +2,22 @@ __NOTOC__
 
 <div id="mp-container">
 
+<div id="intro">Beyond Social is an international and collaborative research and publishing platform on social art and design, written and maintained by its community.</div>
+
 <div class="mp-column">
 <div id="contribute" class="mp-column-item">
-==Contribute==
-Beyond Social is an international and collaborative research and publishing platform on social art and design. It is written and maintained by its community. Feel free to contribute by editing one of the pages, or create a new article below.
-{{#forminput:form=Article|placeholder=Title of a new article|button text=→ create article}}
+=Contribute=
+Feel free to contribute by editing one of the pages, or create a new article below.
+{{#forminput:form=Article|placeholder=|button text=→ create article}}
 </div>
 </div>
 
 <div class="mp-column">
 <div id="editorials" class="mp-column-item">
-==Editorials==
+=Editorials=
 Each editorial is a collection of different articles, carefully selected to emphasize a certain issue, topic or theme and guided by a text by the curator to read articles in a new way. [[Editorial_Tutorial|More info here.]]
 
-<div class="editorials-oneline-wrapper-Main-Page"><div class="editorials-oneline">{{#ask: 
+<div class="editorials-oneline-wrapper-Main-Page oneline-wrapper"><div class="editorials-oneline">{{#ask: 
 [[Template::Template:Editorial]]
 |?Thumb
 |?Editor
@@ -35,7 +37,8 @@ Each editorial is a collection of different articles, carefully selected to emph
 <div class="mp-column">
 <div id="recent-uploads" class="mp-column-item">
 <small class="arrow-link">[[Editorials|→ show all Editorials]]</small>
-==Recent activity==
+
+=Recent activity=
 <small class="arrow-link">[[Special:NewPages|&rarr; show all new pages]]</small>
 <small class="arrow-link second">[[Special:NewFiles|&rarr; show all recent files]]</small>
 <small class="arrow-link third">[[Special:Categories|→ show all Categories]]</small>
@@ -45,13 +48,13 @@ Each editorial is a collection of different articles, carefully selected to emph
 
 <div class="mp-column">
 <div id="about" class="mp-column-item">
-==About==
+=About=
 <small class="arrow-link">[[About_Beyond_Social|→ read more]]</small>{{:About_Beyond_Social}}</div></div>
 
 <div class="mp-column">
 <div id="events" class="mp-column-item">
-==Events==
-<small class="arrow-link">[[:Category:Events|→ show all Events]]</small>{{#ask: 
+=Events=
+<small class="arrow-link">[[Events|→ show all Events]]</small>{{#ask: 
 [[Template::Template:Event]]
 |?Date
 |?Location

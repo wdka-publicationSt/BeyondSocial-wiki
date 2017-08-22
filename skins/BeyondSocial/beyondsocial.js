@@ -137,17 +137,71 @@ jQuery( function ( $ ) {
 	shareClick()
 	addFBImage()
 
+
+	// hide empty parameter in Articles
+	function hideEmptyImgLink(){
+		$('div#article-wrapper div.image').each(function () {
+			if($(this).text() == '[[File: |thumb| ]]'){
+				$(this).detach();
+			};
+		});
+	}
+	hideEmptyImgLink()
+
+	// hide empty Links section in Articles
+	function hideEmptyLinksSection(){
+		$('#article-wrapper h2:last-child').each(function(){
+			// $(this).detach();
+		});
+	}
+	// hideEmptyLinksSection()
+
+	// quick (and dirty) solution to keep page at top after a refresh
+	// document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+	// function to add captions to plain images
+	function showCaption(){
+		$('div.article a.image img').each(function () {
+			var caption = $(this).attr('alt');
+			$(this).parent().after('<div class="caption">'+caption+'</div>');
+		});
+	}
+	showCaption()
+
+
 	// function to align images in the overview pages
 	function centerLandscapeImages(){
-		$('.thumb-wrapper a.image img').each(function () {
+		$('div.overview .thumb-wrapper img').each(function () {
+			// let images that are very narrow scale up to 231px
+			if($(this).width() < 231){
+				$(this).css('width','231px');
+				$(this).css('height','auto');
+			}
+			// center landscape images
 			if($(this).width() > $(this).height()){
 				$(this).css('margin-left','-70%');
+			}
+			// center portrait images
+			else{
+				var marginleft = ($(this).width() - 231 ) / 2;
+				$(this).css('margin-left','-'+marginleft+'px');
 			}
 		});
 	}
 	centerLandscapeImages()
 
-	// quick (probably not ok) solution to keep page at top after a refresh
-	document.body.scrollTop = document.documentElement.scrollTop = 0;
+	// function to change links from the images in an overview page + online sections
+	function changeImageLinks(){
+		$('div.overview a.image').each(function () {
+			var link = $(this).parent().next().children().first().attr('href');
+			$(this).attr('href',link);
+		});
+		$('div.oneline-wrapper a.image').each(function () {
+			var link = $(this).parent().next().children().first().attr('href');
+			$(this).attr('href',link);
+		});
+	}
+	changeImageLinks()
+
 
 } );

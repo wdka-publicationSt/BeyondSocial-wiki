@@ -1,6 +1,6 @@
 @html-font-size: 100%;
 
-@bscolorMain: rgba(0,0,0,1);
+@bscolorMain: rgba(25,25,25,1);
 @bscolorSecond: rgba(1,68,255,1);
 @bscolorThird: rgba(237,236,0,1);
 
@@ -10,13 +10,14 @@
 
 @gridsize: 10px;
 
-// Page content
-// FIXME: Use global variable since Echo and CentralNotice use this variable
+/* Page content */
+/* FIXME: Use global variable since Echo and CentralNotice use this variable */
 @content-border-color: None;
-// FIXME: Find an open font that works with this stack and is readable by Windows users
+/* FIXME: Find an open font that works with this stack and is readable by Windows users */
 @content-font-family: @bsfontBook;
 @content-font-color: @bscolorMain;
 @content-font-size: 1.25em;
+@content-letter-spacing: 0.012em;
 @content-line-height: 1.4;
 @content-padding: 0.5em;
 @content-heading-font-size: 1.4em;
@@ -25,20 +26,22 @@
 @body-background-color: #fff;
 @heading-line-height: 1.0;
 
-@content-small-font-size: 0.75em;
-@content-small-line-height: 1.35;
+/*  small font  */
+@content-small-font-size: 12.6px;
+@content-small-line-height: 1.3;
+@content-small-letter-spacing: 0em;
 
 @content-margin-right: 50px;
 
-// Navigation
+/* Navigation */
 @menu-background-color: None;
 @menu-navigation-font-size:4em;
 @menu-navigation-second-font-size:26.4px;
 
-// Common menu
+/* Common menu */
 @menu-link-color: @bscolorMain;
 
-// Main menu
+/* Main menu */
 @menu-main-font-size: inherit;
 
 @menu-main-heading-font-size: 0.75em;
@@ -53,10 +56,10 @@
 
 @menu-main-logo-left: 0.5em;
 
-// Personal menu
+/* Personal menu */
 @menu-personal-font-size: 0.75em;
 
-// fonts
+/* fonts */
 @font-face{
 	font-family: "Avenir";
 	src:url('fonts/AvenirLTStd-MediumOblique.otf');

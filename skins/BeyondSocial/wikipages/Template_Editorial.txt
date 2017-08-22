@@ -1,0 +1,35 @@
+<noinclude>
+=About=
+This is the "Event" template. This template is used in combination with the [[Form:Event]]. 
+
+It should be called in the following format:
+<pre>
+{{event
+|Tagline=
+|Date=
+|Location=
+|Description=
+}}
+</pre>
+
+Edit the page to see the template text.
+
+</noinclude>
+
+<includeonly>
+
+[[Category:Events]]
+[[Tagline::{{{Tagline}}}| ]]
+[[Date::{{{Date}}}| ]]
+[[Location::{{{Location}}}| ]]
+[[Description::{{{Description}}}| ]]
+[[Template::Template:Event| ]]
+
+__NOTOC__
+<div class="events-wrapper">
+<div class="Tagline">{{{Tagline|}}}</div>
+<div class="date">{{{Date|}}}</div>
+<div class="location">{{{Location|}}}</div>
+<div class="description">{{{Description|}}}</div>
+</div>
+</includeonly>

@@ -7,25 +7,24 @@ It should be called in the following format:
 |Subtitle=
 |Image=
 |Caption=
+|Category=
 |Summary=
-|Body=
+|Article=
 }}
 </pre>
 Edit the page to see the template text.
 </noinclude>
 
-<includeonly>
-[[Template::Template:Article| ]]
-[[Thumb::File:{{{Image}}}| ]]
-
+<includeonly><div id="article-wrapper"><span style="display:none">{{#default_form:Article}}</span>[[Template::Template:Article| ]][[Thumb::File:{{{Image|None.png}}}| ]]
+={{{Subtitle| }}}=
+<div class="image">[[File:{{{Image| }}}|thumb|{{{Caption| }}}]]</div>
 __NOTOC__
+<div class="title">{{PAGENAME}}</div>
+<div class="subtitle">{{{Subtitle}}}</div>
+<div class="summary">{{{Summary| }}}</div>
 
-<div id="articleHeader">[[File:{{{Image|}}}|{{{Caption|}}}]]</div>
-<div id="articleCaption"><small>{{{Caption|}}}</small></div>
-
-<div id="articleBanner">Article<div style="float:right;width:50%;">{{{Summary|}}}</div><br></div>
- 
-{{{Body|}}}
-
-</includeonly>
+<div class="article">
+{{{Article| }}}</div>
+==Links==
+</div></includeonly>
 

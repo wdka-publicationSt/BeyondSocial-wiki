@@ -1,0 +1,15 @@
+=More events=
+<div id="events">{{#ask: 
+[[Template::Template:Event]]
+|?Date
+|?Location
+|format=template
+|template=Events
+|sort=Date
+|order=descending
+|limit=5
+}}
+<br>
+<small class="arrow-link">[[Events|→ show all events]]</small>
+</div>
+

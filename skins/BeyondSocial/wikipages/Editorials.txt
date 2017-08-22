@@ -1,4 +1,4 @@
-<div id="overview-wrapper">
+<div class="overview">
 =All editorials=
 {{#ask: 
 [[Template::Template:Editorial]]

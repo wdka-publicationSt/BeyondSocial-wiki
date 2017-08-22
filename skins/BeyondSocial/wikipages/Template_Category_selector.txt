@@ -1,0 +1,13 @@
+<noinclude>
+This is the "Category selector" template. This template is used on pages that are created with the "[[Form:Article]]".
+It should be called in the following format:
+<pre>
+{{Category selector
+|Category=
+}}
+</pre>
+Edit the page to see the template text.
+</noinclude>
+
+<includeonly><div class="category">[[Category:{{{Category| }}}| ]]</div></includeonly>
+

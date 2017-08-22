@@ -1,0 +1,19 @@
+<noinclude>
+=About=
+This is the "Documentation" template. This template is used in combination with the [[Form:Event]]. 
+
+It should be called in the following format:
+<pre>
+{{Documentation
+|Documentation=
+}}
+</pre>
+
+Edit the page to see the template text.
+
+</noinclude>
+
+<includeonly>
+=Documentation=
+<div class="documentation">{{{Documentation|}}}</div></includeonly>
+

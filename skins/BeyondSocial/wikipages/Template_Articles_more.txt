@@ -1,0 +1,29 @@
+<noinclude>
+This is the "More articles" template, also used as "Recent articles" at the bottom of pages created with "Form:Article".
+It should be called in the following format:
+<pre>
+{{Articles more}}
+</pre>
+It will also add the contribution bar. ([[Template:Contribute]])
+
+Edit the page to see the template text.
+</noinclude>
+
+<includeonly>
+=Recent articles=
+<div class="oneline-wrapper"><div class="oneline">{{#ask: 
+[[Template::Template:Article]]
+|?Thumb
+|?Category
+|?Modification date
+|?Creation date
+|?Last editor is
+|format=template
+|template=Articles
+|limit=10
+|sort=Modification date
+|order=descending
+}}</div></div><small class="arrow-link">[[Articles|→ show all articles created with this template]]</small>
+{{Contribute}}
+</includeonly>
+

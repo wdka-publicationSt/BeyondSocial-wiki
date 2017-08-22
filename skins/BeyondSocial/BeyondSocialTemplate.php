@@ -98,218 +98,229 @@ class BeyondSocialTemplate extends BaseTemplate {
 		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
 
-		<!-- *************************************** -->
-		<!-- ** order of nav & content is swapped ** -->
-		<!-- *************************************** -->
-		<div id="mw-navigation">
 
-			<!-- *************************************** -->
-			<!-- *** personal menu moved to here     *** -->
-			<!-- *************************************** -->		
-			<?php $this->renderNavigation( 'PERSONAL' ); ?>
-
-			<!-- *************************************** -->
-			<!-- *** Beyond Social Title added       *** -->
-			<!-- *************************************** -->
-			<a href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
-			
-			<!-- *************************************** -->
-			<!-- *** page title moved to here        *** -->
-			<!-- *************************************** -->
-			<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
-
-			<!-- *************************************** -->
-			<!-- *** personal menu removed here      *** -->
-			<!-- *************************************** -->	
-
-			<h2><?php $this->msg( 'navigation-heading' ) ?></h2>
-
-			<div id="mw-head">
-				<div id="left-navigation">
-					<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
-				</div>
-
-				<div id="right-navigation">
+		<div id="wrapper">
+			<div id="container">
+				<!-- *************************************** -->
+				<!-- ** order of nav & content is swapped ** -->
+				<!-- *************************************** -->
+				<div id="mw-navigation">
 
 					<!-- *************************************** -->
-					<!-- *** 'SEARCH' removed here           *** -->
+					<!-- *** personal menu moved to here     *** -->
+					<!-- *************************************** -->		
+					<?php $this->renderNavigation( 'PERSONAL' ); ?>
+
 					<!-- *************************************** -->
-					<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
+					<!-- *** Beyond Social Title added       *** -->
+					<!-- *************************************** -->
+					<a id="bs-title-link" href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
+					
+					<!-- *************************************** -->
+					<!-- *** page title moved to here        *** -->
+					<!-- *************************************** -->
+					<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
+
+					<!-- *************************************** -->
+					<!-- *** personal menu removed here      *** -->
+					<!-- *************************************** -->	
+
+					<!-- ****************************************** -->
+					<!-- *** mw-head (now sidebar) removed here *** -->
+					<!-- ****************************************** -->	
+
+					<!-- *************************************** -->
+					<!-- *** mw-Panel removed here (=Footer now)*** -->
+					<!-- *************************************** -->
 				</div>
 
-				<div id="page-info">
-				<!-- ********************************************** -->
-				<!-- *** Footer info moved to here as page info *** -->
-				<!-- ********************************************** -->
-					<!-- "This page is last modifief by ..." -->
-					<!-- List with Footer Links -->
+				<div id="content" class="mw-body" role="main">
+					<a id="top"></a>
+
 					<?php
-					foreach ( $this->getFooterLinks() as $category => $links ) {
+					if ( $this->data['sitenotice'] ) {
 						?>
-						<ul id="page-info-<?php echo $category ?>">
-							<?php
-							foreach ( $links as $link ) {
-								?>
-								<li id="page-info-<?php echo $category ?>-<?php echo $link ?>"><?php $this->html( $link ) ?></li>
-							<?php
-							}
-							?>
-						</ul>
+						<div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div>
 					<?php
 					}
 					?>
-					<!-- ****************************** -->
-					<!-- *** CATLINKS moved to here *** -->
-					<!-- ****************************** -->
 					<?php
-						if ( $this->data['catlinks'] ) {
-							$this->html( 'catlinks' );
+					if ( is_callable( [ $this, 'getIndicators' ] ) ) {
+						echo $this->getIndicators();
+					}
+					// Loose comparison with '!=' is intentional, to catch null and false too, but not '0'
+					if ( $this->data['title'] != '' ) {
+					?>
+
+					<!-- ************************************************************************* -->
+					<!-- *** page title is set to display:none; and included in the navigation *** -->
+					<!-- ************************************************************************* -->
+					<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php
+						 $this->html( 'title' )
+					?></h1>
+
+					<?php
+					} ?>
+					<?php $this->html( 'prebodyhtml' ) ?>
+					<div id="bodyContent" class="mw-body-content">
+						<?php
+						if ( $this->data['isarticle'] ) {
+							?>
+							<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
+						<?php
 						}
-					?>
-				</div>
-
-			</div>
-			<!-- *************************************** -->
-			<!-- *** mw-Panel removed here (=Footer now)*** -->
-			<!-- *************************************** -->
-		</div>
-		<div id="content" class="mw-body" role="main">
-			<a id="top"></a>
-
-			<?php
-			if ( $this->data['sitenotice'] ) {
-				?>
-				<div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div>
-			<?php
-			}
-			?>
-			<?php
-			if ( is_callable( [ $this, 'getIndicators' ] ) ) {
-				echo $this->getIndicators();
-			}
-			// Loose comparison with '!=' is intentional, to catch null and false too, but not '0'
-			if ( $this->data['title'] != '' ) {
-			?>
-
-			<!-- ************************************************************************* -->
-			<!-- *** page title is set to display:none; and included in the navigation *** -->
-			<!-- ************************************************************************* -->
-			<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php
-				 $this->html( 'title' )
-			?></h1>
-
-			<?php
-			} ?>
-			<?php $this->html( 'prebodyhtml' ) ?>
-			<div id="bodyContent" class="mw-body-content">
-				<?php
-				if ( $this->data['isarticle'] ) {
-					?>
-					<div id="siteSub"><?php $this->msg( 'tagline' ) ?></div>
-				<?php
-				}
-				?>
-				<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php
-					$this->html( 'subtitle' )
-				?></div>
-				<?php
-				if ( $this->data['undelete'] ) {
-					?>
-					<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
-				<?php
-				}
-				?>
-				<?php
-				if ( $this->data['newtalk'] ) {
-					?>
-					<div class="usermessage"><?php $this->html( 'newtalk' ) ?></div>
-				<?php
-				}
-				?>
-				<div id="jump-to-nav" class="mw-jump">
-					<?php $this->msg( 'jumpto' ) ?>
-					<a href="#mw-head"><?php
-						$this->msg( 'jumptonavigation' )
-					?></a><?php $this->msg( 'comma-separator' ) ?>
-					<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
-				</div>
-				<?php
-				$this->html( 'bodycontent' );
-
-				if ( $this->data['printfooter'] ) {
-					?>
-					<div class="printfooter">
-						<?php $this->html( 'printfooter' ); ?>
-					</div>
-				<?php
-				}
-
-				// CAT LINKS REMOVED HERE
-
-				if ( $this->data['dataAfterContent'] ) {
-					$this->html( 'dataAfterContent' );
-				}
-				?>
-				<div class="visualClear"></div>
-				<?php $this->html( 'debughtml' ); ?>
-			</div>
-		</div>
-
-		<!-- ***************************************** -->
-		<!-- *** mw-panel (=Footer now) moved to here *** -->
-		<!-- *** used as footer                    *** -->
-		<!-- ***************************************** -->
-		<div id="mw-panel">
-			<!-- *************************************** -->
-			<!-- *** 'SEARCH' added here             *** -->
-			<!-- *************************************** -->
-			<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
-
-			<!-- *************************************** -->
-			<!-- *** footericons added here          *** -->
-			<!-- *************************************** -->
-			<?php $footericons = $this->getFooterIcons( 'icononly' );
-			if ( count( $footericons ) > 0 ) {
-				?>
-				<ul id="footer-icons" class="noprint">
-					<?php
-					foreach ( $footericons as $blockName => $footerIcons ) {
 						?>
-						<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
-							<?php
-							foreach ( $footerIcons as $icon ) {
-								echo $this->getSkin()->makeFooterIcon( $icon );
-							}
+						<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php
+							$this->html( 'subtitle' )
+						?></div>
+						<?php
+						if ( $this->data['undelete'] ) {
 							?>
-						</li>
-					<?php
-					}
+							<div id="contentSub2"><?php $this->html( 'undelete' ) ?></div>
+						<?php
+						}
+						?>
+						<?php
+						if ( $this->data['newtalk'] ) {
+							?>
+							<div class="usermessage"><?php $this->html( 'newtalk' ) ?></div>
+						<?php
+						}
+						?>
+						<div id="jump-to-nav" class="mw-jump">
+							<?php $this->msg( 'jumpto' ) ?>
+							<a href="#mw-head"><?php
+								$this->msg( 'jumptonavigation' )
+							?></a><?php $this->msg( 'comma-separator' ) ?>
+							<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
+						</div>
+						<?php
+						$this->html( 'bodycontent' );
+
+						if ( $this->data['printfooter'] ) {
+							?>
+							<div class="printfooter">
+								<?php $this->html( 'printfooter' ); ?>
+							</div>
+						<?php
+						}
+
+						// CAT LINKS REMOVED HERE
+
+						if ( $this->data['dataAfterContent'] ) {
+							$this->html( 'dataAfterContent' );
+						}
+						?>
+						<div class="visualClear"></div>
+						<?php $this->html( 'debughtml' ); ?>
+					</div>
+				</div>
+
+				<!-- ***************************************** -->
+				<!-- *** mw-head (=now sidebar) moved to here *** -->
+				<!-- ***************************************** -->
+				<div id="mw-head">
+					<div id="left-navigation">
+						<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
+					</div>
+
+					<div id="right-navigation">
+
+						<!-- *************************************** -->
+						<!-- *** 'SEARCH' removed here           *** -->
+						<!-- *************************************** -->
+						<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
+					</div>
+
+					<div id="page-info">
+					<!-- ********************************************** -->
+					<!-- *** Footer info moved to here as page info *** -->
+					<!-- ********************************************** -->
+						<!-- "This page is last modifief by ..." -->
+						<!-- List with Footer Links -->
+						<?php
+						foreach ( $this->getFooterLinks() as $category => $links ) {
+							?>
+							<ul id="page-info-<?php echo $category ?>">
+								<?php
+								foreach ( $links as $link ) {
+									?>
+									<li id="page-info-<?php echo $category ?>-<?php echo $link ?>"><?php $this->html( $link ) ?></li>
+								<?php
+								}
+								?>
+							</ul>
+						<?php
+						}
+						?>
+						<!-- ****************************** -->
+						<!-- *** CATLINKS moved to here *** -->
+						<!-- ****************************** -->
+						<?php
+							if ( $this->data['catlinks'] ) {
+								$this->html( 'catlinks' );
+							}
+						?>
+					</div>
+				</div>
+			</div> <!-- end of container -->
+
+			<!-- ***************************************** -->
+			<!-- *** mw-panel (=Footer now) moved to here *** -->
+			<!-- *** used as footer                    *** -->
+			<!-- ***************************************** -->
+			<div id="mw-panel">
+				<!-- *************************************** -->
+				<!-- *** 'SEARCH' added here             *** -->
+				<!-- *************************************** -->
+				<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
+
+				<!-- *************************************** -->
+				<!-- *** footericons added here          *** -->
+				<!-- *************************************** -->
+				<?php $footericons = $this->getFooterIcons( 'icononly' );
+				if ( count( $footericons ) > 0 ) {
 					?>
-					<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></a></li>
-					<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></a></li>
-				</ul>
-			<?php
-			}
-			?>			
+					<ul id="footer-icons" class="noprint">
+						<?php
+						foreach ( $footericons as $blockName => $footerIcons ) {
+							?>
+							<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
+								<?php
+								foreach ( $footerIcons as $icon ) {
+									echo $this->getSkin()->makeFooterIcon( $icon );
+								}
+								?>
+							</li>
+						<?php
+						}
+						?>
+						<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></a></li>
+						<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></a></li>
+					</ul>
+				<?php
+				}
+				?>			
 
-			<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="<?php
-				echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
-				?>" <?php
-				echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
-				?>></a></div>
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="<?php
+					echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
+					?>" <?php
+					echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
+					?>></a></div>
 
-			<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-		</div>
+				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+			</div>
 
 
-		<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
+			<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
 
-			<!-- FOOTER INFO HERE REMOVED -->
-			<!-- FOOTER ICONS HERE REMOVED -->
+				<!-- FOOTER INFO HERE REMOVED -->
+				<!-- FOOTER ICONS HERE REMOVED -->
 
-		</div>
-		<?php $this->printTrail(); ?>
+			</div>
+			<?php $this->printTrail(); ?>
 
+		</div> <!-- end of wrapper -->
 	</body>
 </html>
 <?php

@@ -24,23 +24,35 @@ body {
 	font-family: @content-font-family;
 }
 body {
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
 	width: 100%;
-	min-width: 960px;
 	background-color: @body-background-color;
 }
 
+#wrapper{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	min-width: 1024px;
+	margin:0;
+	padding:0;
+	top:0px;
+	left:0px;
+	right: 0px;
+}
+	#container{
+		flex:1;
+	}
+
 /* Content */
 .mw-body {
-	flex:1;
-	width: ~"calc(100% - 250px)";
+	width: ~"calc(100% - 236px)";
 	padding: @content-padding @content-padding @content-padding 50px;
 	border:0;
-	margin:0;
+	margin:7em -1em -12px 0;
 	color: @content-font-color;
 	direction: ltr;
+	overflow:hidden;
+	display: inline-block;
 
 	.mw-editsection,
 	.mw-editsection-like {
@@ -69,19 +81,27 @@ body {
 		}
 	}
 
-	h1 {
+	h1, h2 {
 		font-size: @content-heading-font-size;
 	}
 	.mw-body-content {
 		h1 {
+			/* yellow stroke above all h1's*/
+			width: 130vw;
+			border-top: @gridsize solid @bscolorThird;
+			padding-top: @gridsize;
+			margin-bottom: @gridsize;
 			margin-top: 1em;
-			border-bottom: 1px solid @bscolorMain;
+
+			/* previous settings */
+			/*margin-top: 1em;*/
+			/*border-bottom: 1px solid @bscolorMain;*/
 		}
 	}
 
 	h2 {
-		font-size: 1.5em;
 		margin-top: 1em;
+		border-bottom:1px solid;
 	}
 
 	h3,
@@ -127,6 +147,7 @@ body {
 		/* Ensure that this is displayed on top of .mw-body-content and clickable */
 		position: relative;
 		z-index: 1;
+		right: 40px;
 	}
 	a:visited{
 		color:black;
@@ -171,25 +192,219 @@ pre,
 /*********************************/
 /* Beyond Social specific resets */
 /*********************************/
+
+/* Wiki-title + Pagetitle */
+#mw-navigation{
+	width: 100%;
+}
+	/* wiki title */
+	#bs-title{
+		position: relative;
+		top: 0px;
+		left: 5px;
+		width: 440px;
+		font-family: @bsfontBlack;
+		font-weight: bold;
+		font-size: @menu-navigation-font-size;
+		color:@bscolorMain;
+	}
+	/* page title */
+	h1#firstHeading {
+		position: absolute;
+		width: ~"calc(100% - 190px)";
+		min-width: 820px;
+		border-bottom:0px;
+		margin:-10px 0 0 0;
+		padding:0 0 10px 0;
+		left:5px;
+		font-family: @bsfontBlack;
+		font-size: @menu-navigation-font-size;
+		color: @bscolorMain;
+		line-height: 0.95;
+	}
+
 #mw-content-text {
-	width: ~"calc(100% - 40px)";
+	width: ~"calc(100% - 50px)";
 	font-size: @content-font-size;
 	line-height: @content-line-height;
+	letter-spacing: @content-letter-spacing;
 	z-index: 0;
 }
-/* text width for content */
+
+/* text width for content, sentences length */
 #mw-content-text.mw-content-ltr{
 	width: 750px;
 }
 
-#content img{
-	min-width: 100%;
-	max-width: 100%;
+#content .image img{
+	width: 750px;
 	height: auto;
 	margin-top:10px;
 	margin-bottom:10px;
 }
+	#content .thumb img{
+		width: 302px;
+		height: auto;
+	}
+	.thumbinner{
+		max-width: 750px;
+	}
 
+/* small arrow link */
+small.arrow-link{
+	position: absolute;
+	font-family: @bsfont;
+	font-size: @content-small-font-size;
+	letter-spacing: @content-small-letter-spacing;
+	margin-top:-40px;
+	left:~"calc(100% - 180px)";
+	width: 180px;
+	z-index: 200;
+}
+	p small.arrow-link.second{
+		margin-top:-20px;
+	}
+	p small.arrow-link.third{
+		margin-top:0px;
+	}
+	small.arrow-link a:visited, .arrow-link a:active{
+		color:@bscolorSecond;
+	}
+	small.arrow-link a:hover{
+		cursor: pointer;
+	}
+	@media only screen and (max-width:1039px){
+	    small.arrow-link{
+	    	left: 845px;
+    	}
+    }
+
+/*********************************/
+/* overview pages */
+/*********************************/
+.overview{
+	width: ~"calc(100vw - 290px)";
+	min-width: 750px;
+}
+
+/* editorials overview*/
+.editorials-wrapper, .articles-wrapper{
+	width: 231px;
+	display: inline-block;
+	vertical-align: top;
+	margin:10px 5px 30px 0;
+	
+	.title, .info{
+		font-family: @bsfont;
+	}
+	.title{
+		margin:10px 0;
+		height:40px;
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: 0;
+	}
+	.info{
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
+	}
+}
+.editorials-wrapper .thumb-wrapper, .articles-wrapper .thumb-wrapper{
+	overflow: hidden;
+	position: relative;
+}
+	#content .editorials-wrapper .thumb-wrapper img, #content .articles-wrapper .thumb-wrapper img{
+		position: relative;
+		margin: 0;
+		height: 100%;
+		width: auto;
+		max-width: none;
+		margin:0 0 0 0;
+		top:-1px; /* fix for a white top-border*/
+		border:0;
+	}
+	.editorials-wrapper .thumb-wrapper, .articles-wrapper .thumb-wrapper{
+		display: block;
+		width: 100%;
+		height: 326px;
+		overflow: hidden;
+		margin:0;
+	}
+
+/* a one-line view*/
+.oneline-wrapper, .editorials-oneline-wrapper{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: ~"calc(100vw + 0px)";
+	height: 435px;
+
+	.oneline, .editorials-oneline{
+		position: absolute;
+		
+	}
+}
+
+/*********************************/
+/* input field element */
+/*********************************/
+.mp-column #contribute form.pfFormInput, #overview form.pfFormInput, .contribute-container form.pfFormInput{
+	width: ~"calc(100% - 10px)";
+	margin:@content-padding 0 0 0;
+	padding:0;
+	display: block;
+
+	input.formInput{
+		width:~"calc(100vw - 300px)";
+		min-width: 750px;
+		border:0;
+		padding:8px 0px 5px 10px;
+		margin:0;
+		font-size: @menu-navigation-second-font-size;
+		font-family: @bsfontBlack;
+		/*color:@bscolorSecond;*/
+	}
+	input#input_button_1{
+		position: absolute;
+		font-family: @bsfont;
+		background-color: transparent;
+		border:0;
+		color:@bscolorSecond;
+		padding:0;
+		margin-top: @content-padding;
+		/*margin-left: ~"calc(100vw - 409px)";*/
+	}
+	input#input_button_1:hover{
+		cursor:pointer;
+	}
+		
+}
+/*********************************/
+/* other */
+/*********************************/
+.small, small{
+	font-family: @bsfont;
+	font-size: @content-small-font-size;
+	line-height: @content-small-line-height;
+	letter-spacing: @content-small-letter-spacing;
+}
+.link-internal, .link-external{
+	width: ~"calc(100vw - 300px)";
+	min-width: 750px;
+	border-bottom:1px solid;
+	padding:10px 0;
+}
+	/* hide the <p> elements that the wiki parses in between the link div's */
+	.link-internal + p, .link-external + p, .category + p{
+		display: none;
+	}
+	.event-page + p, #article-wrapper + p{
+		margin-bottom:-28px;
+	}
+.selflink{
+	color: @bscolorSecond;
+}
 /* this page title element is not needed anymore, there is a copy in the right-navigation element */
 .mw-body h1.firstHeading {
 	display: none;
@@ -251,6 +466,7 @@ a.new, li.new, #p-personal a.new{
 /* image thumb */
 div.thumb{
 	border:0px;
+	margin-top:0px;
 }
 div.thumbinner{
 	border:0px;

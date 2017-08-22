@@ -1,0 +1,11 @@
+<noinclude>
+<pre>
+{{ Links_internal
+|link=
+|displaytext=
+}}
+</pre>
+</noinclude>
+
+<includeonly><div class="link-internal left">[[{{{link}}}]]</div></includeonly>
+
