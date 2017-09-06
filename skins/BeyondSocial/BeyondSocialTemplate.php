@@ -115,12 +115,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<!-- *** Beyond Social Title added       *** -->
 					<!-- *************************************** -->
 					<a id="bs-title-link" href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
+					<div id="bs-title-tagline">platform researching social design</div>
 					
-					<!-- *************************************** -->
-					<!-- *** page title moved to here        *** -->
-					<!-- *************************************** -->
-					<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php $this->html( 'title' ) ?></h1>
-
 					<!-- *************************************** -->
 					<!-- *** personal menu removed here      *** -->
 					<!-- *************************************** -->	
@@ -151,10 +147,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 					// Loose comparison with '!=' is intentional, to catch null and false too, but not '0'
 					if ( $this->data['title'] != '' ) {
 					?>
-
-					<!-- ************************************************************************* -->
-					<!-- *** page title is set to display:none; and included in the navigation *** -->
-					<!-- ************************************************************************* -->
 					<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php
 						 $this->html( 'title' )
 					?></h1>
@@ -187,35 +179,17 @@ class BeyondSocialTemplate extends BaseTemplate {
 						<?php
 						}
 						?>
-						<div id="jump-to-nav" class="mw-jump">
-							<?php $this->msg( 'jumpto' ) ?>
-							<a href="#mw-head"><?php
-								$this->msg( 'jumptonavigation' )
-							?></a><?php $this->msg( 'comma-separator' ) ?>
-							<a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
-						</div>
+						<!--  jump to nav removed here  -->
 						<?php
 						$this->html( 'bodycontent' );
-
-						if ( $this->data['printfooter'] ) {
-							?>
-							<div class="printfooter">
-								<?php $this->html( 'printfooter' ); ?>
-							</div>
-						<?php
-						}
-
+						// printfooter() REMOVED HERE
 						// CAT LINKS REMOVED HERE
-
-						if ( $this->data['dataAfterContent'] ) {
-							$this->html( 'dataAfterContent' );
-						}
+						// dataAfterContent REMOVED HERE
 						?>
 						<div class="visualClear"></div>
 						<?php $this->html( 'debughtml' ); ?>
 					</div>
 				</div>
-
 				<!-- ***************************************** -->
 				<!-- *** mw-head (=now sidebar) moved to here *** -->
 				<!-- ***************************************** -->
@@ -225,11 +199,15 @@ class BeyondSocialTemplate extends BaseTemplate {
 					</div>
 
 					<div id="right-navigation">
-
 						<!-- *************************************** -->
 						<!-- *** 'SEARCH' removed here           *** -->
 						<!-- *************************************** -->
 						<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
+						<ul id="search-link">
+							<li>
+								<?php $this->msg( 'comma-separator' ) ?><a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
+							</li>
+						</ul>
 					</div>
 
 					<div id="page-info">

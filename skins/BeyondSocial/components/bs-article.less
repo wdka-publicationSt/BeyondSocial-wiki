@@ -11,35 +11,59 @@
 
 /* article pages */
 #article-wrapper{
-	.title{
-		display: none;
-		font-family: @bsfontBlack;
-		line-height: @heading-line-height;
-		font-size: 200%;
-	}
 	.subtitle{
-		display: none;
-		margin-bottom:100px;
+		font-family: @bsfontBlack;
+		font-size: @content-heading-font-size;
+		line-height: @heading-line-height;
+		margin-bottom: @gridsize
 	}
-	.image{
-		margin-top:-2em;
-		margin-bottom:3em;
+	div.sidebox{
+		float: right;
+		width: 302px;
+		margin-bottom:1em;
+		margin-right: -312px;
+		margin-left: 1em;
 
+		a.image img{
+			max-width: 100%;
+		}
 		.thumb{
 			margin-bottom:0px;
 		}
 	}
-	.caption, .thumbcaption{
+	@media only screen and (max-width:1137px){
+		div.sidebox{
+			margin-right: -1em;
+		}
+	}
+	@media only screen and (min-width:1112px){
+		div.sidebox{
+			margin-right: -100px;
+		}
+	}
+	@media only screen and (min-width:1212px){
+		div.sidebox{
+			margin-right: -200px;
+		}
+	}
+	@media only screen and (min-width:1312px){
+		div.sidebox{
+			margin-right: -312px;
+		}
+	}
+	.caption{
 		font-family: @bsfont;
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-		margin-bottom:@gridsize;
+		margin-bottom: 20px;
 	}
 	.summary{
 		font-size: 125%;
-		line-height: 1.4;
+		line-height: 1.35;
 		margin-bottom: 1em;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
 		hyphens: auto;
 	}
 	.article{
@@ -56,15 +80,32 @@
 #contribute-wrapper{
 	width: 130vw;
 	background-color: @bscolorThird;
-	padding:@gridsize @gridsize 30px 50px;
+	padding:@gridsize @gridsize 20px 50px;
 	margin-left:-50px;
 	margin-bottom:-10px;
 
-	h1{
+	h1, b{
 		border:0;
 		margin:0;
+		font-family: @bsfontBlack;
+		font-size: 22px;
+		text-transform: uppercase;
 	}
 	.contribute-container{
 		max-width: 750px;
+	}
+	div#column-wrapper{
+		position: relative;
+		width: ~"calc(100vw - 290px)";
+		min-width: 750px;
+		margin:0;
+		padding:0;
+
+		div.column.third{
+			display: inline-block;
+			width: ~"calc(33% - 12px)";
+			padding-right:@gridsize;
+			vertical-align: top;
+		}
 	}
 }

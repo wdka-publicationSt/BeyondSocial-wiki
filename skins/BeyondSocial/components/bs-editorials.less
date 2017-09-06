@@ -1,95 +1,84 @@
-/* editorial overview - blocks */
-
-
-
 /* single editorial pages */
-#editorial-banner{
-	background-color:@bscolorSecond;
-	color:white;
-	width:~"calc(100% - 20px)";
-	padding:10px;
-	margin:0px;
-}
+#content #editorial-wrapper{
 
-table.wikitable.editorial{
-	margin-bottom:-30px;
+	.editorial-about{
+		margin:1em 0 0 0;
+		padding:5px @gridsize 2px @gridsize;
+		background-color: @bscolorThird;
 
-	tr > th, tr > td{
-		border:0px;
+		a, a:active, a:visited{
+			color:@bscolorMain;
+		}
 	}
-	tr > th{
-		background-color: @bscolorSecond;
-		text-align: left;
+
+	div.image{
+		width: 750px;
 	}
-	tr > th > a{
-		color:white;
+	.caption{
 		font-family: @bsfont;
-		font-size:17px;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
+	}
+	.intro{
+		font-size: 125%;
+		line-height: 1.35;
+		margin: 1em 0 2em 0;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
 	}
 }
-table.wikitable.editorial:first-of-type{
-	margin-top:10px;
-}
-table.wikitable.editorial:last-of-type{
-	margin-bottom:20px;
-}
+#content .selected-article{
+	width: ~"calc(100vw - 290px)";
+	min-width: 750px;
+	border-top:1px solid;
+	padding-bottom:@gridsize;
+	margin-bottom:1.5em;
+	overflow: hidden;
 
+	.title{
+		font-weight: bold;
+		margin-top: 4px;
+	}
+	.title, .moddate{
+		margin-left: 212px;
+	}
+	.moddate::before{
+		content:'Last modified on ';
+	}
+	.article-preview{
+		float: left;
+		width: 200px;
+		margin-right: 12px;
+		vertical-align: top;
 
-/* general changes here, dirty way to test editorial header */
-h1#firstHeading, #bs-title, #wdka-logos, #right-navigation #p-views {
-	z-index: 100;
-}
-	#right-navigation #p-views{
-		position: relative;
+		a.image {
+
+			img{
+				width: 100%;
+				height: auto;
+				border:0;
+			}
+		}
+		.caption{
+			color:black;
+		
+			a, a.new, a:visited, a:active{
+				color:black;
+			}
+			a:hover{
+				cursor: default;
+				text-decoration: none;
+			}
+			
+		}
 	}
-#editorialHeader{
-	position: relative;
-	float:top;
-	top:-200px;
-	left:-@content-padding;
-	width: ~"calc(100% + 122px)";
-	left:-60px;
-	z-index: -5;
-	height: 656px;
-	overflow-y:hidden;
-}
-	#editorialHeader div.thumb, #editorialHeader div.tright, #editorialHeader div.thumbinner{
-		margin:0;
-		width: 0px;
-		background-color: none;
-		clear:none;
-		float: none;
-		border:0;
-		padding:0;
-		font-size: 100%;
-		text-align: left;
-		overflow: none;
+	.notes{
+		margin-top: @gridsize;
+		width: 750px;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
 	}
-	#editorialHeader img{
-		width: 100%;
-		background-size: cover;
-		z-index: -5;
-	}
-	#editorialHeader img.thumbimage{
-		width:inherit;
-	}
-	#editorialHeader::after{
-		display: block;
-		position: absolute;
-		background-image: linear-gradient(to bottom, rgba(237,255,93,1) 0, rgba(0,0,0,0) 100%);
-		top:0px;
-		height: 300px;
-		width: 100%;
-		content: '';
-	}
-#editorialBanner{
-	position:relative;
-	background-color:rgba(0,68,255,1);
-	color:white;
-	width:~"calc(100% + 122px)";
-	left: -60px;
-	margin:-350px 0 1em 0;
-	padding: @gridsize;
-	height:150px;
-	z-index: 99;
 }

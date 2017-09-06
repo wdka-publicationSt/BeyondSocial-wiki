@@ -4,6 +4,121 @@
 jQuery( function ( $ ) {
 
 	/**
+	 * BS js
+	 */
+
+	// function to open a new tab which loads Tw/FB as a sharing option. Written by Template.
+	function shareClick(){
+		$(document).on('click','#share a', function(e){
+			e.preventDefault()
+			var currentUrl=window.location.href
+			if($(this).attr('id') == 'shareTwitter'){
+				window.open('https://twitter.com/intent/tweet?text='+currentUrl); 
+			}else if($(this).attr('id') == 'shareFacebook'){
+				window.open('https://www.facebook.com/sharer/sharer.php?u='+currentUrl); 
+			}
+		})
+	}
+	// this function loads the first img on the page into the head, so FB can read it and place it next to the shared link. Written by Template.
+	function addFBImage(){
+		if($('.content').find('img').length == true){
+			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$('#mw-content-text').find('img').first()[0].src+'" />')
+		}else{
+			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$(document).find('img').first()[0].src+'" />')
+		}
+	}
+	shareClick()
+	addFBImage()
+
+
+	// hide empty parameter in Articles
+	function hideEmptyImgLink(){
+		$('div#article-wrapper .sidebox .image').each(function () {
+			if($(this).text() == '[[File: | ]]'){
+				$(this).detach();
+			};
+		});
+	}
+	hideEmptyImgLink()
+
+	// function to add captions to plain images
+	function showCaption(){
+		$('div#article-wrapper a.image img').each(function () {
+			var caption = $(this).attr('alt');
+			$(this).parent().after('<div class="caption">'+caption+'</div>');
+		});
+	}
+	showCaption()
+
+	// function to align images in the overview pages
+	function centerLandscapeImages(){
+		$('div.overview .thumb-wrapper img, div.oneline-wrapper .thumb-wrapper img').each(function () {
+			// let images that are very narrow scale up to 231px
+			if($(this).width() < 231){
+				$(this).css('width','231px');
+				$(this).css('height','auto');
+			}
+			// center landscape images
+			if($(this).width() > $(this).height()){
+				$(this).css('margin-left','-70%');
+			}
+			// center portrait images
+			else{
+				var marginleft = ($(this).width() - 231 ) / 2;
+				$(this).css('margin-left','-'+marginleft+'px');
+			}
+			$(this).css('opacity',1);
+		});
+	}
+	centerLandscapeImages()
+
+	// function to change links from the images in an overview page + oneline sections
+	function changeImageLinks(){
+		$('div.overview a.image').each(function () {
+			var link = $(this).parent().next().children().first().attr('href');
+			$(this).attr('href',link);
+		});
+		$('div.oneline-wrapper a.image').each(function () {
+			var link = $(this).parent().next().children().first().attr('href');
+			$(this).attr('href',link);
+		});
+	}
+	changeImageLinks()
+
+	// function to hide empty <p> elements
+	function hideEmptyPElements(){
+		$('p').each(function() {
+			if($(this).html() == '<br>\n'){
+				$(this).detach();
+			}
+			if($(this).html() == '<br>'){
+				$(this).detach();
+			}
+		});
+	}
+	hideEmptyPElements()
+
+	// function to hide <h2>Links</h2> if there are no links added to the page
+	function hideEmptyLinksSection(){
+		if (!$('div.link').length) {
+			$('h2 span#Links').parent().detach();
+			$('div.toc a[href=#Links]').parent().detach();
+		}
+	}
+	hideEmptyLinksSection()
+
+	// scroll anchor links
+	function scrollAnchorLinks(){
+		$("a[href*=#]").click(function(e) {
+			e.preventDefault();
+			$('html, body').animate({scrollTop: $( $.attr(this, 'href') ).offset().top - 25}, 500);
+		}); 
+	}
+	scrollAnchorLinks()
+
+	// ************************************************************
+
+	/**
 	 * Collapsible tabs
 	 */
 	var $cactions = $( '#p-cactions' ),
@@ -110,98 +225,5 @@ jQuery( function ( $ ) {
 				}
 			}
 		} );
-
-	// BS js
-	// *******************
-
-	// function to open a new tab which loads Tw/FB as a sharing option. Written by Template.
-	function shareClick(){
-		$(document).on('click','#share a', function(e){
-			e.preventDefault()
-			var currentUrl=window.location.href
-			if($(this).attr('id') == 'shareTwitter'){
-				window.open('https://twitter.com/intent/tweet?text='+currentUrl); 
-			}else if($(this).attr('id') == 'shareFacebook'){
-				window.open('https://www.facebook.com/sharer/sharer.php?u='+currentUrl); 
-			}
-		})
-	}
-	// this function loads the first img on the page into the head, so FB can read it and place it next to the shared link. Written by Template.
-	function addFBImage(){
-		if($('.content').find('img').length == true){
-			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$('#mw-content-text').find('img').first()[0].src+'" />')
-		}else{
-			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$(document).find('img').first()[0].src+'" />')
-		}
-	}
-	shareClick()
-	addFBImage()
-
-
-	// hide empty parameter in Articles
-	function hideEmptyImgLink(){
-		$('div#article-wrapper div.image').each(function () {
-			if($(this).text() == '[[File: |thumb| ]]'){
-				$(this).detach();
-			};
-		});
-	}
-	hideEmptyImgLink()
-
-	// hide empty Links section in Articles
-	function hideEmptyLinksSection(){
-		$('#article-wrapper h2:last-child').each(function(){
-			// $(this).detach();
-		});
-	}
-	// hideEmptyLinksSection()
-
-	// quick (and dirty) solution to keep page at top after a refresh
-	// document.body.scrollTop = document.documentElement.scrollTop = 0;
-
-	// function to add captions to plain images
-	function showCaption(){
-		$('div.article a.image img').each(function () {
-			var caption = $(this).attr('alt');
-			$(this).parent().after('<div class="caption">'+caption+'</div>');
-		});
-	}
-	showCaption()
-
-
-	// function to align images in the overview pages
-	function centerLandscapeImages(){
-		$('div.overview .thumb-wrapper img').each(function () {
-			// let images that are very narrow scale up to 231px
-			if($(this).width() < 231){
-				$(this).css('width','231px');
-				$(this).css('height','auto');
-			}
-			// center landscape images
-			if($(this).width() > $(this).height()){
-				$(this).css('margin-left','-70%');
-			}
-			// center portrait images
-			else{
-				var marginleft = ($(this).width() - 231 ) / 2;
-				$(this).css('margin-left','-'+marginleft+'px');
-			}
-		});
-	}
-	centerLandscapeImages()
-
-	// function to change links from the images in an overview page + online sections
-	function changeImageLinks(){
-		$('div.overview a.image').each(function () {
-			var link = $(this).parent().next().children().first().attr('href');
-			$(this).attr('href',link);
-		});
-		$('div.oneline-wrapper a.image').each(function () {
-			var link = $(this).parent().next().children().first().attr('href');
-			$(this).attr('href',link);
-		});
-	}
-	changeImageLinks()
-
 
 } );

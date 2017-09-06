@@ -15,10 +15,11 @@
 html {
 	position: relative;
 	font-size: @html-font-size;
-	min-height: 100%;
 }
 html,
 body {
+	height: 100%;
+	min-height: 100vh;
 	margin: 0;
 	padding: 0;
 	font-family: @content-font-family;
@@ -31,6 +32,7 @@ body {
 #wrapper{
 	display: flex;
 	min-height: 100vh;
+	height: 100%;
 	flex-direction: column;
 	min-width: 1024px;
 	margin:0;
@@ -41,14 +43,15 @@ body {
 }
 	#container{
 		flex:1;
+		margin-bottom:-7px;
 	}
 
 /* Content */
 .mw-body {
-	width: ~"calc(100% - 236px)";
-	padding: @content-padding @content-padding @content-padding 50px;
+	width: ~"calc(100% - 238px)";
+	padding: @content-padding @content-padding 0 50px;
 	border:0;
-	margin:7em -1em -12px 0;
+	margin:1em -1em 0px 0;
 	color: @content-font-color;
 	direction: ltr;
 	overflow:hidden;
@@ -58,11 +61,15 @@ body {
 	.mw-editsection-like {
 		font-family: @bsfont;
 	}
-
+	a, a:visited, a:active{
+		color:@bscolorMain;
+	}
+	a:hover, a:focus{
+		text-decoration: underline;
+	}
 	p {
 		margin: 0 0 @gridsize 0;
 	}
-
 	h1,
 	h2 {
 		font-family: @bsfontBlack;
@@ -71,6 +78,7 @@ body {
 		padding: 0;
 		border:0;
 		width: ~"calc(100vw - 290px)";
+		min-width: 750px;
 
 		/* Fallback heading font for scripts which render poorly in @content-heading-font-family. */
 		/* See T73240 */
@@ -86,7 +94,7 @@ body {
 	}
 	.mw-body-content {
 		h1 {
-			/* yellow stroke above all h1's*/
+			/* @sidebar-backgroundcolor stroke above all h1's*/
 			width: 130vw;
 			border-top: @gridsize solid @bscolorThird;
 			padding-top: @gridsize;
@@ -131,12 +139,6 @@ body {
 
 	pre{
 		font-size: 14px;
-	}
-	#toc h2,
-	.toc h2 {
-		font-size: 100%; /* (reset) */
-		font-family: @content-font-family;
-		border:0px solid @bscolorMain;
 	}
 
 	.mw-indicators {
@@ -197,30 +199,32 @@ pre,
 #mw-navigation{
 	width: 100%;
 }
+	a#bs-title-link:hover{
+		text-decoration: none;
+	}
 	/* wiki title */
 	#bs-title{
-		position: relative;
+		position: absolute;
 		top: 0px;
 		left: 5px;
-		width: 440px;
+		width: 180px;
 		font-family: @bsfontBlack;
 		font-weight: bold;
-		font-size: @menu-navigation-font-size;
+		font-size: @menu-navigation-second-font-size;
 		color:@bscolorMain;
+	}
+	#bs-title-tagline{
+		display: none;
 	}
 	/* page title */
 	h1#firstHeading {
-		position: absolute;
-		width: ~"calc(100% - 190px)";
-		min-width: 820px;
-		border-bottom:0px;
-		margin:-10px 0 0 0;
-		padding:0 0 10px 0;
-		left:5px;
 		font-family: @bsfontBlack;
 		font-size: @menu-navigation-font-size;
 		color: @bscolorMain;
 		line-height: 0.95;
+		padding: @gridsize 0;
+		margin:0.5em 0 -15px 0;
+		width: auto;
 	}
 
 #mw-content-text {
@@ -229,6 +233,7 @@ pre,
 	line-height: @content-line-height;
 	letter-spacing: @content-letter-spacing;
 	z-index: 0;
+	padding-bottom: @gridsize;
 }
 
 /* text width for content, sentences length */
@@ -236,19 +241,10 @@ pre,
 	width: 750px;
 }
 
-#content .image img{
-	width: 750px;
-	height: auto;
-	margin-top:10px;
-	margin-bottom:10px;
+/* hide smw warning icon */
+.smw-highlighter.smwttinline{
+	display: none;
 }
-	#content .thumb img{
-		width: 302px;
-		height: auto;
-	}
-	.thumbinner{
-		max-width: 750px;
-	}
 
 /* small arrow link */
 small.arrow-link{
@@ -267,18 +263,116 @@ small.arrow-link{
 	p small.arrow-link.third{
 		margin-top:0px;
 	}
-	small.arrow-link a:visited, .arrow-link a:active{
+	p small.arrow-link.fourth{
+		margin-top:20px;
+	}
+	small.arrow-link a, small.arrow-link a:visited, .arrow-link a:active{
 		color:@bscolorSecond;
 	}
 	small.arrow-link a:hover{
 		cursor: pointer;
 	}
 	@media only screen and (max-width:1039px){
-	    small.arrow-link{
-	    	left: 845px;
-    	}
-    }
+		small.arrow-link{
+			left: 845px;
+		}
+	}
 
+/* hide default content template of category pages */
+.mw-category-generated{
+	display: none;
+}
+/* imitate a <h1> header for the "more" elements, so they don't show up in the TOC */
+div.more{
+	font-family: @bsfontBlack;
+	font-size: @content-heading-font-size;
+	line-height: @heading-line-height;
+	width: 130vw;
+	border-top: @gridsize solid @bscolorThird;
+	padding-top: @gridsize;
+	margin-bottom: @gridsize;
+	margin-top: 1em;
+}
+
+/*********************************/
+/* topics pages */
+/*********************************/
+.topics-wrapper {
+	width: ~"calc(100vw - 300px)";
+	min-width: 750px;
+
+	.topic{
+		padding:10px 0;
+		border-top:1px solid;
+	}
+	.topic:last-of-type{
+		border-bottom:1px solid;
+	}
+}
+
+/*********************************/
+/* images */
+/*********************************/
+#content .image img{
+	width: 750px;
+	height: auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+	#content .thumb img{
+		width: 302px;
+		height: auto;
+	}
+	.thumbinner{
+		max-width: 750px;
+	}
+	/* image thumb */
+	div.thumb{
+		border:0px;
+		margin-top:0px;
+	}
+	div.thumbinner{
+		border:0px;
+		background-color: transparent;
+	}
+	img.thumbimage{
+		border:0px;
+	}
+	html .thumbcaption{
+		padding:0;
+		font-family: @bsfont;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
+		margin-bottom:@gridsize;
+		margin-top: 0;
+	}
+#content .gallery{
+	.gallerybox{
+		position: relative;
+
+		.thumb{
+			width: 120px;
+
+			a.image{
+				margin:0;
+				vertical-align: top;
+			}
+
+			img{
+				width: 120px;
+				/*width: 100%;*/
+			}
+		}
+		.gallerytext{
+			font-family: @bsfont;
+			font-size: @content-small-font-size;
+			line-height: @content-small-line-height;
+			letter-spacing: @content-small-letter-spacing;
+			margin-bottom: @gridsize;
+		}
+	}
+}
 /*********************************/
 /* overview pages */
 /*********************************/
@@ -313,6 +407,11 @@ small.arrow-link{
 .editorials-wrapper .thumb-wrapper, .articles-wrapper .thumb-wrapper{
 	overflow: hidden;
 	position: relative;
+
+	img{
+		/* opacity is set to 0, to display thumb-wrapper images only after they have been centered by jquery */
+		opacity: 0;
+	}
 }
 	#content .editorials-wrapper .thumb-wrapper img, #content .articles-wrapper .thumb-wrapper img{
 		position: relative;
@@ -333,16 +432,43 @@ small.arrow-link{
 	}
 
 /* a one-line view*/
-.oneline-wrapper, .editorials-oneline-wrapper{
+.oneline-wrapper {
 	position: relative;
 	overflow: hidden;
 	display: block;
 	width: ~"calc(100vw + 0px)";
-	height: 435px;
+	height: 460px;
 
-	.oneline, .editorials-oneline{
+	.oneline {
 		position: absolute;
 		
+	}
+}
+/* a one-line view*/
+.oneline-wrapper.mainpage{
+	height: 900px;
+}
+
+/*********************************/
+/* special pages */
+/*********************************/
+body.ns-special #right-navigation{
+	display: none;
+}
+/* create account page */
+.mw-createacct-benefits-container{
+	display: none;
+}
+.mw-ui-container #userloginForm{
+	margin-bottom:1em;
+
+	/* create button */
+	button#wpCreateaccount{
+		margin:@gridsize 0;
+		background-color: @bscolorThird;
+		color:black;
+		border:0;
+		font-weight: normal;
 	}
 }
 
@@ -373,112 +499,10 @@ small.arrow-link{
 		color:@bscolorSecond;
 		padding:0;
 		margin-top: @content-padding;
-		/*margin-left: ~"calc(100vw - 409px)";*/
 	}
 	input#input_button_1:hover{
 		cursor:pointer;
 	}
-		
-}
-/*********************************/
-/* other */
-/*********************************/
-.small, small{
-	font-family: @bsfont;
-	font-size: @content-small-font-size;
-	line-height: @content-small-line-height;
-	letter-spacing: @content-small-letter-spacing;
-}
-.link-internal, .link-external{
-	width: ~"calc(100vw - 300px)";
-	min-width: 750px;
-	border-bottom:1px solid;
-	padding:10px 0;
-}
-	/* hide the <p> elements that the wiki parses in between the link div's */
-	.link-internal + p, .link-external + p, .category + p{
-		display: none;
-	}
-	.event-page + p, #article-wrapper + p{
-		margin-bottom:-28px;
-	}
-.selflink{
-	color: @bscolorSecond;
-}
-/* this page title element is not needed anymore, there is a copy in the right-navigation element */
-.mw-body h1.firstHeading {
-	display: none;
-}
-
-/* prevent body text to jump next to the nav */
-#mw-content-text{
-	clear:both;
-}
-
-/* tables */
-table.wikitable{
-	margin:0;
-	width: 100%; /* still expands the table wider than the parent div*/
-	border:none;
-
-	tr > th, tr > td{
-		border:2px solid @bscolorMain;
-		padding:5px;
-	}
-}
-table.filehistory{
-	.mw-usertoollinks{
-		display: none;
-	}
-	th:last-of-type, td:last-of-type{
-		display: none;
-	}
-}
-#filetoc{
-	border:2px solid @bscolorMain;
-}
-
-/* categoryBrowser */
-#xyCategoryBrowser{
-	display: none;
-}
-
-/*file toc*/
-ul#filetoc{
-	height: auto;
-}
-
-/* move patrol link a bit down */
-div.patrollink{
-	margin-top:70px;
-}
-
-/* the red links */
-a.new, li.new, #p-personal a.new{
-	color:#ff2400;
-}
-
-/* the createPage input field */
-.pfFormInput{
-	display: inline-block;
-}
-
-/* image thumb */
-div.thumb{
-	border:0px;
-	margin-top:0px;
-}
-div.thumbinner{
-	border:0px;
-	background-color: transparent;
-}
-img.thumbimage{
-	border:0px;
-}
-html .thumbcaption{
-	padding:0;
-	font-size: 87%;
-	margin-top:-4px;
 }
 
 /* form input preview text */
@@ -495,6 +519,138 @@ html .thumbcaption{
 	color:lightgrey;
 }
 
+form span.inputSpan{
+	display: inline-block;
+}
+
+/*********************************/
+/* tables in Main namespace only */
+body.ns-0 table.wikitable{
+	position: relative;
+	width: ~"calc(100vw - 300px)";
+	min-width: 750px;
+	margin:0 0 1em 0;
+	border:none;
+	background-color: transparent;
+	font-size: 100%;
+
+	tr > th, tr > td{
+		border:0;
+		border-bottom:1px solid @bscolorMain;
+		padding:5px;
+	}
+	thead th{
+		border:0;
+		background-color: @sidebar-backgroundcolor;
+		border-bottom:1px solid @bscolorMain;
+	}
+	tr, td{
+		background-color: transparent;
+	}
+	tbody td:first-of-type{
+		width: 50%;
+	}
+}
+table.filehistory{
+	.mw-usertoollinks{
+		display: none;
+	}
+	th:last-of-type, td:last-of-type{
+		display: none;
+	}
+}
+
+/*********************************/
+/* TOC */
+/*********************************/
+
+/* general toc */
+.mw-content-ltr #toc.toc{
+	width: 100%;
+	background-color: transparent;
+	border:none;
+	font-family: @bsfont;
+	font-size: 15px;
+	margin:@gridsize 0;
+	padding:0;
+
+	#toctitle {
+		text-align: left;
+		padding:@gridsize 0 @gridsize 32px;
+		background-color: @sidebar-backgroundcolor;
+
+		h2{
+			font-family: @bsfont;
+			font-weight: normal;
+		}
+		.toctoggle{
+			float: right;
+			padding-right: @gridsize;
+
+			a{
+				color:@bscolorMain;
+			}
+		}
+	}
+	/* level 1 */
+	ul{
+		padding:0;
+		margin:0;
+
+		li{
+			padding-top:@gridsize;
+
+			.tocnumber{
+				min-width: 30px;
+				padding:0;
+				display: inline-block;
+				font-weight: bold;
+				font-size: 90%;
+			}
+			.toctext{
+				display: inline;
+			}
+			/* level 2 */
+			ul{
+				margin:0 0 0 34px;
+				
+				/* level 3 */
+				li ul {
+
+					.tocnumber{
+						min-width: 45px;
+					}
+
+					/* level 4 */
+					li ul .tocnumber{
+						min-width: 55px;
+					}
+				}
+			}
+		}
+		li.toclevel-1{
+			border-top:1px solid;
+			padding:@gridsize 0;
+		}
+		li.toclevel-1:last-of-type{
+			border-bottom:1px solid;
+		}
+		a{
+			color:@bscolorMain;
+		}
+	}
+}
+
+/* Special:Upload_file page*/
+#filetoc{
+	border:2px solid @bscolorMain;
+	background-color: transparent;
+}
+ul#filetoc{
+	height: auto;
+}
+
+/*********************************/
 /* used in the wiki tutorial */
 .mediawiki-link{
 	margin-top:10px;
@@ -514,4 +670,53 @@ html .thumbcaption{
 	position: absolute;
 	margin-top: 7px;
 	margin-left: -5px;
+}
+
+
+/*********************************/
+/* other */
+/*********************************/
+.small, small{
+	font-family: @bsfont;
+	font-size: @content-small-font-size;
+	line-height: @content-small-line-height;
+	letter-spacing: @content-small-letter-spacing;
+}
+.Avenir{
+	font-family: @bsfont;
+}
+.AvenirBlack{
+	font-family: @bsfontBlack;
+}
+.link-internal, .link-external{
+	width: ~"calc(100vw - 300px)";
+	min-width: 750px;
+	border-bottom:1px solid;
+	padding:10px 0;
+}
+	.event-page + p, #article-wrapper + p{
+		margin-bottom:-28px;
+	}
+.selflink{
+	color: @bscolorSecond;
+}
+
+/* prevent body text to jump next to the nav */
+#mw-content-text{
+	clear:both;
+}
+
+/* categoryBrowser */
+#xyCategoryBrowser{
+	display: none;
+}
+
+/* move patrol link a bit down */
+div.patrollink{
+	margin-top:70px;
+}
+
+/* the red links */
+a.new, li.new, #p-personal a.new{
+	color:#ff2400;
 }

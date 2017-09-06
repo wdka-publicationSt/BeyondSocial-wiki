@@ -2,19 +2,16 @@
 @import "personalMenu";
 @import "search";
 
-/* right navigation strip */
-@sidebar-backgroundcolor: rgba(255,255,0,1);
-
 div#mw-head {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	width: 170px;
+	width: 172px;
 	height: 100%;
-	top: -77px;
+	top: 0px;
 	right: 0;
-	margin:0;
-	padding:0 10px 77px;
+	margin:-20px 0 0 0;
+	padding:0 10px;
 	z-index: 100;
 	background-color: @sidebar-backgroundcolor;
 
@@ -45,7 +42,6 @@ div#mw-head {
 					color: #ff2400;
 				}
 			}
-
 			&.selected {
 				a,
 				a:visited{
@@ -61,7 +57,8 @@ div#mw-head {
 
 	/* read, edit, view history, watch, + more*/
 	#right-navigation {
-		#p-views{
+		#p-views, #search-link{
+			display: inline;
 
 		}
 		ul{
@@ -81,6 +78,7 @@ div#mw-head {
 			line-height: 1.1;
 			margin:0;
 			padding: 0;
+			text-transform: capitalize;
 		}
 			li span::after{
 				content: ", ";
@@ -93,7 +91,12 @@ div#mw-head {
 					color: #a55858;
 				}
 			}
-
+			#shareButtons{
+				/* hiden the word "Share" */
+				font-size: 0; 
+				vertical-align: top;
+				padding-left:5px;
+			}
 			&.selected {
 				a,
 				a:visited{
@@ -116,6 +119,21 @@ div#mw-head {
 				float: left;
 				display: block;
 			}
+		}
+		li#ca-unprotect  {
+			span a{
+				width: ~"calc(100% - 39px)";
+			}
+			span::after{
+				position: relative;
+				top:30px;
+			}
+		}
+		ul#search-link{
+			position: relative;
+			left:-10px;
+			margin-top:-29px;
+			z-index: 100;
 		}
 		#p-views-label{
 			display: none;
@@ -163,118 +181,6 @@ div#mw-head {
 		}
 	}
 }
-
-/* Panel (= transformed into Footer) */
-div#mw-panel {
-	position: relative;
-	display: block;
-    left: 0;
-    bottom: 0;
-	width: ~"calc(100% - 1em)";
-	padding:@content-padding;
-	margin:@content-padding 0 0 0;
-	z-index: 100;
-	background-color: white;
-	font-family: @bsfont;
-	font-size: @menu-main-font-size;
-
-	/* search box */
-	#p-search{
-		display: block;
-		width: 100%;
-		height: 3em;
-		margin:0;
-		padding:0;
-	}
-	/* tools */
-	#p-tb{
-		display: none;
-	}
-
-	#footer-icons {
-		position: relative;
-		margin-top:0px;
-		float: right;
-
-		li {
-			list-style-type: none;
-			list-style-image: none;
-			float: left;
-			margin: 0 0 0 @content-padding;
-			line-height: 2em;
-			text-align: right;
-			
-			/* mediawiki logo */
-
-			img{
-				border-radius: 4px;
-			}
-		}
-		li#footer-poweredbyico{
-			float: none;
-			margin-bottom:@content-padding;
-		}
-	}
-	div.portal {
-		position: relative;
-		display: inline-block;
-		width: 165px;
-		vertical-align: top;
-		margin: 0;
-		padding: 0;
-		direction: ltr;
-
-		h3 {
-			font-size: @menu-main-heading-font-size;
-			color: @menu-main-heading-color;
-			font-weight: normal;
-			margin: 0;
-			padding: @menu-main-heading-padding;
-			cursor: default;
-			border: none;
-			/*display: initial;*/
-		}
-
-		div.body {
-			margin: @menu-main-body-margin;
-			padding-top: 0;
-
-			ul {
-				list-style-type: none;
-				list-style-image: none;
-				margin: 0;
-				padding: @menu-main-body-padding;
-
-				li {
-					/*line-height: 1.125em;*/
-					/*margin: 0;*/
-					/*padding: 0.25em 0;*/
-					font-size: @menu-main-body-font-size;
-					word-wrap: break-word;
-
-					a {
-						color: @menu-main-body-link-color;
-						&:visited {
-							color: @menu-main-body-link-visited-color;
-						}
-					}
-				}
-			}
-		}
-	}
-
-
-	/* First sidebar portlet. Not using :first-of-type for IE<=8 support. */
-	#p-logo + div.portal {
-		background-image: none;
-		margin-top: 0;
-
-		div.body {
-			margin-left: 0.5em;
-		}
-	}
-}
-
 
 /* share icons */
 li#share span:after{
