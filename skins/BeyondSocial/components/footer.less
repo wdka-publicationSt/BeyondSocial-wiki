@@ -1,113 +1,109 @@
 /* Footer */
-div#footer {
-	font-family:@bsfont;
-	/*height: 0;*/
-	/*width: 0;*/
 
-	ul {
-		list-style-type: none;
-		list-style-image: none;
-		margin: 0;
-		padding: 0;
+/* Panel (= transformed into Footer) */
+div#mw-panel {
+	position: relative;
+	display: block;
+    left: 0;
+    bottom: 0;
+	width: ~"calc(100% - 1em)";
+	padding:@content-padding;
+	margin:0;
+	z-index: 100;
+	background-color: white;
+	font-family: @bsfont;
+	font-size: @menu-main-font-size;
 
-		li {
-			margin: 0;
-			padding: 0;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-			color: #333;
-		}
+	/* search box */
+	#p-search{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin:0 0 @gridsize 0;
+		padding:0;
+	}
+	/* tools */
+	#p-tb{
+		display: none;
 	}
 
 	#footer-icons {
-		display: none;
 		position: relative;
-		top:-30px;
+		margin-top:0px;
 		float: right;
 
-		li {
+		li{
+			list-style-type: none;
+			list-style-image: none;
 			float: left;
-			margin: 0 3px;
 			line-height: 2em;
 			text-align: right;
-
+			a{
+				margin: 0 0 0 @content-padding;
+			}
 			img{
 				border-radius: 4px;
 			}
 		}
-	}
-
-	/* TOP RIGHT */
-	#footer-info {
-		/*display: none;*/
-		position: absolute;
-		top:64px;
-		right:0px;
-		width: 181px;
-		z-index: 100;
-		li {
-			font-size: @menu-main-body-font-size;
-			line-height: 1.4em;
-			color:@bscolorSecond;
+		li#footer-poweredbyico{
+			float: none;
+			margin-bottom:@content-padding;
 		}
 	}
-	/* BOTTOM */
-	/*#footer-info {
+	div.portal {
 		position: relative;
-		float: left;
-		left:8px;
-		padding:5px;
-		margin-top:-262px;
-		width: ~"calc(100% - 28px)";
-		border:1px solid #aaa;
-		background-color: white;
-		z-index: 100;
-		li {
-			font-size: @menu-main-body-font-size;
-			line-height: 1.4em;
-			color:@bscolorSecond;
-		}
-	}*/
+		display: inline-block;
+		width: 165px;
+		vertical-align: top;
+		margin: 0;
+		padding: 0;
+		direction: ltr;
 
-	/* links */
-	#footer-places {
-		display: none;
-		li, li a {
-			font-family:@bsfont;
-			font-size: 12px;
-			color:@bscolorSecond;
-			float: left;
-			margin-right: 0.5em;
-			width: 100%;
+		h3 {
+			font-size: @menu-main-heading-font-size;
+			color: @menu-main-heading-color;
+			font-weight: normal;
+			margin: 0;
+			padding: 0;
+			cursor: default;
+			border: none;
+			/*display: initial;*/
+		}
+
+		div.body {
+			margin: @gridsize 0 0 1px;
+			padding-top: 0;
+
+			ul {
+				list-style-type: none;
+				list-style-image: none;
+				margin: 0;
+				padding: @menu-main-body-padding;
+
+				li {
+					/*line-height: 1.125em;*/
+					/*margin: 0;*/
+					/*padding: 0.25em 0;*/
+					font-size: @menu-main-body-font-size;
+					word-wrap: break-word;
+
+					a {
+						color: @menu-main-body-link-color;
+						&:visited {
+							color: @menu-main-body-link-visited-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* First sidebar portlet. Not using :first-of-type for IE<=8 support. */
+	#p-logo + div.portal {
+		background-image: none;
+		margin-top: 0;
+
+		div.body {
+			margin:@gridsize 0 0 1px;
 		}
 	}
 }
-
-body.ltr {
-	div#footer {
-		#footer-places {
-			/* @noflip */
-			float: left;
-		}
-	}
-}
-
-
-/*TO ADD!!*/
-/*
-#wdka-logos{
-	position: absolute;
-	top:76px;
-	width: 187px;
-	right: 3px;
-	text-align: right;
-
-	img{
-		width: 82px;
-		height: auto;
-		border:0;
-		border-radius: 10px;
-		padding-right: 5px;
-	}
-
-}*/
