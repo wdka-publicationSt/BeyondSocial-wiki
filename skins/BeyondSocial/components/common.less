@@ -48,7 +48,7 @@ body {
 
 /* Content */
 .mw-body {
-	width: ~"calc(100% - 238px)";
+	width: ~"calc(100% - 239px)";
 	padding: @content-padding @content-padding 0 50px;
 	border:0;
 	margin:1em -1em 0px 0;
@@ -62,10 +62,11 @@ body {
 		font-family: @bsfont;
 	}
 	a, a:visited, a:active{
+		text-decoration: underline;
 		color:@bscolorMain;
 	}
 	a:hover, a:focus{
-		text-decoration: underline;
+		text-decoration: none;
 	}
 	p {
 		margin: 0 0 @gridsize 0;
@@ -153,6 +154,13 @@ body {
 	}
 	a:visited{
 		color:black;
+	}
+	hr{
+		width: ~"calc(100vw - 300px)";
+		min-width: 750px;
+		border:0;
+		border-bottom:1px solid @bscolorMain;
+		margin:1em 0;
 	}
 	.mw-indicator {
 		display: inline-block;
@@ -247,6 +255,18 @@ pre,
 }
 
 /* small arrow link */
+small.arrow-link-inline{
+	position: relative;
+	font-family: @bsfont;
+	font-size: @content-small-font-size;
+	letter-spacing: @content-small-letter-spacing;
+	margin:0;
+	left:0;
+	a, a:visited, a:active, a:hover{
+		color:@bscolorSecond;
+		text-decoration: none;
+	}
+}
 small.arrow-link{
 	position: absolute;
 	font-family: @bsfont;
@@ -257,6 +277,7 @@ small.arrow-link{
 	width: 180px;
 	z-index: 200;
 }
+
 	p small.arrow-link.second{
 		margin-top:-20px;
 	}
@@ -267,6 +288,7 @@ small.arrow-link{
 		margin-top:20px;
 	}
 	small.arrow-link a, small.arrow-link a:visited, .arrow-link a:active{
+		text-decoration: none;
 		color:@bscolorSecond;
 	}
 	small.arrow-link a:hover{
@@ -300,6 +322,7 @@ div.more{
 .topics-wrapper {
 	width: ~"calc(100vw - 300px)";
 	min-width: 750px;
+	margin-bottom:2em;
 
 	.topic{
 		padding:10px 0;
@@ -494,6 +517,9 @@ body.ns-special #right-navigation{
 	input#input_button_1{
 		position: absolute;
 		font-family: @bsfont;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
 		background-color: transparent;
 		border:0;
 		color:@bscolorSecond;
