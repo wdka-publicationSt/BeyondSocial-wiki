@@ -248,12 +248,6 @@ pre,
 #mw-content-text.mw-content-ltr{
 	width: 750px;
 }
-
-/* hide smw warning icon */
-.smw-highlighter.smwttinline{
-	display: none;
-}
-
 /* small arrow link */
 small.arrow-link-inline{
 	position: relative;
@@ -314,6 +308,9 @@ div.more{
 	padding-top: @gridsize;
 	margin-bottom: @gridsize;
 	margin-top: 1em;
+}
+.patrollink{
+	display: none;
 }
 
 /*********************************/
@@ -397,6 +394,13 @@ div.more{
 	}
 }
 /*********************************/
+/* semantic mediawiki  */
+/*********************************/
+.smw-editpage-help{
+	display: none;
+}
+
+/*********************************/
 /* overview pages */
 /*********************************/
 .overview{
@@ -460,7 +464,7 @@ div.more{
 	overflow: hidden;
 	display: block;
 	width: ~"calc(100vw + 0px)";
-	height: 460px;
+	height: 470px;
 
 	.oneline {
 		position: absolute;
@@ -531,6 +535,7 @@ body.ns-special #right-navigation{
 	}
 }
 
+/* FORMS */
 /* form input preview text */
 ::-moz-placeholder{
 	color:lightgrey;
@@ -549,9 +554,10 @@ form span.inputSpan{
 	display: inline-block;
 }
 
+
 /*********************************/
-/* tables in Main namespace only */
-body.ns-0 table.wikitable{
+/* tables in Main & User namespace only */
+body.ns-0 table.wikitable, body.ns-14 table.wikitable{
 	position: relative;
 	width: ~"calc(100vw - 300px)";
 	min-width: 750px;
@@ -569,12 +575,30 @@ body.ns-0 table.wikitable{
 		border:0;
 		background-color: @sidebar-backgroundcolor;
 		border-bottom:1px solid @bscolorMain;
+		text-align: left;
 	}
 	tr, td{
 		background-color: transparent;
 	}
 	tbody td:first-of-type{
 		width: 50%;
+	}
+	/* header texts */
+	span.smwbuiltin{
+		font-style: normal;
+	}
+	.smw-highlighter.smwttinline{
+		font-family: @bsfont;
+		font-size: @content-small-font-size;
+		font-variant: normal;
+		font-weight: normal;
+
+		a, a:active, a:focus, a:visited, a:hover{
+			text-decoration: none;
+		}
+		a:hover{
+			cursor: default;
+		}
 	}
 }
 table.filehistory{
