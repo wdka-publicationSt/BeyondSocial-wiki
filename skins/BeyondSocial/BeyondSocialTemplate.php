@@ -199,15 +199,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					</div>
 
 					<div id="right-navigation">
-						<!-- *************************************** -->
-						<!-- *** 'SEARCH' removed here           *** -->
-						<!-- *************************************** -->
 						<?php $this->renderNavigation( [ 'VIEWS', 'ACTIONS' ] ); ?>
-						<ul id="search-link">
-							<li>
-								<?php $this->msg( 'comma-separator' ) ?><a href="#p-search"><?php $this->msg( 'jumptosearch' ) ?></a>
-							</li>
-						</ul>
+						<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
 					</div>
 
 					<div id="page-info">
