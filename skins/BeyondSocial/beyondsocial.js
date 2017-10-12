@@ -7,30 +7,16 @@ jQuery( function ( $ ) {
 	 * BS js
 	 */
 
-	// function to open a new tab which loads Tw/FB as a sharing option. Written by Template.
-	function shareClick(){
-		$(document).on('click','#share a', function(e){
-			e.preventDefault()
-			var currentUrl=window.location.href
-			if($(this).attr('id') == 'shareTwitter'){
-				window.open('https://twitter.com/intent/tweet?text='+currentUrl); 
-			}else if($(this).attr('id') == 'shareFacebook'){
-				window.open('https://www.facebook.com/sharer/sharer.php?u='+currentUrl); 
-			}
-		})
-	}
-	// this function loads the first img on the page into the head, so FB can read it and place it next to the shared link. Written by Template.
-	function addFBImage(){
-		if($('.content').find('img').length == true){
-			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$('#mw-content-text').find('img').first()[0].src+'" />')
-		}else{
-			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$(document).find('img').first()[0].src+'" />')
+
+	hideEmptyPElements()
+
+	// function to hide <h2>Links</h2> if there are no links added to the page
+	function hideEmptyLinksSection(){
+		if (!$('div.link').length) {
+			$('h2 span#Links').parent().detach();
+			$('div.toc a[href=#Links]').parent().detach();
 		}
 	}
-	shareClick()
-	addFBImage()
-
-
 	// hide empty parameter in Articles
 	function hideEmptyImgLink(){
 		$('div#article-wrapper .sidebox .image').each(function () {
@@ -96,15 +82,6 @@ jQuery( function ( $ ) {
 			}
 		});
 	}
-	hideEmptyPElements()
-
-	// function to hide <h2>Links</h2> if there are no links added to the page
-	function hideEmptyLinksSection(){
-		if (!$('div.link').length) {
-			$('h2 span#Links').parent().detach();
-			$('div.toc a[href=#Links]').parent().detach();
-		}
-	}
 	hideEmptyLinksSection()
 
 	// scroll anchor links
@@ -115,6 +92,45 @@ jQuery( function ( $ ) {
 		}); 
 	}
 	scrollAnchorLinks()
+
+	// check if http:// is added to the external links
+	function checkExternalLinks(){
+		var http = 'http://';
+		$('div.link-external').each(function(){
+			if($(this).text()[0] == '['){
+				var input = $(this).text().replace('[','');
+				var input = input.replace(']','');
+				var input = input.split(" ");
+				var link = input[0];
+				var text = input[1];
+				$(this).html('<a class="external text" href="http://'+link+'" target="_blank">'+text+'</a>');
+			}
+		});
+	}
+	checkExternalLinks()
+
+	// function to open a new tab which loads Tw/FB as a sharing option. Written by Template.
+	function shareClick(){
+		$(document).on('click','#share a', function(e){
+			e.preventDefault()
+			var currentUrl=window.location.href
+			if($(this).attr('id') == 'shareTwitter'){
+				window.open('https://twitter.com/intent/tweet?text='+currentUrl); 
+			}else if($(this).attr('id') == 'shareFacebook'){
+				window.open('https://www.facebook.com/sharer/sharer.php?u='+currentUrl); 
+			}
+		})
+	}
+	// this function loads the first img on the page into the head, so FB can read it and place it next to the shared link. Written by Template.
+	function addFBImage(){
+		if($('.content').find('img').length == true){
+			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$('#mw-content-text').find('img').first()[0].src+'" />')
+		}else{
+			$('head').append('<link rel="image_src" type="image/jpeg" href="'+$(document).find('img').first()[0].src+'" />')
+		}
+	}
+	shareClick()
+	addFBImage()
 
 	// ************************************************************
 
