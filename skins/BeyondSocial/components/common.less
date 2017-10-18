@@ -43,6 +43,7 @@ body {
 	right: 0px;
 }
 	#container{
+		position: relative;
 		flex:1;
 		margin-bottom:-7px;
 	}
@@ -537,18 +538,21 @@ body.ns-special #right-navigation{
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-		background-color: yellow;
+		background-color: @bscolorThird;
 		color:@bscolorSecond;
 		border:0;
 		padding:@content-padding 12px;
 		margin-left: -3px;
-		height: 45px;
+		height: 46.5px;
 		vertical-align: bottom;
 		display: inline-block;
 	}
 	input#input_button_1:hover{
 		cursor:pointer;
 	}
+}
+.contribute-container form.pfFormInput input#input_button_1{
+	background-color: yellow;
 }
 
 /* FORMS */
