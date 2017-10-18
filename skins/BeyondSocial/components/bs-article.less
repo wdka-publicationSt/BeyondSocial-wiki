@@ -119,8 +119,6 @@
 }
 
 /* hide file destination field in image upload popup */
-form#mw-upload-form{
-	tr:first-of-type{
-		display:none;
-	}
+form#mw-upload-form tr.mw-htmlform-field-HTMLTextField:first-of-type{
+	display:none;
 }
