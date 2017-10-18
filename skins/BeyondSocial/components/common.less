@@ -261,6 +261,9 @@ small.arrow-link-inline{
 	letter-spacing: @content-small-letter-spacing;
 	margin:0;
 	left:0;
+	display: inline;
+	vertical-align: middle;
+
 	a, a:visited, a:active, a:hover{
 		color:@bscolorSecond;
 		text-decoration: none;
@@ -513,32 +516,34 @@ body.ns-special #right-navigation{
 /* input field element */
 /*********************************/
 .mp-column #contribute form.pfFormInput, #overview form.pfFormInput, .contribute-container form.pfFormInput{
-	width: ~"calc(100% - 10px)";
+	width: ~"calc(100vw - 300px)";
+	min-width: 750px;
 	margin:@content-padding 0 0 0;
 	padding:0;
 	display: block;
 
 	input.formInput{
-		width:~"calc(100vw - 300px)";
-		min-width: 750px;
+		width:~"calc(100vw - 437px)";
+		min-width: 600px;
 		border:0;
 		padding:8px 0px 5px 10px;
 		margin:0;
 		font-size: @menu-navigation-second-font-size;
 		font-family: @bsfontBlack;
-		/*color:@bscolorSecond;*/
 	}
 	input#input_button_1{
-		position: absolute;
 		font-family: @bsfont;
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-		background-color: transparent;
-		border:0;
+		background-color: @bscolorThird;
 		color:@bscolorSecond;
-		padding:0;
-		margin-top: @content-padding;
+		border:0;
+		padding:@content-padding 12px;
+		margin-left: @content-padding;
+		height: 45px;
+		vertical-align: bottom;
+		display: inline-block;
 	}
 	input#input_button_1:hover{
 		cursor:pointer;
