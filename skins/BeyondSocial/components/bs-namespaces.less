@@ -13,21 +13,28 @@
 	background-color: rgba(237,255,93,1);
 }
 
-/* special pages */
-.ns-special{
-	background-color: rgba(237,255,93,0.5);
-}
-
 /* talk pages */
 body[class*="page-User_"].ns-talk, .ns-talk{
-	background-color: rgba(255,255,0,0.2);
+	background-color: rgba(237,255,93,0.5);
 }
 
 /* user pages */
 body[class*="page-User_"]{
-	background-color: rgba(255,0,0,0.1);
+	background-color: rgba(255, 210, 104, 0.5);
 }
-/* user pages */
+	body[class*="page-User_"] .mw-body .mw-body-content h1{
+		border-top:10px solid rgba(255, 210, 104, 0.7);
+	}
+	/*body[class*="page-User_"] #mw-head{
+		background-color: rgba(243, 243, 55,1);
+	}*/
+
+/* special pages */
+.ns-special{
+	background-color: rgba(255, 225, 0, 0.5);
+}
+/* mediawiki pages */
 body[class*="page-MediaWiki"]{
-	background-color: rgba(0,0,0,0.05);
+	background-color: rgba(255, 225, 0, 0.3);
+	/*background-color: rgba(0, 0, 0, 0.06);*/
 }

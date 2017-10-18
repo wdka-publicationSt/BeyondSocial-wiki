@@ -119,7 +119,7 @@ jQuery( function ( $ ) {
 			}else if($(this).attr('id') == 'shareFacebook'){
 				window.open('https://www.facebook.com/sharer/sharer.php?u='+currentUrl); 
 			}
-		})
+		});
 	}
 	// this function loads the first img on the page into the head, so FB can read it and place it next to the shared link. Written by Template.
 	function addFBImage(){
