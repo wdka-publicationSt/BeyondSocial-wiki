@@ -8,22 +8,34 @@ body.page-Main_Page{
 		text-decoration: none;
 	}
 	#bs-title{
-		font-size: @menu-navigation-font-size;
-		width: 430px;
+		/*font-size: @menu-navigation-font-size;*/
+		font-size: 5em;
+		width: 900px;
+		left:46px;
+		top:30px;
+		line-height: 1.0;
+		color:@bscolorBlack;
 	}
+		#bs-title:first-letter{
+			letter-spacing: -2px;
+		}
 	#bs-title-tagline{
 		position: absolute;
 		display: block;
 		float: left;
-		left: 8px;
-		margin-top:70px;
+		width: ~"calc(100vw - 300px)";
+		top:110px;
+		left: 50px;
+		margin-top:0;
 		font-family: @bsfontBlack;
+		/*font-size: 5em;*/
+		font-size: @content-heading-font-size;
+		color:@bscolorBlack;
 		font-weight: bold;
-		font-size: @content-heading-font-size;;
-		color:@bscolorMain;
+		line-height: 1.0;
 	}
 	.mw-body{
-		margin-top:8em;
+		margin-top:12em;
 	}
 }
 

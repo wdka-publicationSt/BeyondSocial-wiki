@@ -23,6 +23,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: @content-font-family;
+	color:@bscolorBlack;
 }
 body {
 	width: 100%;
@@ -52,7 +53,7 @@ body {
 	padding: @content-padding @content-padding 0 50px;
 	border:0;
 	margin:1em -1em 0px 0;
-	color: @content-font-color;
+	color:@bscolorBlack;
 	direction: ltr;
 	overflow:hidden;
 	display: inline-block;
@@ -154,7 +155,7 @@ body {
 		right: 40px;
 	}
 	a:visited{
-		color:black;
+		color:@bscolorBlack;
 	}
 	hr{
 		width: ~"calc(100vw - 300px)";
@@ -218,7 +219,7 @@ pre,
 	/* wiki title */
 	#bs-title{
 		position: absolute;
-		top: 0px;
+		top: 3px;
 		left: 5px;
 		width: 180px;
 		font-family: @bsfontBlack;
@@ -506,7 +507,7 @@ body.ns-special #right-navigation{
 	button#wpCreateaccount{
 		margin:@gridsize 0;
 		background-color: @bscolorThird;
-		color:black;
+		color:@bscolorBlack;
 		border:0;
 		font-weight: normal;
 	}
@@ -788,6 +789,7 @@ div.patrollink{
 a.new, li.new, #p-personal a.new{
 	color:#ff2400;
 }
+
 /* slideshow gallery */
 ul.gallery.mw-gallery-slideshow{
 	margin:0;

@@ -115,7 +115,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<!-- *** Beyond Social Title added       *** -->
 					<!-- *************************************** -->
 					<a id="bs-title-link" href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
-					<div id="bs-title-tagline">platform for researching social design</div>
+					<!-- <div id="bs-title-tagline">... a collaborative research and publishing platform on social design</div> -->
+					<div id="bs-title-tagline">Platform Investigating Social Art and Design</div>
 					
 					<!-- *************************************** -->
 					<!-- *** personal menu removed here      *** -->
