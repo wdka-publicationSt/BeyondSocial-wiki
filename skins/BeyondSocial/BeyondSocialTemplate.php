@@ -115,7 +115,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 					<!-- *** Beyond Social Title added       *** -->
 					<!-- *************************************** -->
 					<a id="bs-title-link" href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
-					<!-- <div id="bs-title-tagline">... a collaborative research and publishing platform on social design</div> -->
 					<div id="bs-title-tagline">Platform Investigating Social Art and Design</div>
 					
 					<!-- *************************************** -->
@@ -267,9 +266,9 @@ class BeyondSocialTemplate extends BaseTemplate {
 						<?php
 						}
 						?>
+						<li><a href="https://www.wdka.nl/research/hybrid-publishing" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/HP_Logo.jpeg"></a></li>
 						<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></a></li>
 						<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></a></li>
-						<li><a href="https://www.wdka.nl/research/hybrid-publishing" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/HP_Logo.jpeg"></a></li>
 					</ul>
 				<?php
 				}

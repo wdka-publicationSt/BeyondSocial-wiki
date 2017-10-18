@@ -31,6 +31,7 @@ div#mw-panel {
 		position: relative;
 		margin-top:0px;
 		float: right;
+		width: auto;
 
 		li{
 			list-style-type: none;
@@ -46,8 +47,13 @@ div#mw-panel {
 			}
 		}
 		li#footer-poweredbyico{
-			float: none;
+			width: 100px;
+			float: left;
 			margin-bottom:@content-padding;
+
+			a img{
+				margin-bottom:0.5em;
+			}
 		}
 	}
 	div.portal {
