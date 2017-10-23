@@ -9,6 +9,13 @@
 	}
 }
 
+li.editor{
+	display: inline-block;
+}
+li.editor:first-of-type:before{
+	content:'Edited by: ';
+}
+	
 #content #editorial-wrapper{
 
 	div.image{
@@ -19,12 +26,6 @@
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-	}
-	li.editor{
-		display: inline-block;
-	}
-	li.editor:first-of-type:before{
-		content:'Edited by: ';
 	}
 	.intro{
 		font-size: 115%;
