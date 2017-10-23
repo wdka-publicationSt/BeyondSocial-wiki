@@ -20,8 +20,11 @@
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
 	}
-	.editors{
-		margin:1em 0;
+	li.editor{
+		display: inline-block;
+	}
+	li.editor:first-of-type:before{
+		content:'Edited by: ';
 	}
 	.intro{
 		font-size: 115%;
