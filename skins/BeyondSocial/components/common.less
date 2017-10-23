@@ -372,14 +372,16 @@ div.more{
 	#content .thumb img{
 		width: 302px;
 		height: auto;
+		padding:0;
 	}
 	.thumbinner{
 		max-width: 750px;
 	}
 	/* image thumb */
-	div.thumb{
+	div.thumb, div.thumb.tright, div.thumb.tleft{
 		border:0px;
 		margin-top:0px;
+		margin-bottom:0px;
 	}
 	div.thumbinner{
 		border:0px;
@@ -394,7 +396,7 @@ div.more{
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-		margin-bottom:@gridsize;
+		margin-bottom:-20px;
 		margin-top: 0;
 	}
 #content .gallery{
