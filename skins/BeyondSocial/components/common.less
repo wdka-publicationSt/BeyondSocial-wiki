@@ -589,8 +589,17 @@ body.ns-special #right-navigation{
 .smw-highlighter.smwttinline[data-title='Error']{
 	display: none;
 }
-form span.inputSpan{
-	display: inline-block;
+.mw-body .mw-body-content form {
+	fieldset{
+		width: ~"calc(100vw - 340px)";
+	
+		h1{
+			width: auto;
+		}
+	}
+	span.inputSpan{
+		display: inline-block;
+	}
 }
 
 
@@ -829,3 +838,4 @@ ul.gallery.mw-gallery-slideshow{
 		max-height: 80vh;
 	}
 }
+
