@@ -75,10 +75,10 @@ jQuery( function ( $ ) {
 	function hideEmptyPElements(){
 		$('p').each(function() {
 			if($(this).html() == '<br>\n'){
-				$(this).detach();
+				// $(this).detach();
 			}
 			if($(this).html() == '<br>'){
-				$(this).detach();
+				// $(this).detach();
 			}
 		});
 	}
