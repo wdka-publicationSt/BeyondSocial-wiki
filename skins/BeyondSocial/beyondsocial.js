@@ -74,11 +74,13 @@ jQuery( function ( $ ) {
 	// function to hide empty <p> elements
 	function hideEmptyPElements(){
 		$('p').each(function() {
-			if($(this).html() == '<br>\n'){
-				// $(this).detach();
-			}
-			if($(this).html() == '<br>'){
-				// $(this).detach();
+			if($(this).parent() != $('.summary')){
+				if($(this).html() == '<br>\n'){
+					$(this).detach();
+				}
+				if($(this).html() == '<br>'){
+					$(this).detach();
+				}
 			}
 		});
 	}
