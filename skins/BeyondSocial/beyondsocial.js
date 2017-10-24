@@ -90,12 +90,12 @@ jQuery( function ( $ ) {
 	function addKeyInEventData(){
 		$('div.enddate .value').each(function() {
 			if($(this).text() != ' '){
-				$(this).parent().find('div.key').text('End: ');
+				$(this).parent().find('div.key').html('<b>End: </b>');
 			}
 		});
 		$('div.time .value').each(function() {
 			if($(this).text() != ' '){
-				$(this).parent().find('div.key').text('Time: ');
+				$(this).parent().find('div.key').html('<b>Time: </b>');
 			}
 		});
 	}
