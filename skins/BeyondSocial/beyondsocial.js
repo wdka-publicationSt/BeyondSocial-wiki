@@ -86,16 +86,21 @@ jQuery( function ( $ ) {
 	}
 	hideEmptyLinksSection()
 
-	// addEndKeyIfEnddateInEventPage
-	function addEndKeyIfEnddateInEventPage(){
+	// add a key to event enddate and time
+	function addKeyInEventData(){
 		$('div.enddate .value').each(function() {
 			if($(this).text() != ''){
-				console.log($(this).text());
 				$(this).parent().find('div.key').text('End: ');
-			}
-		});
-	}
-	addEndKeyIfEnddateInEventPage()
+				}
+			});
+		}
+		$('div.time .value').each(function() {
+			if($(this).text() != ''){
+				$(this).parent().find('div.key').text('End: ');
+				}
+			});
+		}
+	addKeyInEventData()
 
 	// scroll anchor links
 	function scrollAnchorLinks(){
