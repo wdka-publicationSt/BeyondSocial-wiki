@@ -86,6 +86,16 @@ jQuery( function ( $ ) {
 	}
 	hideEmptyLinksSection()
 
+	// addEndKeyIfEnddateInEventPage
+	function addEndKeyIfEnddateInEventPage(){
+		$('div.enddate .value').each(function() {
+			if($(this).text() != ''){
+				$(this).parent().find('div.key').text('End: ');
+			}
+		});
+	}
+	addEndKeyIfEnddateInEventPage()
+
 	// scroll anchor links
 	function scrollAnchorLinks(){
 		$("a[href*=#]").click(function(e) {
