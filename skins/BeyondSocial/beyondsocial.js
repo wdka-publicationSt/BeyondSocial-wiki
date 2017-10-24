@@ -91,15 +91,14 @@ jQuery( function ( $ ) {
 		$('div.enddate .value').each(function() {
 			if($(this).text() != ''){
 				$(this).parent().find('div.key').text('End: ');
-				}
-			});
-		}
+			}
+		});
 		$('div.time .value').each(function() {
 			if($(this).text() != ''){
-				$(this).parent().find('div.key').text('End: ');
-				}
-			});
-		}
+				$(this).parent().find('div.key').text('Time: ');
+			}
+		});
+	}
 	addKeyInEventData()
 
 	// scroll anchor links
