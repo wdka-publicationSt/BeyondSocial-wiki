@@ -89,12 +89,12 @@ jQuery( function ( $ ) {
 	// add a key to event enddate and time
 	function addKeyInEventData(){
 		$('div.enddate .value').each(function() {
-			if($(this).text() != ''){
+			if($(this).text() != ' '){
 				$(this).parent().find('div.key').text('End: ');
 			}
 		});
 		$('div.time .value').each(function() {
-			if($(this).text() != ''){
+			if($(this).text() != ' '){
 				$(this).parent().find('div.key').text('Time: ');
 			}
 		});
