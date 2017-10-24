@@ -90,6 +90,7 @@ jQuery( function ( $ ) {
 	function addEndKeyIfEnddateInEventPage(){
 		$('div.enddate .value').each(function() {
 			if($(this).text() != ''){
+				console.log($(this).text());
 				$(this).parent().find('div.key').text('End: ');
 			}
 		});
