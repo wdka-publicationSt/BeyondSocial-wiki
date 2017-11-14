@@ -113,16 +113,12 @@ body.page-Main_Page{
 
 /* editorials */
 .editorials-oneline-wrapper-Main-Page{
-	position: absolute;
+	position: relative;
 	overflow: hidden;
 	display: block;
-	width: ~"calc(100% - 50px)";
-	height: 480px;
-
-	.editorials-oneline{
-		position: absolute;
-		
-	}
+	width: 100vw;
+	float: left;
+	margin: 0 0 20px 0;
 }
 @media only screen and (max-width:1039px){
     #intro{
@@ -206,11 +202,4 @@ body.page-Main_Page{
 			font-size: @content-small-font-size;
 		}
 	}
-}
-
-/* events*/
-div#events.mp-column-item{
-	/* extra margin for this item, as the editorial oneline element is set to absolute*/
-	margin-top:505px; 
-
 }
