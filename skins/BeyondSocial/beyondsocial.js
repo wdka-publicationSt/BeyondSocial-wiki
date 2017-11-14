@@ -46,7 +46,7 @@ jQuery( function ( $ ) {
 			}
 			// center landscape images
 			if($(this).width() > $(this).height()){
-				$(this).css('margin-left','-70%');
+				$(this).css('margin-left','-40%');
 			}
 			// center portrait images
 			else{
