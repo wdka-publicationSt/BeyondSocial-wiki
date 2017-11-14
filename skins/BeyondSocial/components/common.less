@@ -381,7 +381,7 @@ div.more{
 	.thumbinner{
 		max-width: 750px;
 	}
-	.mw-datatable img{
+	#content .mw-datatable .image img{
 		width: auto;
 	}
 	/* image thumb */
@@ -788,6 +788,11 @@ ul#filetoc{
 /*********************************/
 /* other */
 /*********************************/
+
+/* hide the edit link next to headers, they work counterintuitive now we work with templates */
+.mw-editsection { 
+	display:none!important; 
+}
 .small, small{
 	font-family: @bsfont;
 	font-size: @content-small-font-size;
