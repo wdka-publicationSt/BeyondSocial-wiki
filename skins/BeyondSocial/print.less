@@ -60,9 +60,8 @@
 	@bsfontBlack: "AvenirBlack";
 
 	@content-font-size: 1.2em;
-	@content-line-height: 1.25;
-	@content-heading-font-size: 1.4em;
-
+	@content-line-height: 1.35;
+	@content-heading-font-size: 3em;
 	html{
 		margin:0;
 		padding:0;
@@ -84,7 +83,7 @@
 		h1#firstHeading{
 			font-size: @content-heading-font-size;
 			color:@bscolorSecond;
-			border-bottom:1px solid @bscolorSecond;
+			/*border-bottom:1px solid @bscolorSecond;*/
 			margin:5px 0 10px 0;
 			padding:0px;
 			top:0px;
@@ -96,16 +95,80 @@
 		#mw-head, .more, .oneline-wrapper, #mw-panel, #contribute-wrapper form, .arrow-link{
 			display: none;
 		}
-		/*contribute columns*/
-		.small.column.quarter{
-			display: inline-block;
-			width: calc(50% - 5em);
-			margin:1em;
-		}
-		#content:after{
-			content:'Beyond Social is an publishing experiment based on MediaWiki software. The project is initiated by the Publishing Practices department of the WdKA and developed by the Hybrid Publishing research group and Manetta Berends. We are developing our publishing workflow further in 2018 with a focus on print specifically. This print is a first rough step into that direction.';
-			font-size: small;
-			padding-top:3em;
+		.mw-body-content{
+			#article-wrapper {
+				float: left;
+				width: 120mm;
+
+				.summary{
+					margin-top:5mm;
+					font-size:120%;
+					line-height: 1.35;
+				}
+				.image{
+					max-width: 50mm;
+					height: auto;
+					float: right;
+					margin:-2.5mm 0 0 5mm;
+				}
+				.caption{
+					font-family:'Avenir';
+					font-size: small;
+					margin-left:5mm;
+				}
+			}
+			.link-external.link{
+				float: left;
+				width: 120mm;
+			}		
+			/*contribute columns*/
+			#contribute-wrapper{
+				position: absolute;
+				left: 130mm;
+				width: 60mm;
+				margin-top:-11mm;
+				opacity: 0.5;
+				font-size: 85%;
+
+				.contribute-container{
+					p, .small{
+						display: inline;
+						margin:0;
+					}
+					#column-wrapper{
+						margin-top:0mm;
+
+						.small.column.quarter{
+							display: block;
+							margin:5mm 0 0  0;
+
+							b, a{
+								font-family: 'Avenir';
+								font-size: 13px;
+								text-transform: uppercase;
+								font-weight: bold;
+							}
+						}
+						.small.column.quarter:last-of-type{
+							margin-bottom: 5mm;
+						}
+					}
+				}
+			}
+			#mw-content-text{
+				margin-bottom:5mm;
+			}
+			#mw-content-text:after{
+				display: block;
+				width: 190mm;
+				clear: both;
+				content:'Beyond Social is an publishing experiment based on MediaWiki software. The project is initiated by the Publishing Practices department of the WdKA and developed by the Hybrid Publishing research group and Manetta Berends. We are developing our publishing workflow further in 2018 with a focus on print specifically. This print is a first rough step into that direction.';
+				font-family:'Avenir';
+				font-size: small;
+				line-height: 1.3;
+				padding-top:5mm;
+				opacity: 0.5;
+			}
 		}
 		a{
 			font-family: @bsfont;
@@ -155,7 +218,7 @@
 		}
 		#footer{
 			font-family: @bsfont;
-			border-top: 1pt solid @bscolorSecond;
+			border-top: 0pt solid @bscolorSecond;
 			font-size: 0.8em;
 			padding:3mm 0 0 0;
 		}
