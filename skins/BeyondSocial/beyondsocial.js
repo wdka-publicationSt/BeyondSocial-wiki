@@ -60,11 +60,7 @@ jQuery( function ( $ ) {
 
 	// function to change links from the images in an overview page + oneline sections
 	function changeImageLinks(){
-		$('div.overview a.image').each(function () {
-			var link = $(this).parent().next().children().first().attr('href');
-			$(this).attr('href',link);
-		});
-		$('div.oneline-wrapper a.image').each(function () {
+		$('div.thumb-wrapper a.image').each(function () {
 			var link = $(this).parent().next().children().first().attr('href');
 			$(this).attr('href',link);
 		});
