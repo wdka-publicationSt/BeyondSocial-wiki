@@ -38,7 +38,7 @@ jQuery( function ( $ ) {
 
 	// function to align images in the overview pages
 	function centerLandscapeImages(){
-		$('div.overview .thumb-wrapper img, div.oneline-wrapper .thumb-wrapper img').each(function () {
+		$('.thumb-wrapper img').each(function () {
 			// let images that are very narrow scale up to 231px
 			if($(this).width() < 231){
 				$(this).css('width','231px');
