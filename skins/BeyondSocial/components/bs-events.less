@@ -58,15 +58,18 @@
 		.title{
 			font-weight: bold;
 		}
-		.location a{
-			color:@bscolorMain;
+}
+/* prevent Semantic Properties to display as links */
+.events-wrapper, .event-page{
+	.location a, .enddate a{
+		color:@bscolorMain;
+		text-decoration: none;
+	}
+		.location a:hover, .enddate a:hover{
+			cursor: default;
 			text-decoration: none;
+			border: 0;
 		}
-			.location a:hover{
-				cursor: default;
-				text-decoration: none;
-				border: 0;
-			}
 }
 .events-wrapper:last-of-type .info{
 	border-bottom:1px solid;
