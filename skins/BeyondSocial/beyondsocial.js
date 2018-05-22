@@ -10,6 +10,28 @@ jQuery( function ( $ ) {
 
 	hideEmptyPElements()
 
+	// function to align images in the overview pages
+	function centerLandscapeImages(){
+		$('.thumb-wrapper img').each(function () {
+			// let images that are very narrow scale up to 231px
+			if($(this).width() < 231){
+				$(this).css('width','231px');
+				$(this).css('height','auto');
+			}
+			// center landscape images
+			if($(this).width() > $(this).height()){
+				$(this).css('margin-left','-40%');
+			}
+			// center portrait images
+			else{
+				var marginleft = ($(this).width() - 231 ) / 2;
+				$(this).css('margin-left','-'+marginleft+'px');
+			}
+			$(this).css('opacity',1);
+		});
+	}
+	centerLandscapeImages()
+
 	// function to hide <h2>Links</h2> if there are no links added to the page
 	function hideEmptyLinksSection(){
 		if (!$('div.link').length) {
@@ -36,28 +58,6 @@ jQuery( function ( $ ) {
 		});
 	}
 	showCaption()
-
-	// function to align images in the overview pages
-	function centerLandscapeImages(){
-		$('.thumb-wrapper img').each(function () {
-			// let images that are very narrow scale up to 231px
-			if($(this).width() < 231){
-				$(this).css('width','231px');
-				$(this).css('height','auto');
-			}
-			// center landscape images
-			if($(this).width() > $(this).height()){
-				$(this).css('margin-left','-40%');
-			}
-			// center portrait images
-			else{
-				var marginleft = ($(this).width() - 231 ) / 2;
-				$(this).css('margin-left','-'+marginleft+'px');
-			}
-			$(this).css('opacity',1);
-		});
-	}
-	centerLandscapeImages()
 
 	// function to change links from the images in an overview page + oneline sections
 	function changeImageLinks(){
@@ -149,8 +149,42 @@ jQuery( function ( $ ) {
 
 	// *************************************
 	// extended print function using the API 
+
+	currentpagename = location.href.match(/([^\/]*)\/*$/)[1];
+	// console.log(currentpagename);
+
+	var firsteditor;
+	function getMetadata(page, handler){
+		var request = 'http://beyond-social.org/wiki/api.php?action=query&prop=revisions&rvlimit=1&rvprop=timestamp|user&rvdir=newer&titles='+page+'&format=json';
+		var created;
+		var user;
+		$.ajax({
+			dataType: 'json',
+			url: request,
+			type:'GET',
+			dataType: "jsonp",
+			success: function(data){
+				// console.log('metadata', data.query.pages);
+				$.each(data.query.pages, function(id, request){
+
+					// console.log('creation date', request.revisions[0].timestamp);
+					created = request.revisions[0].timestamp;
+					$('#socialitydata').append('<div class="metadata">This page is created at: '+request.revisions[0].timestamp+'</div>');			
+
+					// console.log('user', request.revisions[0].user);
+					user = request.revisions[0].user;
+				});
+				handler(user);
+			}
+		});
+	}
+	getMetadata(currentpagename, function(output){
+		firsteditor = output;
+		console.log('FIRST', firsteditor);
+		mainAjax(2, firsteditor);
+	});
+	
 	function getCategoryPages(category){
-		// var request = 'http://beyond-social.org/wiki/api.php?action=query&titles='+category+'&format=json';
 		var request = 'http://beyond-social.org/wiki/api.php?action=parse&page='+category+'&contentmodel=wikitext&format=json';
 		$.ajax({
 			dataType: 'json',
@@ -158,99 +192,113 @@ jQuery( function ( $ ) {
 			type:'GET',
 			dataType: "jsonp",
 			success: function(data){
+				console.log('*other pages in the category: '+ category+'*');
 				$.each(data.parse.text, function(_, text){
-					console.log('>> category data', text);
-					$('#socialitydata').append('<div class="item">Other articles in the category '+data.parse.title+' are: '+text+'</div>');
+					$('#socialitydata').append('<div class="item">Other articles in the category <strong>'+data.parse.title+'</strong> are: '+text+'</div>');
 				});
 			}
 		});
 	}
-	currentpagename = location.href.match(/([^\/]*)\/*$/)[1];
-	// console.log(currentpagename);
-	requests = [
-		'http://beyond-social.org/wiki/api.php?action=query&list=usercontribs&ucuser=Manetta&uclimit=15&format=json',
-		'http://beyond-social.org/wiki/api.php?action=query&list=recentchanges&rcprop=title|comment|flags|user|timestamp&rclimit=5&rctoponly&format=json',
-		'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=contributors&inprop=lastrevid&format=json',
-		'http://beyond-social.org/wiki/api.php?action=query&list=users&ususers=Manetta&usprop=editcount|registration&format=json',
-		'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&format=json',
-		'http://beyond-social.org/wiki/api.php?action=query&list=mostviewed&format=json',
-		'http://beyond-social.org/wiki/api.php?action=query&meta=siteinfo&format=json',
-	]
-	function getRandom() {
-		return Math.floor(Math.random() * (requests.length - 0) + 0);
-	}
-	console.log('random', getRandom());
 
-	// start API call
-	$.ajax({
-		dataType: 'json',
-		url: requests[4],
-		type:'GET',
-		dataType: "jsonp",
-		success: function(data){
-			console.log('data.query', data.query);
-
-			$('body').append('<div id="socialitydata"></div>');
-
-			$.map( data.query, function( request, requestname ) {
-				console.log('requestname', requestname);
-
-				if(requestname == 'usercontribs'){
-					var done = [];
-					$('#socialitydata').append('<div class="item '+requestname+'"></div>');
-					$('#socialitydata .item.'+requestname).append('<div>'+request[0].user+' also edited: </div>');
-					$('#socialitydata .item.'+requestname).append('<ul></ul>');
-					$.each(request, function(i, item) {
-						if($.inArray( item.title, done) < 0){
-							$('#socialitydata .item.'+requestname+' ul').append('<li><em>'+item.title+'</em><br>(edited at '+item.timestamp+')</li>');
-							done.push(item.title);
-						}
-					});
-				}
-
-				if(requestname == 'recentchanges'){
-					$('#socialitydata').append('<div class="item">Recent Changes of the previous month include:<br></div>');
-					$.each(request, function(i, item){
-						$('#socialitydata').append('<div class="item"><strong>'+item.timestamp+'</strong><p>'+item.user+' edited the page '+item.title+'</p></div>');
-					});
-				}
-
-				if(requestname == 'pages'){
-					$.each(request, function(id, item){
-						var contributors = $.map(item.contributors, function(contributor, i){
-							return '<strong>'+contributor.name+'</strong>';
-						});
-						var categories = $.map(item.categories, function(category, i){
-							return category.title;
-						});
-						if(contributors.length){
-							$('#socialitydata').append('<div class="item">This article is based on the work by: </div>');
-							$('#socialitydata .item').append(contributors.join(' & '));
-						}
-						if(categories.length){
-							$('#socialitydata').append('<div class="item">This article is added to the categor(y/ies): </div>');
-							$('#socialitydata .item').append(categories.join(', '));
-							console.log('>> selected category', categories[0]);
-							getCategoryPages(categories[0]);
-						}
-					});
-				}
-
-				if(requestname == 'users'){
-					$('#socialitydata').append('<div class="item"><strong>');
-					console.log(request);
-					$('#socialitydata').append(request[0].name);
-					$('#socialitydata').append('</strong> edited ');
-					$('#socialitydata').append(request[0].editcount);
-					$('#socialitydata').append(' pages, since this user registered to Beyond Social on ');
-					$('#socialitydata').append(request[0].registration);
-					console.log();
-					$('#socialitydata').append('</div>');
-				}
-			});
+	function mainAjax(num, firsteditor){
+		requests = [
+			'http://beyond-social.org/wiki/api.php?action=query&list=usercontribs&ucuser='+firsteditor+'&uclimit=15&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&list=recentchanges&rcprop=title|comment|flags|user|timestamp&rclimit=5&rctoponly&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=contributors&inprop=lastrevid&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&list=users&ususers='+firsteditor+'&usprop=editcount|registration&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&format=json',
+		]
+		var done;
+		function getRandom(list) {
+			return Math.floor(Math.random() * (list.length - 0) + 0);
 		}
-	});
+		// start API call
+		$.ajax({
+			dataType: 'json',
+			url: requests[getRandom(requests)],
+			// url: requests[0],
+			type:'GET',
+			dataType: "jsonp",
+			success: function(data){
+				// console.log('data.query', data.query);
 
+				$('body').append('<div id="socialitydata"></div>');
+
+				$.map( data.query, function( request, requestname ) {
+					console.log('requestname', requestname);
+
+					// display what other articles this user also edited
+					if(requestname == 'usercontribs'){
+						console.log('*this user also edited*');
+						var done = [];
+						$('#socialitydata').append('<div class="item '+requestname+'"></div>');
+						$('#socialitydata .item.'+requestname).append('<div>User '+request[0].user+' also edited: </div>');
+						$('#socialitydata .item.'+requestname).append('<ul></ul>');
+						$.each(request, function(i, item) {
+							if($.inArray( item.title, done) < 0){
+								$('#socialitydata .item.'+requestname+' ul').append('<li><strong>'+item.title+'</strong><br>(edited at '+item.timestamp+')</li>');
+								done.push(item.title);
+							}
+						});
+					}
+
+					if(requestname == 'recentchanges'){
+						// display recent changes made on the wiki 
+						console.log('*recent changes*');
+						$('#socialitydata').append('<div class="item">Recent Changes of the previous month include:<br></div>');
+						$.each(request, function(i, item){
+							$('#socialitydata').append('<div class="item"><strong>'+item.timestamp+'</strong><p>'+item.user+' edited the page '+item.title+'</p></div>');
+						});
+					}
+
+					if(requestname == 'pages'){
+						$.each(request, function(id, item){
+
+							// display all contributors of current article
+							var contributors = $.map(item.contributors, function(contributor, i){
+								return '<strong>'+contributor.name+'</strong>';
+							});
+							if(contributors.length > 0){
+								console.log('*page contributors*');
+								$('#socialitydata').append('<div class="item">This article is based on the work by: </div>');
+								$('#socialitydata .item').append(contributors.join(' & '));
+							}
+
+							// display categories + pages in the first category
+							var categories = $.map(item.categories, function(category, i){
+								return category.title;
+							});
+							if(categories.length > 0){
+								console.log('*page categories*');
+								if(categories.length >= 1){
+									$('#socialitydata').append('<div class="item categories">This article is added to the categories: </div>');
+								}
+								else{
+									$('#socialitydata').append('<div class="item categories">This article is added to the category: </div>');
+								}
+								$('#socialitydata .item').append(categories.join(', '));
+								console.log('>> selected category', categories[getRandom(categories)]);
+								getCategoryPages(categories[getRandom(categories)]);
+							}
+						});
+					}
+
+					if(requestname == 'users'){
+						console.log('*user statistics*');
+						$('#socialitydata').append('<span class="item">User <strong>');
+						$('#socialitydata').append(request[0].name);
+						$('#socialitydata').append('</strong> edited ');
+						$('#socialitydata').append(request[0].editcount);
+						$('#socialitydata').append(' pages, since this user registered to Beyond Social on ');
+						$('#socialitydata').append(request[0].registration);
+						$('#socialitydata').append('</span>');
+					}
+				});
+			}
+		});
+	}
 
 	// ************************************************************
 
