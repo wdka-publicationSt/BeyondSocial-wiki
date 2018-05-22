@@ -150,6 +150,7 @@ jQuery( function ( $ ) {
 	// *************************************
 	// extended print function using the API 
 
+	$('body').append('<div id="socialitydata"></div>');
 	currentpagename = location.href.match(/([^\/]*)\/*$/)[1];
 	// console.log(currentpagename);
 
@@ -167,9 +168,9 @@ jQuery( function ( $ ) {
 				// console.log('metadata', data.query.pages);
 				$.each(data.query.pages, function(id, request){
 
-					// console.log('creation date', request.revisions[0].timestamp);
+					console.log('creation date', request.revisions[0].timestamp);
 					created = request.revisions[0].timestamp;
-					$('#socialitydata').append('<div class="metadata">This page is created at: '+request.revisions[0].timestamp+'</div>');			
+					$('#socialitydata').append('<div class="metadata">This page is created at: <strong>'+created+'</strong></div>');			
 
 					// console.log('user', request.revisions[0].user);
 					user = request.revisions[0].user;
@@ -178,9 +179,8 @@ jQuery( function ( $ ) {
 			}
 		});
 	}
-	getMetadata(currentpagename, function(output){
-		firsteditor = output;
-		console.log('FIRST', firsteditor);
+	getMetadata(currentpagename, function(metadata){
+		firsteditor = metadata;
 		mainAjax(2, firsteditor);
 	});
 	
@@ -206,9 +206,9 @@ jQuery( function ( $ ) {
 			'http://beyond-social.org/wiki/api.php?action=query&list=recentchanges&rcprop=title|comment|flags|user|timestamp&rclimit=5&rctoponly&format=json',
 			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=contributors&inprop=lastrevid&format=json',
 			'http://beyond-social.org/wiki/api.php?action=query&list=users&ususers='+firsteditor+'&usprop=editcount|registration&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&cllimit=10&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&cllimit=10&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&cllimit=10&format=json',
 		]
 		var done;
 		function getRandom(list) {
@@ -224,8 +224,6 @@ jQuery( function ( $ ) {
 			success: function(data){
 				// console.log('data.query', data.query);
 
-				$('body').append('<div id="socialitydata"></div>');
-
 				$.map( data.query, function( request, requestname ) {
 					console.log('requestname', requestname);
 
@@ -234,7 +232,7 @@ jQuery( function ( $ ) {
 						console.log('*this user also edited*');
 						var done = [];
 						$('#socialitydata').append('<div class="item '+requestname+'"></div>');
-						$('#socialitydata .item.'+requestname).append('<div>User '+request[0].user+' also edited: </div>');
+						$('#socialitydata .item.'+requestname).append('<div>User <strong>'+request[0].user+'</strong> also edited: </div>');
 						$('#socialitydata .item.'+requestname).append('<ul></ul>');
 						$.each(request, function(i, item) {
 							if($.inArray( item.title, done) < 0){
@@ -260,7 +258,7 @@ jQuery( function ( $ ) {
 							var contributors = $.map(item.contributors, function(contributor, i){
 								return '<strong>'+contributor.name+'</strong>';
 							});
-							if(contributors.length > 0){
+							if(contributors.length){
 								console.log('*page contributors*');
 								$('#socialitydata').append('<div class="item">This article is based on the work by: </div>');
 								$('#socialitydata .item').append(contributors.join(' & '));
@@ -270,7 +268,7 @@ jQuery( function ( $ ) {
 							var categories = $.map(item.categories, function(category, i){
 								return category.title;
 							});
-							if(categories.length > 0){
+							if(categories.length){
 								console.log('*page categories*');
 								if(categories.length >= 1){
 									$('#socialitydata').append('<div class="item categories">This article is added to the categories: </div>');

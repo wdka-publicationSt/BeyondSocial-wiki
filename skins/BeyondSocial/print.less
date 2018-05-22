@@ -84,21 +84,25 @@
 	@bsfont: "Avenir";
 	@bsfontBlack: "AvenirBlack";
 
-	@content-font-size: 12pt;
-	@content-line-height: 1.25;
+	@content-font-size: 10pt;
+	@content-line-height: 1.35;
 	@content-heading-font-size: 3em;
 	html{
 		margin:0;
 		padding:0;
 	}
 	body{
-		width: calc(100% - 22mm);
+		width: calc(100% - 17mm);
 		margin:0 0 0 10mm;
 		padding:0;
 		font-family: @bsfontBook;
 		font-size: @content-font-size;
 		line-height: @content-line-height;
 
+		p{
+			margin:0 0 5mm 0;
+			padding:0;
+		}
 		h1, h2, h3, h4, h5, h6{
 			font-family: @bsfontBlack;
 			margin:5mm 0 0 0;
@@ -122,15 +126,16 @@
 		.mw-body-content{
 			columns:2 auto;
 			-moz-columns:2 auto;
-			column-gap:6mm;
+			column-gap:7mm;
 		
 			#article-wrapper {
 				width: 100%;
 
 				.summary{
-					margin:5mm 0 5mm 0;
-					font-size:16pt;
-					line-height: 1.3;
+					margin:-10mm 0 5mm 0;
+					font-size:13pt;
+					font-family: 'AvenirBlack';
+					page-break-before: always;
 				}
 				.sidebox{
 					width: 100%;
@@ -158,7 +163,7 @@
 				.article .caption{
 					font-family:'Avenir';
 					font-size: small;
-					margin:0 0 5mm 0;
+					margin:0 0 3mm 0;
 				}
 				.article img{
 					margin:2mm 0 0 0;
@@ -197,19 +202,20 @@
 						padding:0;
 					}
 					p{
-						margin:0 0 0.6775em 0;
+						margin:0 0 1em 0;
 					}
 					#column-wrapper{
 						margin-top:0;
 
 						.small.column.quarter{
+							/*max-width: calc(50% - 6mm);*/
 							display: inline-block;
 							vertical-align: top;
-							margin:0.6775em 0 0 0;
+							margin:1em 0 0 0;
 
 							b, a{
 								font-family: 'AvenirBlack';
-								font-size: 9pt;
+								font-size: 8pt;
 								text-transform: uppercase;
 								font-weight: normal;
 								padding:0;
@@ -235,21 +241,24 @@
 			position:absolute;
 			top:0px;
 			right:0px;
-			width:22mm;
+			width:15mm;
 			height:100%;
 			margin:0;
 			padding:0 1mm 0 2mm;
 			font-family: 'Avenir';
-			font-size: 8pt;
+			font-size: 6pt;
 			font-style: normal;
-
+			
+			strong{
+				font-family: 'AvenirBlack';
+			}
+			.metadata{
+				margin-bottom:5mm;
+			}
 			.item{
 				position: relative;
 				margin-bottom: 5mm;
-			
-				.categories{
-					margin-bottom: 2mm;
-				}
+
 				ul li{
 					list-style: disc;
 					padding-top:0mm;
@@ -264,9 +273,6 @@
 				.overview{
 					margin-top:-8mm;
 				}
-				strong{
-					font-family: 'AvenirBlack';
-				}
 				img{
 					width: 100%;
 					height: auto;
@@ -275,20 +281,16 @@
 				.articles-wrapper .info, .articles-wrapper small a{
 					display: inline-block;
 					font-family: 'Avenir';
-					font-size: 8pt;
+					font-size: 6pt;
 				}
 				.articles-wrapper .title, .articles-wrapper .title a{
 					font-family: 'AvenirBlack';
-					font-size: 8pt;
+					font-size: 6pt;
 					line-height: 1.15;
 					font-weight: bold;
 					padding-top:1mm;
 				}
 			}
-		}
-		#socialitydata.bottom{
-			bottom:0;
-
 		}
 
 
