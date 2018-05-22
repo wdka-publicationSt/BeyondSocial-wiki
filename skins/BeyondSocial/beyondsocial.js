@@ -258,7 +258,7 @@ jQuery( function ( $ ) {
 							var contributors = $.map(item.contributors, function(contributor, i){
 								return '<strong>'+contributor.name+'</strong>';
 							});
-							if(contributors.length){
+							if(contributors.length > 0){
 								console.log('*page contributors*');
 								$('#socialitydata').append('<div class="item">This article is based on the work by: </div>');
 								$('#socialitydata .item').append(contributors.join(' & '));
@@ -268,7 +268,7 @@ jQuery( function ( $ ) {
 							var categories = $.map(item.categories, function(category, i){
 								return category.title;
 							});
-							if(categories.length){
+							if(categories.length > 0){
 								console.log('*page categories*');
 								if(categories.length >= 1){
 									$('#socialitydata').append('<div class="item categories">This article is added to the categories: </div>');
