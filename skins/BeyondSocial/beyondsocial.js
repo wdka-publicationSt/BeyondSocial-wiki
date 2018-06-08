@@ -51,13 +51,13 @@ jQuery( function ( $ ) {
 	hideEmptyImgLink()
 
 	// function to add captions to plain images
-	function showCaption(){
-		$('div#article-wrapper a.image img').each(function () {
-			var caption = $(this).attr('alt');
-			$(this).parent().after('<div class="caption">'+caption+'</div>');
-		});
-	}
-	showCaption()
+	// function showCaption(){
+	// 	$('div#article-wrapper a.image img').each(function () {
+	// 		var caption = $(this).attr('alt');
+	// 		$(this).parent().after('<div class="caption">'+caption+'</div>');
+	// 	});
+	// }
+	// showCaption()
 
 	// function to change links from the images in an overview page + oneline sections
 	function changeImageLinks(){
@@ -149,7 +149,9 @@ jQuery( function ( $ ) {
 
 	// *************************************
 	// extended print function using the API 
+	// to retrieve sociality data
 
+	// $('body').prepend('<div id="cover">Beyond Social</div>');
 	$('body').append('<div id="socialitydata"></div>');
 	currentpagename = location.href.match(/([^\/]*)\/*$/)[1];
 	// console.log(currentpagename);
