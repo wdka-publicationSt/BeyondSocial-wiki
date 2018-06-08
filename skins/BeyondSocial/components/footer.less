@@ -1,67 +1,122 @@
 /* Footer */
-div#footer {
-	font-family:@bsfont;
-	margin-top: 2em;
-	padding: 0.75em;
-	direction: ltr;
-	width: ~"calc(100% - 210px)";
 
-	ul {
-		list-style-type: none;
-		list-style-image: none;
-		margin: 0;
-		padding: 0;
+/* Panel (= transformed into Footer) */
+div#mw-panel {
+	position: relative;
+	display: block;
+    left: 0;
+    bottom: 0;
+	width: ~"calc(100% - 1em)";
+	height: auto;
+	min-height: 160px;
+	padding:@content-padding;
+	margin: 0;
+	z-index: 100;
+	background-color: white;
+	font-family: @bsfont;
+	font-size: @menu-main-font-size;
 
-		li {
-			margin: 0;
-			padding: 0;
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
-			color: #333;
-		}
+	/* search box */
+	#p-search{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin:0 0 @gridsize 0;
+		padding:0;
+	}
+	/* tools */
+	#p-tb{
+		display: none;
 	}
 
 	#footer-icons {
 		position: relative;
-		top:-30px;
+		margin-top:0px;
 		float: right;
+		width: auto;
 
-		li {
+		li{
+			list-style-type: none;
+			list-style-image: none;
 			float: left;
-			margin: 0 3px;
 			line-height: 2em;
 			text-align: right;
-
+			a{
+				margin: 0 0 0 @content-padding;
+			}
 			img{
 				border-radius: 4px;
 			}
 		}
-	}
+		li#footer-poweredbyico{
+			width: 100px;
+			float: left;
+			margin-bottom:@content-padding;
 
-	#footer-info {
-		li {
-			font-size: @menu-main-body-font-size;
-			line-height: 1.4em;
-			color:@bscolorSecond;
+			a img{
+				margin-bottom:0.5em;
+			}
 		}
 	}
+	div.portal {
+		position: relative;
+		display: inline-block;
+		width: 165px;
+		vertical-align: top;
+		margin: 0;
+		padding: 0;
+		direction: ltr;
 
-	#footer-places {
-		li, li a {
-			font-family:@bsfont;
-			font-size: 12px;
-			color:@bscolorSecond;
-			float: left;
-			margin-right: 0.5em;
+		h3 {
+			font-size: @menu-main-heading-font-size;
+			color: @menu-main-heading-color;
+			font-weight: normal;
+			margin: 0;
+			padding: 0;
+			cursor: default;
+			border: none;
+			/*display: initial;*/
+		}
+
+		div.body {
+			margin: @gridsize 0 0 1px;
+			padding-top: 0;
+
+			ul {
+				list-style-type: none;
+				list-style-image: none;
+				margin: 0;
+				padding: @menu-main-body-padding;
+
+				li {
+					/*line-height: 1.125em;*/
+					/*margin: 0;*/
+					/*padding: 0.25em 0;*/
+					font-size: @menu-main-body-font-size;
+					word-wrap: break-word;
+
+					a {
+						color: @menu-main-body-link-color;
+						&:visited {
+							color: @menu-main-body-link-visited-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* First sidebar portlet. Not using :first-of-type for IE<=8 support. */
+	#p-logo + div.portal {
+		background-image: none;
+		margin-top: 0;
+
+		div.body {
+			margin:@gridsize 0 0 1px;
 		}
 	}
 }
 
-body.ltr {
-	div#footer {
-		#footer-places {
-			/* @noflip */
-			float: left;
-		}
-	}
+div#mw-panel div#p-categorytree-portlet.portal{
+	display:none;
+
 }

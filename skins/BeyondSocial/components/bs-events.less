@@ -1,0 +1,76 @@
+/* event page */
+.event-page{
+
+	.image{
+		width: 100%;
+		margin: 0;
+		padding:0;
+		line-height: 0;
+	}
+	.caption{
+		font-family: @bsfont;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
+		margin-bottom:@gridsize;
+	}
+	.info{
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+
+		.location, .date-time{
+			width: ~"calc(50% - 5px)";
+			padding: 10px 0;
+			margin:0;
+			display: inline-block;
+			vertical-align: top;
+			
+			.key{
+				display: inline-block;
+				padding-right: @gridsize;
+			}
+		}
+	}
+}
+
+/* events list */
+#events.mp-column-item, #events {
+	width: ~"calc(100vw - 300px)";
+	min-width: 750px;
+	margin-bottom:2em;
+}
+.events-wrapper{
+	width: 100%;
+
+	.date, .info{
+		display: inline-block;
+		padding:10px 0;
+	}
+	.date{
+		width: 170px;
+		font-size:18.6px;
+	}
+	.info{
+		position: relative;
+		width: ~"calc(100% - 180px)";
+		border-top:1px solid;
+	}
+		.title{
+			font-weight: bold;
+		}
+}
+/* prevent Semantic Properties to display as links */
+.events-wrapper, .event-page{
+	.location a, .enddate a{
+		color:@bscolorMain;
+		text-decoration: none;
+	}
+		.location a:hover, .enddate a:hover{
+			cursor: default;
+			text-decoration: none;
+			border: 0;
+		}
+}
+.events-wrapper:last-of-type .info{
+	border-bottom:1px solid;
+}

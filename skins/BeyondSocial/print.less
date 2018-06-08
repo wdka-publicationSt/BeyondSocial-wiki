@@ -1,6 +1,31 @@
 /* BeyondSocial print styles */
 
+
 @media print {
+
+	@font-face{
+		font-family: "Avenir";
+		src:url('fonts/AvenirLTStd-MediumOblique.otf');
+		font-style: italic, oblique;
+	}
+	@font-face{
+		font-family: "Avenir";
+		src:url('fonts/AvenirLTStd-Medium.otf');
+	}
+	@font-face{
+		font-family: "Book";
+		src:url('fonts/crimson/CrimsonText-Italic.ttf');
+		font-style: italic, oblique;
+	}
+	@font-face{
+		font-family: "Book";
+		src:url('fonts/crimson/CrimsonText-Roman.ttf');
+	}
+	@font-face{
+		font-family: "AvenirBlack";
+		src:url('fonts/AvenirLTStd-Black.otf');
+		font-weight: bold;
+	}
 
 	/* CSS RESET */
 	/* http://meyerweb.com/eric/tools/css/reset/ 
@@ -53,29 +78,31 @@
 	}
 
 	@bscolorMain: rgba(0,0,0,1);
-	@bscolorSecond: rgba(0,68,255,1);
+	@bscolorSecond: black;
 
-	@bsfontBook: "Book";
+	@bsfontBook: "Avenir";
 	@bsfont: "Avenir";
 	@bsfontBlack: "AvenirBlack";
 
-	@content-font-size: 1.2em;
-	@content-line-height: 1.25;
-	@content-heading-font-size: 1.4em;
-
+	@content-font-size: 10pt;
+	@content-line-height: 1.35;
+	@content-heading-font-size: 3em;
 	html{
 		margin:0;
 		padding:0;
 	}
 	body{
+		width: calc(100% - 17mm);
+		margin:0 0 0 10mm;
+		padding:0;
 		font-family: @bsfontBook;
 		font-size: @content-font-size;
 		line-height: @content-line-height;
-		margin:0;
-		padding:0;
-		columns:2 85mm;
-		-moz-columns:2 80mm;
 
+		p{
+			margin:0 0 5mm 0;
+			padding:0;
+		}
 		h1, h2, h3, h4, h5, h6{
 			font-family: @bsfontBlack;
 			margin:5mm 0 0 0;
@@ -83,9 +110,9 @@
 		}
 		h1#firstHeading{
 			font-size: @content-heading-font-size;
+			line-height: 1.0;
 			color:@bscolorSecond;
-			border-bottom:1px solid @bscolorSecond;
-			margin:5px 0 10px 0;
+			margin:5px 0 15mm 0;
 			padding:0px;
 			top:0px;
 		}
@@ -93,44 +120,216 @@
 			padding:0;
 			margin:0;
 		}
+		#mw-head, .more, .oneline-wrapper, #mw-panel, #contribute-wrapper form, .arrow-link, #player{
+			display: none;
+		}
+		.mw-body-content{
+			columns:2 auto;
+			-moz-columns:2 auto;
+			column-gap:7mm;
+		
+			#article-wrapper {
+				width: 100%;
+
+				.summary{
+					margin:-10mm 0 5mm 0;
+					font-size:13pt;
+					font-family: 'AvenirBlack';
+					page-break-before: always;
+				}
+				.sidebox{
+					width: 100%;
+					margin-top:-5mm;
+
+					.image img{
+						max-width: 100%;
+						height: auto;
+						margin:0;
+						background-color: white;
+					}
+					.caption{
+						font-family:'Avenir';
+						font-size: small;
+						margin-bottom: 0;
+					}
+				}
+				
+				.article img, .article .caption{
+					width: 100% !important;
+					/*float:right;*/
+					height: auto;
+					padding:0;
+				}
+				.article .caption{
+					font-family:'Avenir';
+					font-size: small;
+					margin:0 0 3mm 0;
+				}
+				.article img{
+					margin:2mm 0 0 0;
+				}
+				.embedvideo:after{
+					display: block;
+					content:'Please visit www.beyond-social.org to watch this video.';
+				}
+				.embedvideowrap{
+					display: none;
+				}
+			}
+
+			#mw-content-text{
+				margin-bottom:5mm;
+			}
+
+			/*contribute columns*/
+			#contribute-wrapper{
+				width:100%;
+				margin:10mm 0 0 0;
+				color:rgba(0,100,220,0.8);
+				font-size:10pt;
+				page-break-before: always;
+
+				/*CONTRIBUTE*/
+				p{
+					font-family: @bsfontBlack;
+					margin:0 0 0 0;
+					padding:0;
+				}
+				.contribute-container{
+					p, .small{
+						font-family: @bsfontBook;
+						display: inline;
+						padding:0;
+					}
+					p{
+						margin:0 0 1em 0;
+					}
+					#column-wrapper{
+						margin-top:0;
+
+						.small.column.quarter{
+							/*max-width: calc(50% - 6mm);*/
+							display: inline-block;
+							vertical-align: top;
+							margin:1em 0 0 0;
+
+							b, a{
+								font-family: 'AvenirBlack';
+								font-size: 8pt;
+								text-transform: uppercase;
+								font-weight: normal;
+								padding:0;
+							}
+						}
+					}
+				}
+			}
+			#contribute-wrapper:before{
+				display: block;
+				clear: both;
+				font-family: 'AvenirBlack';
+				font-size:10pt;
+				content:'Beyond Social is a publishing experiment based on MediaWiki software. The project is initiated by the Social Practices department of the WdKA and developed in collaboration with the Hybrid Publishing research group.';
+				line-height: 1.3;
+				margin:-10mm 0 5mm 0;
+			}
+		}
+
+		/* sociality data */
+		#socialitydata{
+			display: block;		
+			position:absolute;
+			top:0px;
+			right:0px;
+			width:15mm;
+			height:100%;
+			margin:0;
+			padding:0 1mm 0 2mm;
+			font-family: 'Avenir';
+			font-size: 6pt;
+			font-style: normal;
+			
+			strong{
+				font-family: 'AvenirBlack';
+			}
+			.metadata{
+				margin-bottom:5mm;
+			}
+			.item{
+				position: relative;
+				margin-bottom: 5mm;
+
+				ul li{
+					list-style: disc;
+					padding-top:0mm;
+				}
+				li{
+					margin-top: 1em;
+				}
+				em{
+					font-style: italic;
+				}
+				/* this is a dirty hack */
+				.overview{
+					margin-top:-8mm;
+				}
+				img{
+					width: 100%;
+					height: auto;
+					margin:2mm 0 0 0;
+				}
+				.articles-wrapper .info, .articles-wrapper small a{
+					display: inline-block;
+					font-family: 'Avenir';
+					font-size: 6pt;
+				}
+				.articles-wrapper .title, .articles-wrapper .title a{
+					font-family: 'AvenirBlack';
+					font-size: 6pt;
+					line-height: 1.15;
+					font-weight: bold;
+					padding-top:1mm;
+				}
+			}
+		}
+
+
 		a{
 			font-family: @bsfont;
 			font-size: 0.8em;
 			color:inherit;
 		}
-		img{
-			width: 100% !important;
-			height: auto;
+	
+		div.thumb{
+			display: block;
+			border:0px;
+			width: 100%;
+			margin:5mm 0 0 0;
 			padding:0;
-			margin:0;
 		}
-			div.thumb{
-				display: block;
-				border:0px;
-				width: 100%;
-				margin:5mm 0 0 0;
-				padding:0;
-			}
-			div.thumbinner{
-				width: 100%;
-				border:0px;
-				background-color: transparent;
-				margin:0;
-				padding:0;
-			}
-			img.thumbimage{
-				width: 100%;
-				height: auto;
-				border:0px;
-			}
-			.thumbcaption{
-				font-family: @bsfont;
-				font-size: 0.8em;
-				margin:0 0 5mm 0;
-				padding:0;
-			}
+		div.thumbinner{
+			width: 100%;
+			border:0px;
+			background-color: transparent;
+			margin:0;
+			padding:0;
+		}
+		img.thumbimage{
+			width: 100%;
+			height: auto;
+			border:0px;
+		}
+		.thumbcaption{
+			font-family: @bsfont;
+			font-size: 0.8em;
+			margin:0 0 5mm 0;
+			padding:0;
+		}
 		p{
 			margin-bottom:5mm;
+		}
+		b, strong{
+			font-weight: bold;
 		}
 		hr{
 			border:0;
@@ -138,7 +337,7 @@
 		}
 		#footer{
 			font-family: @bsfont;
-			border-top: 1pt solid @bscolorSecond;
+			border-top: 0pt solid @bscolorSecond;
 			font-size: 0.8em;
 			padding:3mm 0 0 0;
 		}
@@ -188,33 +387,6 @@
 			color:white;
 			width:calc(100% - 20px);
 			padding:10px;
-		}
+		}		
 	}
-	
-
-	// fonts
-	@font-face{
-		font-family: "Avenir";
-		src:url('fonts/AvenirLTStd-MediumOblique.otf');
-		font-style: italic, oblique;
-	}
-	@font-face{
-		font-family: "Avenir";
-		src:url('fonts/AvenirLTStd-Medium.otf');
-	}
-	@font-face{
-		font-family: "Book";
-		src:url('fonts/crimson/CrimsonText-Italic.ttf');
-		font-style: italic, oblique;
-	}
-	@font-face{
-		font-family: "Book";
-		src:url('fonts/crimson/CrimsonText-Roman.ttf');
-	}
-	@font-face{
-		font-family: "AvenirBlack";
-		src:url('fonts/AvenirLTStd-Black.otf');
-		font-weight: bold;
-	}
-
 }

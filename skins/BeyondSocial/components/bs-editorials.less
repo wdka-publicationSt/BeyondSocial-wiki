@@ -1,41 +1,92 @@
-/* editorial list on the Main Page */
-.editorial-list{
-	font-family:'Avenir';
-	font-weight:bold;
-	font-size:17px;
+/* single editorial pages */
+.editorial-about{
+	margin:1em 0 0 0;
+	padding:@gridsize;
+	background-color: @bscolorThird;
 
-}
-	#mp-container .mp-column-item .editorial-list ul li{
-		padding:3px 0;
-		line-height: 20px;
+	a, a:active, a:visited{
+		color:@bscolorMain;
 	}
-
-/* editorial pages */
-
-#editorial-banner{
-	background-color:@bscolorSecond;
-	color:white;
-	width:~"calc(100% - 20px)";
-	padding:10px;
-	margin:0px;
 }
 
-table.wikitable.editorial{
-	margin-bottom:-30px;
+li.editor{
+	display: inline-block;
+}
+li.editor:first-of-type:before{
+	content:'Edited by: ';
+	padding-right:3px; 
+}
 
-	tr > th, tr > td{
-		border:0px;
+#content #editorial-wrapper{
+
+	div.image{
+		width: 750px;
 	}
-	tr > th{
-		background-color: @bscolorSecond;
-		text-align: left;
-	}
-	tr > th > a{
-		color:white;
+	.caption{
 		font-family: @bsfont;
-		font-size:17px;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
+	}
+	.intro{
+		font-size: 115%;
+		line-height: 1.35;
+		margin: 1em 0 2em 0;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
 	}
 }
-table.wikitable.editorial:first-of-type{
-	margin-top:10px;
+#content .selected-article{
+	width: ~"calc(100vw - 290px)";
+	min-width: 750px;
+	border-top:1px solid;
+	padding-bottom:@gridsize;
+	margin-bottom:1.5em;
+	overflow: hidden;
+
+	.title{
+		font-weight: bold;
+		margin-top: 4px;
+	}
+	.title, .moddate{
+		margin-left: 212px;
+	}
+	.moddate::before{
+		content:'Last modified on ';
+	}
+	.article-preview{
+		float: left;
+		width: 200px;
+		margin-right: 12px;
+		vertical-align: top;
+
+		a.image {
+
+			img{
+				width: 100%;
+				height: auto;
+				border:0;
+			}
+		}
+		.caption{
+			color:@bscolorBlack;
+		
+			a, a.new, a:visited, a:active{
+				color:@bscolorBlack;
+			}
+			a:hover{
+				cursor: default;
+				text-decoration: none;
+			}
+			
+		}
+	}
+	.notes{
+		margin-top: @gridsize;
+		width: 750px;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
+	}
 }

@@ -1,0 +1,120 @@
+/* article list on the Main Page */
+.article-list{
+	font-family:'Avenir';
+	font-weight:bold;
+	font-size:17px;
+}
+	#mp-container .mp-column-item .article-list ul li{
+		padding:3px 0;
+		line-height: 20px;
+	}
+
+/* article pages */
+#article-wrapper{
+
+	.subtitle{
+		font-family: @bsfontBlack;
+		font-size: @content-heading-font-size;
+		line-height: @heading-line-height;
+		margin-bottom: @gridsize;
+	}
+	div.sidebox{
+		float: right;
+		width: 302px;
+		margin-bottom:1em;
+		margin-right: -312px;
+		margin-left: 1em;
+
+		a.image img{
+			max-width: 100%;
+		}
+		.thumb{
+			margin-bottom:0px;
+		}
+	}
+	@media only screen and (max-width:1137px){
+		div.sidebox{
+			margin-right: -1em;
+		}
+	}
+	@media only screen and (min-width:1112px){
+		div.sidebox{
+			margin-right: -100px;
+		}
+	}
+	@media only screen and (min-width:1212px){
+		div.sidebox{
+			margin-right: -200px;
+		}
+	}
+	@media only screen and (min-width:1312px){
+		div.sidebox{
+			margin-right: -312px;
+		}
+	}
+	.caption{
+		font-family: @bsfont;
+		font-size: @content-small-font-size;
+		line-height: @content-small-line-height;
+		letter-spacing: @content-small-letter-spacing;
+		margin-bottom: 20px;
+	}
+	.summary{
+		font-size: 125%;
+		line-height: 1.35;
+		margin-bottom: 1em;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
+
+		small{
+			padding-bottom:4em;
+		}
+	}
+	.article{
+		iframe{
+			min-width: 750px;
+			width: 100%;
+			height: 450px;
+			margin-top:@gridsize;
+			margin-bottom: -20px;
+		}
+	}
+}
+
+/* contribute */
+#contribute-wrapper{
+	width: 100vw;
+	background-color: @bscolorThird;
+	padding:@gridsize @gridsize 20px 50px;
+	margin-left:-50px;
+	margin-bottom:-10px;
+
+	h1, b{
+		border:0;
+		margin:0;
+		font-family: @bsfontBlack;
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+	.contribute-container{
+		max-width: 750px;
+	}
+	div#column-wrapper{
+		position: relative;
+		width: ~"calc(100vw - 290px)";
+		min-width: 750px;
+		margin:0;
+		padding:0;
+
+		div.column.quarter{
+			display: inline-block;
+			width: ~"calc(25% - 40px)";
+			padding-right:36px;
+			vertical-align: top;
+		}
+	}
+	.column.small.quarter b{
+		font-size: 13px;
+	}
+}

@@ -1,39 +1,51 @@
 @html-font-size: 100%;
 
-@bscolorMain: rgba(0,0,0,1);
-@bscolorSecond: rgba(0,68,255,1);
+@bscolorMain: @bscolorBlack;
+@bscolorSecond: rgba(1,68,255,1);
+@bscolorThird: rgba(237,236,0,1);
+@bscolorBlack: rgba(40,40,40,1);
 
-/*@bscolorThird: rgba(196,0,34,1);*/
 @bsfont: "Avenir";
 @bsfontBook: "Book";
 @bsfontBlack: "AvenirBlack";
 
-// Page content
-// FIXME: Use global variable since Echo and CentralNotice use this variable
+@gridsize: 10px;
+
+/* Page content */
+/* FIXME: Use global variable since Echo and CentralNotice use this variable */
 @content-border-color: None;
-// FIXME: Find an open font that works with this stack and is readable by Windows users
+/* FIXME: Find an open font that works with this stack and is readable by Windows users */
 @content-font-family: @bsfontBook;
-@content-font-color: @bscolorMain;
-@content-font-size: 1.2em;
-@content-line-height: 1.25;
-@content-padding: 1em;
-@content-heading-font-size: 1.4em;
+@content-font-color: @bscolorBlack;
+@content-font-size: 1.3em;
+@content-letter-spacing: 0.008em;
+@content-line-height: 1.45;
+@content-padding: 0.5em;
 @content-heading-font-family: @bsfont;
 @content-heading-font-family-generic: @bsfont;
 @body-background-color: #fff;
-@heading-line-height: 1.0;
+@heading-line-height: 1.15;
 
-// Navigation
+/* h1, h2, bs-title, right-navigation */
+@content-heading-font-size: 26.8px;
+@menu-navigation-second-font-size:26.8px;
+
+/*  small font  */
+@content-small-font-size: 13.8px;
+@content-small-line-height: 1.3;
+@content-small-letter-spacing: 0em;
+
+@content-margin-right: 50px;
+
+/* Navigation */
 @menu-background-color: None;
 @menu-navigation-font-size:4em;
-@menu-navigation-second-font-size:26.4px;
 
-// Common menu
+/* Common menu */
 @menu-link-color: @bscolorMain;
 
-// Main menu
+/* Main menu */
 @menu-main-font-size: inherit;
-
 @menu-main-heading-font-size: 0.75em;
 @menu-main-heading-padding: 0.25em 0 0.25em 0.25em;
 @menu-main-heading-color: @bscolorSecond;
@@ -46,10 +58,13 @@
 
 @menu-main-logo-left: 0.5em;
 
-// Personal menu
+/* Personal menu */
 @menu-personal-font-size: 0.75em;
 
-// fonts
+/* right navigation strip */
+@sidebar-backgroundcolor: rgba(255,255,0,1);
+
+/* fonts */
 @font-face{
 	font-family: "Avenir";
 	src:url('fonts/AvenirLTStd-MediumOblique.otf');
