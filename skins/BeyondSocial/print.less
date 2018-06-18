@@ -5,7 +5,10 @@
 
 	@page{
 		size: A4;
-		margin:8mm 5mm 10mm 5mm;
+		margin:8mm 5mm 5mm 0;
+		orphans:4; 
+		widows:2;
+		border:1px dotted gray;
 	}
 
 	@font-face{
@@ -89,8 +92,10 @@
 	@bsfont: "Avenir";
 	@bsfontBlack: "AvenirBlack";
 
-	@content-font-size: 14pt;
-	@content-line-height: 1.35;
+	@content-font-size: 11pt;
+	@content-line-height: 1.25;
+	/*@content-font-size: 14pt;*/
+	/*@content-line-height: 1.35;*/
 	@content-heading-font-size: 3em;
 
 	html{
@@ -98,15 +103,16 @@
 		padding:0;
 	}
 	body{
-		width: calc(100% - 17mm);
-		margin:0 0 0 7.5mm;
+		width: calc(100% - 28mm);
+		margin:0 0 0 51mm;
 		padding:0;
 		font-family: @bsfontBook;
 		font-size: @content-font-size;
 		line-height: @content-line-height;
+		/*border:1px dotted goldenrod;*/
 
 		p{
-			margin:0 0 1em 0;
+			margin:0 0 2mm 0;
 			padding:0;
 		}
 		h1, h2, h3, h4, h5, h6{
@@ -140,15 +146,17 @@
 		.mw-body-content{
 			columns:2 auto;
 			-moz-columns:2 auto;
-			column-gap:8mm;
+			column-gap:5mm;
+			/*border:1px dotted blue;*/
 
 			#article-wrapper {
 				width: 100%;
-				margin-top:-15mm;
+				margin:-15mm 0 0 0;
+				/*border:1px dotted red;*/
 
 				.sidebox{
 					width: 100%;
-					margin-top:8mm;
+					margin-top:10mm;
 
 					.image img{
 						max-width: 100%;
@@ -168,14 +176,14 @@
 					transform: rotate(355deg);
 					width:100%;
 					border-radius: 100%;
-					padding:2em 0;
+					padding:10mm 0 4mm 0;
 					text-align: center;
 				}
 				.summary{
-					margin:0mm 0 1em 0;
-					font-size:13pt;
-					line-height: 1.45;
+					margin:0 0 3mm 0;
 					font-family: 'AvenirBlack';
+					font-size:11pt;
+					line-height: 1.35;
 					page-break-before: always;
 
 					small{
@@ -206,99 +214,43 @@
 					display: none;
 				}
 			}
-
-			/*contribute columns*/
-			#contribute-wrapper{
-				display: none;
-				/*width:100%;
-				margin:10mm 0 0 0;
-				color:rgba(0,100,220,0.8);
-				font-size:10pt;
-				page-break-before: always;
-
-				p{
-					font-family: @bsfontBlack;
-					margin:0 0 0 0;
-					padding:0;
-				}
-				.contribute-container{
-					p, .small{
-						font-family: @bsfontBook;
-						display: inline;
-						padding:0;
-					}
-					p{
-						margin:0 0 1em 0;
-					}
-					#column-wrapper{
-						margin-top:0;
-
-						.small.column.quarter{
-							display: inline-block;
-							vertical-align: top;
-							margin:1em 0 0 0;
-
-							b, a{
-								font-family: 'AvenirBlack';
-								font-size: 8pt;
-								text-transform: uppercase;
-								font-weight: normal;
-								padding:0;
-							}
-						}
-					}
-				}*/
-			}
-			/*#contribute-wrapper:before{
-				display: block;
-				clear: both;
-				font-family: 'AvenirBlack';
-				font-size:10pt;
-				content:'Beyond Social is a publishing experiment based on MediaWiki software. The project is initiated by the Social Practices department of the WdKA and developed in collaboration with the Hybrid Publishing research group.';
-				line-height: 1.3;
-				margin:-10mm 0 5mm 0;
-			}*/
 		}
 
 		/* sociality data */
-		#socialitydata{
+		.socialitydata.right{
+			left:23mm;
+		}
+		.socialitydata.left{
+			left:2mm;
+		}
+		.socialitydata{
 			display: block;		
 			position:absolute;
-			bottom:0;
-			left:0;
-			width:100%;
-			max-height: 15mm;
-			margin:0;
-			padding:0 1mm 0 2mm;
-			columns:10 auto;
-			/*border:1px dotted blue;*/
-			/*
-			top:0px;
-			right:0px;
+			top:0;
 			width:15mm;
 			margin:0;
-			padding:0 1mm 0 2mm;*/
+			padding:0 1mm 0 2mm;
 			font-family: 'Avenir';
 			font-size: 6pt;
 			font-style: normal;
+			/*border:1px dotted lime;*/
 			
+			
+
 			strong{
 				font-family: 'AvenirBlack';
 			}
-			.metadata{
-				margin-bottom:5mm;
+			.metadata, .categories{
+				margin-bottom:3mm;
+				transform:rotate(5deg);
 			}
 			.item{
 				position: relative;
-				margin-bottom: 5mm;
-				break-inside: avoid;
+				margin-bottom: 3mm;
 
 				ul li{
 					list-style: disc;
 					padding-top:0mm;
-					break-inside: avoid;
-				}
-				li{
 					margin-top: 1em;
 					break-inside: avoid;
 				}
@@ -310,9 +262,14 @@
 					margin-top:-8mm;
 				}
 				img{
-					width: 100%;
+					width: 75%;
 					height: auto;
-					margin:2mm 0 0 0;
+					margin:0;
+					border:0;
+				}
+				.articles-wrapper{
+					margin-top:3mm;
+					transform:rotate(5deg);
 				}
 				.articles-wrapper .info, .articles-wrapper small a{
 					display: inline-block;
@@ -328,17 +285,31 @@
 				}
 			}
 		}
-		#socialitydata:after{
+		#bs-print-title{
+			display: none;
+			font-family: 'AvenirBlack';
+			position: fixed;
+			top:0;
+			left:2mm;
+			width: 10mm;
+			font-size:32pt;
+			line-height: 2.1;
+			text-align: center;
+
+			.letter{
+				transform:rotate(5deg);
+			} 
+		}
+		/*#socialitydata:after{
 			content:"B E Y O N D S O C I A L";
 			font-family: 'AvenirBlack';
 			position: fixed;
-			top:0px;
-			right:0px;
+			top:0;
+			left:2mm;
 			width: 10mm;
-			font-size:30pt;
-			line-height: 2.2;
-		}
-
+			font-size:32pt;
+			line-height: 2.1;
+		}*/
 
 		a{
 			font-family: @bsfont;
@@ -370,9 +341,6 @@
 			font-size: 0.8em;
 			margin:0 0 5mm 0;
 			padding:0;
-		}
-		p{
-			margin-bottom:5mm;
 		}
 		b, strong{
 			font-weight: bold;
@@ -430,6 +398,58 @@
 			color:white;
 			width:calc(100% - 20px);
 			padding:10px;
-		}		
+		}
+
+		/*contribute columns*/
+			#contribute-wrapper{
+				display: none;
+				/*width:100%;
+				margin:10mm 0 0 0;
+				color:rgba(0,100,220,0.8);
+				font-size:10pt;
+				page-break-before: always;
+
+				p{
+					font-family: @bsfontBlack;
+					margin:0 0 0 0;
+					padding:0;
+				}
+				.contribute-container{
+					p, .small{
+						font-family: @bsfontBook;
+						display: inline;
+						padding:0;
+					}
+					p{
+						margin:0 0 1em 0;
+					}
+					#column-wrapper{
+						margin-top:0;
+
+						.small.column.quarter{
+							display: inline-block;
+							vertical-align: top;
+							margin:1em 0 0 0;
+
+							b, a{
+								font-family: 'AvenirBlack';
+								font-size: 8pt;
+								text-transform: uppercase;
+								font-weight: normal;
+								padding:0;
+							}
+						}
+					}
+				}*/
+			}
+			/*#contribute-wrapper:before{
+				display: block;
+				clear: both;
+				font-family: 'AvenirBlack';
+				font-size:10pt;
+				content:'Beyond Social is a publishing experiment based on MediaWiki software. The project is initiated by the Social Practices department of the WdKA and developed in collaboration with the Hybrid Publishing research group.';
+				line-height: 1.3;
+				margin:-10mm 0 5mm 0;
+			}*/		
 	}
 }

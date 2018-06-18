@@ -152,7 +152,8 @@ jQuery( function ( $ ) {
 	// to retrieve sociality data
 
 	// $('body').prepend('<div id="cover">Beyond Social</div>');
-	$('body').append('<div id="socialitydata"></div>');
+	$('body').append('<div class="socialitydata right"></div>');
+	$('body').append('<div class="socialitydata left"></div>');
 	currentpagename = location.href.match(/([^\/]*)\/*$/)[1];
 	// console.log(currentpagename);
 
@@ -172,7 +173,7 @@ jQuery( function ( $ ) {
 
 					console.log('creation date', request.revisions[0].timestamp);
 					created = request.revisions[0].timestamp;
-					$('#socialitydata').append('<div class="metadata">This page is created at: <strong>'+created+'</strong></div>');			
+					$('.socialitydata.left').append('<div class="metadata">This article is created at: <strong>'+created+'</strong></div>');			
 
 					// console.log('user', request.revisions[0].user);
 					user = request.revisions[0].user;
@@ -183,7 +184,15 @@ jQuery( function ( $ ) {
 	}
 	getMetadata(currentpagename, function(metadata){
 		firsteditor = metadata;
-		mainAjax(2, firsteditor);
+		mainAjax(0, function(firsteditor){
+			mainAjax(1, function(firsteditor){
+				// mainAjax(2, function(firsteditor){
+					// mainAjax(3, function(firsteditor){
+						// console.log('*sociality data calls done, all API requests made*');
+					// });
+				// });
+			});
+		});
 	});
 	
 	function getCategoryPages(category){
@@ -196,21 +205,19 @@ jQuery( function ( $ ) {
 			success: function(data){
 				console.log('*other pages in the category: '+ category+'*');
 				$.each(data.parse.text, function(_, text){
-					$('#socialitydata').append('<div class="item">Other articles in the category <strong>'+data.parse.title+'</strong> are: '+text+'</div>');
+					$('.socialitydata.right').append('<div class="item"><div class="metadata">Other articles in the category <strong>'+data.parse.title+'</strong> are:</div> '+text+'</div>');
 				});
 			}
 		});
 	}
 
-	function mainAjax(num, firsteditor){
+	function mainAjax(requestnum, handler){
+		handler(firsteditor);
 		requests = [
-			'http://beyond-social.org/wiki/api.php?action=query&list=usercontribs&ucuser='+firsteditor+'&uclimit=15&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&list=recentchanges&rcprop=title|comment|flags|user|timestamp&rclimit=5&rctoponly&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=contributors&inprop=lastrevid&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&list=users&ususers='+firsteditor+'&usprop=editcount|registration&format=json',
 			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&cllimit=10&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&cllimit=10&format=json',
-			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&cllimit=10&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&list=recentchanges&rcprop=title|comment|flags|user|timestamp&rclimit=25&rctoponly&format=json',
+			// 'http://beyond-social.org/wiki/api.php?action=query&list=usercontribs&ucuser='+firsteditor+'&uclimit=15&format=json',
+			// 'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=contributors&inprop=lastrevid&format=json',
 		]
 		var done;
 		function getRandom(list) {
@@ -219,8 +226,8 @@ jQuery( function ( $ ) {
 		// start API call
 		$.ajax({
 			dataType: 'json',
-			url: requests[getRandom(requests)],
-			// url: requests[0],
+			// url: requests[getRandom(requests)],
+			url: requests[requestnum],
 			type:'GET',
 			dataType: "jsonp",
 			success: function(data){
@@ -231,14 +238,15 @@ jQuery( function ( $ ) {
 
 					// display what other articles this user also edited
 					if(requestname == 'usercontribs'){
+						$('.socialitydata.left .item').append('<hr>');
 						console.log('*this user also edited*');
 						var done = [];
-						$('#socialitydata').append('<div class="item '+requestname+'"></div>');
-						$('#socialitydata .item.'+requestname).append('<div>User <strong>'+request[0].user+'</strong> also edited: </div>');
-						$('#socialitydata .item.'+requestname).append('<ul></ul>');
+						$('.socialitydata.left').append('<div class="item '+requestname+'"></div>');
+						$('.socialitydata.left .item.'+requestname).append('<div class="metadata">User <strong>'+request[0].user+'</strong> also edited: </div>');
+						$('.socialitydata.left .item.'+requestname).append('<ul></ul>');
 						$.each(request, function(i, item) {
 							if($.inArray( item.title, done) < 0){
-								$('#socialitydata .item.'+requestname+' ul').append('<li><strong>'+item.title+'</strong><br>(edited at '+item.timestamp+')</li>');
+								$('.socialitydata.left .item.'+requestname+' ul').append('<li class="metadata"><strong>'+item.title+'</strong><br>(edited at '+item.timestamp+')</li>');
 								done.push(item.title);
 							}
 						});
@@ -246,56 +254,43 @@ jQuery( function ( $ ) {
 
 					if(requestname == 'recentchanges'){
 						// display recent changes made on the wiki 
+						$('.socialitydata.left .item').append('<hr>');
 						console.log('*recent changes*');
-						$('#socialitydata').append('<div class="item">Recent Changes of the previous month include:<br></div>');
+						$('.socialitydata.left').append('<div class="item metadata">Recent Changes of the previous month include:<br></div>');
 						$.each(request, function(i, item){
-							$('#socialitydata').append('<div class="item"><strong>'+item.timestamp+'</strong><p>'+item.user+' edited the page '+item.title+'</p></div>');
+							$('.socialitydata.left').append('<div class="item metadata"><strong>'+item.timestamp+'</strong><p>'+item.user+' edited the page '+item.title+'</p></div>');
 						});
 					}
 
 					if(requestname == 'pages'){
 						$.each(request, function(id, item){
-
-							// display all contributors of current article
-							var contributors = $.map(item.contributors, function(contributor, i){
-								return '<strong>'+contributor.name+'</strong>';
-							});
-							console.log('contributors', contributors);
-							if(contributors.length == true){
-								console.log('*page contributors*');
-								$('#socialitydata').append('<div class="item">This article is based on the work by: </div>');
-								$('#socialitydata .item').append(contributors.join(' & '));
+							if(item.contributors != undefined){
+								// display all contributors of current article
+								console.log('pages > contributors');
+								var contributors = $.map(item.contributors, function(contributor, i){
+									return '<strong>'+contributor.name+'</strong>';
+								});
+								$('.socialitydata.left').append('<div class="item metadata">This article is based on the work by: </div>');
+								$('.socialitydata.left .item').append(contributors.join(' & '));
 							}
 
-							// display categories + pages in the first category
-							var categories = $.map(item.categories, function(category, i){
-								return category.title;
-							});
-							console.log('categories', categories);
-							if(categories.length == true){
-								console.log('*page categories*');
+							if(item.categories != undefined){
+								// display categories + pages in the first category
+								console.log('pages > categories');
+								var categories = $.map(item.categories, function(category, i){
+									return category.title;
+								});
 								if(categories.length >= 1){
-									$('#socialitydata').append('<div class="item categories">This article is added to the categories: </div>');
+									$('.socialitydata.right').append('<div class="item categories">This article is added to the categories: </div>');
 								}
 								else{
-									$('#socialitydata').append('<div class="item categories">This article is added to the category: </div>');
+									$('.socialitydata.right').append('<div class="item categories">This article is added to the category: </div>');
 								}
-								$('#socialitydata .item').append(categories.join(', '));
+								$('.socialitydata.right .item').append(categories.join(', '));
 								console.log('>> selected category', categories[getRandom(categories)]);
 								getCategoryPages(categories[getRandom(categories)]);
 							}
 						});
-					}
-
-					if(requestname == 'users'){
-						console.log('*user statistics*');
-						$('#socialitydata').append('<span class="item">User <strong>');
-						$('#socialitydata').append(request[0].name);
-						$('#socialitydata').append('</strong> edited ');
-						$('#socialitydata').append(request[0].editcount);
-						$('#socialitydata').append(' pages, since this user registered to Beyond Social on ');
-						$('#socialitydata').append(request[0].registration);
-						$('#socialitydata').append('</span>');
 					}
 				});
 			}

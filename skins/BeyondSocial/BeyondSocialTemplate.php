@@ -97,7 +97,20 @@ class BeyondSocialTemplate extends BaseTemplate {
 		?>
 		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
-
+		<div id="bs-print-title">
+			<div class="letter">B</div>
+			<div class="letter">E</div>
+			<div class="letter">Y</div>
+			<div class="letter">O</div>
+			<div class="letter">N</div>
+			<div class="letter">D</div>
+			<div class="letter">S</div>
+			<div class="letter">O</div>
+			<div class="letter">C</div>
+			<div class="letter">I</div>
+			<div class="letter">A</div>
+			<div class="letter">L</div>
+		</div>
 
 		<div id="wrapper">
 			<div id="container">
