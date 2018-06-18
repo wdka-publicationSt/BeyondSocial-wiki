@@ -52,7 +52,8 @@
 		"skins.beyondsocial.js": {
 			"scripts": [
 				"collapsibleTabs.js",
-				"beyondsocial.js"
+				"beyondsocial.js",
+				"date.js"
 			],
 			"position": "top",
 			"dependencies": [
