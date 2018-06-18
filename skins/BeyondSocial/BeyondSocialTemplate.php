@@ -114,33 +114,10 @@ class BeyondSocialTemplate extends BaseTemplate {
 
 		<div id="wrapper">
 			<div id="container">
-				<!-- *************************************** -->
-				<!-- ** order of nav & content is swapped ** -->
-				<!-- *************************************** -->
-				<div id="mw-navigation">
-
-					<!-- *************************************** -->
-					<!-- *** personal menu moved to here     *** -->
-					<!-- *************************************** -->		
+				<div id="mw-navigation">	
 					<?php $this->renderNavigation( 'PERSONAL' ); ?>
-
-					<!-- *************************************** -->
-					<!-- *** Beyond Social Title added       *** -->
-					<!-- *************************************** -->
 					<a id="bs-title-link" href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
 					<div id="bs-title-tagline">Platform Investigating Social Art and Design</div>
-					
-					<!-- *************************************** -->
-					<!-- *** personal menu removed here      *** -->
-					<!-- *************************************** -->	
-
-					<!-- ****************************************** -->
-					<!-- *** mw-head (now sidebar) removed here *** -->
-					<!-- ****************************************** -->	
-
-					<!-- *************************************** -->
-					<!-- *** mw-Panel removed here (=Footer now)*** -->
-					<!-- *************************************** -->
 				</div>
 
 				<div id="content" class="mw-body" role="main">
@@ -192,20 +169,13 @@ class BeyondSocialTemplate extends BaseTemplate {
 						<?php
 						}
 						?>
-						<!--  jump to nav removed here  -->
 						<?php
 						$this->html( 'bodycontent' );
-						// printfooter() REMOVED HERE
-						// CAT LINKS REMOVED HERE
-						// dataAfterContent REMOVED HERE
 						?>
 						<div class="visualClear"></div>
 						<?php $this->html( 'debughtml' ); ?>
 					</div>
 				</div>
-				<!-- ***************************************** -->
-				<!-- *** mw-head (=now sidebar) moved to here *** -->
-				<!-- ***************************************** -->
 				<div id="mw-head">
 					<div id="left-navigation">
 						<?php $this->renderNavigation( [ 'NAMESPACES', 'VARIANTS' ] ); ?>
@@ -217,9 +187,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 					</div>
 
 					<div id="page-info">
-					<!-- ********************************************** -->
-					<!-- *** Footer info moved to here as page info *** -->
-					<!-- ********************************************** -->
 						<!-- "This page is last modifief by ..." -->
 						<!-- List with Footer Links -->
 						<?php
@@ -237,9 +204,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 						<?php
 						}
 						?>
-						<!-- ****************************** -->
-						<!-- *** CATLINKS moved to here *** -->
-						<!-- ****************************** -->
 						<?php
 							if ( $this->data['catlinks'] ) {
 								$this->html( 'catlinks' );
@@ -249,19 +213,8 @@ class BeyondSocialTemplate extends BaseTemplate {
 				</div>
 			</div> <!-- end of container -->
 
-			<!-- ***************************************** -->
-			<!-- *** mw-panel (=Footer now) moved to here *** -->
-			<!-- *** used as footer                    *** -->
-			<!-- ***************************************** -->
 			<div id="mw-panel">
-				<!-- *************************************** -->
-				<!-- *** 'SEARCH' added here             *** -->
-				<!-- *************************************** -->
 				<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
-
-				<!-- *************************************** -->
-				<!-- *** footericons added here          *** -->
-				<!-- *************************************** -->
 				<?php $footericons = $this->getFooterIcons( 'icononly' );
 				if ( count( $footericons ) > 0 ) {
 					?>
@@ -295,13 +248,7 @@ class BeyondSocialTemplate extends BaseTemplate {
 
 				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
 			</div>
-
-
 			<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
-
-				<!-- FOOTER INFO HERE REMOVED -->
-				<!-- FOOTER ICONS HERE REMOVED -->
-
 			</div>
 			<?php $this->printTrail(); ?>
 
