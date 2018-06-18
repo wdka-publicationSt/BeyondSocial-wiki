@@ -10,6 +10,12 @@ jQuery( function ( $ ) {
 
 	hideEmptyPElements()
 
+	// display 'Editorial' before an editorial FirstHeader
+	console.log('editorial wrapper', $('#editorial-wrapper').length == 1);
+	if($('#editorial-wrapper').length == 1){
+		$('#firstHeading').prepend('Editorial - ');
+	}
+
 	// function to align images in the overview pages
 	function centerLandscapeImages(){
 		$('.thumb-wrapper img').each(function () {
@@ -35,7 +41,7 @@ jQuery( function ( $ ) {
 	// function to hide <h2>Links</h2> if there are no links added to the page
 	function hideEmptyLinksSection(){
 		if (!$('div.link').length) {
-			console.log('no links!!!!!');
+			// console.log('no links!!!!!');
 			$('h1 span#Links').parent().detach();
 			$('div.toc a[href=#Links]').parent().detach();
 		}
@@ -51,13 +57,22 @@ jQuery( function ( $ ) {
 	hideEmptyImgLink()
 
 	// function to add captions to plain images
-	// function showCaption(){
-	// 	$('div#article-wrapper a.image img').each(function () {
-	// 		var caption = $(this).attr('alt');
-	// 		$(this).parent().after('<div class="caption">'+caption+'</div>');
-	// 	});
-	// }
-	// showCaption()
+	function checker(value) {
+		var prohibited = ['.png', '.jpg', '.gif', '.pdf'];
+		return prohibited.every(function(v) {
+			return value.indexOf(v) == -1;
+		});
+	}
+	function showCaption(){
+		$('div#article-wrapper a.image img').each(function () {
+			var caption = $(this).attr('alt');
+			console.log(checker(caption));
+			if(checker(caption) == true){
+				$(this).parent().after('<div class="caption">'+caption+'</div>');
+			}
+		});
+	}
+	showCaption()
 
 	// function to change links from the images in an overview page + oneline sections
 	function changeImageLinks(){
@@ -154,12 +169,13 @@ jQuery( function ( $ ) {
 	// $('body').prepend('<div id="cover">Beyond Social</div>');
 	$('body').append('<div class="socialitydata right"></div>');
 	$('body').append('<div class="socialitydata left"></div>');
+	$('.metadata').append('<div class="socialitydata"></div>');
 	currentpagename = location.href.match(/([^\/]*)\/*$/)[1];
 	// console.log(currentpagename);
 
 	var firsteditor;
-	function getMetadata(page, handler){
-		var request = 'http://beyond-social.org/wiki/api.php?action=query&prop=revisions&rvlimit=1&rvprop=timestamp|user&rvdir=newer&titles='+page+'&format=json';
+	function getMetadata(page){
+		var request = 'http://beyond-social.org/wiki/api.php?action=query&prop=revisions|contributors&rvlimit=1&rvprop=timestamp|user&rvdir=newer&titles='+page+'&format=json';
 		var created;
 		var user;
 		$.ajax({
@@ -170,30 +186,23 @@ jQuery( function ( $ ) {
 			success: function(data){
 				// console.log('metadata', data.query.pages);
 				$.each(data.query.pages, function(id, request){
+					// console.log('creation date', request.revisions[0].timestamp);
+					created = new Date(request.revisions[0].timestamp).toString('d MMMM yyyy HH:mm:ss');
+					$('.metadata .socialitydata').append('<div class="item">This article is created at '+created+'</div>');			
 
-					console.log('creation date', request.revisions[0].timestamp);
-					created = request.revisions[0].timestamp;
-					$('.socialitydata.left').append('<div class="metadata">This article is created at: <strong>'+created+'</strong></div>');			
+					var contributors = $.map(request.contributors, function(contributor, i){
+						return contributor.name;
+					});
+					$('.metadata .socialitydata .item').append(' and is edited by ');
+					$('.metadata .socialitydata .item').append(contributors.join(' & '));
+					$('.metadata .socialitydata .item').append('.');
 
 					// console.log('user', request.revisions[0].user);
-					user = request.revisions[0].user;
+					// user = request.revisions[0].user;
 				});
-				handler(user);
 			}
 		});
 	}
-	getMetadata(currentpagename, function(metadata){
-		firsteditor = metadata;
-		mainAjax(0, function(firsteditor){
-			mainAjax(1, function(firsteditor){
-				// mainAjax(2, function(firsteditor){
-					// mainAjax(3, function(firsteditor){
-						// console.log('*sociality data calls done, all API requests made*');
-					// });
-				// });
-			});
-		});
-	});
 	
 	function getCategoryPages(category){
 		var request = 'http://beyond-social.org/wiki/api.php?action=parse&page='+category+'&contentmodel=wikitext&format=json';
@@ -205,19 +214,19 @@ jQuery( function ( $ ) {
 			success: function(data){
 				console.log('*other pages in the category: '+ category+'*');
 				$.each(data.parse.text, function(_, text){
-					$('.socialitydata.right').append('<div class="item"><div class="metadata">Other articles in the category <strong>'+data.parse.title+'</strong> are:</div> '+text+'</div>');
+					$('.socialitydata.right').append('<div class="item"><div class="data-item">Other articles in <strong>'+data.parse.title+'</strong> are:</div> '+text+'</div>');
 				});
 			}
 		});
 	}
 
-	function mainAjax(requestnum, handler){
-		handler(firsteditor);
+	function mainAjax(requestnum){
+		// handler(firsteditor);
 		requests = [
 			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=categories&cllimit=10&format=json',
 			'http://beyond-social.org/wiki/api.php?action=query&list=recentchanges&rcprop=title|comment|flags|user|timestamp&rclimit=25&rctoponly&format=json',
+			'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=contributors&inprop=lastrevid&format=json',
 			// 'http://beyond-social.org/wiki/api.php?action=query&list=usercontribs&ucuser='+firsteditor+'&uclimit=15&format=json',
-			// 'http://beyond-social.org/wiki/api.php?action=query&titles='+currentpagename+'&prop=contributors&inprop=lastrevid&format=json',
 		]
 		var done;
 		function getRandom(list) {
@@ -234,60 +243,35 @@ jQuery( function ( $ ) {
 				// console.log('data.query', data.query);
 
 				$.map( data.query, function( request, requestname ) {
-					console.log('requestname', requestname);
-
-					// display what other articles this user also edited
-					if(requestname == 'usercontribs'){
-						$('.socialitydata.left .item').append('<hr>');
-						console.log('*this user also edited*');
-						var done = [];
-						$('.socialitydata.left').append('<div class="item '+requestname+'"></div>');
-						$('.socialitydata.left .item.'+requestname).append('<div class="metadata">User <strong>'+request[0].user+'</strong> also edited: </div>');
-						$('.socialitydata.left .item.'+requestname).append('<ul></ul>');
-						$.each(request, function(i, item) {
-							if($.inArray( item.title, done) < 0){
-								$('.socialitydata.left .item.'+requestname+' ul').append('<li class="metadata"><strong>'+item.title+'</strong><br>(edited at '+item.timestamp+')</li>');
-								done.push(item.title);
-							}
-						});
-					}
-
 					if(requestname == 'recentchanges'){
 						// display recent changes made on the wiki 
 						$('.socialitydata.left .item').append('<hr>');
-						console.log('*recent changes*');
-						$('.socialitydata.left').append('<div class="item metadata">Recent Changes of the previous month include:<br></div>');
+						// console.log('*recent changes*');
+						$('.socialitydata.left').append('<div class="item data-item">Recent Changes of the previous month include:<br></div>');
 						$.each(request, function(i, item){
-							$('.socialitydata.left').append('<div class="item metadata"><strong>'+item.timestamp+'</strong><p>'+item.user+' edited the page '+item.title+'</p></div>');
+							timestamp = new Date(item.timestamp).toString('d MMMM yyyy HH:mm:ss');
+							var actions = [' edited ', ' worked on ', ' made a change in '];
+							if(item.title.indexOf("File:") >= 0){
+								var action = ' uploaded ';
+							}
+							else{
+								var action = actions[getRandom(actions)];
+							}
+							$('.socialitydata.left').append('<div class="item data-item">'+timestamp+'<p>'+item.user+action+' <em>'+item.title+'</em></p></div>');
 						});
 					}
 
 					if(requestname == 'pages'){
 						$.each(request, function(id, item){
-							if(item.contributors != undefined){
-								// display all contributors of current article
-								console.log('pages > contributors');
-								var contributors = $.map(item.contributors, function(contributor, i){
-									return '<strong>'+contributor.name+'</strong>';
-								});
-								$('.socialitydata.left').append('<div class="item metadata">This article is based on the work by: </div>');
-								$('.socialitydata.left .item').append(contributors.join(' & '));
-							}
-
 							if(item.categories != undefined){
 								// display categories + pages in the first category
-								console.log('pages > categories');
+								// console.log('pages > categories');
 								var categories = $.map(item.categories, function(category, i){
 									return category.title;
 								});
-								if(categories.length >= 1){
-									$('.socialitydata.right').append('<div class="item categories">This article is added to the categories: </div>');
-								}
-								else{
-									$('.socialitydata.right').append('<div class="item categories">This article is added to the category: </div>');
-								}
+								$('.socialitydata.right').append('<div class="item categories">This article is added to: </div>');
 								$('.socialitydata.right .item').append(categories.join(', '));
-								console.log('>> selected category', categories[getRandom(categories)]);
+								// console.log('>> selected category', categories[getRandom(categories)]);
 								getCategoryPages(categories[getRandom(categories)]);
 							}
 						});
@@ -296,7 +280,12 @@ jQuery( function ( $ ) {
 			}
 		});
 	}
+	mainAjax(0);
+	mainAjax(1);
+	mainAjax(2);
+	getMetadata(currentpagename);
 
+	
 	// ************************************************************
 
 	/**
