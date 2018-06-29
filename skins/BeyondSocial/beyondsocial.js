@@ -11,9 +11,12 @@ jQuery( function ( $ ) {
 	hideEmptyPElements()
 
 	// display 'Editorial' before an editorial FirstHeader
-	console.log('editorial wrapper', $('#editorial-wrapper').length == 1);
 	if($('#editorial-wrapper').length == 1){
-		$('#firstHeading').prepend('Editorial - ');
+		$('#firstHeading').prepend('(editorial) ');
+	}
+	// display 'Event' before an event FirstHeader
+	if($('.event-page').length == 1){
+		$('#firstHeading').prepend('(event) ');
 	}
 
 	// function to align images in the overview pages

@@ -143,7 +143,7 @@
 			height: 100%;
 			width: 100%;
 		}*/
-		.mw-body-content{
+		#content .mw-body-content{
 			columns:2 auto;
 			-moz-columns:2 auto;
 			column-gap:5mm;
@@ -152,7 +152,7 @@
 			li.editor{
 				display: none;
 			}
-			#article-wrapper, #editorial-wrapper {
+			#article-wrapper, #editorial-wrapper, .event-page{
 				width: 100%;
 
 				.sidebox{
@@ -213,6 +213,40 @@
 				.embedvideowrap{
 					display: none;
 				}
+			}
+			/*event page*/
+			.event-page{
+				.image img{
+					/*float: left;*/
+					width:200%;
+				}
+				.info{
+					page-break-after: always;
+				
+					.key{
+						display: inline-block;
+						padding-right: 1mm;
+					}
+
+				}
+			}
+			/*event page*/
+			.articles-wrapper{
+				break-inside: avoid;
+				margin-bottom:1em;
+
+				.thumb-wrapper img{
+					max-width: 100%;
+					height: auto;
+				}
+				.info small{
+					font-family:'Avenir';
+					font-size:100%;
+				}
+			}
+			/* more events */
+			.more, #events{
+				display: none;
 			}
 			/*editorial selected articles*/
 			#editorial-wrapper {
@@ -292,6 +326,7 @@
 		.socialitydata.left{
 			left:3mm;
 			word-wrap: break-word;
+			overflow: hidden;
 		}
 		.socialitydata{
 			display: block;		
