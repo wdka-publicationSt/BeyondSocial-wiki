@@ -9,51 +9,6 @@
 		line-height: 20px;
 	}
 
-/* article pages */
-#article-wrapper{
-
-	.subtitle{
-		font-family: @bsfontBlack;
-		font-size: @content-heading-font-size;
-		line-height: @heading-line-height;
-		margin-bottom: @gridsize;
-	}
-	@media only screen and (max-width:1137px){
-		div.sidebox{
-			margin-right: -1em;
-		}
-		a.image img, a.image .caption, .article iframe{
-			width: 436px;
-			height: 250px;
-		}
-	}
-	@media only screen and (min-width:1112px){
-		div.sidebox{
-			margin-right: -100px;
-		}
-		a.image img, a.image .caption, .article iframe{
-			width: 516px;
-			height: 290px;
-		}
-	}
-	@media only screen and (min-width:1212px){
-		div.sidebox{
-			margin-right: -200px;
-		}
-		a.image img, a.image .caption, .article iframe{
-			width: 616px;	
-			height: 350px;
-		}
-	}
-	@media only screen and (min-width:1312px){
-		div.sidebox{
-			margin-right: -312px;
-		}
-		a.image img, a.image .caption, .article iframe{
-			width: 627px;	
-			height: 350px;
-		}
-	}
 	div.sidebox{
 		float: right;
 		width: 302px;
@@ -66,6 +21,68 @@
 		}
 		.thumb{
 			margin-bottom:0px;
+		}
+	}
+
+/* article pages */
+#article-wrapper{
+
+	.subtitle{
+		font-family: @bsfontBlack;
+		font-size: @content-heading-font-size;
+		line-height: @heading-line-height;
+		margin-bottom: @gridsize;
+	}
+	@media only screen and (max-width:1137px){
+		a.image img, a.image .caption, .article iframe{
+			width: 436px;
+			height: 250px;
+		}
+		div.sidebox{
+			margin-right: -1em;
+			
+			a.image img{
+				max-width: 100%;
+			}
+		}
+	}
+	@media only screen and (min-width:1112px){
+		a.image img, a.image .caption, .article iframe{
+			width: 516px;
+			height: 290px;
+		}
+		div.sidebox{
+			margin-right: -100px;
+
+			a.image img{
+				max-width: 100%;
+			}
+		}
+	}
+	@media only screen and (min-width:1212px){
+		a.image img, a.image .caption, .article iframe{
+			width: 616px;	
+			height: 350px;
+		}
+		div.sidebox{
+			margin-right: -200px;
+
+			a.image img{
+				max-width: 100%;
+			}
+		}
+	}
+	@media only screen and (min-width:1312px){
+		a.image img, a.image .caption, .article iframe{
+			width: 627px;	
+			height: 350px;
+		}
+		div.sidebox{
+			margin-right: -312px;
+			
+			a.image img{
+				max-width: 100%;
+			}
 		}
 	}
 	a.image{
