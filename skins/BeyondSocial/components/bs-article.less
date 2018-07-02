@@ -36,30 +36,47 @@
 		div.sidebox{
 			margin-right: -1em;
 		}
+		a.image img, a.image .caption{
+			width: 448px;
+		}
 	}
 	@media only screen and (min-width:1112px){
 		div.sidebox{
 			margin-right: -100px;
+		}
+		a.image img, a.image .caption{
+			width: 527px;
 		}
 	}
 	@media only screen and (min-width:1212px){
 		div.sidebox{
 			margin-right: -200px;
 		}
+		a.image img, a.image .caption{
+			width: 627px;	
+		}
 	}
 	@media only screen and (min-width:1312px){
 		div.sidebox{
 			margin-right: -312px;
 		}
+		a.image img, a.image .caption{
+			width: 627px;	
+		}
 	}
-	.caption{
-		font-family: @bsfont;
-		font-size: @content-small-font-size;
-		line-height: @content-small-line-height;
-		letter-spacing: @content-small-letter-spacing;
-		margin-bottom: 20px;
+	a.image{
+		margin-top:2em;
+		
+		.caption{
+			font-family: @bsfont;
+			font-size: @content-small-font-size;
+			line-height: @content-small-line-height;
+			letter-spacing: @content-small-letter-spacing;
+			margin-bottom: 20px;
+			width: 627px;	
+		}
 	}
-	.summary{
+	a.image .summary{
 		font-size: 125%;
 		line-height: 1.35;
 		margin-bottom: 1em;
