@@ -36,7 +36,7 @@
 		div.sidebox{
 			margin-right: -1em;
 		}
-		a.image img, a.image .caption{
+		a.image img, a.image .caption, .article iframe{
 			width: 436px;
 		}
 	}
@@ -44,7 +44,7 @@
 		div.sidebox{
 			margin-right: -100px;
 		}
-		a.image img, a.image .caption{
+		a.image img, a.image .caption, .article iframe{
 			width: 516px;
 		}
 	}
@@ -52,7 +52,7 @@
 		div.sidebox{
 			margin-right: -200px;
 		}
-		a.image img, a.image .caption{
+		a.image img, a.image .caption, .article iframe{
 			width: 616px;	
 		}
 	}
@@ -60,7 +60,7 @@
 		div.sidebox{
 			margin-right: -312px;
 		}
-		a.image img, a.image .caption{
+		a.image img, a.image .caption, .article iframe{
 			width: 627px;	
 		}
 	}
@@ -90,8 +90,6 @@
 	}
 	.article{
 		iframe{
-			/*min-width: 750px;*/
-			width: calc(100% - 13px);
 			height: auto;
 			margin-top:@gridsize;
 			margin-bottom: -20px;
