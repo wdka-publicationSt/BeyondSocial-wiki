@@ -24,15 +24,8 @@
 		}
 	}
 
-/* article pages */
-#article-wrapper{
+#content{
 
-	.subtitle{
-		font-family: @bsfontBlack;
-		font-size: @content-heading-font-size;
-		line-height: @heading-line-height;
-		margin-bottom: @gridsize;
-	}
 	@media only screen and (max-width:1137px){
 		a.image img, a.image .caption, .article iframe{
 			width: 436px;
@@ -41,20 +34,23 @@
 		div.sidebox{
 			margin-right: -1em;
 			
-			a.image img{
+			.image img{
 				max-width: 100%;
 			}
 		}
 	}
+
 	@media only screen and (min-width:1112px){
 		a.image img, a.image .caption, .article iframe{
 			width: 516px;
+		}
+		.article iframe{
 			height: 290px;
 		}
 		div.sidebox{
 			margin-right: -100px;
 
-			a.image img{
+			.image img{
 				max-width: 100%;
 			}
 		}
@@ -62,12 +58,14 @@
 	@media only screen and (min-width:1212px){
 		a.image img, a.image .caption, .article iframe{
 			width: 616px;	
+		}
+		.article iframe{
 			height: 350px;
 		}
 		div.sidebox{
 			margin-right: -200px;
 
-			a.image img{
+			.image img{
 				max-width: 100%;
 			}
 		}
@@ -75,15 +73,25 @@
 	@media only screen and (min-width:1312px){
 		a.image img, a.image .caption, .article iframe{
 			width: 627px;	
+		}
+		.article iframe{
 			height: 350px;
 		}
 		div.sidebox{
 			margin-right: -312px;
 			
-			a.image img{
+			.image img{
 				max-width: 100%;
 			}
 		}
+	}
+}
+#article-wrapper{
+	.subtitle{
+		font-family: @bsfontBlack;
+		font-size: @content-heading-font-size;
+		line-height: @heading-line-height;
+		margin-bottom: @gridsize;
 	}
 	a.image{
 		margin-top:2em;
