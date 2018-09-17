@@ -5,6 +5,10 @@ a custom MediaWiki skin based on the Vector skin.
 
 This wiki skin is developed for [Beyond Social](http://beyond-social.org/), a publishing project around Social Art & Design at the [Willem de Kooning Academie](http://www.wdka.nl/) in Rotterdam. The skin and the other wiki developments are a collaborative product of the Hybrid Publishing research group and the Social Practices department in collaboration with André Castro and Manetta Berends. 
 
+In between 2014 & 2016, Beyond Social already used a wiki as part of their publishing workflow, where it had a backend function for a [wiki2web workflow](https://github.com/wdka-publicationSt/BeyondSocial). The wiki was a workarea, where articles and images were collected and brought together to generate the online Beyond Social Issues. 
+
+In November 2016 we made the choice to change the Beyond Social publishing workflow. The wiki2web workflow made it difficult to make relatively small changes to the structure of the Beyond Social issues, for example to the topic and section categories. The collaboration between editors and developers was sometimes difficult. The specific expectations did often not match with the wealth of possibilities that the wiki software offered. As a response to this, we decided to not use the wiki as a backend anymore, but instead, we decided to start to use the wiki as a wiki in itself: both as back- and frontend of Beyond Social. 
+
 ## Install the BeyondSocial skin and customize your own
 The Beyond Social skin is based on the Vector skin and is implemented in a Mediawiki 1.28 installation. Make sure you install this version or higher. It is recommended to make an installation of MediaWiki locally, where you can test your changes to the skin. 
 
