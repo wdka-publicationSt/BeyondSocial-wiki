@@ -27,7 +27,7 @@ body {
 }
 body {
 	width: 100%;
-	background-color: @body-background-color;
+	/*background-color: @body-background-color;*/
 }
 
 #wrapper{
@@ -112,20 +112,16 @@ body {
 		h1 {
 			/* @sidebar-backgroundcolor stroke above all h1's*/
 			width: 130vw;
-			border-top: @gridsize solid @bscolorThird;
+			border-top: 1px dotted @bscolorMain;
 			padding-top: @gridsize;
 			margin-bottom: @gridsize;
 			margin-top: 1em;
-
-			/* previous settings */
-			/*margin-top: 1em;*/
-			/*border-bottom: 1px solid @bscolorMain;*/
 		}
 	}
 
 	h2 {
 		margin-top: 1em;
-		border-bottom:1px solid;
+		border-bottom:1px dotted;
 	}
 
 	h3,
@@ -177,7 +173,7 @@ body {
 		width: ~"calc(100vw - 300px)";
 		min-width: 750px;
 		border:0;
-		border-bottom:1px solid @bscolorMain;
+		border-bottom:1px dotted @bscolorMain;
 		margin:1em 0;
 	}
 	i, em{
@@ -227,6 +223,8 @@ pre,
 
 /* Wiki-title + Pagetitle */
 #mw-navigation{
+	position: relative;
+	margin:177px 0 0 0;
 	width: 100%;
 }
 	a#bs-title-link:hover{
@@ -331,7 +329,7 @@ div.more{
 	font-size: @content-heading-font-size;
 	line-height: @heading-line-height;
 	width: 130vw;
-	border-top: @gridsize solid @bscolorThird;
+	border-top: 1px dotted @bscolorMain;
 	padding-top: @gridsize;
 	margin-bottom: @gridsize;
 	margin-top: 1em;
@@ -354,10 +352,10 @@ div.more{
 
 	.topic{
 		padding:10px 0;
-		border-top:1px solid;
+		border-top:1px dotted;
 	}
 	.topic:last-of-type{
-		border-bottom:1px solid;
+		border-bottom:1px dotted;
 	}
 }
 
@@ -566,15 +564,17 @@ body.ns-special #right-navigation{
 		margin:0;
 		font-size: @menu-navigation-second-font-size;
 		font-family: @bsfontBlack;
+		background-color: lightgrey;
 	}
 	input#input_button_1{
 		font-family: @bsfont;
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-		background-color: @bscolorThird;
+		background-color: lightgrey;
 		color:@bscolorSecond;
 		border:0;
+		border-radius: 25px;
 		padding:@content-padding 12px;
 		margin-left: -5px;
 		height: 45.5px;
@@ -584,9 +584,6 @@ body.ns-special #right-navigation{
 	input#input_button_1:hover{
 		cursor:pointer;
 	}
-}
-.contribute-container form.pfFormInput input#input_button_1{
-	background-color: yellow;
 }
 
 /* FORMS */
@@ -641,13 +638,13 @@ body.ns-0 table.wikitable, body.ns-14 table.wikitable{
 
 	tr > th, tr > td{
 		border:0;
-		border-bottom:1px solid @bscolorMain;
+		border-bottom:1px dotted @bscolorMain;
 		padding:5px;
 	}
 	thead th{
 		border:0;
 		background-color: @sidebar-backgroundcolor;
-		border-bottom:1px solid @bscolorMain;
+		border-bottom:1px dotted @bscolorMain;
 		text-align: left;
 	}
 	tr, td{
@@ -752,11 +749,11 @@ table.filehistory{
 			}
 		}
 		li.toclevel-1{
-			border-top:1px solid;
+			border-top:1px dotted;
 			padding:@gridsize 0;
 		}
 		li.toclevel-1:last-of-type{
-			border-bottom:1px solid;
+			border-bottom:1px dotted;
 		}
 		a{
 			color:@bscolorMain;
@@ -766,7 +763,7 @@ table.filehistory{
 
 /* Special:Upload_file page*/
 #filetoc{
-	border:2px solid @bscolorMain;
+	border:2px dotted @bscolorMain;
 	background-color: transparent;
 }
 ul#filetoc{
@@ -820,7 +817,7 @@ ul#filetoc{
 .link-internal, .link-external{
 	width: ~"calc(100vw - 300px)";
 	min-width: 750px;
-	border-bottom:1px solid;
+	border-bottom:1px dotted;
 	padding:10px 0;
 }
 	/*both do not work :\\\\ */

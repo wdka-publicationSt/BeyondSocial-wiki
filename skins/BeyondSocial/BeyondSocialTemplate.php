@@ -97,23 +97,36 @@ class BeyondSocialTemplate extends BaseTemplate {
 		?>
 		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
-		<div id="bs-print-title">
-			<div class="letter">B</div>
-			<div class="letter">E</div>
-			<div class="letter">Y</div>
-			<div class="letter">O</div>
-			<div class="letter">N</div>
-			<div class="letter">D</div>
-			<div class="letter">S</div>
-			<div class="letter">O</div>
-			<div class="letter">C</div>
-			<div class="letter">I</div>
-			<div class="letter">A</div>
-			<div class="letter">L</div>
-		</div>
-
+		
 		<div id="wrapper">
 			<div id="container">
+
+				<div id="mw-panel">
+					<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
+					<?php $footericons = $this->getFooterIcons( 'icononly' );
+					if ( count( $footericons ) > 0 ) {
+						?>
+						<ul id="footer-icons" class="noprint">
+							<?php
+							foreach ( $footericons as $blockName => $footerIcons ) {
+								?>
+								<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
+									<?php
+									foreach ( $footerIcons as $icon ) {
+										echo $this->getSkin()->makeFooterIcon( $icon );
+									}
+									?>
+								</li>
+							<?php
+							}
+							?>
+						</ul>
+					<?php
+					}
+					?>			
+					<?php $this->renderPortals( $this->data['sidebar'] ); ?>
+				</div>
+
 				<div id="mw-navigation">	
 					<?php $this->renderNavigation( 'PERSONAL' ); ?>
 					<a id="bs-title-link" href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
@@ -213,41 +226,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 				</div>
 			</div> <!-- end of container -->
 
-			<div id="mw-panel">
-				<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
-				<?php $footericons = $this->getFooterIcons( 'icononly' );
-				if ( count( $footericons ) > 0 ) {
-					?>
-					<ul id="footer-icons" class="noprint">
-						<?php
-						foreach ( $footericons as $blockName => $footerIcons ) {
-							?>
-							<li id="footer-<?php echo htmlspecialchars( $blockName ); ?>ico">
-								<?php
-								foreach ( $footerIcons as $icon ) {
-									echo $this->getSkin()->makeFooterIcon( $icon );
-								}
-								?>
-							</li>
-						<?php
-						}
-						?>
-						<li><a href="https://www.wdka.nl/research/hybrid-publishing" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/HP_Logo.jpeg"></a></li>
-						<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_bw.svg"></a></li>
-						<li><a href="http://www.wdka.nl/" target="_blank"><img width="50px" src="/wiki/skins/BeyondSocial/images/wdkalogo_2.svg"></a></li>
-					</ul>
-				<?php
-				}
-				?>			
-
-				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="<?php
-					echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] )
-					?>" <?php
-					echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'p-logo' ) )
-					?>></a></div>
-
-				<?php $this->renderPortals( $this->data['sidebar'] ); ?>
-			</div>
 			<div id="footer" role="contentinfo"<?php $this->html( 'userlangattributes' ) ?>>
 			</div>
 			<?php $this->printTrail(); ?>

@@ -2,14 +2,14 @@
 
 /* Panel (= transformed into Footer) */
 div#mw-panel {
-	position: relative;
+	position: absolute;
 	display: block;
     left: 0;
-    bottom: 0;
+    top: 0;
 	width: ~"calc(100% - 1em)";
 	height: auto;
 	min-height: 160px;
-	padding:@content-padding;
+	padding:0 @content-padding @content-padding @content-padding;
 	margin: 0;
 	z-index: 100;
 	background-color: white;
@@ -35,26 +35,19 @@ div#mw-panel {
 		float: right;
 		width: auto;
 
-		li{
+		li {
 			list-style-type: none;
 			list-style-image: none;
-			float: left;
-			line-height: 2em;
-			text-align: right;
+
 			a{
-				margin: 0 0 0 @content-padding;
+				display: block;
+				text-align: right;
+				margin: 0 0 3px 5px;
 			}
 			img{
+				width: 50px;
+				height: auto;
 				border-radius: 4px;
-			}
-		}
-		li#footer-poweredbyico{
-			width: 100px;
-			float: left;
-			margin-bottom:@content-padding;
-
-			a img{
-				margin-bottom:0.5em;
 			}
 		}
 	}
