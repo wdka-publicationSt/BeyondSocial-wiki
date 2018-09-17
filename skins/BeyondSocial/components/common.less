@@ -54,7 +54,6 @@ body {
 		-moz-flex:1;
 		-ms-flex:1;
 		flex:1;
-		margin-bottom:-7px;
 	}
 
 /* Content */
@@ -106,7 +105,7 @@ body {
 		font-size: @content-heading-font-size;
 	}
 	h2{
-		font-size: 98%;
+		font-size: 90%;
 	}
 	.mw-body-content {
 		h1 {
@@ -120,7 +119,7 @@ body {
 	}
 
 	h2 {
-		margin-top: 1em;
+		margin: 2em 0 0.5em 0;
 		border-bottom:1px dotted;
 	}
 
@@ -154,6 +153,8 @@ body {
 	pre{
 		font-size: 14px;
 		border:0;
+		background-image: url('images/noise.png');
+		background-repeat: auto; 
 	}
 
 	.mw-indicators {
@@ -224,7 +225,7 @@ pre,
 /* Wiki-title + Pagetitle */
 #mw-navigation{
 	position: relative;
-	margin:177px 0 0 0;
+	margin:200px 0 0 0;
 	width: 100%;
 }
 	a#bs-title-link:hover{
@@ -235,7 +236,7 @@ pre,
 		position: absolute;
 		top: 3px;
 		left: 5px;
-		width: 180px;
+		width: 250px;
 		font-family: @bsfontBlack;
 		font-weight: bold;
 		font-size: @menu-navigation-second-font-size;
@@ -349,6 +350,9 @@ div.more{
 	width: ~"calc(100vw - 300px)";
 	min-width: 750px;
 	margin-bottom:2em;
+	-webkit-columns:5;
+	-moz-columns:5;
+	columns:200px auto;
 
 	.topic{
 		padding:10px 0;
@@ -363,7 +367,7 @@ div.more{
 /* images */
 /*********************************/
 #content .image img{
-	/*width: 750px;*/
+	display: block;
 	width: 627px;
 	height: auto;
 	margin-top:10px;
@@ -397,14 +401,13 @@ div.more{
 	img.thumbimage{
 		border:0px;
 	}
-	html .thumbcaption{
+	html .thumbcaption, .caption{
 		padding:0;
 		font-family: @bsfont;
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-		margin-top:-20px;
-		margin-bottom: 0;
+		margin:0 0 1em 0;
 	}
 #content .gallery{
 	.gallerybox{
@@ -467,6 +470,7 @@ div.embedvideo{
 	.title{
 		margin:10px 0;
 		height:45px;
+		font-family: @bsfontBlack;
 		font-size: 14px;
 		font-weight: bold;
 		letter-spacing: 0;
@@ -557,27 +561,27 @@ body.ns-special #right-navigation{
 	display: block;
 
 	input.formInput{
-		width:~"calc(100vw - 434px)";
+		width:~"calc(100vw - 484px)";
 		min-width: 600px;
-		border:0;
+		border:1px dotted;
 		padding:8px 0px 5px 10px;
 		margin:0;
 		font-size: @menu-navigation-second-font-size;
 		font-family: @bsfontBlack;
-		background-color: lightgrey;
+		background-image: url('images/noise.png');
 	}
 	input#input_button_1{
 		font-family: @bsfont;
 		font-size: @content-small-font-size;
 		line-height: @content-small-line-height;
 		letter-spacing: @content-small-letter-spacing;
-		background-color: lightgrey;
+		background-image: url('images/noise.png');
 		color:@bscolorSecond;
-		border:0;
+		border:1px dotted black;
 		border-radius: 25px;
 		padding:@content-padding 12px;
 		margin-left: -5px;
-		height: 45.5px;
+		height: 56px;
 		vertical-align: top;
 		display: inline-block;
 	}
@@ -773,23 +777,26 @@ ul#filetoc{
 /*********************************/
 /* used in the wiki tutorial */
 .mediawiki-link{
-	margin-top:10px;
+	margin:10px 0;
 	background-color:rgba(255,255,0,0.5);
 	padding:0px 15px;
+
 	.mediawiki-link-text{
-		width: ~"calc(100% - 50px)";
+		width: ~"calc(100% - 60px)";
 		left: 50px;
 		position: relative;
 		line-height: 20px;
 		padding: 15px;
 		display: block;
 		text-align: left;
+		font-family: @bsfont;
+		font-size:0.75em;
 	}
 }
 #content .mediawiki-link img{
 	position: absolute;
-	margin-top: 7px;
-	margin-left: -5px;
+	margin-top: 15px;
+	margin-left: -6px;
 }
 
 
