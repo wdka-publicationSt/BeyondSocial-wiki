@@ -5,9 +5,9 @@
 @bscolorThird: rgba(237,236,0,1);
 @bscolorBlack: rgba(40,40,40,1);
 
-@bsfont: "Avenir";
+@bsfont: "SpaceMono";
 @bsfontBook: "Book";
-@bsfontBlack: "AvenirBlack";
+@bsfontBlack: "SpaceMonoHeaders";
 
 @gridsize: 10px;
 
@@ -17,7 +17,7 @@
 /* FIXME: Find an open font that works with this stack and is readable by Windows users */
 @content-font-family: @bsfontBook;
 @content-font-color: @bscolorBlack;
-@content-font-size: 1.3em;
+@content-font-size: 1.15em;
 @content-letter-spacing: 0.008em;
 @content-line-height: 1.45;
 @content-padding: 0.5em;
@@ -28,10 +28,10 @@
 
 /* h1, h2, bs-title, right-navigation */
 @content-heading-font-size: 26.8px;
-@menu-navigation-second-font-size:26.8px;
+@menu-navigation-second-font-size: 26.8px;
 
 /*  small font  */
-@content-small-font-size: 13.8px;
+@content-small-font-size: 12px;
 @content-small-line-height: 1.3;
 @content-small-letter-spacing: 0em;
 
@@ -59,19 +59,19 @@
 @menu-main-logo-left: 0.5em;
 
 /* Personal menu */
-@menu-personal-font-size: 0.75em;
+@menu-personal-font-size: @content-small-font-size;
 
 /* right navigation bar */
 @sidebar-backgroundcolor: transparent;
 
 /* fonts */
 @font-face{
-	font-family: "Avenir";
+	font-family: "SpaceMono";
 	src:url('fonts/Space_Mono/SpaceMono-Regular.ttf');
 	font-style: italic, oblique;
 }
 @font-face{
-	font-family: "Avenir";
+	font-family: "SpaceMono";
 	src:url('fonts/Space_Mono/SpaceMono-Regular.ttf');
 }
 @font-face{
@@ -84,7 +84,7 @@
 	src:url('fonts/crimson/CrimsonText-Roman.ttf');
 }
 @font-face{
-	font-family: "AvenirBlack";
+	font-family: "SpaceMonoHeaders";
 	src:url('fonts/Space_Mono/SpaceMono-BoldItalic.ttf');
 	font-weight: bold;
 }

@@ -7,8 +7,8 @@ div#mw-head {
 	display: inline-block;
 	vertical-align: top;
 	width: 175px;
-	height: ~"calc(100% - 140px)";
-	top: 177px;
+	height: 100%;
+	top: 0;
 	right: 0;
 	margin:0;
 	padding:0 10px;
@@ -60,7 +60,6 @@ div#mw-head {
 	#right-navigation {
 		#p-views, #search-link{
 			display: inline;
-
 		}
 		ul{
 			list-style-type: none;
@@ -93,7 +92,7 @@ div#mw-head {
 				}
 			}
 			#shareButtons{
-				/* hiden the word "Share" */
+				/* hidden the word "Share" */
 				font-size: 0; 
 				vertical-align: top;
 				padding-left:5px;
@@ -104,6 +103,24 @@ div#mw-head {
 					text-decoration: none;
 					color: @bscolorSecond;
 				}
+			}
+			/* fb & twitter share icons */
+			li#share span:after{
+				content: '';
+			}
+			#right-navigation span > a#shareTwitter, #right-navigation span > a#shareFacebook{
+				float: none;
+				display: inline-block;
+			}
+			.fa.fa-twitter-square, .fa.fa-facebook-square{
+				display: inline-block;
+				font-family:'FontAwesome';
+				font-size: 23px;
+				text-rendering: auto;
+				margin: 5px 5px 0 0;
+			}
+			i{
+				color: @bscolorSecond;
 			}
 		}
 		span {
@@ -185,21 +202,3 @@ div#mw-head {
 	}
 }
 
-/* share icons */
-li#share span:after{
-	content: '';
-}
-#right-navigation span > a#shareTwitter, #right-navigation span > a#shareFacebook{
-	float: none;
-	display: inline-block;
-}
-.fa.fa-twitter-square, .fa.fa-facebook-square{
-	display: inline-block;
-	font-family:'FontAwesome';
-	font-size: 23px;
-	text-rendering: auto;
-	margin-right: 5px;
-}
-i{
-	color: @bscolorSecond;
-}

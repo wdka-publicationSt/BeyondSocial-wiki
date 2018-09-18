@@ -1,10 +1,10 @@
 /* Personal */
-#p-personal {
-	position: relative;
-	float: right;
+#mw-personal #p-personal {
+	position: absolute;
+	top: 0;
 	font-family: @bsfont;
-	top: 0px;
 	right: @content-padding;
+	text-align: right;
 	/* Display on top of page tabs - bugs 37158, 48078 */
 	z-index: 101;
 
@@ -31,8 +31,8 @@
 }
 
 /* Icon for Usernames */
-#pt-userpage,
-#pt-anonuserpage {
+#mw-personal #pt-userpage,
+#mw-personal #pt-anonuserpage {
 	background-position: left top;
 	background-repeat: no-repeat;
 	/* SVG support using a transparent gradient to guarantee cross-browser
@@ -42,6 +42,6 @@
 }
 
 /* Show "Not logged in" text in gray */
-#pt-anonuserpage {
+#mw-personal #pt-anonuserpage {
 	color: #707070;
 }

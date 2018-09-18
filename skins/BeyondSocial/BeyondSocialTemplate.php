@@ -101,8 +101,10 @@ class BeyondSocialTemplate extends BaseTemplate {
 		<div id="wrapper">
 			<div id="container">
 
+				<div id="mw-personal">
+					<?php $this->renderNavigation( 'PERSONAL' ); ?>
+				</div>
 				<div id="mw-panel">
-					<?php $this->renderNavigation( [ 'SEARCH' ] ); ?>
 					<?php $footericons = $this->getFooterIcons( 'icononly' );
 					if ( count( $footericons ) > 0 ) {
 						?>
@@ -128,7 +130,6 @@ class BeyondSocialTemplate extends BaseTemplate {
 				</div>
 
 				<div id="mw-navigation">	
-					<?php $this->renderNavigation( 'PERSONAL' ); ?>
 					<a id="bs-title-link" href="<?php $this->text( 'scriptpath' ); ?>"><div id="bs-title"><?php $this->text( 'sitename' ); ?></div></a>
 					<div id="bs-title-tagline">Platform Investigating Social Art and Design</div>
 				</div>
